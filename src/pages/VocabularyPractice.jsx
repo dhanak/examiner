@@ -5,10 +5,10 @@ import vocabularyData from '../data/vocabulary.json'
 import './VocabularyPractice.css'
 
 export default function VocabularyPractice() {
-  const { currentFilter, setFilter, getLearnedCount } = useVocabularyStore()
+  const { currentFilter, setFilter, getLearnedCount, isLearned } = useVocabularyStore()
   const [currentProgress, setCurrentProgress] = useState({ current: 1, total: 0 })
   const [shuffleKey, setShuffleKey] = useState(0) // Increment to trigger shuffle
-  const [cachedShuffled, setCachedShuffled] = useState([])
+  const [statusFilter, setStatusFilter] = useState('all') // 'all', 'learned', 'unlearned'
 
   const filteredWords = useMemo(() => {
     let filtered = vocabularyData.words
@@ -18,24 +18,53 @@ export default function VocabularyPractice() {
       filtered = filtered.filter(word => word.level === currentFilter)
     }
 
+    // Filter by status
+    if (statusFilter === 'learned') {
+      filtered = filtered.filter(word => isLearned(word.id))
+    } else if (statusFilter === 'unlearned') {
+      filtered = filtered.filter(word => !isLearned(word.id))
+    }
+
     return filtered
-  }, [currentFilter])
+  }, [currentFilter, statusFilter, isLearned])
 
   const learnedCount = getLearnedCount()
 
-  // Derive display words
+  // Derive display words - reshuffle when filters change in shuffle mode
   const displayWords = useMemo(() => {
     if (shuffleKey === 0) {
       // Not shuffled
       return filteredWords
     }
     
-    // Return cached shuffled
-    return cachedShuffled
-  }, [filteredWords, shuffleKey, cachedShuffled])
+    // In shuffle mode - shuffle the current filtered words
+    // Use shuffleKey as seed to get different shuffle on each shuffle click
+    const seed = shuffleKey * 9999
+    const shuffled = [...filteredWords].sort((a, b) => {
+      const hash = (str) => {
+        let h = 0
+        for (let i = 0; i < str.length; i++) {
+          h = ((h << 5) - h) + str.charCodeAt(i)
+          h = h & h
+        }
+        return h
+      }
+      return (hash(a.id + seed) - hash(b.id + seed))
+    })
+    return shuffled
+  }, [filteredWords, shuffleKey])
 
   const handleFilterChange = (filter) => {
     setFilter(filter)
+  }
+
+  const handleStatusFilterChange = (status) => {
+    setStatusFilter(status)
+  }
+
+  const handleClearFilters = () => {
+    setFilter('all')
+    setStatusFilter('all')
   }
 
   const handleProgress = useCallback((progress) => {
@@ -43,14 +72,12 @@ export default function VocabularyPractice() {
   }, [])
 
   const handleShuffle = () => {
-    const shuffled = [...filteredWords].sort(() => Math.random() - 0.5)
-    setCachedShuffled(shuffled)
-    setShuffleKey(prev => prev + 1)
+    // Generate a new random seed for each shuffle
+    setShuffleKey(Math.floor(Math.random() * 1000000))
   }
 
   const handleReset = () => {
     setShuffleKey(0)
-    setCachedShuffled([])
   }
 
   const isShuffled = shuffleKey > 0
@@ -60,28 +87,86 @@ export default function VocabularyPractice() {
     <div className="vocabulary-practice">
       <div className="practice-sidebar">
         <div className="filter-controls">
-        <label htmlFor="level-filter">Filter by level:</label>
-        <div className="filter-buttons">
-          <button
-            className={`filter-btn ${currentFilter === 'all' ? 'active' : ''}`}
-            onClick={() => handleFilterChange('all')}
+          <button 
+            onClick={handleClearFilters} 
+            className="btn-clear-filters"
+            disabled={currentFilter === 'all' && statusFilter === 'all'}
           >
-            All ({vocabularyData.words.length})
+            Clear All Filters
           </button>
-          <button
-            className={`filter-btn ${currentFilter === 'B2' ? 'active' : ''}`}
-            onClick={() => handleFilterChange('B2')}
-          >
-            B2 ({vocabularyData.words.filter(w => w.level === 'B2').length})
-          </button>
-          <button
-            className={`filter-btn ${currentFilter === 'C1' ? 'active' : ''}`}
-            onClick={() => handleFilterChange('C1')}
-          >
-            C1 ({vocabularyData.words.filter(w => w.level === 'C1').length})
-          </button>
+
+          <div className="filter-group">
+            <h3 className="filter-group-title">Level</h3>
+            <div className="radio-group">
+              <label className="radio-label">
+                <input
+                  type="radio"
+                  name="level"
+                  value="all"
+                  checked={currentFilter === 'all'}
+                  onChange={() => handleFilterChange('all')}
+                />
+                <span>All ({vocabularyData.words.length})</span>
+              </label>
+              <label className="radio-label">
+                <input
+                  type="radio"
+                  name="level"
+                  value="B2"
+                  checked={currentFilter === 'B2'}
+                  onChange={() => handleFilterChange('B2')}
+                />
+                <span>B2 ({vocabularyData.words.filter(w => w.level === 'B2').length})</span>
+              </label>
+              <label className="radio-label">
+                <input
+                  type="radio"
+                  name="level"
+                  value="C1"
+                  checked={currentFilter === 'C1'}
+                  onChange={() => handleFilterChange('C1')}
+                />
+                <span>C1 ({vocabularyData.words.filter(w => w.level === 'C1').length})</span>
+              </label>
+            </div>
+          </div>
+
+          <div className="filter-group">
+            <h3 className="filter-group-title">Status</h3>
+            <div className="radio-group">
+              <label className="radio-label">
+                <input
+                  type="radio"
+                  name="status"
+                  value="all"
+                  checked={statusFilter === 'all'}
+                  onChange={() => handleStatusFilterChange('all')}
+                />
+                <span>All</span>
+              </label>
+              <label className="radio-label">
+                <input
+                  type="radio"
+                  name="status"
+                  value="learned"
+                  checked={statusFilter === 'learned'}
+                  onChange={() => handleStatusFilterChange('learned')}
+                />
+                <span>Learned ({learnedCount})</span>
+              </label>
+              <label className="radio-label">
+                <input
+                  type="radio"
+                  name="status"
+                  value="unlearned"
+                  checked={statusFilter === 'unlearned'}
+                  onChange={() => handleStatusFilterChange('unlearned')}
+                />
+                <span>Not Learned ({vocabularyData.words.length - learnedCount})</span>
+              </label>
+            </div>
+          </div>
         </div>
-      </div>
 
       <div className="progress-section">
         <div className="learned-stats">
