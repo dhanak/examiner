@@ -27,20 +27,21 @@
   z-index: 10;
 }
 
-.level-badge,
-.pos-badge {
+.multiple-choice .level-badge,
+.multiple-choice .pos-badge {
+  position: static;
   padding: 0.25rem 0.75rem;
   border-radius: 4px;
   font-size: 0.85rem;
   font-weight: 600;
 }
 
-.level-badge {
+.multiple-choice .level-badge {
   background: var(--primary-color);
   color: white;
 }
 
-.pos-badge {
+.multiple-choice .pos-badge {
   background: var(--background-color);
   color: var(--text-secondary);
   border: 1px solid var(--border-color);
