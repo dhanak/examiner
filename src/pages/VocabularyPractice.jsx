@@ -1,14 +1,14 @@
-import { useState, useMemo, useEffect, useCallback } from 'react'
+import { useState, useMemo, useCallback } from 'react'
 import FlipCardDeck from '../components/FlipCardDeck'
 import { useVocabularyStore } from '../store/vocabularyStore'
 import vocabularyData from '../data/vocabulary.json'
 import './VocabularyPractice.css'
 
 export default function VocabularyPractice() {
-  const { currentFilter, setFilter, learnedWords, getLearnedCount } = useVocabularyStore()
+  const { currentFilter, setFilter } = useVocabularyStore()
   const [currentProgress, setCurrentProgress] = useState({ current: 1, total: 0 })
-  const [isShuffled, setIsShuffled] = useState(false)
-  const [shuffledWords, setShuffledWords] = useState([])
+  const [shuffleKey, setShuffleKey] = useState(0) // Increment to trigger shuffle
+  const [cachedShuffled, setCachedShuffled] = useState([])
 
   const filteredWords = useMemo(() => {
     let filtered = vocabularyData.words
@@ -21,11 +21,16 @@ export default function VocabularyPractice() {
     return filtered
   }, [currentFilter])
 
-  // Reset shuffle when filter changes
-  useEffect(() => {
-    setShuffledWords(filteredWords)
-    setIsShuffled(false)
-  }, [filteredWords])
+  // Derive display words
+  const displayWords = useMemo(() => {
+    if (shuffleKey === 0) {
+      // Not shuffled
+      return filteredWords
+    }
+    
+    // Return cached shuffled
+    return cachedShuffled
+  }, [filteredWords, shuffleKey, cachedShuffled])
 
   const handleFilterChange = (filter) => {
     setFilter(filter)
@@ -37,20 +42,17 @@ export default function VocabularyPractice() {
 
   const handleShuffle = () => {
     const shuffled = [...filteredWords].sort(() => Math.random() - 0.5)
-    setShuffledWords(shuffled)
-    setIsShuffled(true)
+    setCachedShuffled(shuffled)
+    setShuffleKey(prev => prev + 1)
   }
 
   const handleReset = () => {
-    setShuffledWords(filteredWords)
-    setIsShuffled(false)
+    setShuffleKey(0)
+    setCachedShuffled([])
   }
 
-  const displayWords = isShuffled ? shuffledWords : filteredWords
-
-  const learnedPercentage = filteredWords.length > 0
-    ? Math.round((getLearnedCount() / vocabularyData.words.length) * 100)
-    : 0
+  const isShuffled = shuffleKey > 0
+  const words = displayWords
 
   return (
     <div className="vocabulary-practice">
@@ -82,12 +84,12 @@ export default function VocabularyPractice() {
       <div className="progress-section">
         <div className="progress-info">
           <span className="progress-text">
-            Card {currentProgress.current} of {currentProgress.total || displayWords.length}
+            Card {currentProgress.current} of {currentProgress.total || words.length}
           </span>
           <div className="progress-bar-container">
             <div 
               className="progress-bar-fill" 
-              style={{ width: `${((currentProgress.current) / (currentProgress.total || displayWords.length)) * 100}%` }}
+              style={{ width: `${((currentProgress.current) / (currentProgress.total || words.length)) * 100}%` }}
             />
           </div>
         </div>
@@ -113,11 +115,10 @@ export default function VocabularyPractice() {
     </div>
 
     <div className="practice-content">
-        {displayWords.length > 0 ? (
+        {words.length > 0 ? (
           <FlipCardDeck 
-            words={displayWords} 
+            words={words} 
             onProgress={handleProgress}
-            isShuffled={isShuffled}
           />
         ) : (
           <div className="no-results">

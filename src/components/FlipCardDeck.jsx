@@ -2,17 +2,18 @@ import { useState, useEffect } from 'react'
 import FlipCard from './FlipCard'
 import './FlipCardDeck.css'
 
-export default function FlipCardDeck({ words, onProgress, onShuffle, onReset, isShuffled }) {
+export default function FlipCardDeck({ words, onProgress }) {
   const [currentIndex, setCurrentIndex] = useState(0)
-  const [displayWords, setDisplayWords] = useState([])
 
-  useEffect(() => {
-    setDisplayWords(words)
+  // Reset index when words change
+  const [prevWords, setPrevWords] = useState(words)
+  if (words !== prevWords) {
+    setPrevWords(words)
     setCurrentIndex(0)
-  }, [words])
+  }
 
   const handleNext = () => {
-    if (currentIndex < displayWords.length - 1) {
+    if (currentIndex < words.length - 1) {
       setCurrentIndex(currentIndex + 1)
     }
   }
@@ -23,19 +24,11 @@ export default function FlipCardDeck({ words, onProgress, onShuffle, onReset, is
     }
   }
 
-  const handleKeyDown = (e) => {
-    if (e.key === 'ArrowRight') {
-      handleNext()
-    } else if (e.key === 'ArrowLeft') {
-      handlePrevious()
-    }
-  }
-
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'ArrowRight') {
         setCurrentIndex(prev => {
-          if (prev < displayWords.length - 1) {
+          if (prev < words.length - 1) {
             return prev + 1
           }
           return prev
@@ -52,22 +45,22 @@ export default function FlipCardDeck({ words, onProgress, onShuffle, onReset, is
 
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [displayWords.length]) // Only depend on length, use functional updates for index
+  }, [words.length]) // Only depend on length, use functional updates for index
 
   useEffect(() => {
     if (onProgress) {
       onProgress({
         current: currentIndex + 1,
-        total: displayWords.length
+        total: words.length
       })
     }
-  }, [currentIndex, displayWords.length, onProgress])
+  }, [currentIndex, words.length, onProgress])
 
-  if (!displayWords.length) {
+  if (!words.length) {
     return <div className="no-words">No vocabulary words available.</div>
   }
 
-  const currentWord = displayWords[currentIndex]
+  const currentWord = words[currentIndex]
 
   return (
     <div className="flip-card-deck">
@@ -97,7 +90,7 @@ export default function FlipCardDeck({ words, onProgress, onShuffle, onReset, is
         
         <button 
           onClick={handleNext}
-          disabled={currentIndex === displayWords.length - 1}
+          disabled={currentIndex === words.length - 1}
           className="btn btn-primary btn-nav"
           aria-label="Next card"
         >
