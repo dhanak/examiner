@@ -32,9 +32,27 @@ export default function FlipCardDeck({ words, onProgress, onShuffle, onReset, is
   }
 
   useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'ArrowRight') {
+        setCurrentIndex(prev => {
+          if (prev < displayWords.length - 1) {
+            return prev + 1
+          }
+          return prev
+        })
+      } else if (e.key === 'ArrowLeft') {
+        setCurrentIndex(prev => {
+          if (prev > 0) {
+            return prev - 1
+          }
+          return prev
+        })
+      }
+    }
+
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [currentIndex, displayWords.length])
+  }, [displayWords.length]) // Only depend on length, use functional updates for index
 
   useEffect(() => {
     if (onProgress) {

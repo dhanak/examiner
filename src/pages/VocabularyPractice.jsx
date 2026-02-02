@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect, useCallback } from 'react'
 import FlipCardDeck from '../components/FlipCardDeck'
 import { useVocabularyStore } from '../store/vocabularyStore'
 import vocabularyData from '../data/vocabulary.json'
@@ -22,7 +22,7 @@ export default function VocabularyPractice() {
   }, [currentFilter])
 
   // Reset shuffle when filter changes
-  useMemo(() => {
+  useEffect(() => {
     setShuffledWords(filteredWords)
     setIsShuffled(false)
   }, [filteredWords])
@@ -31,9 +31,9 @@ export default function VocabularyPractice() {
     setFilter(filter)
   }
 
-  const handleProgress = (progress) => {
+  const handleProgress = useCallback((progress) => {
     setCurrentProgress(progress)
-  }
+  }, [])
 
   const handleShuffle = () => {
     const shuffled = [...filteredWords].sort(() => Math.random() - 0.5)

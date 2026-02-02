@@ -12,13 +12,13 @@ export default function FlipCard({ word, level, partOfSpeech, translations, defi
     const handleKeyDown = (e) => {
       if (e.key === ' ' || e.key === 'Spacebar') {
         e.preventDefault()
-        handleFlip()
+        setIsFlipped(prev => !prev)
       }
     }
 
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [isFlipped])
+  }, []) // Empty dependency array - only set up once
 
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
