@@ -92,11 +92,29 @@ src/
 
 ## Deployment
 
-This app is configured for GitHub Pages deployment:
+This app is automatically deployed to GitHub Pages via GitHub Actions:
 
-1. Update `base` in `vite.config.js` to match your repository name
-2. Build the project: `npm run build`
-3. Deploy the `dist/` folder to GitHub Pages
+- **Live URL**: [https://dev.vidga.hu/examiner/](https://dev.vidga.hu/examiner/)
+- **Repository**: [github.com/dhanak/examiner](https://github.com/dhanak/examiner)
+- **Workflow**: Runs tests, builds, and deploys on every push to `master`
+- **Base Path**: `/examiner/` (configured in `vite.config.js`)
+
+### Manual Deployment
+
+If you need to deploy manually:
+
+1. Build the project: `npm run build`
+2. Deploy the `dist/` folder to GitHub Pages
+
+### CI/CD Pipeline
+
+The GitHub Actions workflow (`.github/workflows/deploy.yml`) automatically:
+1. ✅ Runs all tests
+2. ✅ Runs ESLint
+3. 🏗️ Builds the production bundle
+4. 🚀 Deploys to GitHub Pages (only on `master` branch)
+
+Pull requests will run tests and build but won't deploy.
 
 ## Contributing
 

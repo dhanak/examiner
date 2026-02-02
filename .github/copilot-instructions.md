@@ -9,6 +9,15 @@ C1 Examiner is a single-page React application for Hungarian learners preparing 
 - Learner's native language: Hungarian
 - All vocabulary and translations are Hungarian → English
 
+## Deployment
+
+- **Live URL**: https://dev.vidga.hu/examiner/
+- **Repository**: https://github.com/dhanak/examiner
+- **CI/CD**: GitHub Actions workflow (`.github/workflows/deploy.yml`)
+- **Trigger**: Automatic deployment on push to `master` branch
+- **Pipeline**: Tests → Build → Deploy to GitHub Pages
+- **Setup Guide**: See `.github/DEPLOYMENT.md`
+
 ## Build, Test, and Lint Commands
 
 ### Development
