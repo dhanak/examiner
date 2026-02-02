@@ -31,11 +31,6 @@ export default function Practice() {
 
   return (
     <div className="practice-page">
-      <header className="practice-header">
-        <h1>Practice</h1>
-        <p>Test your vocabulary knowledge with interactive exercises</p>
-      </header>
-
       <PracticeControls />
 
       <main className="practice-content">

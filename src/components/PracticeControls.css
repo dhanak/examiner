@@ -50,13 +50,14 @@
 }
 
 .mode-tab.active {
-  background: var(--primary-color);
+  background: var(--accent-color, #10b981);
   color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  font-weight: 600;
 }
 
 .mode-tab:focus-visible {
-  outline: 2px solid var(--primary-color);
+  outline: 2px solid var(--accent-color, #10b981);
   outline-offset: 2px;
 }
 
