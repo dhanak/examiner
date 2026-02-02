@@ -167,41 +167,6 @@ export default function MultipleChoice() {
 
   return (
     <div className="multiple-choice">
-      {/* Left sidebar: Options and keyboard hints */}
-      <div className="multiple-choice-sidebar">
-        <div className="options-container">
-          <h3>{instructionText}</h3>
-          <div className="options-list">
-            {options.map((option, index) => {
-              const isSelected = selectedOption === option
-              const isTheCorrectAnswer = option === correctAnswer
-              const showAsCorrect = isCorrect !== null && isTheCorrectAnswer
-              const showAsWrong = isSelected && !isCorrect
-
-              return (
-                <button
-                  key={index}
-                  className={`option-button ${isSelected ? 'selected' : ''} ${showAsCorrect ? 'correct' : ''} ${showAsWrong ? 'wrong' : ''}`}
-                  onClick={() => handleOptionClick(option)}
-                  disabled={isCorrect !== null}
-                >
-                  <span className="option-number">{index + 1}</span>
-                  <span className="option-text">{option}</span>
-                  {showAsCorrect && <span className="option-icon">✓</span>}
-                  {showAsWrong && <span className="option-icon">✗</span>}
-                </button>
-              )
-            })}
-          </div>
-        </div>
-
-        <div className="keyboard-hints">
-          Press 1-{options.length} to select
-          {isCorrect !== null && ', Enter for next'}
-        </div>
-      </div>
-
-      {/* Right side: Question card */}
       <div className="question-card">
         <div className="word-header">
           <span className="level-badge">{currentWord.level}</span>
@@ -213,7 +178,30 @@ export default function MultipleChoice() {
         </div>
 
         <div className="instruction">
-          Translate this word
+          {instructionText}
+        </div>
+
+        <div className="options-list">
+          {options.map((option, index) => {
+            const isSelected = selectedOption === option
+            const isTheCorrectAnswer = option === correctAnswer
+            const showAsCorrect = isCorrect !== null && isTheCorrectAnswer
+            const showAsWrong = isSelected && !isCorrect
+
+            return (
+              <button
+                key={index}
+                className={`option-button ${isSelected ? 'selected' : ''} ${showAsCorrect ? 'correct' : ''} ${showAsWrong ? 'wrong' : ''}`}
+                onClick={() => handleOptionClick(option)}
+                disabled={isCorrect !== null}
+              >
+                <span className="option-number">{index + 1}</span>
+                <span className="option-text">{option}</span>
+                {showAsCorrect && <span className="option-icon">✓</span>}
+                {showAsWrong && <span className="option-icon">✗</span>}
+              </button>
+            )
+          })}
         </div>
 
         {isCorrect !== null && (
@@ -228,6 +216,11 @@ export default function MultipleChoice() {
             </button>
           </div>
         )}
+      </div>
+
+      <div className="keyboard-hints">
+        Press 1-{options.length} to select
+        {isCorrect !== null && ', Enter for next'}
       </div>
     </div>
   )

@@ -4,7 +4,19 @@
 }
 
 .practice-content {
-  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.practice-sidebar {
+  flex: 0 0 400px;
+}
+
+.practice-main {
+  flex: 1;
+  min-width: 0;
 }
 
 .coming-soon {
@@ -28,6 +40,17 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .practice-content {
+    flex-direction: column;
+  }
+
+  .practice-sidebar {
+    flex: none;
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .practice-page {
     padding: 0.5rem;

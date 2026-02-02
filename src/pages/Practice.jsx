@@ -31,11 +31,17 @@ export default function Practice() {
 
   return (
     <div className="practice-page">
-      <PracticeControls />
+      <div className="practice-content">
+        {/* Left sidebar: All controls and stats */}
+        <div className="practice-sidebar">
+          <PracticeControls />
+        </div>
 
-      <main className="practice-content">
-        {renderPracticeMode()}
-      </main>
+        {/* Right side: Practice mode content */}
+        <main className="practice-main">
+          {renderPracticeMode()}
+        </main>
+      </div>
     </div>
   )
 }
