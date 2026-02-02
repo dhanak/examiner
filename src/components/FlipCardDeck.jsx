@@ -12,7 +12,7 @@ export default function FlipCardDeck({ words, onProgress, onShuffle, onReset, is
   }, [words])
 
   const handleNext = () => {
-    if (currentIndex < shuffledWords.length - 1) {
+    if (currentIndex < displayWords.length - 1) {
       setCurrentIndex(currentIndex + 1)
     }
   }
