@@ -1,0 +1,184 @@
+.practice-controls {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.control-section {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.control-section + .control-section {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Mode Selector Tabs */
+.mode-selector {
+  justify-content: center;
+}
+
+.mode-tabs {
+  display: flex;
+  gap: 0.5rem;
+  background: var(--background-color);
+  padding: 0.25rem;
+  border-radius: 6px;
+}
+
+.mode-tab {
+  flex: 1;
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  color: var(--text-color);
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.mode-tab:hover {
+  background: var(--hover-color);
+}
+
+.mode-tab.active {
+  background: var(--primary-color);
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mode-tab:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Settings Row */
+.settings-row {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.setting-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.setting-group label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.direction-select,
+.filter-select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background: var(--background-color);
+  color: var(--text-color);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.direction-select:hover,
+.filter-select:hover {
+  border-color: var(--primary-color);
+}
+
+.direction-select:focus,
+.filter-select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Stats Display */
+.stats-display {
+  justify-content: center;
+  gap: 2rem;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stat-icon {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.stat-correct .stat-icon {
+  color: var(--success-color);
+}
+
+.stat-incorrect .stat-icon {
+  color: var(--error-color);
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.stat-accuracy {
+  padding-left: 1rem;
+  border-left: 1px solid var(--border-color);
+}
+
+.stat-placeholder {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .practice-controls {
+    padding: 1rem;
+  }
+
+  .mode-tabs {
+    flex-direction: column;
+  }
+
+  .mode-tab {
+    padding: 0.625rem 1rem;
+  }
+
+  .settings-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .setting-group {
+    justify-content: space-between;
+  }
+
+  .stats-display {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .stat-accuracy {
+    padding-left: 0;
+    border-left: none;
+  }
+}
