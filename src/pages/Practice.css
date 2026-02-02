@@ -5,6 +5,7 @@
 
 .practice-content {
   display: flex;
+  flex-direction: row;
   gap: 2rem;
   max-width: 1600px;
   margin: 0 auto;

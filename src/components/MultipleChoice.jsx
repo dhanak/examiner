@@ -52,7 +52,7 @@ export default function MultipleChoice() {
     const [word] = getRandomWords(filteredWords, 1)
 
     // Generate options based on direction
-    if (direction === 'hu-to-en') {
+    if (direction === 'en-to-hu') {
       // Show English word, pick Hungarian translation
       const correct = getRandomTranslation(word)
 
@@ -62,7 +62,7 @@ export default function MultipleChoice() {
 
       // Combine and shuffle
       const allOptions = shuffleArray([correct, ...distractorOptions])
-      
+
       return { word, options: allOptions, correctAnswer: correct }
     } else {
       // Show Hungarian translation, pick English word
@@ -74,10 +74,10 @@ export default function MultipleChoice() {
 
       // Combine and shuffle
       const allOptions = shuffleArray([word.word, ...distractorOptions])
-      
+
       // Store the Hungarian word used as prompt
       const wordWithPrompt = { ...word, promptText: hungarianPrompt }
-      
+
       return { word: wordWithPrompt, options: allOptions, correctAnswer: word.word }
     }
   }, [filteredWords, direction, optionCount])
@@ -157,11 +157,11 @@ export default function MultipleChoice() {
     return <div className="multiple-choice">Loading...</div>
   }
 
-  const promptText = direction === 'hu-to-en'
+  const promptText = direction === 'en-to-hu'
     ? currentWord.word
     : currentWord.promptText
 
-  const instructionText = direction === 'hu-to-en'
+  const instructionText = direction === 'en-to-hu'
     ? 'Select the Hungarian translation:'
     : 'Select the English word:'
 
@@ -216,11 +216,11 @@ export default function MultipleChoice() {
             </button>
           </div>
         )}
-      </div>
 
-      <div className="keyboard-hints">
-        Press 1-{options.length} to select
-        {isCorrect !== null && ', Enter for next'}
+        <div className="keyboard-hints">
+          Press 1-{options.length} to select
+          {isCorrect !== null && ', Enter for next'}
+        </div>
       </div>
     </div>
   )
