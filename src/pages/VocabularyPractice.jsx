@@ -5,7 +5,7 @@ import vocabularyData from '../data/vocabulary.json'
 import './VocabularyPractice.css'
 
 export default function VocabularyPractice() {
-  const { currentFilter, setFilter } = useVocabularyStore()
+  const { currentFilter, setFilter, getLearnedCount } = useVocabularyStore()
   const [currentProgress, setCurrentProgress] = useState({ current: 1, total: 0 })
   const [shuffleKey, setShuffleKey] = useState(0) // Increment to trigger shuffle
   const [cachedShuffled, setCachedShuffled] = useState([])
@@ -20,6 +20,8 @@ export default function VocabularyPractice() {
 
     return filtered
   }, [currentFilter])
+
+  const learnedCount = getLearnedCount()
 
   // Derive display words
   const displayWords = useMemo(() => {
@@ -82,6 +84,21 @@ export default function VocabularyPractice() {
       </div>
 
       <div className="progress-section">
+        <div className="learned-stats">
+          <div className="stat-item">
+            <span className="stat-label">Total words:</span>
+            <span className="stat-value">{vocabularyData.words.length}</span>
+          </div>
+          <div className="stat-item">
+            <span className="stat-label">Learned:</span>
+            <span className="stat-value learned">{learnedCount}</span>
+          </div>
+          <div className="stat-item">
+            <span className="stat-label">Progress:</span>
+            <span className="stat-value">{Math.round((learnedCount / vocabularyData.words.length) * 100)}%</span>
+          </div>
+        </div>
+
         <div className="progress-info">
           <span className="progress-text">
             Card {currentProgress.current} of {currentProgress.total || words.length}

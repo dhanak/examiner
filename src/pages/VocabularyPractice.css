@@ -148,6 +148,37 @@
   flex-shrink: 0;
 }
 
+.learned-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.learned-stats .stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.learned-stats .stat-label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.learned-stats .stat-value {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.learned-stats .stat-value.learned {
+  color: #4caf50;
+}
+
 .progress-info {
   width: 100%;
 }

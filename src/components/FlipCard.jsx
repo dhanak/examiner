@@ -1,11 +1,23 @@
 import { useState, useEffect } from 'react'
+import { useVocabularyStore } from '../store/vocabularyStore'
 import './FlipCard.css'
 
-export default function FlipCard({ word, level, partOfSpeech, translations, definition, example }) {
+export default function FlipCard({ wordId, word, level, partOfSpeech, translations, definition, example }) {
   const [isFlipped, setIsFlipped] = useState(false)
+  const { isLearned, markAsLearned, unmarkAsLearned } = useVocabularyStore()
+  const learned = isLearned(wordId)
 
   const handleFlip = () => {
     setIsFlipped(!isFlipped)
+  }
+
+  const handleToggleLearned = (e) => {
+    e.stopPropagation() // Prevent card flip
+    if (learned) {
+      unmarkAsLearned(wordId)
+    } else {
+      markAsLearned(wordId)
+    }
   }
 
   useEffect(() => {
@@ -13,12 +25,19 @@ export default function FlipCard({ word, level, partOfSpeech, translations, defi
       if (e.key === ' ' || e.key === 'Spacebar') {
         e.preventDefault()
         setIsFlipped(prev => !prev)
+      } else if (e.key === 'Enter') {
+        e.preventDefault()
+        if (learned) {
+          unmarkAsLearned(wordId)
+        } else {
+          markAsLearned(wordId)
+        }
       }
     }
 
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
-  }, []) // Empty dependency array - only set up once
+  }, [learned, wordId, markAsLearned, unmarkAsLearned]) // Include dependencies for Enter key handler
 
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
@@ -29,26 +48,42 @@ export default function FlipCard({ word, level, partOfSpeech, translations, defi
 
   return (
     <div 
-      className={`flip-card ${isFlipped ? 'flipped' : ''}`}
+      className={`flip-card ${isFlipped ? 'flipped' : ''} ${learned ? 'learned' : ''}`}
       onClick={handleFlip}
       onKeyPress={handleKeyPress}
       tabIndex={0}
       role="button"
-      aria-label={`Flashcard for word: ${word}. ${isFlipped ? 'Showing translation' : 'Showing word'}`}
+      aria-label={`Flashcard for word: ${word}. ${isFlipped ? 'Showing translation' : 'Showing word'}. ${learned ? 'Marked as learned' : 'Not learned yet'}`}
     >
       <div className="flip-card-inner">
         {/* Front Side */}
         <div className="flip-card-front">
           <div className="level-badge">{level}</div>
+          <button
+            className={`learned-toggle ${learned ? 'is-learned' : ''}`}
+            onClick={handleToggleLearned}
+            aria-label={learned ? 'Mark as not learned' : 'Mark as learned'}
+            title={learned ? 'Mark as not learned' : 'Mark as learned'}
+          >
+            {learned ? '✓' : '○'}
+          </button>
           <div className="word-container">
             <h2 className="word">{word}</h2>
           </div>
-          <div className="flip-hint">Click or press Space to flip</div>
+          <div className="flip-hint">Click or press Space to flip • Press Enter to mark as learned</div>
         </div>
 
         {/* Back Side */}
         <div className="flip-card-back">
           <div className="level-badge">{level}</div>
+          <button
+            className={`learned-toggle ${learned ? 'is-learned' : ''}`}
+            onClick={handleToggleLearned}
+            aria-label={learned ? 'Mark as not learned' : 'Mark as learned'}
+            title={learned ? 'Mark as not learned' : 'Mark as learned'}
+          >
+            {learned ? '✓' : '○'}
+          </button>
           <div className="back-content">
             <div className="word-header">
               <h3 className="word-title">{word}</h3>

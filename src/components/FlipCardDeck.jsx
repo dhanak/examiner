@@ -67,6 +67,7 @@ export default function FlipCardDeck({ words, onProgress }) {
       <div className="card-container">
         <FlipCard
           key={currentWord.id}
+          wordId={currentWord.id}
           word={currentWord.word}
           level={currentWord.level}
           partOfSpeech={currentWord.partOfSpeech}
