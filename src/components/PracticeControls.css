@@ -19,38 +19,37 @@
 
 /* Mode Selector Tabs */
 .mode-selector {
-  justify-content: center;
+  display: block;
 }
 
 .mode-tabs {
   display: flex;
+  flex-direction: column;
   gap: 0.5rem;
-  background: var(--background-color);
-  padding: 0.25rem;
-  border-radius: 6px;
 }
 
 .mode-tab {
-  flex: 1;
-  padding: 0.75rem 1.5rem;
-  background: transparent;
-  border: none;
-  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  background: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
   color: var(--text-color);
   font-size: 0.95rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
-  white-space: nowrap;
+  text-align: left;
 }
 
 .mode-tab:hover {
   background: var(--hover-color);
+  border-color: var(--accent-color, #10b981);
 }
 
 .mode-tab.active {
   background: var(--accent-color, #10b981);
   color: white;
+  border-color: var(--accent-color, #10b981);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   font-weight: 600;
 }
