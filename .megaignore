@@ -1,0 +1,62 @@
+# MegaSync ignore file for C1 Examiner project
+# Format: <CLASS><TARGET><TYPE><STRATEGY>:<PATTERN>
+# Classes: - (exclude), + (include)
+# Targets: a (all), d (directory), f (file), s (symlink)
+# Types: N (local name), n (subtree name), p (path)
+# Strategies: g/G (glob), r/R (regexp)
+
+# Dependencies
+-d:node_modules
+
+# Build outputs
+-d:dist
+-d:dist-ssr
+-d:build
+
+# Test coverage
+-d:coverage
+-d:.nyc_output
+
+# Vite cache
+-d:.vite
+
+# Logs directory
+-d:logs
+
+# Log files
+-f:*.log
+-fn:npm-debug.log*
+-fn:yarn-debug.log*
+-fn:yarn-error.log*
+-fn:pnpm-debug.log*
+-fn:lerna-debug.log*
+
+# OS files
+-f:.DS_Store
+-f:Thumbs.db
+-f:*.swp
+-f:*.swo
+-f:*~
+
+# IDE directories
+-d:.vscode
+-d:.idea
+
+# IDE files
+-f:*.sublime-project
+-f:*.sublime-workspace
+
+# Lock files (commented out - uncomment to exclude)
+# -f:package-lock.json
+# -f:yarn.lock
+# -f:pnpm-lock.yaml
+
+# Temporary files
+-f:*.tmp
+-f:*.temp
+-d:.cache
+
+# Local environment files
+-fn:.env.local
+-fn:.env.*.local
+-fn:*.local
