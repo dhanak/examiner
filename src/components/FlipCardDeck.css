@@ -8,61 +8,6 @@
   min-height: 0;
 }
 
-.deck-controls {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.5rem;
-  gap: 1rem;
-  flex-wrap: wrap;
-  flex-shrink: 0;
-}
-
-.progress-info {
-  flex: 1;
-  min-width: 200px;
-}
-
-.progress-text {
-  font-size: 0.875rem;
-  color: #666;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  .progress-text {
-    color: #999;
-  }
-}
-
-.progress-bar {
-  width: 100%;
-  height: 8px;
-  background-color: #e0e0e0;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-@media (prefers-color-scheme: dark) {
-  .progress-bar {
-    background-color: #333;
-  }
-}
-
-.progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-  transition: width 0.3s ease;
-  border-radius: 4px;
-}
-
-.shuffle-controls {
-  display: flex;
-  gap: 0.5rem;
-  flex-shrink: 0;
-}
-
 .card-container {
   flex: 1;
   display: flex;
@@ -84,14 +29,8 @@
 
 .keyboard-hint {
   font-size: 0.75rem;
-  color: #888;
+  color: var(--text-secondary);
   font-style: italic;
-}
-
-@media (prefers-color-scheme: dark) {
-  .keyboard-hint {
-    color: #666;
-  }
 }
 
 .btn {
@@ -120,38 +59,33 @@
 }
 
 .btn-primary {
-  background-color: #646cff;
+  background-color: var(--accent-color);
   color: white;
 }
 
 .btn-primary:hover:not(:disabled) {
-  background-color: #535bf2;
+  background-color: var(--accent-hover);
+}
+
+.btn-nav {
+  min-width: 120px;
 }
 
 .btn-secondary {
-  background-color: #f0f0f0;
-  color: #333;
-}
-
-@media (prefers-color-scheme: dark) {
-  .btn-secondary {
-    background-color: #2a2a2a;
-    color: #e0e0e0;
-  }
-
-  .btn-secondary:hover:not(:disabled) {
-    background-color: #3a3a3a;
-  }
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
 }
 
 .btn-secondary:hover:not(:disabled) {
-  background-color: #e0e0e0;
+  background-color: var(--button-hover);
+  border-color: var(--accent-color);
 }
 
 .no-words {
   text-align: center;
   padding: 3rem;
-  color: #888;
+  color: var(--text-secondary);
   font-size: 1.125rem;
 }
 
@@ -160,24 +94,13 @@
   .card-container {
     min-height: 450px;
   }
+  
+  .btn-nav {
+    min-width: 140px;
+  }
 }
 
 @media (max-width: 768px) {
-  .deck-controls {
-    flex-direction: column;
-    align-items: stretch;
-    margin-bottom: 1rem;
-  }
-
-  .progress-info {
-    width: 100%;
-  }
-
-  .shuffle-controls {
-    width: 100%;
-    justify-content: center;
-  }
-
   .card-container {
     min-height: 380px;
     margin-bottom: 1rem;
@@ -191,6 +114,10 @@
   .keyboard-hint {
     width: 100%;
     text-align: center;
+  }
+  
+  .btn-nav {
+    min-width: 110px;
   }
 }
 
@@ -206,5 +133,9 @@
 
   .navigation-controls {
     padding-bottom: 0.5rem;
+  }
+  
+  .btn-nav {
+    min-width: 100px;
   }
 }

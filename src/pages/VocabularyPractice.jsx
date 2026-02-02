@@ -7,6 +7,8 @@ import './VocabularyPractice.css'
 export default function VocabularyPractice() {
   const { currentFilter, setFilter, learnedWords, getLearnedCount } = useVocabularyStore()
   const [currentProgress, setCurrentProgress] = useState({ current: 1, total: 0 })
+  const [isShuffled, setIsShuffled] = useState(false)
+  const [shuffledWords, setShuffledWords] = useState([])
 
   const filteredWords = useMemo(() => {
     let filtered = vocabularyData.words
@@ -19,6 +21,12 @@ export default function VocabularyPractice() {
     return filtered
   }, [currentFilter])
 
+  // Reset shuffle when filter changes
+  useMemo(() => {
+    setShuffledWords(filteredWords)
+    setIsShuffled(false)
+  }, [filteredWords])
+
   const handleFilterChange = (filter) => {
     setFilter(filter)
   }
@@ -27,36 +35,27 @@ export default function VocabularyPractice() {
     setCurrentProgress(progress)
   }
 
+  const handleShuffle = () => {
+    const shuffled = [...filteredWords].sort(() => Math.random() - 0.5)
+    setShuffledWords(shuffled)
+    setIsShuffled(true)
+  }
+
+  const handleReset = () => {
+    setShuffledWords(filteredWords)
+    setIsShuffled(false)
+  }
+
+  const displayWords = isShuffled ? shuffledWords : filteredWords
+
   const learnedPercentage = filteredWords.length > 0
     ? Math.round((getLearnedCount() / vocabularyData.words.length) * 100)
     : 0
 
   return (
     <div className="vocabulary-practice">
-      <div className="practice-header">
-        <h2>Vocabulary Practice</h2>
-        <p className="practice-description">
-          Study C1-level English vocabulary with Hungarian translations. 
-          Click cards to flip and see definitions and examples.
-        </p>
-      </div>
-
-      <div className="practice-stats">
-        <div className="stat-item">
-          <span className="stat-label">Total Words:</span>
-          <span className="stat-value">{vocabularyData.words.length}</span>
-        </div>
-        <div className="stat-item">
-          <span className="stat-label">Learned:</span>
-          <span className="stat-value">{getLearnedCount()} ({learnedPercentage}%)</span>
-        </div>
-        <div className="stat-item">
-          <span className="stat-label">Current Deck:</span>
-          <span className="stat-value">{filteredWords.length} words</span>
-        </div>
-      </div>
-
-      <div className="filter-controls">
+      <div className="practice-sidebar">
+        <div className="filter-controls">
         <label htmlFor="level-filter">Filter by level:</label>
         <div className="filter-buttons">
           <button
@@ -80,16 +79,52 @@ export default function VocabularyPractice() {
         </div>
       </div>
 
-      {filteredWords.length > 0 ? (
-        <FlipCardDeck 
-          words={filteredWords} 
-          onProgress={handleProgress}
-        />
-      ) : (
-        <div className="no-results">
-          <p>No words found for the selected filter.</p>
+      <div className="progress-section">
+        <div className="progress-info">
+          <span className="progress-text">
+            Card {currentProgress.current} of {currentProgress.total || displayWords.length}
+          </span>
+          <div className="progress-bar-container">
+            <div 
+              className="progress-bar-fill" 
+              style={{ width: `${((currentProgress.current) / (currentProgress.total || displayWords.length)) * 100}%` }}
+            />
+          </div>
         </div>
-      )}
+
+        <div className="shuffle-controls">
+          {!isShuffled ? (
+            <button 
+              onClick={handleShuffle} 
+              className="btn btn-secondary btn-shuffle"
+            >
+              🔀 Shuffle
+            </button>
+          ) : (
+            <button 
+              onClick={handleReset} 
+              className="btn btn-secondary btn-shuffle"
+            >
+              ↺ Reset Order
+            </button>
+          )}
+        </div>
+      </div>
+    </div>
+
+    <div className="practice-content">
+        {displayWords.length > 0 ? (
+          <FlipCardDeck 
+            words={displayWords} 
+            onProgress={handleProgress}
+            isShuffled={isShuffled}
+          />
+        ) : (
+          <div className="no-results">
+            <p>No words found for the selected filter.</p>
+          </div>
+        )}
+      </div>
     </div>
   )
 }

@@ -21,7 +21,31 @@ describe('FlipCard', () => {
 
   it('shows flip hint on front side', () => {
     render(<FlipCard {...mockWord} />)
-    expect(screen.getByText('Click to flip')).toBeInTheDocument()
+    expect(screen.getByText('Click or press Space to flip')).toBeInTheDocument()
+  })
+
+  it('flips card when spacebar is pressed', async () => {
+    const user = userEvent.setup()
+    render(<FlipCard {...mockWord} />)
+    
+    // Press spacebar
+    await user.keyboard(' ')
+    
+    // Back side should show translations
+    expect(screen.getByText(/eltöröl, megszüntet/)).toBeInTheDocument()
+  })
+
+  it('toggles card when spacebar is pressed multiple times', async () => {
+    const user = userEvent.setup()
+    render(<FlipCard {...mockWord} />)
+    
+    // First spacebar - flip to back
+    await user.keyboard(' ')
+    expect(screen.getByText(/Magyar:/)).toBeInTheDocument()
+    
+    // Second spacebar - flip to front
+    await user.keyboard(' ')
+    expect(screen.getByText('Click or press Space to flip')).toBeInTheDocument()
   })
 
   it('flips card when clicked', async () => {
@@ -81,6 +105,6 @@ describe('FlipCard', () => {
     
     // Second click - flip to front
     await user.click(card)
-    expect(screen.getByText('Click to flip')).toBeInTheDocument()
+    expect(screen.getByText('Click or press Space to flip')).toBeInTheDocument()
   })
 })

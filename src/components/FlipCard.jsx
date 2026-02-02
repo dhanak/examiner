@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './FlipCard.css'
 
 export default function FlipCard({ word, level, partOfSpeech, translations, definition, example }) {
@@ -8,8 +8,20 @@ export default function FlipCard({ word, level, partOfSpeech, translations, defi
     setIsFlipped(!isFlipped)
   }
 
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === ' ' || e.key === 'Spacebar') {
+        e.preventDefault()
+        handleFlip()
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [isFlipped])
+
   const handleKeyPress = (e) => {
-    if (e.key === 'Enter' || e.key === ' ') {
+    if (e.key === 'Enter') {
       e.preventDefault()
       handleFlip()
     }
@@ -31,7 +43,7 @@ export default function FlipCard({ word, level, partOfSpeech, translations, defi
           <div className="word-container">
             <h2 className="word">{word}</h2>
           </div>
-          <div className="flip-hint">Click to flip</div>
+          <div className="flip-hint">Click or press Space to flip</div>
         </div>
 
         {/* Back Side */}

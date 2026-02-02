@@ -10,7 +10,7 @@
 }
 
 .flip-card:focus {
-  outline: 2px solid #646cff;
+  outline: 2px solid var(--accent-color);
   outline-offset: 4px;
 }
 
@@ -35,23 +35,15 @@
   backface-visibility: hidden;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
-  background-color: #fff;
+  background-color: var(--bg-primary);
   box-sizing: border-box;
   overflow: hidden;
-}
-
-@media (prefers-color-scheme: dark) {
-  .flip-card-front,
-  .flip-card-back {
-    background-color: #1a1a1a;
-    border-color: #404040;
-  }
 }
 
 .flip-card-front {
@@ -78,7 +70,7 @@
 }
 
 .flip-card-back .level-badge {
-  background-color: #646cff;
+  background-color: var(--accent-color);
 }
 
 .word-container {
@@ -116,20 +108,20 @@
   align-items: baseline;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid #646cff;
+  border-bottom: 2px solid var(--accent-color);
   gap: 0.5rem;
 }
 
 .word-title {
   font-size: 1.5rem;
   margin: 0;
-  color: #646cff;
+  color: var(--accent-color);
   word-break: break-word;
 }
 
 .part-of-speech {
   font-style: italic;
-  color: #888;
+  color: var(--text-secondary);
   font-size: 0.875rem;
 }
 
@@ -146,36 +138,19 @@
 .example strong {
   display: block;
   margin-bottom: 0.25rem;
-  color: #646cff;
+  color: var(--accent-color);
 }
 
 .example {
   font-style: italic;
   padding: 0.75rem;
   background-color: rgba(100, 108, 255, 0.05);
-  border-left: 3px solid #646cff;
+  border-left: 3px solid var(--accent-color);
   border-radius: 4px;
 }
 
-@media (prefers-color-scheme: dark) {
-  .word-title {
-    color: #a0a8ff;
-  }
-
-  .part-of-speech {
-    color: #999;
-  }
-
-  .translations strong,
-  .definition strong,
-  .example strong {
-    color: #a0a8ff;
-  }
-
-  .example {
-    background-color: rgba(160, 168, 255, 0.1);
-    border-left-color: #a0a8ff;
-  }
+:root[data-theme="dark"] .example {
+  background-color: rgba(160, 168, 255, 0.1);
 }
 
 /* Responsive design */
