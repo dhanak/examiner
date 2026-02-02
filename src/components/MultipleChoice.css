@@ -17,11 +17,12 @@
   position: relative;
 }
 
-.word-header {
+.multiple-choice .badges {
   position: absolute;
   top: 1rem;
   right: 1rem;
   display: flex;
+  flex-direction: row-reverse;
   gap: 0.5rem;
   z-index: 10;
 }

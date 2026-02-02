@@ -168,7 +168,7 @@ export default function MultipleChoice() {
   return (
     <div className="multiple-choice">
       <div className="question-card">
-        <div className="word-header">
+        <div className="badges">
           <span className="level-badge">{currentWord.level}</span>
           <span className="pos-badge">{currentWord.partOfSpeech}</span>
         </div>
