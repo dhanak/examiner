@@ -1,14 +1,20 @@
 # C1 Examiner
 
-A single-page web application for training and self-testing to prepare for the Cambridge C1 (Advanced) language exam. This app runs entirely in the browser with no backend dependencies, making it perfect for hosting on GitHub Pages.
+A single-page web application for Hungarian learners preparing for the Cambridge C1 (Advanced) English language exam. This app runs entirely in the browser with no backend dependencies, making it perfect for hosting on GitHub Pages.
+
+## Language Context
+
+- **Target Language**: British English
+- **Learner's Native Language**: Hungarian
+- **Exam Focus**: Cambridge C1 Advanced (CAE)
 
 ## Features
 
+- **Vocabulary Flipcards**: Interactive flashcards with English words and Hungarian translations
 - **Self-Contained**: No backend server required - all data stored locally in the browser
 - **Progress Tracking**: Individual progress saved in browser state with analytics
 - **Multiple Exercise Types**: Practice for different sections of the C1 exam
 - **Performance Analytics**: Visualize your progress with charts and statistics
-- **Dictionary Integration**: Optional integration with online dictionary/thesaurus APIs
 - **Offline-Ready**: Works without an internet connection once loaded
 
 ## Tech Stack
@@ -36,10 +42,10 @@ npm install
 ### Development
 
 ```bash
-npm run dev
+npm run dev -- --host
 ```
 
-Open [http://localhost:5173](http://localhost:5173) to view in your browser.
+Open [http://localhost:5173/examiner/](http://localhost:5173/examiner/) to view in your browser. The `--host` flag exposes the server to your network.
 
 ### Testing
 

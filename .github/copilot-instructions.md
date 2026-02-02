@@ -2,7 +2,12 @@
 
 ## Project Overview
 
-C1 Examiner is a single-page React application for Cambridge C1 exam preparation. It runs entirely client-side with no backend, using IndexedDB for data storage and localStorage for user preferences.
+C1 Examiner is a single-page React application for Hungarian learners preparing for the Cambridge C1 Advanced (British English) exam. It runs entirely client-side with no backend, using IndexedDB for data storage and localStorage for user preferences.
+
+**Language Context:**
+- Target language: British English
+- Learner's native language: Hungarian
+- All vocabulary and translations are Hungarian → English
 
 ## Build, Test, and Lint Commands
 
@@ -78,6 +83,13 @@ export const useStoreNameStore = create(
 - Example: `const questions = useLiveQuery(() => db.questions.toArray())`
 - Avoid direct database mutations in components; use functions in `src/db/`
 
+### Vocabulary Data
+- Vocabulary words stored in `src/data/vocabulary.json`
+- JSON file is imported directly and bundled with the build
+- Each word has: `id`, `word`, `level`, `partOfSpeech`, `translations`, `definition`, `example`
+- Translations are in Hungarian (learner's native language)
+- All definitions and examples are in British English
+
 ### Testing Expectations
 - All new components must have tests
 - Test user interactions, not implementation details
@@ -90,6 +102,13 @@ export const useStoreNameStore = create(
 - Router basename must match: `<BrowserRouter basename="/examiner">`
 
 ## Common Patterns
+
+### Adding Vocabulary Words
+1. Edit `src/data/vocabulary.json`
+2. Add new word object with all required fields
+3. Ensure Hungarian translations are accurate
+4. Include British English definition and example sentence
+5. Set appropriate level (B2 or C1)
 
 ### Adding a New Question Type
 1. Add schema to `db.version().stores()` if needed

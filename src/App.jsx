@@ -2,6 +2,7 @@ import { Routes, Route, Link } from 'react-router-dom'
 import './App.css'
 import Dashboard from './pages/Dashboard'
 import Practice from './pages/Practice'
+import VocabularyPractice from './pages/VocabularyPractice'
 
 function App() {
   return (
@@ -10,12 +11,15 @@ function App() {
         <h1>C1 Examiner</h1>
         <nav>
           <Link to="/">Dashboard</Link>
+          <Link to="/vocabulary">Vocabulary</Link>
           <Link to="/practice">Practice</Link>
         </nav>
       </header>
       <main className="app-main">
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route index element={<Dashboard />} />
+          <Route path="/vocabulary" element={<VocabularyPractice />} />
           <Route path="/practice" element={<Practice />} />
         </Routes>
       </main>

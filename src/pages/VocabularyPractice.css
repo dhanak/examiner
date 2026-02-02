@@ -1,0 +1,226 @@
+.vocabulary-practice {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.practice-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  flex-shrink: 0;
+}
+
+.practice-header h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.practice-description {
+  color: #666;
+  font-size: 0.9375rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  .practice-description {
+    color: #999;
+  }
+}
+
+.practice-stats {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .practice-stats {
+    background-color: #1a1a1a;
+  }
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.8125rem;
+  color: #888;
+}
+
+.stat-value {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #646cff;
+}
+
+@media (prefers-color-scheme: dark) {
+  .stat-value {
+    color: #a0a8ff;
+  }
+}
+
+.filter-controls {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  flex-shrink: 0;
+}
+
+.filter-controls label {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+  font-size: 0.9375rem;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid #e0e0e0;
+  background-color: white;
+  color: #333;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+  .filter-btn {
+    background-color: #1a1a1a;
+    border-color: #404040;
+    color: #e0e0e0;
+  }
+}
+
+.filter-btn:hover {
+  border-color: #646cff;
+  background-color: #f5f5ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  .filter-btn:hover {
+    border-color: #a0a8ff;
+    background-color: #252540;
+  }
+}
+
+.filter-btn.active {
+  background-color: #646cff;
+  border-color: #646cff;
+  color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  .filter-btn.active {
+    background-color: #a0a8ff;
+    border-color: #a0a8ff;
+    color: #1a1a1a;
+  }
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  color: #888;
+  font-size: 1.125rem;
+}
+
+/* Responsive design */
+@media (min-width: 1024px) {
+  .vocabulary-practice {
+    padding: 2rem 3rem;
+  }
+
+  .practice-header h2 {
+    font-size: 2rem;
+  }
+
+  .practice-description {
+    font-size: 1rem;
+  }
+
+  .practice-stats {
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .vocabulary-practice {
+    padding: 1rem;
+  }
+
+  .practice-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .practice-description {
+    font-size: 0.875rem;
+  }
+
+  .practice-stats {
+    gap: 1rem;
+    padding: 0.75rem;
+  }
+
+  .stat-value {
+    font-size: 1.125rem;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .vocabulary-practice {
+    padding: 0.75rem;
+  }
+
+  .practice-header {
+    margin-bottom: 1rem;
+  }
+
+  .practice-stats {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.75rem;
+  }
+
+  .stat-item {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .filter-controls {
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,210 @@
+.flip-card-deck {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.deck-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+.progress-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.progress-text {
+  font-size: 0.875rem;
+  color: #666;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .progress-text {
+    color: #999;
+  }
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  .progress-bar {
+    background-color: #333;
+  }
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  transition: width 0.3s ease;
+  border-radius: 4px;
+}
+
+.shuffle-controls {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.card-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  margin-bottom: 1.5rem;
+  overflow: visible;
+}
+
+.navigation-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-shrink: 0;
+  padding-bottom: 1rem;
+}
+
+.keyboard-hint {
+  font-size: 0.75rem;
+  color: #888;
+  font-style: italic;
+}
+
+@media (prefers-color-scheme: dark) {
+  .keyboard-hint {
+    color: #666;
+  }
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background-color: #646cff;
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #535bf2;
+}
+
+.btn-secondary {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+  .btn-secondary {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+  }
+
+  .btn-secondary:hover:not(:disabled) {
+    background-color: #3a3a3a;
+  }
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: #e0e0e0;
+}
+
+.no-words {
+  text-align: center;
+  padding: 3rem;
+  color: #888;
+  font-size: 1.125rem;
+}
+
+/* Responsive design */
+@media (min-width: 1024px) {
+  .card-container {
+    min-height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .deck-controls {
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 1rem;
+  }
+
+  .progress-info {
+    width: 100%;
+  }
+
+  .shuffle-controls {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .card-container {
+    min-height: 380px;
+    margin-bottom: 1rem;
+  }
+
+  .navigation-controls {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .keyboard-hint {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  .card-container {
+    min-height: 350px;
+  }
+
+  .navigation-controls {
+    padding-bottom: 0.5rem;
+  }
+}
