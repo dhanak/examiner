@@ -1,0 +1,20 @@
+Sort the vocabulary file alphabetically. Make a note to keep it sorted in future expansions.
+
+On the Multiple Choice screen, changing the Direction or the Word Pool dropdown doesn't regenerate the question card.
+
+Chosing a different practice mode resets the global statistics. It's okay to
+show a local, session statistic in the sidebar, but the global statistics must
+be maintained (unless explicitly cleared on the dashboard).
+
+Remove the unused database component, and dixie as a dependency.
+
+Change the sidebar on the Vocabulary tab:
+1. make its style match the sidebars on the Practice tab (background, border, button colors, etc.)
+2. reorganize filters to include all available levels, but also to take up significantly less space (perhaps use dropdown menu instead of checkboxes?)
+3. Make the total/learned/progress pane more compact
+
+
+
+The built/deployed app is single page, but the URL is rewritten when changing tabs. These rewritten URLs don't work when loaded directly on the hosted site. Offer alternatives on how to fix this, and let me chose the best option.
+
+Update the README.md based on the completed features and implementation details. Remove obsolete items, add yet undocumented components.
