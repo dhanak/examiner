@@ -29,8 +29,8 @@ describe('VocabularyPractice Filtering', () => {
     render(<VocabularyPractice />)
     
     // Check that "All (4)" is selected
-    const allRadio = screen.getByRole('radio', { name: /All \(4\)/ })
-    expect(allRadio).toBeChecked()
+    const levelSelect = screen.getByRole('combobox', { name: /Level:/ })
+    expect(levelSelect).toHaveValue('all')
   })
 
   it('filters words by B2 level', async () => {
@@ -38,10 +38,10 @@ describe('VocabularyPractice Filtering', () => {
     render(<VocabularyPractice />)
     
     // Click B2 filter
-    const b2Radio = screen.getByRole('radio', { name: /B2 \(2\)/ })
-    await user.click(b2Radio)
+    const levelSelect = screen.getByRole('combobox', { name: /Level:/ })
+    await user.selectOptions(levelSelect, 'B2')
     
-    expect(b2Radio).toBeChecked()
+    expect(levelSelect).toHaveValue('B2')
     
     // Progress should show 2 words
     expect(screen.getByText(/Card 1 of 2/)).toBeInTheDocument()
@@ -52,10 +52,10 @@ describe('VocabularyPractice Filtering', () => {
     render(<VocabularyPractice />)
     
     // Click C1 filter
-    const c1Radio = screen.getByRole('radio', { name: /C1 \(2\)/ })
-    await user.click(c1Radio)
+    const levelSelect = screen.getByRole('combobox', { name: /Level:/ })
+    await user.selectOptions(levelSelect, 'C1')
     
-    expect(c1Radio).toBeChecked()
+    expect(levelSelect).toHaveValue('C1')
     
     // Progress should show 2 words
     expect(screen.getByText(/Card 1 of 2/)).toBeInTheDocument()
@@ -72,10 +72,10 @@ describe('VocabularyPractice Filtering', () => {
     render(<VocabularyPractice />)
     
     // Click "Learned" filter
-    const learnedRadio = screen.getByRole('radio', { name: /Learned \(1\)/ })
-    await user.click(learnedRadio)
+    const statusSelect = screen.getByRole('combobox', { name: /Status:/ })
+    await user.selectOptions(statusSelect, 'learned')
     
-    expect(learnedRadio).toBeChecked()
+    expect(statusSelect).toHaveValue('learned')
     
     // Should show only 1 word
     expect(screen.getByText(/Card 1 of 1/)).toBeInTheDocument()
@@ -92,10 +92,10 @@ describe('VocabularyPractice Filtering', () => {
     render(<VocabularyPractice />)
     
     // Click "Not Learned" filter
-    const unlearnedRadio = screen.getByRole('radio', { name: /Not Learned \(3\)/ })
-    await user.click(unlearnedRadio)
+    const statusSelect = screen.getByRole('combobox', { name: /Status:/ })
+    await user.selectOptions(statusSelect, 'unlearned')
     
-    expect(unlearnedRadio).toBeChecked()
+    expect(statusSelect).toHaveValue('unlearned')
     
     // Should show 3 unlearned words
     expect(screen.getByText(/Card 1 of 3/)).toBeInTheDocument()
@@ -112,13 +112,12 @@ describe('VocabularyPractice Filtering', () => {
     render(<VocabularyPractice />)
     
     // Filter by C1 level
-    const c1Radio = screen.getByRole('radio', { name: /C1 \(2\)/ })
-    await user.click(c1Radio)
+    const levelSelect = screen.getByRole('combobox', { name: /Level:/ })
+    await user.selectOptions(levelSelect, 'C1')
     
-    // Filter by Learned - need to be specific to avoid matching the stats label
-    const statusSection = screen.getByText('Status').closest('.filter-group')
-    const learnedRadio = statusSection.querySelector('input[value="learned"]')
-    await user.click(learnedRadio)
+    // Filter by Learned
+    const statusSelect = screen.getByRole('combobox', { name: /Status:/ })
+    await user.selectOptions(statusSelect, 'learned')
     
     // Should show only 1 word (C1 AND learned = word2)
     expect(screen.getByText(/Card 1 of 1/)).toBeInTheDocument()
@@ -135,16 +134,16 @@ describe('VocabularyPractice Filtering', () => {
     
     render(<VocabularyPractice />)
     
-    // Click Clear All Filters
-    const clearButton = screen.getByRole('button', { name: /Clear All Filters/i })
+    // Click Clear Filters
+    const clearButton = screen.getByRole('button', { name: /Clear Filters/i })
     await user.click(clearButton)
     
     // Should reset to all filters
-    const allLevelRadio = screen.getByRole('radio', { name: /All \(4\)/ })
-    const allStatusRadio = screen.getByRole('radio', { name: /^All$/ })
+    const levelSelect = screen.getByRole('combobox', { name: /Level:/ })
+    const statusSelect = screen.getByRole('combobox', { name: /Status:/ })
     
-    expect(allLevelRadio).toBeChecked()
-    expect(allStatusRadio).toBeChecked()
+    expect(levelSelect).toHaveValue('all')
+    expect(statusSelect).toHaveValue('all')
     
     // Should show all 4 words
     expect(screen.getByText(/Card 1 of 4/)).toBeInTheDocument()
@@ -153,7 +152,7 @@ describe('VocabularyPractice Filtering', () => {
   it('disables Clear button when no filters are active', () => {
     render(<VocabularyPractice />)
     
-    const clearButton = screen.getByRole('button', { name: /Clear All Filters/i })
+    const clearButton = screen.getByRole('button', { name: /Clear Filters/i })
     expect(clearButton).toBeDisabled()
   })
 
@@ -161,12 +160,12 @@ describe('VocabularyPractice Filtering', () => {
     const user = userEvent.setup()
     render(<VocabularyPractice />)
     
-    const clearButton = screen.getByRole('button', { name: /Clear All Filters/i })
+    const clearButton = screen.getByRole('button', { name: /Clear Filters/i })
     expect(clearButton).toBeDisabled()
     
     // Apply a filter
-    const c1Radio = screen.getByRole('radio', { name: /C1 \(2\)/ })
-    await user.click(c1Radio)
+    const levelSelect = screen.getByRole('combobox', { name: /Level:/ })
+    await user.selectOptions(levelSelect, 'C1')
     
     expect(clearButton).toBeEnabled()
   })
@@ -225,8 +224,8 @@ describe('VocabularyPractice Shuffling', () => {
     await user.click(shuffleButton)
     
     // Change filter
-    const c1Radio = screen.getByRole('radio', { name: /C1 \(2\)/ })
-    await user.click(c1Radio)
+    const levelSelect = screen.getByRole('combobox', { name: /Level:/ })
+    await user.selectOptions(levelSelect, 'C1')
     
     // Should still be in shuffle mode (showing Reset Order button)
     expect(screen.getByRole('button', { name: /↺ Reset Order/i })).toBeInTheDocument()
@@ -245,8 +244,8 @@ describe('VocabularyPractice Shuffling', () => {
     await user.click(shuffleButton)
     
     // Filter to C1 (2 words)
-    const c1Radio = screen.getByRole('radio', { name: /C1 \(2\)/ })
-    await user.click(c1Radio)
+    const levelSelect = screen.getByRole('combobox', { name: /Level:/ })
+    await user.selectOptions(levelSelect, 'C1')
     
     // Should show 2 words
     expect(screen.getByText(/Card 1 of 2/)).toBeInTheDocument()

@@ -13,7 +13,11 @@ export const usePracticeStore = create(
       // Word pool filter: 'all', 'learned', 'mistakes'
       wordPoolFilter: 'all',
       
-      // Session statistics
+      // Global statistics (persist across session resets)
+      globalCorrectCount: 0,
+      globalIncorrectCount: 0,
+      
+      // Session statistics (reset when changing modes)
       correctCount: 0,
       incorrectCount: 0,
       
@@ -44,11 +48,13 @@ export const usePracticeStore = create(
       setCurrentQuestion: (question) => set({ currentQuestion: question }),
       
       incrementCorrect: () => set((state) => ({ 
-        correctCount: state.correctCount + 1 
+        correctCount: state.correctCount + 1,
+        globalCorrectCount: state.globalCorrectCount + 1
       })),
       
       incrementIncorrect: () => set((state) => ({ 
-        incorrectCount: state.incorrectCount + 1 
+        incorrectCount: state.incorrectCount + 1,
+        globalIncorrectCount: state.globalIncorrectCount + 1
       })),
       
       updateSettings: (mode, settings) => set((state) => ({
@@ -76,6 +82,8 @@ export const usePracticeStore = create(
         wordPoolFilter: 'all',
         correctCount: 0,
         incorrectCount: 0,
+        globalCorrectCount: 0,
+        globalIncorrectCount: 0,
         currentQuestion: null,
         settings: {
           multipleChoice: {

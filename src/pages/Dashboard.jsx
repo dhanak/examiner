@@ -5,8 +5,8 @@ import './Dashboard.css'
 
 export default function Dashboard() {
   const {
-    correctCount,
-    incorrectCount,
+    globalCorrectCount,
+    globalIncorrectCount,
     resetAll
   } = usePracticeStore()
 
@@ -19,9 +19,9 @@ export default function Dashboard() {
   const totalVocabulary = vocabularyData.words.length
   const learnedCount = learnedWords.size
   const mistakeCount = mistakeWords.size
-  const totalAttempts = correctCount + incorrectCount
+  const totalAttempts = globalCorrectCount + globalIncorrectCount
   const accuracy = totalAttempts > 0 
-    ? Math.round((correctCount / totalAttempts) * 100)
+    ? Math.round((globalCorrectCount / totalAttempts) * 100)
     : 0
 
   const handleClearProgress = () => {
@@ -86,14 +86,14 @@ export default function Dashboard() {
             <div className="stat-icon">✓</div>
             <div className="stat-content">
               <h3>Correct Answers</h3>
-              <p className="stat-value">{correctCount}</p>
+              <p className="stat-value">{globalCorrectCount}</p>
             </div>
           </div>
           <div className="stat-card stat-error">
             <div className="stat-icon">✗</div>
             <div className="stat-content">
               <h3>Incorrect Answers</h3>
-              <p className="stat-value">{incorrectCount}</p>
+              <p className="stat-value">{globalIncorrectCount}</p>
             </div>
           </div>
           <div className="stat-card stat-accuracy">
