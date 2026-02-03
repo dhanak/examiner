@@ -159,14 +159,14 @@ export default function VocabularyPractice() {
                 onClick={handleShuffle} 
                 className="btn btn-secondary btn-shuffle"
               >
-                🔀 Shuffle
+                Shuffle
               </button>
             ) : (
               <button 
                 onClick={handleReset} 
                 className="btn btn-secondary btn-shuffle"
               >
-                ↺ Reset Order
+                Reset Order
               </button>
             )}
           </div>

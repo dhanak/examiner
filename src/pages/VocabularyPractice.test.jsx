@@ -182,20 +182,20 @@ describe('VocabularyPractice Shuffling', () => {
   it('shows Shuffle button by default', () => {
     render(<VocabularyPractice />)
     
-    expect(screen.getByRole('button', { name: /🔀 Shuffle/i })).toBeInTheDocument()
-    expect(screen.queryByRole('button', { name: /↺ Reset Order/i })).not.toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /Shuffle/i })).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: /Reset Order/i })).not.toBeInTheDocument()
   })
 
   it('switches to Reset Order button after shuffling', async () => {
     const user = userEvent.setup()
     render(<VocabularyPractice />)
     
-    const shuffleButton = screen.getByRole('button', { name: /🔀 Shuffle/i })
+    const shuffleButton = screen.getByRole('button', { name: /Shuffle/i })
     await user.click(shuffleButton)
     
     // Should now show Reset Order button
-    expect(screen.queryByRole('button', { name: /🔀 Shuffle/i })).not.toBeInTheDocument()
-    expect(screen.getByRole('button', { name: /↺ Reset Order/i })).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: /Shuffle/i })).not.toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /Reset Order/i })).toBeInTheDocument()
   })
 
   it('resets to original order when Reset Order is clicked', async () => {
@@ -203,16 +203,16 @@ describe('VocabularyPractice Shuffling', () => {
     render(<VocabularyPractice />)
     
     // Shuffle
-    const shuffleButton = screen.getByRole('button', { name: /🔀 Shuffle/i })
+    const shuffleButton = screen.getByRole('button', { name: /Shuffle/i })
     await user.click(shuffleButton)
     
     // Reset
-    const resetButton = screen.getByRole('button', { name: /↺ Reset Order/i })
+    const resetButton = screen.getByRole('button', { name: /Reset Order/i })
     await user.click(resetButton)
     
     // Should show Shuffle button again
-    expect(screen.getByRole('button', { name: /🔀 Shuffle/i })).toBeInTheDocument()
-    expect(screen.queryByRole('button', { name: /↺ Reset Order/i })).not.toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /Shuffle/i })).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: /Reset Order/i })).not.toBeInTheDocument()
   })
 
   it('maintains shuffle mode when filters change', async () => {
@@ -220,7 +220,7 @@ describe('VocabularyPractice Shuffling', () => {
     render(<VocabularyPractice />)
     
     // Shuffle
-    const shuffleButton = screen.getByRole('button', { name: /🔀 Shuffle/i })
+    const shuffleButton = screen.getByRole('button', { name: /Shuffle/i })
     await user.click(shuffleButton)
     
     // Change filter
@@ -228,8 +228,8 @@ describe('VocabularyPractice Shuffling', () => {
     await user.selectOptions(levelSelect, 'C1')
     
     // Should still be in shuffle mode (showing Reset Order button)
-    expect(screen.getByRole('button', { name: /↺ Reset Order/i })).toBeInTheDocument()
-    expect(screen.queryByRole('button', { name: /🔀 Shuffle/i })).not.toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /Reset Order/i })).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: /Shuffle/i })).not.toBeInTheDocument()
   })
 
   it('shows correct card count after filtering in shuffle mode', async () => {
@@ -240,7 +240,7 @@ describe('VocabularyPractice Shuffling', () => {
     expect(screen.getByText(/Card 1 of 4/)).toBeInTheDocument()
     
     // Shuffle
-    const shuffleButton = screen.getByRole('button', { name: /🔀 Shuffle/i })
+    const shuffleButton = screen.getByRole('button', { name: /Shuffle/i })
     await user.click(shuffleButton)
     
     // Filter to C1 (2 words)
