@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, useCallback } from 'react'
+import { useState, useEffect, useMemo, useCallback, useRef } from 'react'
 import { usePracticeStore } from '../store/practiceStore'
 import { useVocabularyStore } from '../store/vocabularyStore'
 import { getRandomWords, getDistractors, shuffleArray, getRandomTranslation } from '../utils/practiceUtils'
@@ -17,7 +17,8 @@ export default function MultipleChoice() {
   const {
     learnedWords,
     mistakeWords,
-    markAsMistake
+    markAsMistake,
+    clearMistake
   } = useVocabularyStore()
 
   const [currentWord, setCurrentWord] = useState(null)
@@ -25,6 +26,7 @@ export default function MultipleChoice() {
   const [selectedOption, setSelectedOption] = useState(null)
   const [isCorrect, setIsCorrect] = useState(null)
   const [correctAnswer, setCorrectAnswer] = useState(null)
+  const hasInitializedRef = useRef(false)
 
   const optionCount = settings.multipleChoice.optionCount
 
@@ -82,17 +84,18 @@ export default function MultipleChoice() {
     }
   }, [filteredWords, direction, optionCount])
 
-  // Generate first question on mount and when dependencies change
+  // Generate first question on mount only
   useEffect(() => {
-    const question = generateQuestion()
-    // We intentionally set state here to load a new question when dependencies change
-    // eslint-disable-next-line
-    setCurrentWord(question.word)
-    setOptions(question.options)
-    setCorrectAnswer(question.correctAnswer)
-    setSelectedOption(null)
-    setIsCorrect(null)
-  }, [generateQuestion])
+    if (!hasInitializedRef.current) {
+      hasInitializedRef.current = true
+      const question = generateQuestion()
+      setCurrentWord(question.word)
+      setOptions(question.options)
+      setCorrectAnswer(question.correctAnswer)
+      setSelectedOption(null)
+      setIsCorrect(null)
+    }
+  }, [])
 
   const handleOptionClick = useCallback((option) => {
     if (isCorrect !== null) return // Already answered
@@ -104,11 +107,12 @@ export default function MultipleChoice() {
 
     if (correct) {
       incrementCorrect()
+      clearMistake(currentWord.id)
     } else {
       incrementIncorrect()
       markAsMistake(currentWord.id)
     }
-  }, [isCorrect, correctAnswer, currentWord, incrementCorrect, incrementIncorrect, markAsMistake])
+  }, [isCorrect, correctAnswer, currentWord, incrementCorrect, incrementIncorrect, markAsMistake, clearMistake])
 
   const handleNext = () => {
     const question = generateQuestion()

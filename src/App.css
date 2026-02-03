@@ -106,6 +106,12 @@
   align-items: center;
   gap: 0.5rem;
   transition: all 0.2s;
+  outline: none;
+}
+
+.theme-toggle:focus,
+.theme-toggle:focus-visible {
+  outline: none;
 }
 
 .theme-toggle:hover {

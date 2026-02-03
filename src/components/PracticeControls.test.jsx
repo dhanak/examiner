@@ -77,8 +77,8 @@ describe('PracticeControls', () => {
     it('should show both direction options', () => {
       render(<PracticeControls />)
       
-      expect(screen.getByRole('option', { name: /HU → EN/i })).toBeInTheDocument()
-      expect(screen.getByRole('option', { name: /EN → HU/i })).toBeInTheDocument()
+      expect(screen.getByRole('option', { name: /Hungarian to English/i })).toBeInTheDocument()
+      expect(screen.getByRole('option', { name: /English to Hungarian/i })).toBeInTheDocument()
     })
   })
 

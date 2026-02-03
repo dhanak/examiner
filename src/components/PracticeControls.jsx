@@ -22,8 +22,8 @@ export default function PracticeControls() {
   ]
 
   const directions = [
-    { id: 'hu-to-en', label: 'HU → EN' },
-    { id: 'en-to-hu', label: 'EN → HU' }
+    { id: 'hu-to-en', label: 'Hungarian to English' },
+    { id: 'en-to-hu', label: 'English to Hungarian' }
   ]
 
   const filters = [
