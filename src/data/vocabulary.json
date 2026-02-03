@@ -1812,6 +1812,594 @@
       ],
       "definition": "To have enough money to buy something",
       "example": "We can't afford a holiday this year."
+    },
+    {
+      "id": "classroom",
+      "word": "classroom",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "tanterem",
+        "osztályterem"
+      ],
+      "definition": "A room in a school where lessons take place",
+      "example": "Our classroom has twenty desks and a large whiteboard."
+    },
+    {
+      "id": "colleague",
+      "word": "colleague",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kolléga",
+        "munkatárs"
+      ],
+      "definition": "A person you work with in a profession or business",
+      "example": "My colleague helped me finish the project on time."
+    },
+    {
+      "id": "timetable",
+      "word": "timetable",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "órarend",
+        "menetrend"
+      ],
+      "definition": "A list showing the times when classes or events are planned",
+      "example": "Check your timetable to see when the maths lesson starts."
+    },
+    {
+      "id": "graduate",
+      "word": "graduate",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "diplomát szerez",
+        "végez"
+      ],
+      "definition": "To successfully complete a course of study at a university or college",
+      "example": "She will graduate from university next summer."
+    },
+    {
+      "id": "employee",
+      "word": "employee",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "alkalmazott",
+        "munkavállaló"
+      ],
+      "definition": "A person who is paid to work for someone else",
+      "example": "The company has over 500 employees worldwide."
+    },
+    {
+      "id": "assignment",
+      "word": "assignment",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "feladat",
+        "házi feladat"
+      ],
+      "definition": "A piece of work given to someone as part of their studies",
+      "example": "We have to hand in our history assignment by Friday."
+    },
+    {
+      "id": "employ",
+      "word": "employ",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "alkalmaz",
+        "foglalkoztat"
+      ],
+      "definition": "To pay someone to work for you",
+      "example": "The factory employs over 200 workers."
+    },
+    {
+      "id": "qualification",
+      "word": "qualification",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "képesítés",
+        "végzettség"
+      ],
+      "definition": "An official record showing that you have finished a course or passed an exam",
+      "example": "You need teaching qualifications to work in this school."
+    },
+    {
+      "id": "attend",
+      "word": "attend",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "jelen van",
+        "részt vesz"
+      ],
+      "definition": "To go to an event or place regularly",
+      "example": "All students must attend the morning assembly."
+    },
+    {
+      "id": "salary",
+      "word": "salary",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "fizetés",
+        "bér"
+      ],
+      "definition": "Money that you receive regularly for doing your job",
+      "example": "His monthly salary is paid directly into his bank account."
+    },
+    {
+      "id": "revise",
+      "word": "revise",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "felülvizsgál",
+        "átnéz"
+      ],
+      "definition": "To study work that you have done in order to prepare for an exam",
+      "example": "I need to revise my notes before the test tomorrow."
+    },
+    {
+      "id": "deadline",
+      "word": "deadline",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "határidő",
+        "véghatáridő"
+      ],
+      "definition": "A time or date by which something must be finished",
+      "example": "The deadline for the project is next Monday."
+    },
+    {
+      "id": "experienced",
+      "word": "experienced",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "tapasztalt",
+        "gyakorlott"
+      ],
+      "definition": "Having knowledge or skill from doing something for a long time",
+      "example": "We are looking for an experienced teacher to join our team."
+    },
+    {
+      "id": "canteen",
+      "word": "canteen",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "menza",
+        "étkezde"
+      ],
+      "definition": "A place in a school or workplace where people can buy and eat meals",
+      "example": "The school canteen serves hot lunch every day."
+    },
+    {
+      "id": "apply",
+      "word": "apply",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "jelentkezik",
+        "pályázik"
+      ],
+      "definition": "To formally ask for something, especially a job or a place at a university",
+      "example": "Over fifty people applied for the position."
+    },
+    {
+      "id": "lecturer",
+      "word": "lecturer",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "előadó",
+        "egyetemi oktató"
+      ],
+      "definition": "A person who teaches at a university or college",
+      "example": "The history lecturer gave an interesting talk about ancient Rome."
+    },
+    {
+      "id": "promote",
+      "word": "promote",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "előléptet",
+        "promovál"
+      ],
+      "definition": "To raise someone to a higher position or rank at work",
+      "example": "She was promoted to manager after two years."
+    },
+    {
+      "id": "curriculum",
+      "word": "curriculum",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "tanterv",
+        "tananyag"
+      ],
+      "definition": "The subjects that are taught in a school or the content of a course",
+      "example": "Science is an important part of the school curriculum."
+    },
+    {
+      "id": "resign",
+      "word": "resign",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "lemond",
+        "felmond"
+      ],
+      "definition": "To officially tell your employer that you are leaving your job",
+      "example": "He decided to resign from his position last month."
+    },
+    {
+      "id": "term",
+      "word": "term",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "félév",
+        "tanítási időszak"
+      ],
+      "definition": "One of the periods into which the school year is divided",
+      "example": "The autumn term begins in September."
+    },
+    {
+      "id": "skilled",
+      "word": "skilled",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "szakképzett",
+        "képzett"
+      ],
+      "definition": "Having the training and ability to do something well",
+      "example": "We need skilled workers for this technical job."
+    },
+    {
+      "id": "seminar",
+      "word": "seminar",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szeminárium",
+        "konzultáció"
+      ],
+      "definition": "A class at university in which a small group discusses a subject with a teacher",
+      "example": "We have a seminar on British literature every Thursday."
+    },
+    {
+      "id": "interview",
+      "word": "interview",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "interjú",
+        "állásinterjú"
+      ],
+      "definition": "A formal meeting where someone is asked questions to decide if they are suitable for a job",
+      "example": "I have a job interview at the bank tomorrow morning."
+    },
+    {
+      "id": "certificate",
+      "word": "certificate",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "bizonyítvány",
+        "tanúsítvány"
+      ],
+      "definition": "An official document that proves you have completed a course or passed an exam",
+      "example": "She received her certificate at the graduation ceremony."
+    },
+    {
+      "id": "dismiss",
+      "word": "dismiss",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "elbocsát",
+        "elküld"
+      ],
+      "definition": "To remove someone from their job or to tell students they can leave",
+      "example": "The teacher dismissed the class early because of the fire drill."
+    },
+    {
+      "id": "apprentice",
+      "word": "apprentice",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "inas",
+        "gyakornok"
+      ],
+      "definition": "A person who learns a skill by working for someone who is experienced",
+      "example": "He started as an apprentice carpenter at the age of sixteen."
+    },
+    {
+      "id": "enrol",
+      "word": "enrol",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "beiratkozik",
+        "feliratkozik"
+      ],
+      "definition": "To officially join a course or become a member of an institution",
+      "example": "Students can enrol for evening classes starting in September."
+    },
+    {
+      "id": "profession",
+      "word": "profession",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szakma",
+        "hivatás"
+      ],
+      "definition": "A type of job that needs special training or education",
+      "example": "Teaching is a rewarding profession that requires patience."
+    },
+    {
+      "id": "examination",
+      "word": "examination",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "vizsga",
+        "vizsgálat"
+      ],
+      "definition": "A formal test of knowledge or ability in a particular subject",
+      "example": "The final examination will take place in June."
+    },
+    {
+      "id": "capable",
+      "word": "capable",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "képes",
+        "alkalmas"
+      ],
+      "definition": "Having the ability or qualities necessary for doing something",
+      "example": "She is a very capable student who always completes her work."
+    },
+    {
+      "id": "department",
+      "word": "department",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "részleg",
+        "tanszék"
+      ],
+      "definition": "A section of a large organisation such as a school, university or business",
+      "example": "The English department is on the second floor."
+    },
+    {
+      "id": "retire",
+      "word": "retire",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "nyugdíjba megy",
+        "visszavonul"
+      ],
+      "definition": "To stop working permanently, usually because of age",
+      "example": "My father retired from teaching at the age of sixty-five."
+    },
+    {
+      "id": "tutorial",
+      "word": "tutorial",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "konzultáció",
+        "korrepetáls"
+      ],
+      "definition": "A period of teaching given by a tutor to one student or a small group",
+      "example": "I have a maths tutorial with my tutor on Wednesday afternoon."
+    },
+    {
+      "id": "efficient",
+      "word": "efficient",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "hatékony",
+        "eredményes"
+      ],
+      "definition": "Working well and not wasting time or energy",
+      "example": "She is a very efficient worker who always meets her targets."
+    },
+    {
+      "id": "degree",
+      "word": "degree",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "diploma",
+        "egyetemi végzettség"
+      ],
+      "definition": "A qualification given for completing a university course",
+      "example": "He has a degree in engineering from Cambridge University."
+    },
+    {
+      "id": "supervise",
+      "word": "supervise",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "felügyel",
+        "ellenőriz"
+      ],
+      "definition": "To watch someone to make sure they do their work properly",
+      "example": "The teacher supervises the students during break time."
+    },
+    {
+      "id": "scholarship",
+      "word": "scholarship",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "ösztnnnnnndíj",
+        "tanulmányi ösztöndíj"
+      ],
+      "definition": "Money given to a student to help pay for their education",
+      "example": "She won a scholarship to study at Oxford University."
+    },
+    {
+      "id": "staff",
+      "word": "staff",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "személyzet",
+        "alkalmazottak"
+      ],
+      "definition": "All the people who work for a particular organisation",
+      "example": "The school staff includes thirty teachers and five assistants."
+    },
+    {
+      "id": "achieve",
+      "word": "achieve",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "elér",
+        "teljesít"
+      ],
+      "definition": "To succeed in doing or getting something through effort",
+      "example": "She achieved excellent results in all her examinations."
+    },
+    {
+      "id": "occupation",
+      "word": "occupation",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "foglalkozás",
+        "munkakör"
+      ],
+      "definition": "A job or profession",
+      "example": "Please write your name and occupation on the form."
+    },
+    {
+      "id": "practical",
+      "word": "practical",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "gyakorlati",
+        "gyakorlatias"
+      ],
+      "definition": "Relating to real situations and events rather than ideas",
+      "example": "We have a practical science lesson in the laboratory today."
+    },
+    {
+      "id": "headteacher",
+      "word": "headteacher",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "igazgató",
+        "iskolaigazgató"
+      ],
+      "definition": "The teacher who is in charge of a school",
+      "example": "The headteacher announced the new school rules at assembly."
+    },
+    {
+      "id": "recruit",
+      "word": "recruit",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "felvesz",
+        "alkalmaz"
+      ],
+      "definition": "To find new people to work in a company or join an organisation",
+      "example": "The company is recruiting new graduates this summer."
+    },
+    {
+      "id": "academic",
+      "word": "academic",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "tanulmányi",
+        "tudományos"
+      ],
+      "definition": "Connected with education, especially studying in schools and universities",
+      "example": "Her academic performance has improved significantly this year."
+    },
+    {
+      "id": "overtime",
+      "word": "overtime",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "túlóra",
+        "többletmunka"
+      ],
+      "definition": "Time worked in addition to your normal working hours",
+      "example": "He worked overtime last week to finish the important project."
+    },
+    {
+      "id": "library",
+      "word": "library",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "könyvtár",
+        "olvasóterem"
+      ],
+      "definition": "A room or building containing books that people can read or borrow",
+      "example": "Students use the library to study quietly and borrow books."
+    },
+    {
+      "id": "responsible",
+      "word": "responsible",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "felelős",
+        "megbízható"
+      ],
+      "definition": "Having the duty of dealing with something or being in charge of someone",
+      "example": "The team leader is responsible for managing the project."
+    },
+    {
+      "id": "absent",
+      "word": "absent",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "hiányzó",
+        "távol lévő"
+      ],
+      "definition": "Not present in a place, especially at school or work",
+      "example": "Three students were absent from class yesterday."
+    },
+    {
+      "id": "laboratory",
+      "word": "laboratory",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "labor",
+        "laboratórium"
+      ],
+      "definition": "A room or building used for scientific work and experiments",
+      "example": "We conduct chemistry experiments in the laboratory every week."
     }
   ]
 }
