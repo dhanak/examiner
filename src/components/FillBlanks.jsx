@@ -52,6 +52,7 @@ export default function FillBlanks() {
   const [feedback, setFeedback] = useState(null) // {type, message}
   const [showingAnswers, setShowingAnswers] = useState(false) // Showing correct answers (disables lozenges)
   const [hoveredBlankId, setHoveredBlankId] = useState(null) // Track hovered correct answer in sentence
+  const [touchTarget, setTouchTarget] = useState(null) // Track touch target receptacle
 
   const hasInitializedRef = useRef(false)
 
@@ -396,6 +397,28 @@ export default function FillBlanks() {
                   setDraggedLozenge(null)
                 }
               }}
+              onTouchOver={(e) => {
+                if (!showingAnswers && draggedLozenge) {
+                  e.currentTarget.classList.add('drag-over')
+                  setTouchTarget(blank.id)
+                }
+              }}
+              onTouchLeave={(e) => {
+                e.currentTarget.classList.remove('drag-over')
+                setTouchTarget(null)
+              }}
+              onTouchEnd={(e) => {
+                if (showingAnswers || !draggedLozenge) return
+                e.currentTarget.classList.remove('drag-over')
+                if (touchTarget === blank.id) {
+                  setFilledBlanks(prev => ({
+                    ...prev,
+                    [blank.id]: draggedLozenge
+                  }))
+                  setDraggedLozenge(null)
+                  setTouchTarget(null)
+                }
+              }}
             >
               _______
             </span>
@@ -428,6 +451,13 @@ export default function FillBlanks() {
                   if (!showingAnswers) setDraggedLozenge(option.id)
                 }}
                 onDragEnd={() => setDraggedLozenge(null)}
+                onTouchStart={() => {
+                  if (!showingAnswers) setDraggedLozenge(option.id)
+                }}
+                onTouchEnd={() => {
+                  setDraggedLozenge(null)
+                  setTouchTarget(null)
+                }}
                 title={hotkey ? `${option.word} (${hotkey})` : option.word}
               >
                 {hotkey && <span className="hotkey">{hotkey}</span>}

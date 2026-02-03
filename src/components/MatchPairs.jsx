@@ -130,7 +130,13 @@ export default function MatchPairs() {
   const [selectedLeft, setSelectedLeft] = useState(null)
   const [selectedRight, setSelectedRight] = useState(null)
   const [matches, setMatches] = useState(new Set())
+  const [animateSlide, setAnimateSlide] = useState(false)
   const hasInitializedRef = useRef(false)
+  const itemsAreNewRef = useRef(true)
+  
+  // Refs to measure item positions
+  const leftItemsRefs = useRef({})
+  const rightItemsRefs = useRef({})
 
   // Initialize on mount
   useEffect(() => {
@@ -143,6 +149,7 @@ export default function MatchPairs() {
       setSelectedLeft(null)
       setSelectedRight(null)
       setMatches(new Set())
+      setAnimateSlide(false)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
@@ -156,9 +163,35 @@ export default function MatchPairs() {
     setSelectedLeft(null)
     setSelectedRight(null)
     setMatches(new Set())
+    setAnimateSlide(false)
+    itemsAreNewRef.current = true
+    leftItemsRefs.current = {}
+    rightItemsRefs.current = {}
   }, [pairCount, generatePairs])
 
+  // Reset animation and refs when items change
+  useEffect(() => {
+    setAnimateSlide(false)
+    itemsAreNewRef.current = true
+    leftItemsRefs.current = {}
+    rightItemsRefs.current = {}
+  }, [leftItems.length])
+
+  // Trigger slide animation when all pairs are matched (but only if items are not new)
+  useEffect(() => {
+    if (leftItems.length > 0 && matches.size === leftItems.length && !animateSlide && !itemsAreNewRef.current) {
+      // Trigger animation after a brief delay
+      const timer = setTimeout(() => {
+        setAnimateSlide(true)
+      }, 300)
+      return () => clearTimeout(timer)
+    }
+  }, [leftItems.length, matches.size, animateSlide])
+
   const handleItemClick = useCallback((itemId, side) => {
+    // Mark items as no longer new on first interaction
+    itemsAreNewRef.current = false
+    
     // If the item is already matched, don't do anything
     const item = side === 'left' 
       ? leftItems.find(i => i.id === itemId)
@@ -218,9 +251,38 @@ export default function MatchPairs() {
     setSelectedLeft(null)
     setSelectedRight(null)
     setMatches(new Set())
+    setAnimateSlide(false)
+    // Clear refs so animation won't trigger on old refs
+    leftItemsRefs.current = {}
+    rightItemsRefs.current = {}
   }, [generatePairs])
 
   const allMatched = leftItems.length > 0 && matches.size === leftItems.length
+
+  // Calculate slide offset for each right item to match left column position
+  const getSlideOffset = (rightItem) => {
+    // Don't calculate offset if not animating or items are new
+    if (!animateSlide || itemsAreNewRef.current) return 0
+    
+    // Find where this item should be
+    const targetIndex = leftItems.findIndex(li => li.pairId === rightItem.pairId)
+    const currentIndex = rightItems.findIndex(ri => ri.id === rightItem.id)
+    
+    if (targetIndex === -1 || currentIndex === -1) return 0
+    
+    // Get actual DOM positions
+    const leftElement = leftItemsRefs.current[leftItems[targetIndex]?.id]
+    const rightElement = rightItemsRefs.current[rightItem.id]
+    
+    if (!leftElement || !rightElement) return 0
+    
+    // Calculate the difference in top position
+    const leftTop = leftElement.getBoundingClientRect().top
+    const rightTop = rightElement.getBoundingClientRect().top
+    const offsetPixels = leftTop - rightTop
+    
+    return offsetPixels
+  }
 
   // Add keyboard shortcuts (must be before conditional return)
   useEffect(() => {
@@ -274,6 +336,7 @@ export default function MatchPairs() {
           {leftItems.map(item => (
             <button
               key={item.id}
+              ref={(el) => { if (el) leftItemsRefs.current[item.id] = el }}
               className={`match-item ${selectedLeft === item.id ? 'selected' : ''} ${matches.has(item.pairId) ? 'matched' : ''}`}
               onClick={() => handleItemClick(item.id, 'left')}
               disabled={matches.has(item.pairId)}
@@ -285,17 +348,25 @@ export default function MatchPairs() {
         </div>
 
         <div className="column right-column">
-          {rightItems.map(item => (
-            <button
-              key={item.id}
-              className={`match-item ${selectedRight === item.id ? 'selected' : ''} ${matches.has(item.pairId) ? 'matched' : ''}`}
-              onClick={() => handleItemClick(item.id, 'right')}
-              disabled={matches.has(item.pairId)}
-            >
-              <span className="hotkey">{item.hotkey}</span>
-              {item.text}
-            </button>
-          ))}
+          {rightItems.map(item => {
+            const slideOffset = getSlideOffset(item)
+            const shouldAnimate = animateSlide && !itemsAreNewRef.current
+            const slideStyle = shouldAnimate ? { transform: `translateY(${slideOffset}px)` } : {}
+            
+            return (
+              <button
+                key={item.id}
+                ref={(el) => { if (el) rightItemsRefs.current[item.id] = el }}
+                className={`match-item ${selectedRight === item.id ? 'selected' : ''} ${matches.has(item.pairId) ? 'matched' : ''} ${shouldAnimate ? 'sliding' : ''}`}
+                style={slideStyle}
+                onClick={() => handleItemClick(item.id, 'right')}
+                disabled={matches.has(item.pairId)}
+              >
+                <span className="hotkey">{item.hotkey}</span>
+                {item.text}
+              </button>
+            )
+          })}
         </div>
       </div>
 

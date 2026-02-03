@@ -180,4 +180,53 @@ describe('MultipleChoice', () => {
       expect(feedback || buttons[0].classList.contains('selected')).toBeTruthy()
     }
   })
+
+  it('does not skip feedback when wordPoolFilter changes', () => {
+    const learnedSet = new Set([1, 2])
+    const mockIncrement = vi.fn()
+    
+    // Start with 'all' word pool
+    usePracticeStore.mockReturnValue({
+      direction: 'hu-to-en',
+      wordPoolFilter: 'all',
+      levelFilter: 'all',
+      settings: { multipleChoice: { optionCount: 4 } },
+      incrementCorrect: mockIncrement,
+      incrementIncorrect: vi.fn()
+    })
+
+    useVocabularyStore.mockReturnValue({
+      learnedWords: learnedSet,
+      mistakeWords: new Set(),
+      markAsMistake: vi.fn(),
+      clearMistake: vi.fn()
+    })
+
+    const { container, rerender } = render(<MultipleChoice />)
+    const buttons = container.querySelectorAll('.option-button')
+    
+    if (buttons.length > 0) {
+      // Click first option to show feedback
+      fireEvent.click(buttons[0])
+      const feedbackBefore = container.querySelector('.feedback')
+      expect(feedbackBefore).toBeTruthy()
+      
+      // Change word pool filter (simulating user changing filter mid-question)
+      usePracticeStore.mockReturnValue({
+        direction: 'hu-to-en',
+        wordPoolFilter: 'learned', // Changed filter
+        levelFilter: 'all',
+        settings: { multipleChoice: { optionCount: 4 } },
+        incrementCorrect: mockIncrement,
+        incrementIncorrect: vi.fn()
+      })
+      
+      // Rerender with new filter
+      rerender(<MultipleChoice />)
+      
+      // Feedback should still be visible (not replaced by new question)
+      const feedbackAfter = container.querySelector('.feedback')
+      expect(feedbackAfter).toBeTruthy()
+    }
+  })
 })

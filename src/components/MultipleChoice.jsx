@@ -104,9 +104,9 @@ export default function MultipleChoice() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  // Regenerate question when direction or wordPoolFilter changes
+  // Regenerate question when direction, wordPoolFilter, or levelFilter changes
   useEffect(() => {
-    if (hasInitializedRef.current) {
+    if (hasInitializedRef.current && isCorrect === null) {
       const question = generateQuestion()
       setCurrentWord(question.word)
       setOptions(question.options)
@@ -114,7 +114,7 @@ export default function MultipleChoice() {
       setSelectedOption(null)
       setIsCorrect(null)
     }
-  }, [direction, wordPoolFilter, generateQuestion])
+  }, [direction, wordPoolFilter, levelFilter, generateQuestion, isCorrect])
 
   const handleOptionClick = useCallback((option) => {
     if (isCorrect !== null) return // Already answered
