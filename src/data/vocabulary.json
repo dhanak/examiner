@@ -2400,6 +2400,1050 @@
       ],
       "definition": "A room or building used for scientific work and experiments",
       "example": "We conduct chemistry experiments in the laboratory every week."
+    },
+    {
+      "id": "destination",
+      "word": "destination",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "úti cél",
+        "rendeltetési hely"
+      ],
+      "definition": "the place to which someone or something is going",
+      "example": "Paris is a popular holiday destination for British tourists."
+    },
+    {
+      "id": "luggage",
+      "word": "luggage",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "poggyász",
+        "csomag"
+      ],
+      "definition": "suitcases and bags that you take with you when travelling",
+      "example": "You can collect your luggage from the baggage reclaim area."
+    },
+    {
+      "id": "flight",
+      "word": "flight",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "repülőjárat",
+        "repülés"
+      ],
+      "definition": "a journey made by air, especially in a plane",
+      "example": "Our flight to Rome was delayed by two hours."
+    },
+    {
+      "id": "passenger",
+      "word": "passenger",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "utas"
+      ],
+      "definition": "a person travelling in a vehicle, aircraft, or ship who is not driving or working on it",
+      "example": "The bus can carry up to fifty passengers."
+    },
+    {
+      "id": "sightseeing",
+      "word": "sightseeing",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "városnézés",
+        "látványosságok megtekintése"
+      ],
+      "definition": "the activity of visiting places of interest in a particular location",
+      "example": "We spent the morning sightseeing in the old town."
+    },
+    {
+      "id": "explore",
+      "word": "explore",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "felfedez",
+        "felderít"
+      ],
+      "definition": "to travel around an area in order to learn about it",
+      "example": "We decided to explore the countryside on foot."
+    },
+    {
+      "id": "tourist",
+      "word": "tourist",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "turista"
+      ],
+      "definition": "a person who is travelling or visiting a place for pleasure",
+      "example": "Thousands of tourists visit the castle every year."
+    },
+    {
+      "id": "accommodation",
+      "word": "accommodation",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szállás"
+      ],
+      "definition": "a place to live or stay",
+      "example": "The price includes flights and accommodation for seven nights."
+    },
+    {
+      "id": "leisure",
+      "word": "leisure",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szabadidő"
+      ],
+      "definition": "time when you are not working or studying and can relax",
+      "example": "Most people now have more leisure time than their grandparents did."
+    },
+    {
+      "id": "hobby",
+      "word": "hobby",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "hobbi"
+      ],
+      "definition": "an activity that someone does for pleasure in their free time",
+      "example": "My favourite hobby is collecting stamps from different countries."
+    },
+    {
+      "id": "collection",
+      "word": "collection",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "gyűjtemény",
+        "kollekció"
+      ],
+      "definition": "a group of objects gathered together",
+      "example": "He has an impressive collection of old coins."
+    },
+    {
+      "id": "photography",
+      "word": "photography",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "fényképezés",
+        "fényképészet"
+      ],
+      "definition": "the skill or activity of taking photographs",
+      "example": "She's studying photography at college."
+    },
+    {
+      "id": "painting",
+      "word": "painting",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "festmény",
+        "festészet"
+      ],
+      "definition": "a picture made using paint, or the activity of creating such pictures",
+      "example": "There's a beautiful painting of a landscape on the wall."
+    },
+    {
+      "id": "gardening",
+      "word": "gardening",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kertészkedés"
+      ],
+      "definition": "the activity of working in a garden",
+      "example": "My mum spends every weekend gardening."
+    },
+    {
+      "id": "concert",
+      "word": "concert",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "koncert"
+      ],
+      "definition": "a public performance of music",
+      "example": "We went to a rock concert last Saturday night."
+    },
+    {
+      "id": "performance",
+      "word": "performance",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "előadás",
+        "teljesítmény"
+      ],
+      "definition": "the act of performing a play, concert, or other form of entertainment",
+      "example": "The evening performance starts at 7.30 pm."
+    },
+    {
+      "id": "audience",
+      "word": "audience",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "közönség",
+        "nézők"
+      ],
+      "definition": "the group of people watching or listening to a performance",
+      "example": "The audience clapped loudly at the end of the show."
+    },
+    {
+      "id": "exhibition",
+      "word": "exhibition",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kiállítás"
+      ],
+      "definition": "a public display of works of art or items of interest",
+      "example": "There's an exhibition of modern art at the gallery this month."
+    },
+    {
+      "id": "museum",
+      "word": "museum",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "múzeum"
+      ],
+      "definition": "a building where objects of historical or cultural interest are kept",
+      "example": "We visited the science museum on our school trip."
+    },
+    {
+      "id": "stadium",
+      "word": "stadium",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "stadion"
+      ],
+      "definition": "a large sports ground surrounded by seats for spectators",
+      "example": "The football stadium can hold 60,000 people."
+    },
+    {
+      "id": "tournament",
+      "word": "tournament",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "bajnokság",
+        "torna"
+      ],
+      "definition": "a sports competition involving several teams or players",
+      "example": "Our school won the tennis tournament this year."
+    },
+    {
+      "id": "coach",
+      "word": "coach",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "edző"
+      ],
+      "definition": "a person who trains and instructs a sports team or individual",
+      "example": "Our new football coach is very experienced."
+    },
+    {
+      "id": "opponent",
+      "word": "opponent",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "ellenfél"
+      ],
+      "definition": "a person who competes against another in a contest or game",
+      "example": "Our opponents were much stronger than we expected."
+    },
+    {
+      "id": "score",
+      "word": "score",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "gólt lő",
+        "pontot szerez"
+      ],
+      "definition": "to gain points in a game or competition",
+      "example": "She scored three goals in the match yesterday."
+    },
+    {
+      "id": "defeat",
+      "word": "defeat",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "legyőz",
+        "vereséget mér"
+      ],
+      "definition": "to win a victory over someone in a battle or competition",
+      "example": "We defeated the other team by five goals to two."
+    },
+    {
+      "id": "victory",
+      "word": "victory",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "győzelem"
+      ],
+      "definition": "success in defeating an opponent",
+      "example": "The team celebrated their victory with champagne."
+    },
+    {
+      "id": "champion",
+      "word": "champion",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "bajnok"
+      ],
+      "definition": "a person who has defeated all opponents in a competition",
+      "example": "She became the world champion at the age of nineteen."
+    },
+    {
+      "id": "compete",
+      "word": "compete",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "versenyez"
+      ],
+      "definition": "to take part in a race or competition",
+      "example": "Athletes from over fifty countries will compete in the games."
+    },
+    {
+      "id": "entertaining",
+      "word": "entertaining",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "szórakoztató"
+      ],
+      "definition": "providing amusement or enjoyment",
+      "example": "The film was very entertaining and made us laugh a lot."
+    },
+    {
+      "id": "amusing",
+      "word": "amusing",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "mulattató",
+        "vicces"
+      ],
+      "definition": "causing laughter and providing entertainment",
+      "example": "He told us an amusing story about his travels."
+    },
+    {
+      "id": "enjoyable",
+      "word": "enjoyable",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "élvezetes"
+      ],
+      "definition": "giving pleasure or satisfaction",
+      "example": "We had a very enjoyable evening at the theatre."
+    },
+    {
+      "id": "exciting",
+      "word": "exciting",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "izgalmas"
+      ],
+      "definition": "causing great enthusiasm and interest",
+      "example": "It was an exciting match that kept us on the edge of our seats."
+    },
+    {
+      "id": "relaxing",
+      "word": "relaxing",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "pihentető",
+        "relaxáló"
+      ],
+      "definition": "making you feel calm and less worried",
+      "example": "I find listening to music very relaxing after a long day."
+    },
+    {
+      "id": "adventurous",
+      "word": "adventurous",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "kalandvágyó",
+        "kalandos"
+      ],
+      "definition": "willing to take risks or try new experiences",
+      "example": "She's quite adventurous and loves trying extreme sports."
+    },
+    {
+      "id": "cultural",
+      "word": "cultural",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "kulturális"
+      ],
+      "definition": "relating to the arts, customs, and achievements of a society",
+      "example": "The city offers many cultural activities such as concerts and exhibitions."
+    },
+    {
+      "id": "participate",
+      "word": "participate",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "részt vesz"
+      ],
+      "definition": "to take part in an activity or event",
+      "example": "All students are encouraged to participate in school sports."
+    },
+    {
+      "id": "practise",
+      "word": "practise",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "gyakorol"
+      ],
+      "definition": "to do an activity regularly to improve your skill",
+      "example": "You need to practise the piano every day if you want to improve."
+    },
+    {
+      "id": "train",
+      "word": "train",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "edzést végez",
+        "edz"
+      ],
+      "definition": "to prepare for a sport or physical activity by exercising",
+      "example": "The team trains three times a week."
+    },
+    {
+      "id": "perform",
+      "word": "perform",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "előad",
+        "teljesít"
+      ],
+      "definition": "to entertain an audience by acting, singing, or dancing",
+      "example": "The band will perform live at the festival."
+    },
+    {
+      "id": "entertain",
+      "word": "entertain",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "szórakoztat"
+      ],
+      "definition": "to provide someone with amusement or enjoyment",
+      "example": "The clown entertained the children for an hour."
+    },
+    {
+      "id": "broadcast",
+      "word": "broadcast",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "sugároz",
+        "közvetít"
+      ],
+      "definition": "to send out a programme on television or radio",
+      "example": "The match will be broadcast live on Saturday afternoon."
+    },
+    {
+      "id": "comedy",
+      "word": "comedy",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "vígjáték",
+        "komédia"
+      ],
+      "definition": "entertainment that is funny and makes people laugh",
+      "example": "I prefer watching comedies to serious dramas."
+    },
+    {
+      "id": "documentary",
+      "word": "documentary",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "dokumentumfilm"
+      ],
+      "definition": "a film or television programme that gives facts about a real subject",
+      "example": "We watched a documentary about wildlife in Africa."
+    },
+    {
+      "id": "thriller",
+      "word": "thriller",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "thriller"
+      ],
+      "definition": "a book or film with an exciting story, often about crime",
+      "example": "I'm reading a psychological thriller at the moment."
+    },
+    {
+      "id": "adventure",
+      "word": "adventure",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kaland"
+      ],
+      "definition": "an unusual, exciting, or dangerous experience",
+      "example": "Their trip to the Amazon was a real adventure."
+    },
+    {
+      "id": "camping",
+      "word": "camping",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kempingezés",
+        "táborozás"
+      ],
+      "definition": "the activity of staying in a tent on holiday",
+      "example": "We go camping in the mountains every summer."
+    },
+    {
+      "id": "health",
+      "word": "health",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "egészség"
+      ],
+      "definition": "the condition of your body and the degree to which it is free from illness",
+      "example": "Regular exercise is important for good health."
+    },
+    {
+      "id": "illness",
+      "word": "illness",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "betegség"
+      ],
+      "definition": "a disease or period of sickness",
+      "example": "She missed school due to illness."
+    },
+    {
+      "id": "pain",
+      "word": "pain",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "fájdalom"
+      ],
+      "definition": "an unpleasant physical sensation caused by injury or illness",
+      "example": "I have a terrible pain in my back."
+    },
+    {
+      "id": "injury",
+      "word": "injury",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "sérülés"
+      ],
+      "definition": "physical harm or damage to someone's body",
+      "example": "He suffered a knee injury during the football match."
+    },
+    {
+      "id": "treatment",
+      "word": "treatment",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kezelés"
+      ],
+      "definition": "medical care given to help cure an illness or injury",
+      "example": "She is receiving treatment for her condition at the hospital."
+    },
+    {
+      "id": "medicine",
+      "word": "medicine",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "gyógyszer",
+        "orvostudomány"
+      ],
+      "definition": "a substance used to cure illness or relieve pain",
+      "example": "Remember to take your medicine three times a day."
+    },
+    {
+      "id": "prescription",
+      "word": "prescription",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "recept"
+      ],
+      "definition": "a written instruction from a doctor for medicine",
+      "example": "You'll need a prescription from your doctor to buy this medicine."
+    },
+    {
+      "id": "clinic",
+      "word": "clinic",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "klinika",
+        "rendelő"
+      ],
+      "definition": "a place where people receive medical treatment",
+      "example": "There's a health clinic on the high street."
+    },
+    {
+      "id": "recover",
+      "word": "recover",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "felépül",
+        "meggyógyul"
+      ],
+      "definition": "to become well again after illness or injury",
+      "example": "It took me two weeks to recover from the flu."
+    },
+    {
+      "id": "examine",
+      "word": "examine",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megvizsgál"
+      ],
+      "definition": "to look at someone or something carefully to check their condition",
+      "example": "The doctor examined my throat and said it was infected."
+    },
+    {
+      "id": "exercise",
+      "word": "exercise",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "testmozgás",
+        "gyakorlat"
+      ],
+      "definition": "physical activity that you do to stay healthy and strong",
+      "example": "You should do at least thirty minutes of exercise every day."
+    },
+    {
+      "id": "diet",
+      "word": "diet",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "étrend",
+        "diéta"
+      ],
+      "definition": "the food and drink that a person regularly consumes",
+      "example": "A healthy diet should include plenty of fruit and vegetables."
+    },
+    {
+      "id": "nutrition",
+      "word": "nutrition",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "táplálkozás",
+        "tápanyag"
+      ],
+      "definition": "the process of eating the right kind of food for good health",
+      "example": "Good nutrition is essential for children's development."
+    },
+    {
+      "id": "relationship",
+      "word": "relationship",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kapcsolat",
+        "viszony"
+      ],
+      "definition": "the way in which two people or groups feel about and behave towards each other",
+      "example": "She has a good relationship with her colleagues."
+    },
+    {
+      "id": "friendship",
+      "word": "friendship",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "barátság"
+      ],
+      "definition": "a close relationship between friends",
+      "example": "Their friendship has lasted for over twenty years."
+    },
+    {
+      "id": "partner",
+      "word": "partner",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "partner",
+        "társ"
+      ],
+      "definition": "a person you are married to or in a romantic relationship with",
+      "example": "She lives with her partner and their two children."
+    },
+    {
+      "id": "sibling",
+      "word": "sibling",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "testvér"
+      ],
+      "definition": "a brother or sister",
+      "example": "Do you have any siblings or are you an only child?"
+    },
+    {
+      "id": "ancestor",
+      "word": "ancestor",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "ős",
+        "előd"
+      ],
+      "definition": "a person in your family who lived a long time ago",
+      "example": "My ancestors came from Italy in the 19th century."
+    },
+    {
+      "id": "marry",
+      "word": "marry",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "házasodik",
+        "feleségül vesz"
+      ],
+      "definition": "to become the husband or wife of someone in a legal ceremony",
+      "example": "They're planning to marry next summer."
+    },
+    {
+      "id": "divorce",
+      "word": "divorce",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "elválik"
+      ],
+      "definition": "to legally end your marriage",
+      "example": "They decided to divorce after ten years of marriage."
+    },
+    {
+      "id": "argue",
+      "word": "argue",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "vitatkozik",
+        "veszekedik"
+      ],
+      "definition": "to disagree with someone in an angry way",
+      "example": "My parents often argue about money."
+    },
+    {
+      "id": "forgive",
+      "word": "forgive",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megbocsát"
+      ],
+      "definition": "to stop being angry with someone who has done something wrong",
+      "example": "I found it hard to forgive him for lying to me."
+    },
+    {
+      "id": "trust",
+      "word": "trust",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megbízik"
+      ],
+      "definition": "to believe that someone is honest and will not harm you",
+      "example": "I trust her completely with my secrets."
+    },
+    {
+      "id": "support",
+      "word": "support",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "támogat"
+      ],
+      "definition": "to give help or encouragement to someone",
+      "example": "My family has always supported me in my decisions."
+    },
+    {
+      "id": "care",
+      "word": "care",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "törődik",
+        "gondoskodik"
+      ],
+      "definition": "to feel interest or concern about something or someone",
+      "example": "She really cares about her students."
+    },
+    {
+      "id": "respect",
+      "word": "respect",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "tisztel",
+        "elismer"
+      ],
+      "definition": "to admire someone because of their qualities or achievements",
+      "example": "I respect him for his honesty and hard work."
+    },
+    {
+      "id": "emotion",
+      "word": "emotion",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "érzelem"
+      ],
+      "definition": "a strong feeling such as love, fear, or anger",
+      "example": "She was overcome with emotion when she heard the news."
+    },
+    {
+      "id": "anger",
+      "word": "anger",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "harag",
+        "düh"
+      ],
+      "definition": "a strong feeling of being annoyed or upset",
+      "example": "He couldn't hide his anger when he discovered the truth."
+    },
+    {
+      "id": "joy",
+      "word": "joy",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "öröm"
+      ],
+      "definition": "a feeling of great happiness",
+      "example": "She jumped for joy when she passed her exam."
+    },
+    {
+      "id": "sadness",
+      "word": "sadness",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szomorúság"
+      ],
+      "definition": "the feeling of being unhappy",
+      "example": "There was a feeling of sadness in the room after the announcement."
+    },
+    {
+      "id": "fear",
+      "word": "fear",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "félelem"
+      ],
+      "definition": "an unpleasant emotion caused by being aware of danger",
+      "example": "Many people have a fear of flying."
+    },
+    {
+      "id": "surprise",
+      "word": "surprise",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "meglepetés"
+      ],
+      "definition": "an unexpected or astonishing event or fact",
+      "example": "We're planning a surprise party for her birthday."
+    },
+    {
+      "id": "worry",
+      "word": "worry",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "aggódik",
+        "nyugtalankodik"
+      ],
+      "definition": "to feel anxious or concerned about something",
+      "example": "Don't worry, everything will be fine."
+    },
+    {
+      "id": "stress",
+      "word": "stress",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "stressz",
+        "feszültség"
+      ],
+      "definition": "a state of mental or emotional strain caused by difficult circumstances",
+      "example": "She's been under a lot of stress at work recently."
+    },
+    {
+      "id": "anxiety",
+      "word": "anxiety",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szorongás",
+        "aggodalom"
+      ],
+      "definition": "a feeling of worry or nervousness",
+      "example": "He suffers from anxiety before exams."
+    },
+    {
+      "id": "proud",
+      "word": "proud",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "büszke"
+      ],
+      "definition": "feeling pleased about something you have done or are connected with",
+      "example": "I'm very proud of my daughter's achievements."
+    },
+    {
+      "id": "jealous",
+      "word": "jealous",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "féltékeny",
+        "irigy"
+      ],
+      "definition": "feeling angry or unhappy because someone has something you want",
+      "example": "She was jealous of her sister's success."
+    },
+    {
+      "id": "upset",
+      "word": "upset",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "felzaklatott",
+        "ideges"
+      ],
+      "definition": "unhappy or disappointed about something",
+      "example": "He was very upset when his dog died."
+    },
+    {
+      "id": "nervous",
+      "word": "nervous",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "ideges",
+        "nyugtalan"
+      ],
+      "definition": "worried or anxious about something",
+      "example": "I always feel nervous before giving a presentation."
+    },
+    {
+      "id": "confident",
+      "word": "confident",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "magabiztos",
+        "biztos"
+      ],
+      "definition": "feeling sure about your abilities or that something will happen",
+      "example": "She's very confident about passing the test."
+    },
+    {
+      "id": "lonely",
+      "word": "lonely",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "magányos"
+      ],
+      "definition": "sad because you are alone and lack friends or company",
+      "example": "She felt lonely after moving to a new city."
+    },
+    {
+      "id": "grateful",
+      "word": "grateful",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "hálás"
+      ],
+      "definition": "feeling or showing thanks to someone",
+      "example": "I'm very grateful for all your help."
+    },
+    {
+      "id": "disappointed",
+      "word": "disappointed",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "csalódott"
+      ],
+      "definition": "sad because something has not happened or is not as good as expected",
+      "example": "He was disappointed when he didn't get the job."
+    },
+    {
+      "id": "ashamed",
+      "word": "ashamed",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "szégyenkező",
+        "megszégyenült"
+      ],
+      "definition": "feeling embarrassed or guilty about something",
+      "example": "She felt ashamed of her behaviour at the party."
+    },
+    {
+      "id": "relieved",
+      "word": "relieved",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "megkönnyebbült"
+      ],
+      "definition": "no longer feeling worried or anxious",
+      "example": "I was relieved to hear that the operation was successful."
     }
   ]
 }
