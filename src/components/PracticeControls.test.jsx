@@ -110,6 +110,35 @@ describe('PracticeControls', () => {
     })
   })
 
+  describe('level filter', () => {
+    it('should render level select with "All Levels" by default', () => {
+      render(<PracticeControls />)
+      
+      const select = screen.getByLabelText(/level/i)
+      expect(select).toHaveValue('all')
+    })
+
+    it('should change level filter when selecting', async () => {
+      const user = userEvent.setup()
+      render(<PracticeControls />)
+      
+      const select = screen.getByLabelText(/level/i)
+      await user.selectOptions(select, 'C1')
+      
+      expect(select).toHaveValue('C1')
+      expect(usePracticeStore.getState().levelFilter).toBe('C1')
+    })
+
+    it('should show all level options', () => {
+      render(<PracticeControls />)
+      
+      expect(screen.getByRole('option', { name: /all levels/i })).toBeInTheDocument()
+      expect(screen.getByRole('option', { name: /^B1$/ })).toBeInTheDocument()
+      expect(screen.getByRole('option', { name: /^B2$/ })).toBeInTheDocument()
+      expect(screen.getByRole('option', { name: /^C1$/ })).toBeInTheDocument()
+    })
+  })
+
   describe('stats display', () => {
     it('should show placeholder when no attempts made', () => {
       render(<PracticeControls />)

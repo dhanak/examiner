@@ -1,8 +1,7 @@
 .practice-controls {
-  background: var(--surface-color);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .control-section {
@@ -61,24 +60,28 @@
 
 /* Settings Row */
 .settings-row {
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0.75rem;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+  column-gap: 0.5rem;
 }
 
 .setting-group {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  display: contents;
 }
 
 .setting-group label {
   font-size: 0.9rem;
   color: var(--text-secondary);
   font-weight: 500;
+  text-align: right;
 }
 
 .direction-select,
-.filter-select {
+.filter-select,
+.level-select {
   padding: 0.5rem 0.75rem;
   border: 1px solid var(--border-color);
   border-radius: 4px;
@@ -87,15 +90,18 @@
   font-size: 0.9rem;
   cursor: pointer;
   transition: border-color 0.2s ease;
+  width: 100%;
 }
 
 .direction-select:hover,
-.filter-select:hover {
+.filter-select:hover,
+.level-select:hover {
   border-color: var(--primary-color);
 }
 
 .direction-select:focus,
-.filter-select:focus {
+.filter-select:focus,
+.level-select:focus {
   outline: none;
   border-color: var(--primary-color);
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
@@ -220,10 +226,6 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .practice-controls {
-    padding: 1rem;
-  }
-
   .mode-tabs {
     flex-direction: column;
   }
@@ -233,12 +235,11 @@
   }
 
   .settings-row {
-    flex-direction: column;
-    align-items: stretch;
+    grid-template-columns: 1fr;
   }
 
-  .setting-group {
-    justify-content: space-between;
+  .setting-group label {
+    text-align: left;
   }
 
   .parameter-controls .setting-group {

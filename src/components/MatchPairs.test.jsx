@@ -27,6 +27,7 @@ describe('MatchPairs', () => {
     usePracticeStore.setState({
       direction: 'hu-to-en',
       wordPoolFilter: 'all',
+      levelFilter: 'all',
       settings: {
         multipleChoice: { optionCount: 4 },
         matchPairs: { pairCount: 4 }

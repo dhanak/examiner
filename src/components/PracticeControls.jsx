@@ -6,12 +6,14 @@ export default function PracticeControls() {
     currentMode,
     direction,
     wordPoolFilter,
+    levelFilter,
     correctCount,
     incorrectCount,
     settings,
     setMode,
     setDirection,
     setWordPoolFilter,
+    setLevelFilter,
     updateSettings,
     getAccuracy,
     resetSession
@@ -32,6 +34,13 @@ export default function PracticeControls() {
     { id: 'all', label: 'All Words' },
     { id: 'learned', label: 'Learned Only' },
     { id: 'mistakes', label: 'Mistakes Only' }
+  ]
+
+  const levels = [
+    { id: 'all', label: 'All Levels' },
+    { id: 'B1', label: 'B1' },
+    { id: 'B2', label: 'B2' },
+    { id: 'C1', label: 'C1' }
   ]
 
   const totalAttempts = correctCount + incorrectCount
@@ -92,6 +101,22 @@ export default function PracticeControls() {
             {filters.map(filter => (
               <option key={filter.id} value={filter.id}>
                 {filter.label}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div className="setting-group">
+          <label htmlFor="level-select">Level:</label>
+          <select
+            id="level-select"
+            value={levelFilter}
+            onChange={(e) => setLevelFilter(e.target.value)}
+            className="level-select"
+          >
+            {levels.map(level => (
+              <option key={level.id} value={level.id}>
+                {level.label}
               </option>
             ))}
           </select>

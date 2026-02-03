@@ -13,6 +13,9 @@ export const usePracticeStore = create(
       // Word pool filter: 'all', 'learned', 'mistakes'
       wordPoolFilter: 'all',
       
+      // Level filter: 'all', 'B1', 'B2', 'C1'
+      levelFilter: 'all',
+      
       // Global statistics (persist across session resets)
       globalCorrectCount: 0,
       globalIncorrectCount: 0,
@@ -44,6 +47,8 @@ export const usePracticeStore = create(
       setDirection: (direction) => set({ direction }),
       
       setWordPoolFilter: (filter) => set({ wordPoolFilter: filter }),
+      
+      setLevelFilter: (level) => set({ levelFilter: level }),
       
       setCurrentQuestion: (question) => set({ currentQuestion: question }),
       

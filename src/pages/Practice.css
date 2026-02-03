@@ -13,6 +13,10 @@
 
 .practice-sidebar {
   flex: 0 0 400px;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
 }
 
 .practice-main {
@@ -55,6 +59,10 @@
 @media (max-width: 768px) {
   .practice-page {
     padding: 0.5rem;
+  }
+
+  .practice-sidebar {
+    padding: 1rem;
   }
 
   .coming-soon {

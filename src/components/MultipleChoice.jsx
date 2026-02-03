@@ -9,6 +9,7 @@ export default function MultipleChoice() {
   const {
     direction,
     wordPoolFilter,
+    levelFilter,
     settings,
     incrementCorrect,
     incrementIncorrect
@@ -30,7 +31,7 @@ export default function MultipleChoice() {
 
   const optionCount = settings.multipleChoice.optionCount
 
-  // Filter words based on word pool filter
+  // Filter words based on word pool filter and level filter
   const filteredWords = useMemo(() => {
     let words = vocabularyData.words
 
@@ -41,8 +42,13 @@ export default function MultipleChoice() {
       words = words.filter(w => mistakeWords.has(w.id))
     }
 
+    // Apply level filter
+    if (levelFilter !== 'all') {
+      words = words.filter(w => w.level === levelFilter)
+    }
+
     return words
-  }, [wordPoolFilter, learnedWords, mistakeWords])
+  }, [wordPoolFilter, levelFilter, learnedWords, mistakeWords])
 
   // Generate new question
   const generateQuestion = useCallback(() => {

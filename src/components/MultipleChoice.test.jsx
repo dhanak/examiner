@@ -29,6 +29,7 @@ describe('MultipleChoice', () => {
     usePracticeStore.mockReturnValue({
       direction: 'hu-to-en',
       wordPoolFilter: 'all',
+      levelFilter: 'all',
       settings: { multipleChoice: { optionCount: 4 } },
       incrementCorrect: vi.fn(),
       incrementIncorrect: vi.fn()
@@ -65,6 +66,7 @@ describe('MultipleChoice', () => {
     usePracticeStore.mockReturnValue({
       direction: 'hu-to-en',
       wordPoolFilter: 'all',
+      levelFilter: 'all',
       settings: { multipleChoice: { optionCount: 4 } },
       incrementCorrect: mockCorrect,
       incrementIncorrect: mockIncorrect
@@ -109,6 +111,7 @@ describe('MultipleChoice', () => {
     usePracticeStore.mockReturnValue({
       direction: 'en-to-hu',
       wordPoolFilter: 'all',
+      levelFilter: 'all',
       settings: { multipleChoice: { optionCount: 4 } },
       incrementCorrect: vi.fn(),
       incrementIncorrect: vi.fn()
@@ -132,6 +135,7 @@ describe('MultipleChoice', () => {
     usePracticeStore.mockReturnValue({
       direction: 'hu-to-en',
       wordPoolFilter: 'learned',
+      levelFilter: 'all',
       settings: { multipleChoice: { optionCount: 4 } },
       incrementCorrect: vi.fn(),
       incrementIncorrect: vi.fn()

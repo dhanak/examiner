@@ -8,6 +8,7 @@ import './FillBlanks.css'
 export default function FillBlanks() {
   const {
     wordPoolFilter,
+    levelFilter,
     settings,
     incrementCorrect,
     incrementIncorrect
@@ -33,8 +34,13 @@ export default function FillBlanks() {
       words = words.filter(w => mistakeWords.has(w.id))
     }
 
+    // Apply level filter
+    if (levelFilter !== 'all') {
+      words = words.filter(w => w.level === levelFilter)
+    }
+
     return words
-  }, [wordPoolFilter, learnedWords, mistakeWords])
+  }, [wordPoolFilter, levelFilter, learnedWords, mistakeWords])
 
   // State for current exercise
   const [word, setWord] = useState(null)
@@ -217,6 +223,13 @@ export default function FillBlanks() {
   // Keyboard shortcuts
   useEffect(() => {
     const handleKeyDown = (e) => {
+      // S for Show Answers (when incorrect)
+      if (e.key.toLowerCase() === 's' && feedback?.type === 'incorrect') {
+        e.preventDefault()
+        handleShowAnswers()
+        return
+      }
+
       // Enter for Check/Next
       if (e.key === 'Enter') {
         e.preventDefault()
@@ -272,7 +285,7 @@ export default function FillBlanks() {
 
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [feedback, handleCheck, handleNext, blanks, filledBlanks, options, showingAnswers])
+  }, [feedback, handleCheck, handleNext, handleShowAnswers, blanks, filledBlanks, options, showingAnswers])
 
   if (filteredWords.length === 0) {
     return (
@@ -452,7 +465,7 @@ export default function FillBlanks() {
               <div className={`feedback ${feedback.type}`}>{feedback.message}</div>
               <div className="incorrect-actions">
                 <button className="show-answer-button" onClick={handleShowAnswers}>
-                  Show Answers
+                  Show Answers (S)
                 </button>
                 <button className="next-button" onClick={handleNext}>
                   Next (Enter)
