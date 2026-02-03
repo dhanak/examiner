@@ -89,12 +89,15 @@ export default function MultipleChoice() {
     if (!hasInitializedRef.current) {
       hasInitializedRef.current = true
       const question = generateQuestion()
+      // We intentionally set state here to load a question on mount only
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setCurrentWord(question.word)
       setOptions(question.options)
       setCorrectAnswer(question.correctAnswer)
       setSelectedOption(null)
       setIsCorrect(null)
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const handleOptionClick = useCallback((option) => {

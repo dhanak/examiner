@@ -1,0 +1,297 @@
+import { useState, useEffect, useMemo, useCallback, useRef } from 'react'
+import { usePracticeStore } from '../store/practiceStore'
+import { useVocabularyStore } from '../store/vocabularyStore'
+import { getRandomWords, shuffleArray, getRandomTranslation } from '../utils/practiceUtils'
+import vocabularyData from '../data/vocabulary.json'
+import './MatchPairs.css'
+
+export default function MatchPairs() {
+  const {
+    direction,
+    wordPoolFilter,
+    settings,
+    incrementCorrect,
+    incrementIncorrect
+  } = usePracticeStore()
+
+  const {
+    learnedWords,
+    mistakeWords,
+    markAsMistake,
+    clearMistake
+  } = useVocabularyStore()
+
+  const pairCount = settings.matchPairs.pairCount
+
+  // Filter words based on word pool filter
+  const filteredWords = useMemo(() => {
+    let words = vocabularyData.words
+
+    if (wordPoolFilter === 'learned') {
+      words = words.filter(w => learnedWords.has(w.id))
+    } else if (wordPoolFilter === 'mistakes') {
+      words = words.filter(w => mistakeWords.has(w.id))
+    }
+
+    return words
+  }, [wordPoolFilter, learnedWords, mistakeWords])
+
+  // Generate pairs for matching
+  const generatePairs = useCallback(() => {
+    if (filteredWords.length < pairCount) {
+      return { leftItems: [], rightItems: [], pairs: new Map() }
+    }
+
+    // Get random words for this round
+    const selectedWords = getRandomWords(filteredWords, pairCount)
+    const qwertyKeys = 'QWERTYUIOP'
+
+    // Create pairs with IDs
+    const pairs = new Map()
+    const leftItems = []
+    const rightItems = []
+    const usedWordIds = new Set()
+
+    selectedWords.forEach((word, index) => {
+      // Skip if this word ID is already used
+      if (usedWordIds.has(word.id)) {
+        return
+      }
+      usedWordIds.add(word.id)
+
+      const pairId = `pair-${index}`
+      pairs.set(pairId, word.id)
+
+      if (direction === 'hu-to-en') {
+        // Left: English (with number hotkey), Right: Hungarian (hotkey assigned after shuffle)
+        leftItems.push({
+          id: `left-${index}`,
+          pairId,
+          text: word.word,
+          type: 'english',
+          hotkey: String(index + 1)
+        })
+        rightItems.push({
+          id: `right-${index}`,
+          pairId,
+          text: getRandomTranslation(word),
+          type: 'hungarian',
+          hotkey: '' // Will be assigned after shuffle
+        })
+      } else {
+        // Left: Hungarian (with number hotkey), Right: English (hotkey assigned after shuffle)
+        leftItems.push({
+          id: `left-${index}`,
+          pairId,
+          text: getRandomTranslation(word),
+          type: 'hungarian',
+          hotkey: String(index + 1)
+        })
+        rightItems.push({
+          id: `right-${index}`,
+          pairId,
+          text: word.word,
+          type: 'english',
+          hotkey: '' // Will be assigned after shuffle
+        })
+      }
+    })
+
+    // Only keep items up to pairCount
+    const trimmedLeft = leftItems.slice(0, pairCount)
+    const trimmedRight = rightItems.slice(0, pairCount)
+
+    // Shuffle right side to make matching non-trivial
+    const shuffledRight = shuffleArray(trimmedRight)
+
+    // Assign hotkeys after shuffle based on new position
+    const rightItemsWithHotkeys = shuffledRight.map((item, index) => ({
+      ...item,
+      hotkey: qwertyKeys[index] || ''
+    }))
+
+    return {
+      leftItems: trimmedLeft,
+      rightItems: rightItemsWithHotkeys,
+      pairs
+    }
+  }, [filteredWords, pairCount, direction])
+
+  // State management
+  const [leftItems, setLeftItems] = useState([])
+  const [rightItems, setRightItems] = useState([])
+  const [pairs, setPairs] = useState(new Map())
+  const [selectedLeft, setSelectedLeft] = useState(null)
+  const [selectedRight, setSelectedRight] = useState(null)
+  const [matches, setMatches] = useState(new Set())
+  const hasInitializedRef = useRef(false)
+
+  // Initialize on mount
+  useEffect(() => {
+    if (!hasInitializedRef.current) {
+      hasInitializedRef.current = true
+      const { leftItems: left, rightItems: right, pairs: newPairs } = generatePairs()
+      // We intentionally set state here to load pairs on mount only
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setLeftItems(left)
+      setRightItems(right)
+      setPairs(newPairs)
+      setSelectedLeft(null)
+      setSelectedRight(null)
+      setMatches(new Set())
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  const handleItemClick = useCallback((itemId, side) => {
+    // If the item is already matched, don't do anything
+    const item = side === 'left' 
+      ? leftItems.find(i => i.id === itemId)
+      : rightItems.find(i => i.id === itemId)
+    
+    if (item && matches.has(item.pairId)) {
+      return
+    }
+
+    // Determine new selection state
+    let newSelectedLeft = selectedLeft
+    let newSelectedRight = selectedRight
+
+    if (side === 'left') {
+      newSelectedLeft = selectedLeft === itemId ? null : itemId
+    } else {
+      newSelectedRight = selectedRight === itemId ? null : itemId
+    }
+
+    // Update selection
+    setSelectedLeft(newSelectedLeft)
+    setSelectedRight(newSelectedRight)
+
+    // Check if we now have both selected
+    if (newSelectedLeft && newSelectedRight) {
+      const leftItem = leftItems.find(i => i.id === newSelectedLeft)
+      const rightItem = rightItems.find(i => i.id === newSelectedRight)
+
+      if (leftItem && rightItem) {
+        const isCorrect = leftItem.pairId === rightItem.pairId
+
+        if (isCorrect) {
+          const wordId = pairs.get(leftItem.pairId)
+          incrementCorrect()
+          clearMistake(wordId)
+          setMatches(prev => new Set([...prev, leftItem.pairId]))
+        } else {
+          const wordId = pairs.get(leftItem.pairId)
+          incrementIncorrect()
+          markAsMistake(wordId)
+        }
+
+        // Clear selection after a brief delay
+        setTimeout(() => {
+          setSelectedLeft(null)
+          setSelectedRight(null)
+        }, 300)
+      }
+    }
+  }, [selectedLeft, selectedRight, leftItems, rightItems, pairs, matches, incrementCorrect, incrementIncorrect, markAsMistake, clearMistake])
+
+  const handleReset = useCallback(() => {
+    const { leftItems: left, rightItems: right, pairs: newPairs } = generatePairs()
+    setLeftItems(left)
+    setRightItems(right)
+    setPairs(newPairs)
+    setSelectedLeft(null)
+    setSelectedRight(null)
+    setMatches(new Set())
+  }, [generatePairs])
+
+  const allMatched = leftItems.length > 0 && matches.size === leftItems.length
+
+  // Add keyboard shortcuts (must be before conditional return)
+  useEffect(() => {
+    if (filteredWords.length < pairCount) {
+      return
+    }
+
+    const qwertyKeys = 'QWERTYUIOP'
+
+    const handleKeyDown = (e) => {
+      // Check for number keys (1-9) for left column
+      if (e.key >= '1' && e.key <= '9') {
+        const index = parseInt(e.key) - 1
+        if (index < leftItems.length) {
+          handleItemClick(leftItems[index].id, 'left')
+        }
+      }
+      // Check for QWERTY keys for right column
+      else if (qwertyKeys.includes(e.key.toUpperCase())) {
+        const index = qwertyKeys.indexOf(e.key.toUpperCase())
+        if (index < rightItems.length) {
+          handleItemClick(rightItems[index].id, 'right')
+        }
+      }
+      // Check for Enter key on new round button
+      else if (e.key === 'Enter' && allMatched) {
+        e.preventDefault()
+        handleReset()
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [leftItems, rightItems, allMatched, handleItemClick, handleReset, filteredWords.length, pairCount])
+
+  if (filteredWords.length < pairCount) {
+    return (
+      <div className="match-pairs">
+        <div className="no-words-message">
+          <p>Not enough words available for matching.</p>
+          <p>Try changing the word pool filter or add more words to your collection.</p>
+        </div>
+      </div>
+    )
+  }
+
+  return (
+    <div className="match-pairs">
+      <div className="matching-container">
+        <div className="column left-column">
+          {leftItems.map(item => (
+            <button
+              key={item.id}
+              className={`match-item ${selectedLeft === item.id ? 'selected' : ''} ${matches.has(item.pairId) ? 'matched' : ''}`}
+              onClick={() => handleItemClick(item.id, 'left')}
+              disabled={matches.has(item.pairId)}
+            >
+              <span className="hotkey">{item.hotkey}</span>
+              {item.text}
+            </button>
+          ))}
+        </div>
+
+        <div className="column right-column">
+          {rightItems.map(item => (
+            <button
+              key={item.id}
+              className={`match-item ${selectedRight === item.id ? 'selected' : ''} ${matches.has(item.pairId) ? 'matched' : ''}`}
+              onClick={() => handleItemClick(item.id, 'right')}
+              disabled={matches.has(item.pairId)}
+            >
+              <span className="hotkey">{item.hotkey}</span>
+              {item.text}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {allMatched && (
+        <div className="completion-message">
+          <p>✓ All pairs matched! Great job!</p>
+          <button className="new-round-button" onClick={handleReset}>
+            New Round (Enter)
+          </button>
+        </div>
+      )}
+    </div>
+  )
+}

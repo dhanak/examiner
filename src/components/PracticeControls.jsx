@@ -60,21 +60,24 @@ export default function PracticeControls() {
 
       {/* Settings Row: Direction + Word Pool Filter */}
       <div className="control-section settings-row">
-        <div className="setting-group">
-          <label htmlFor="direction-select">Direction:</label>
-          <select
-            id="direction-select"
-            value={direction}
-            onChange={(e) => setDirection(e.target.value)}
-            className="direction-select"
-          >
-            {directions.map(dir => (
-              <option key={dir.id} value={dir.id}>
-                {dir.label}
-              </option>
-            ))}
-          </select>
-        </div>
+        {/* Only show direction for multiple-choice mode */}
+        {currentMode === 'multiple-choice' && (
+          <div className="setting-group">
+            <label htmlFor="direction-select">Direction:</label>
+            <select
+              id="direction-select"
+              value={direction}
+              onChange={(e) => setDirection(e.target.value)}
+              className="direction-select"
+            >
+              {directions.map(dir => (
+                <option key={dir.id} value={dir.id}>
+                  {dir.label}
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
 
         <div className="setting-group">
           <label htmlFor="filter-select">Word Pool:</label>
