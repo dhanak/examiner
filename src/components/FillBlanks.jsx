@@ -39,12 +39,13 @@ export default function FillBlanks() {
   // State for current exercise
   const [word, setWord] = useState(null)
   const [sentence, setSentence] = useState('')
-  const [blanks, setBlanks] = useState([]) // Array of {id, wordIdx, correctWord}
+  const [blanks, setBlanks] = useState([]) // Array of {id, wordIdx, correctWord, wordData}
   const [options, setOptions] = useState([]) // Array of {id, word, isCorrect}
   const [filledBlanks, setFilledBlanks] = useState({}) // {blankId: wordId}
   const [draggedLozenge, setDraggedLozenge] = useState(null) // Track dragged word
   const [feedback, setFeedback] = useState(null) // {type, message}
   const [showingAnswers, setShowingAnswers] = useState(false) // Showing correct answers (disables lozenges)
+  const [hoveredBlankId, setHoveredBlankId] = useState(null) // Track hovered correct answer in sentence
 
   const hasInitializedRef = useRef(false)
 
@@ -57,17 +58,39 @@ export default function FillBlanks() {
     const example = selectedWord.example
     const words = example.split(/\s+/)
 
-    // Create blanks by randomly selecting word positions from the sentence
+    // Find the index of the selected word in the sentence to ensure it's always a blank
+    const selectedWordIndex = words.findIndex(w =>
+      w.toLowerCase().replace(/[^a-z]/g, '') === selectedWord.word.toLowerCase()
+    )
+
+    // Create blanks: ensure selectedWord is always one of them
     const availableIndices = words.map((_, idx) => idx)
     const numBlanks = Math.min(blankCount, availableIndices.length)
-    const blankIndices = shuffleArray(availableIndices).slice(0, numBlanks)
+    
+    // Start with the selected word's index
+    let blankIndices = selectedWordIndex >= 0 ? [selectedWordIndex] : []
+    
+    // Add additional random indices to reach numBlanks
+    if (numBlanks > blankIndices.length) {
+      const remainingIndices = availableIndices.filter(idx => !blankIndices.includes(idx))
+      const additionalIndices = shuffleArray(remainingIndices).slice(0, numBlanks - blankIndices.length)
+      blankIndices = blankIndices.concat(additionalIndices)
+    }
+    
+    // Shuffle the final indices for visual variety
+    blankIndices = shuffleArray(blankIndices)
 
-    // Build blanks array with correct words
-    const newBlanks = blankIndices.map((idx) => ({
-      id: `blank-${idx}`,
-      wordIdx: idx,
-      correctWord: words[idx].toLowerCase().replace(/[^a-z]/g, '')
-    }))
+    // Build blanks array with correct words and their vocabulary data
+    const newBlanks = blankIndices.map((idx) => {
+      const correctWord = words[idx].toLowerCase().replace(/[^a-z]/g, '')
+      const wordData = vocabularyData.words.find(w => w.word.toLowerCase() === correctWord)
+      return {
+        id: `blank-${idx}`,
+        wordIdx: idx,
+        correctWord,
+        wordData // Store full word object for tooltip display
+      }
+    })
 
     // Get distractor words (exclude correct words and duplicates)
     const correctWords = new Set(newBlanks.map(b => b.correctWord.toLowerCase()))
@@ -279,6 +302,8 @@ export default function FillBlanks() {
       // Show correct answer if showingAnswers is true
       const shouldShowCorrect = showingAnswers
       const correctWord = shouldShowCorrect ? blank.correctWord : null
+      const isHovered = hoveredBlankId === blank.id
+      const showTooltip = shouldShowCorrect && isHovered && blank.wordData
 
       return (
         <span key={idx} className="blank-slot">
@@ -300,8 +325,41 @@ export default function FillBlanks() {
               <span className="word-text">{filledOption.word}</span>
             </span>
           ) : shouldShowCorrect ? (
-            <span className="receptacle-lozenge correct-answer">
+            <span 
+              className="receptacle-lozenge correct-answer"
+              onMouseEnter={() => setHoveredBlankId(blank.id)}
+              onMouseLeave={() => setHoveredBlankId(null)}
+              style={{ position: 'relative' }}
+            >
               <span className="word-text">{correctWord}</span>
+              {/* Tooltip for correct answer */}
+              {showTooltip && (
+                <div className="word-tooltip">
+                  <div className="tooltip-header">
+                    <div className="tooltip-word">{blank.wordData.word}</div>
+                    <div className="tooltip-meta">
+                      <span className="tooltip-level">{blank.wordData.level}</span>
+                      <span className="tooltip-pos">{blank.wordData.partOfSpeech}</span>
+                    </div>
+                  </div>
+                  
+                  <div className="tooltip-translations">
+                    <strong>Magyar:</strong> {blank.wordData.translations && blank.wordData.translations.join(', ')}
+                  </div>
+                  
+                  {blank.wordData.definition && (
+                    <div className="tooltip-definition">
+                      <strong>Definition:</strong> {blank.wordData.definition}
+                    </div>
+                  )}
+                  
+                  {blank.wordData.example && (
+                    <div className="tooltip-example">
+                      <strong>Example:</strong> {blank.wordData.example}
+                    </div>
+                  )}
+                </div>
+              )}
             </span>
           ) : (
             <span
