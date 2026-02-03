@@ -5,7 +5,10 @@
       "word": "abolish",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["eltöröl", "megszüntet"],
+      "translations": [
+        "eltöröl",
+        "megszüntet"
+      ],
       "definition": "to officially end a law, system, or practice",
       "example": "The government voted to abolish the outdated tax system."
     },
@@ -14,7 +17,10 @@
       "word": "absurd",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["abszurd", "nevetséges"],
+      "translations": [
+        "abszurd",
+        "nevetséges"
+      ],
       "definition": "completely unreasonable or illogical",
       "example": "It would be absurd to expect everyone to agree on this issue."
     },
@@ -23,7 +29,10 @@
       "word": "accelerate",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["gyorsít", "felgyorsul"],
+      "translations": [
+        "gyorsít",
+        "felgyorsul"
+      ],
       "definition": "to increase in speed or make something happen faster",
       "example": "The company plans to accelerate its expansion into new markets."
     },
@@ -32,7 +41,10 @@
       "word": "accessible",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["hozzáférhető", "elérhető"],
+      "translations": [
+        "hozzáférhető",
+        "elérhető"
+      ],
       "definition": "able to be reached or obtained easily",
       "example": "The building is accessible to people with disabilities."
     },
@@ -41,7 +53,10 @@
       "word": "accumulate",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["felhalmoz", "gyűjt"],
+      "translations": [
+        "felhalmoz",
+        "gyűjt"
+      ],
       "definition": "to gradually gather or acquire more of something",
       "example": "Dust tends to accumulate in corners if not cleaned regularly."
     },
@@ -50,7 +65,10 @@
       "word": "adverse",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["kedvezőtlen", "hátrányos"],
+      "translations": [
+        "kedvezőtlen",
+        "hátrányos"
+      ],
       "definition": "preventing success or development; harmful",
       "example": "Adverse weather conditions forced the cancellation of the event."
     },
@@ -59,7 +77,10 @@
       "word": "advocate",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["támogat", "szorgalmaz"],
+      "translations": [
+        "támogat",
+        "szorgalmaz"
+      ],
       "definition": "to publicly support or recommend a particular cause or policy",
       "example": "Many experts advocate a balanced approach to climate change."
     },
@@ -68,7 +89,10 @@
       "word": "aftermath",
       "level": "C1",
       "partOfSpeech": "noun",
-      "translations": ["utóhatás", "következmény"],
+      "translations": [
+        "utóhatás",
+        "következmény"
+      ],
       "definition": "the consequences or after-effects of a significant event",
       "example": "The country is still dealing with the aftermath of the natural disaster."
     },
@@ -77,7 +101,10 @@
       "word": "allocate",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["kioszt", "eloszt"],
+      "translations": [
+        "kioszt",
+        "eloszt"
+      ],
       "definition": "to distribute resources or duties for a particular purpose",
       "example": "The committee will allocate funds to various departments."
     },
@@ -86,7 +113,10 @@
       "word": "amend",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["módosít", "kijavít"],
+      "translations": [
+        "módosít",
+        "kijavít"
+      ],
       "definition": "to make minor changes to improve a text or document",
       "example": "Parliament voted to amend the constitution."
     },
@@ -95,7 +125,10 @@
       "word": "anonymous",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["névtelen", "ismeretlen"],
+      "translations": [
+        "névtelen",
+        "ismeretlen"
+      ],
       "definition": "not identified by name; of unknown identity",
       "example": "The donor wishes to remain anonymous."
     },
@@ -104,7 +137,10 @@
       "word": "arbitrary",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["önkényes", "esetleges"],
+      "translations": [
+        "önkényes",
+        "esetleges"
+      ],
       "definition": "based on random choice rather than reason or system",
       "example": "The decision seemed arbitrary and unfair to many employees."
     },
@@ -113,7 +149,10 @@
       "word": "articulate",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["ékesszóló", "világos"],
+      "translations": [
+        "ékesszóló",
+        "világos"
+      ],
       "definition": "able to express ideas clearly and effectively",
       "example": "She is an articulate speaker who captivates her audience."
     },
@@ -122,7 +161,10 @@
       "word": "aspire",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["törekszik", "vágyik"],
+      "translations": [
+        "törekszik",
+        "vágyik"
+      ],
       "definition": "to have ambitions to achieve something",
       "example": "Many young athletes aspire to compete in the Olympics."
     },
@@ -131,7 +173,10 @@
       "word": "authentic",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["hiteles", "eredeti"],
+      "translations": [
+        "hiteles",
+        "eredeti"
+      ],
       "definition": "genuine; not a copy or fake",
       "example": "The museum only displays authentic artifacts."
     },
@@ -140,7 +185,10 @@
       "word": "autonomy",
       "level": "C1",
       "partOfSpeech": "noun",
-      "translations": ["autonómia", "önállóság"],
+      "translations": [
+        "autonómia",
+        "önállóság"
+      ],
       "definition": "the right or condition of self-government",
       "example": "The region was granted greater autonomy in decision-making."
     },
@@ -149,7 +197,10 @@
       "word": "bankruptcy",
       "level": "C1",
       "partOfSpeech": "noun",
-      "translations": ["csőd", "fizetésképtelenség"],
+      "translations": [
+        "csőd",
+        "fizetésképtelenség"
+      ],
       "definition": "legal status of being unable to repay debts",
       "example": "The company filed for bankruptcy after years of losses."
     },
@@ -158,7 +209,10 @@
       "word": "benchmark",
       "level": "C1",
       "partOfSpeech": "noun",
-      "translations": ["mérce", "viszonyítási alap"],
+      "translations": [
+        "mérce",
+        "viszonyítási alap"
+      ],
       "definition": "a standard or point of reference for measuring quality",
       "example": "This study serves as a benchmark for future research."
     },
@@ -167,7 +221,10 @@
       "word": "betray",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["elárul", "megcsal"],
+      "translations": [
+        "elárul",
+        "megcsal"
+      ],
       "definition": "to be disloyal or reveal secrets",
       "example": "He felt betrayed when his friend shared his confidential information."
     },
@@ -176,7 +233,10 @@
       "word": "bizarre",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["bizarr", "furcsa"],
+      "translations": [
+        "bizarr",
+        "furcsa"
+      ],
       "definition": "very strange or unusual",
       "example": "The witness gave a bizarre account of what happened."
     },
@@ -185,7 +245,10 @@
       "word": "cease",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["megszűnik", "abbahagy"],
+      "translations": [
+        "megszűnik",
+        "abbahagy"
+      ],
       "definition": "to stop or bring to an end",
       "example": "The fighting ceased after the peace agreement was signed."
     },
@@ -194,7 +257,10 @@
       "word": "circulate",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["kering", "terjed"],
+      "translations": [
+        "kering",
+        "terjed"
+      ],
       "definition": "to move continuously through a system or area",
       "example": "Rumours began to circulate about the company's financial problems."
     },
@@ -203,7 +269,10 @@
       "word": "civic",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["állampolgári", "közösségi"],
+      "translations": [
+        "állampolgári",
+        "közösségi"
+      ],
       "definition": "relating to a city or citizenship",
       "example": "It's our civic duty to vote in elections."
     },
@@ -212,7 +281,10 @@
       "word": "commodity",
       "level": "C1",
       "partOfSpeech": "noun",
-      "translations": ["áru", "nyersanyag"],
+      "translations": [
+        "áru",
+        "nyersanyag"
+      ],
       "definition": "a raw material or primary product that can be bought and sold",
       "example": "Oil is a valuable commodity in the global market."
     },
@@ -221,7 +293,10 @@
       "word": "compatible",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["kompatibilis", "összeegyeztethető"],
+      "translations": [
+        "kompatibilis",
+        "összeegyeztethető"
+      ],
       "definition": "able to exist or work together without conflict",
       "example": "The new software is compatible with all major operating systems."
     },
@@ -230,7 +305,10 @@
       "word": "competent",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["hozzáértő", "képzett"],
+      "translations": [
+        "hozzáértő",
+        "képzett"
+      ],
       "definition": "having the necessary ability or skill",
       "example": "She is a competent manager who handles challenges well."
     },
@@ -239,7 +317,10 @@
       "word": "conceivable",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["elképzelhető", "lehetséges"],
+      "translations": [
+        "elképzelhető",
+        "lehetséges"
+      ],
       "definition": "capable of being imagined or understood",
       "example": "It's conceivable that technology will solve many current problems."
     },
@@ -248,7 +329,10 @@
       "word": "consecutive",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["egymást követő", "sorozatos"],
+      "translations": [
+        "egymást követő",
+        "sorozatos"
+      ],
       "definition": "following one after another without interruption",
       "example": "She won the championship for three consecutive years."
     },
@@ -257,7 +341,10 @@
       "word": "controversy",
       "level": "C1",
       "partOfSpeech": "noun",
-      "translations": ["vita", "ellentmondás"],
+      "translations": [
+        "vita",
+        "ellentmondás"
+      ],
       "definition": "prolonged public disagreement or heated discussion",
       "example": "The new policy sparked considerable controversy."
     },
@@ -266,7 +353,10 @@
       "word": "conventional",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["hagyományos", "szokásos"],
+      "translations": [
+        "hagyományos",
+        "szokásos"
+      ],
       "definition": "based on what is generally done or believed",
       "example": "He rejected conventional methods in favour of innovation."
     },
@@ -275,7 +365,10 @@
       "word": "credibility",
       "level": "C1",
       "partOfSpeech": "noun",
-      "translations": ["hitelesség", "megbízhatóság"],
+      "translations": [
+        "hitelesség",
+        "megbízhatóság"
+      ],
       "definition": "the quality of being trusted and believed in",
       "example": "The scandal damaged the politician's credibility."
     },
@@ -284,7 +377,10 @@
       "word": "cultivate",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["művel", "fejleszt"],
+      "translations": [
+        "művel",
+        "fejleszt"
+      ],
       "definition": "to try to develop or improve something",
       "example": "She cultivated strong relationships with her colleagues."
     },
@@ -293,7 +389,10 @@
       "word": "deficiency",
       "level": "C1",
       "partOfSpeech": "noun",
-      "translations": ["hiány", "hiányosság"],
+      "translations": [
+        "hiány",
+        "hiányosság"
+      ],
       "definition": "a lack or shortage of something essential",
       "example": "Vitamin D deficiency can cause various health problems."
     },
@@ -302,7 +401,10 @@
       "word": "deteriorate",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["romlik", "leépül"],
+      "translations": [
+        "romlik",
+        "leépül"
+      ],
       "definition": "to become progressively worse",
       "example": "The patient's condition began to deteriorate rapidly."
     },
@@ -311,7 +413,10 @@
       "word": "deviate",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["eltér", "letér"],
+      "translations": [
+        "eltér",
+        "letér"
+      ],
       "definition": "to depart from an established course",
       "example": "The pilot had to deviate from the flight path due to storms."
     },
@@ -320,7 +425,10 @@
       "word": "diminish",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["csökken", "kisebbít"],
+      "translations": [
+        "csökken",
+        "kisebbít"
+      ],
       "definition": "to make or become less",
       "example": "The importance of this issue should not be diminished."
     },
@@ -329,7 +437,10 @@
       "word": "disclose",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["felfed", "közöl"],
+      "translations": [
+        "felfed",
+        "közöl"
+      ],
       "definition": "to make information known publicly",
       "example": "The company refused to disclose details about the merger."
     },
@@ -338,7 +449,10 @@
       "word": "discrepancy",
       "level": "C1",
       "partOfSpeech": "noun",
-      "translations": ["eltérés", "ellentmondás"],
+      "translations": [
+        "eltérés",
+        "ellentmondás"
+      ],
       "definition": "a difference between things that should be the same",
       "example": "There was a discrepancy between the two reports."
     },
@@ -347,7 +461,10 @@
       "word": "disruptive",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["zavaró", "bomlasztó"],
+      "translations": [
+        "zavaró",
+        "bomlasztó"
+      ],
       "definition": "causing disturbance or problems",
       "example": "The student's disruptive behaviour interrupted the lesson."
     },
@@ -356,7 +473,10 @@
       "word": "dubious",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["kétséges", "gyanús"],
+      "translations": [
+        "kétséges",
+        "gyanús"
+      ],
       "definition": "doubtful or questionable",
       "example": "The company's financial practices seem dubious."
     },
@@ -365,7 +485,10 @@
       "word": "eligible",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["jogosult", "alkalmas"],
+      "translations": [
+        "jogosult",
+        "alkalmas"
+      ],
       "definition": "having the right to do or receive something",
       "example": "Only citizens are eligible to vote in national elections."
     },
@@ -374,7 +497,10 @@
       "word": "elusive",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["megfoghatatlan", "nehezen elérhető"],
+      "translations": [
+        "megfoghatatlan",
+        "nehezen elérhető"
+      ],
       "definition": "difficult to find, catch, or achieve",
       "example": "Success in this field can be elusive without proper training."
     },
@@ -383,7 +509,10 @@
       "word": "enforcement",
       "level": "C1",
       "partOfSpeech": "noun",
-      "translations": ["végrehajtás", "kikényszerítés"],
+      "translations": [
+        "végrehajtás",
+        "kikényszerítés"
+      ],
       "definition": "the act of compelling observance of a law or rule",
       "example": "Enforcement of traffic laws has become stricter recently."
     },
@@ -392,7 +521,10 @@
       "word": "entity",
       "level": "C1",
       "partOfSpeech": "noun",
-      "translations": ["entitás", "szervezet"],
+      "translations": [
+        "entitás",
+        "szervezet"
+      ],
       "definition": "a thing with distinct and independent existence",
       "example": "The company operates as a separate legal entity."
     },
@@ -401,7 +533,10 @@
       "word": "eradicate",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["kiirt", "felszámol"],
+      "translations": [
+        "kiirt",
+        "felszámol"
+      ],
       "definition": "to destroy completely; to eliminate",
       "example": "The goal is to eradicate poverty within the next decade."
     },
@@ -410,7 +545,10 @@
       "word": "exert",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["gyakorol", "kifejt"],
+      "translations": [
+        "gyakorol",
+        "kifejt"
+      ],
       "definition": "to apply or bring to bear (influence, force, etc.)",
       "example": "She exerted considerable influence over the committee's decision."
     },
@@ -419,7 +557,10 @@
       "word": "feasible",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["megvalósítható", "kivitelezhető"],
+      "translations": [
+        "megvalósítható",
+        "kivitelezhető"
+      ],
       "definition": "possible and practical to do easily",
       "example": "The project is technically feasible but requires significant funding."
     },
@@ -428,7 +569,10 @@
       "word": "fluctuate",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["ingadozik", "változik"],
+      "translations": [
+        "ingadozik",
+        "változik"
+      ],
       "definition": "to rise and fall irregularly in number or amount",
       "example": "Stock prices fluctuate depending on market conditions."
     },
@@ -437,7 +581,10 @@
       "word": "formidable",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["félelmetes", "jelentős"],
+      "translations": [
+        "félelmetes",
+        "jelentős"
+      ],
       "definition": "inspiring fear or respect through being large or powerful",
       "example": "The team faces a formidable opponent in the finals."
     },
@@ -446,7 +593,10 @@
       "word": "foster",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["elősegít", "támogat"],
+      "translations": [
+        "elősegít",
+        "támogat"
+      ],
       "definition": "to encourage the development of something",
       "example": "The programme aims to foster creativity in young people."
     },
@@ -455,7 +605,10 @@
       "word": "grim",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["komor", "barátságtalan"],
+      "translations": [
+        "komor",
+        "barátságtalan"
+      ],
       "definition": "forbidding or uninviting; very serious or gloomy",
       "example": "The economic forecast looks grim for the coming year."
     },
@@ -464,7 +617,10 @@
       "word": "implication",
       "level": "C1",
       "partOfSpeech": "noun",
-      "translations": ["következmény", "jelentés"],
+      "translations": [
+        "következmény",
+        "jelentés"
+      ],
       "definition": "a conclusion that can be drawn from something",
       "example": "The implications of this discovery are far-reaching."
     },
@@ -473,7 +629,10 @@
       "word": "incentive",
       "level": "C1",
       "partOfSpeech": "noun",
-      "translations": ["ösztönzés", "motiváció"],
+      "translations": [
+        "ösztönzés",
+        "motiváció"
+      ],
       "definition": "something that motivates or encourages someone to do something",
       "example": "The company offers financial incentives for top performers."
     },
@@ -482,7 +641,10 @@
       "word": "inevitable",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["elkerülhetetlen", "óhatatlan"],
+      "translations": [
+        "elkerülhetetlen",
+        "óhatatlan"
+      ],
       "definition": "certain to happen; unavoidable",
       "example": "Change is inevitable in any growing organization."
     },
@@ -491,7 +653,10 @@
       "word": "infrastructure",
       "level": "C1",
       "partOfSpeech": "noun",
-      "translations": ["infrastruktúra", "alapszerkezet"],
+      "translations": [
+        "infrastruktúra",
+        "alapszerkezet"
+      ],
       "definition": "the basic physical systems and facilities of a country or region",
       "example": "The government plans to invest heavily in infrastructure development."
     },
@@ -500,7 +665,10 @@
       "word": "integrity",
       "level": "C1",
       "partOfSpeech": "noun",
-      "translations": ["feddhetetlenség", "integritás"],
+      "translations": [
+        "feddhetetlenség",
+        "integritás"
+      ],
       "definition": "the quality of being honest and having strong moral principles",
       "example": "She is known for her integrity and ethical standards."
     },
@@ -509,7 +677,10 @@
       "word": "liability",
       "level": "C1",
       "partOfSpeech": "noun",
-      "translations": ["kötelezettség", "tartozás"],
+      "translations": [
+        "kötelezettség",
+        "tartozás"
+      ],
       "definition": "the state of being responsible for something; a financial obligation",
       "example": "The company's liabilities exceed its assets."
     },
@@ -518,7 +689,10 @@
       "word": "mainstream",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["fősodratú", "mainstream"],
+      "translations": [
+        "fősodratú",
+        "mainstream"
+      ],
       "definition": "belonging to or characteristic of a principal, dominant, or widely accepted group",
       "example": "Her views are outside mainstream political opinion."
     },
@@ -527,7 +701,10 @@
       "word": "mandatory",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["kötelező", "előírt"],
+      "translations": [
+        "kötelező",
+        "előírt"
+      ],
       "definition": "required by law or rules; compulsory",
       "example": "Wearing seatbelts is mandatory in most countries."
     },
@@ -536,7 +713,10 @@
       "word": "negligible",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["elhanyagolható", "jelentéktelen"],
+      "translations": [
+        "elhanyagolható",
+        "jelentéktelen"
+      ],
       "definition": "so small or unimportant as to not be worth considering",
       "example": "The risk of side effects is negligible."
     },
@@ -545,7 +725,10 @@
       "word": "notorious",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["hírhedt", "rossz hírű"],
+      "translations": [
+        "hírhedt",
+        "rossz hírű"
+      ],
       "definition": "famous or well-known for something bad",
       "example": "The area is notorious for high crime rates."
     },
@@ -554,7 +737,10 @@
       "word": "obsolete",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["elavult", "idejétmúlt"],
+      "translations": [
+        "elavult",
+        "idejétmúlt"
+      ],
       "definition": "no longer in use; out of date",
       "example": "Many traditional skills have become obsolete in the digital age."
     },
@@ -563,7 +749,10 @@
       "word": "offset",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["ellensúlyoz", "kompenzál"],
+      "translations": [
+        "ellensúlyoz",
+        "kompenzál"
+      ],
       "definition": "to counterbalance or compensate for something",
       "example": "The company's profits offset its earlier losses."
     },
@@ -572,7 +761,10 @@
       "word": "overwhelming",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["elsöprő", "túlnyomó"],
+      "translations": [
+        "elsöprő",
+        "túlnyomó"
+      ],
       "definition": "very great in amount; overpowering",
       "example": "She received overwhelming support from her colleagues."
     },
@@ -581,7 +773,10 @@
       "word": "persistent",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["kitartó", "tartós"],
+      "translations": [
+        "kitartó",
+        "tartós"
+      ],
       "definition": "continuing firmly in a course of action despite difficulty",
       "example": "His persistent efforts finally paid off."
     },
@@ -590,7 +785,10 @@
       "word": "plausible",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["hihetőnek tűnő", "elfogadható"],
+      "translations": [
+        "hihetőnek tűnő",
+        "elfogadható"
+      ],
       "definition": "seeming reasonable or probable",
       "example": "Her explanation for being late sounded plausible."
     },
@@ -599,7 +797,10 @@
       "word": "pragmatic",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["pragmatikus", "gyakorlatias"],
+      "translations": [
+        "pragmatikus",
+        "gyakorlatias"
+      ],
       "definition": "dealing with things in a practical way",
       "example": "We need a pragmatic approach to solve this problem."
     },
@@ -608,7 +809,10 @@
       "word": "prohibit",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["megtilt", "eltilt"],
+      "translations": [
+        "megtilt",
+        "eltilt"
+      ],
       "definition": "to formally forbid something by law or rule",
       "example": "Smoking is prohibited in all public buildings."
     },
@@ -617,7 +821,10 @@
       "word": "prone",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["hajlamos", "érzékeny"],
+      "translations": [
+        "hajlamos",
+        "érzékeny"
+      ],
       "definition": "likely or liable to suffer from something",
       "example": "Children are particularly prone to catching colds."
     },
@@ -626,7 +833,10 @@
       "word": "pursue",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["folytat", "üldöz"],
+      "translations": [
+        "folytat",
+        "üldöz"
+      ],
       "definition": "to follow or chase; to continue with an activity",
       "example": "She decided to pursue a career in medicine."
     },
@@ -635,7 +845,10 @@
       "word": "reciprocal",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["kölcsönös", "viszonzott"],
+      "translations": [
+        "kölcsönös",
+        "viszonzott"
+      ],
       "definition": "given or done in return; mutual",
       "example": "The two countries signed a reciprocal trade agreement."
     },
@@ -644,7 +857,10 @@
       "word": "redundant",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["felesleges", "redundáns"],
+      "translations": [
+        "felesleges",
+        "redundáns"
+      ],
       "definition": "not or no longer needed or useful",
       "example": "Many workers were made redundant due to automation."
     },
@@ -653,7 +869,10 @@
       "word": "reluctant",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["vonakodó", "kelletlenül"],
+      "translations": [
+        "vonakodó",
+        "kelletlenül"
+      ],
       "definition": "unwilling and hesitant",
       "example": "She was reluctant to share her personal experiences."
     },
@@ -662,7 +881,10 @@
       "word": "revenue",
       "level": "C1",
       "partOfSpeech": "noun",
-      "translations": ["bevétel", "jövedelem"],
+      "translations": [
+        "bevétel",
+        "jövedelem"
+      ],
       "definition": "income generated from business activities or taxes",
       "example": "The company reported increased revenue this quarter."
     },
@@ -671,7 +893,10 @@
       "word": "rigorous",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["szigorú", "alapos"],
+      "translations": [
+        "szigorú",
+        "alapos"
+      ],
       "definition": "extremely thorough and careful",
       "example": "The research was subjected to rigorous testing."
     },
@@ -680,7 +905,10 @@
       "word": "scrutiny",
       "level": "C1",
       "partOfSpeech": "noun",
-      "translations": ["vizsgálat", "átvilágítás"],
+      "translations": [
+        "vizsgálat",
+        "átvilágítás"
+      ],
       "definition": "critical observation or examination",
       "example": "The proposal came under intense scrutiny from experts."
     },
@@ -689,7 +917,10 @@
       "word": "stagnant",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["pangó", "stagnáló"],
+      "translations": [
+        "pangó",
+        "stagnáló"
+      ],
       "definition": "showing no activity; not developing",
       "example": "The economy has been stagnant for several years."
     },
@@ -698,7 +929,10 @@
       "word": "subsidize",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["támogat", "szubvencionál"],
+      "translations": [
+        "támogat",
+        "szubvencionál"
+      ],
       "definition": "to support financially, typically through government funding",
       "example": "The government subsidizes public transportation."
     },
@@ -707,7 +941,10 @@
       "word": "subordinate",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["alárendelt", "másodlagos"],
+      "translations": [
+        "alárendelt",
+        "másodlagos"
+      ],
       "definition": "lower in rank or position",
       "example": "All other considerations are subordinate to safety."
     },
@@ -716,7 +953,10 @@
       "word": "tedious",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["unalmas", "fárasztó"],
+      "translations": [
+        "unalmas",
+        "fárasztó"
+      ],
       "definition": "too long, slow, or dull; tiresome",
       "example": "Filing paperwork can be a tedious task."
     },
@@ -725,7 +965,10 @@
       "word": "tentative",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["ideiglenes", "bizonytalan"],
+      "translations": [
+        "ideiglenes",
+        "bizonytalan"
+      ],
       "definition": "not certain or fixed; provisional",
       "example": "We made tentative plans to meet next week."
     },
@@ -734,7 +977,10 @@
       "word": "thrive",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["virágzik", "boldogul"],
+      "translations": [
+        "virágzik",
+        "boldogul"
+      ],
       "definition": "to grow or develop well; to prosper",
       "example": "Children thrive in a supportive learning environment."
     },
@@ -743,7 +989,10 @@
       "word": "unprecedented",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["példátlan", "precedens nélküli"],
+      "translations": [
+        "példátlan",
+        "precedens nélküli"
+      ],
       "definition": "never done or known before",
       "example": "The crisis created unprecedented challenges for businesses."
     },
@@ -752,7 +1001,10 @@
       "word": "versatile",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["sokoldalú", "változatos"],
+      "translations": [
+        "sokoldalú",
+        "változatos"
+      ],
       "definition": "able to adapt or be adapted to many different functions",
       "example": "She is a versatile performer who excels in multiple genres."
     },
@@ -761,7 +1013,10 @@
       "word": "viable",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["életképes", "megvalósítható"],
+      "translations": [
+        "életképes",
+        "megvalósítható"
+      ],
       "definition": "capable of working successfully; feasible",
       "example": "Solar energy is now a viable alternative to fossil fuels."
     },
@@ -770,7 +1025,10 @@
       "word": "vigilant",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["éber", "figyelmes"],
+      "translations": [
+        "éber",
+        "figyelmes"
+      ],
       "definition": "keeping careful watch for possible danger",
       "example": "Security guards must remain vigilant at all times."
     },
@@ -779,7 +1037,10 @@
       "word": "volatile",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["változékony", "ingadozó"],
+      "translations": [
+        "változékony",
+        "ingadozó"
+      ],
       "definition": "liable to change rapidly and unpredictably",
       "example": "The stock market has been highly volatile recently."
     },
@@ -788,7 +1049,10 @@
       "word": "widespread",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["elterjedt", "széles körű"],
+      "translations": [
+        "elterjedt",
+        "széles körű"
+      ],
       "definition": "found or distributed over a large area or number",
       "example": "There is widespread support for the new policy."
     },
@@ -797,7 +1061,10 @@
       "word": "yield",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["termel", "enged"],
+      "translations": [
+        "termel",
+        "enged"
+      ],
       "definition": "to produce or provide; to give way under pressure",
       "example": "The research yielded important new findings."
     },
@@ -806,7 +1073,10 @@
       "word": "acclaim",
       "level": "C1",
       "partOfSpeech": "noun",
-      "translations": ["elismerés", "tetszés"],
+      "translations": [
+        "elismerés",
+        "tetszés"
+      ],
       "definition": "enthusiastic approval or praise",
       "example": "The film received critical acclaim at the festival."
     },
@@ -815,7 +1085,10 @@
       "word": "coherent",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["koherens", "összefüggő"],
+      "translations": [
+        "koherens",
+        "összefüggő"
+      ],
       "definition": "logical and consistent; clear and easy to understand",
       "example": "She presented a coherent argument for the proposal."
     },
@@ -824,7 +1097,10 @@
       "word": "complement",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["kiegészít", "teljessé tesz"],
+      "translations": [
+        "kiegészít",
+        "teljessé tesz"
+      ],
       "definition": "to add to something in a way that enhances or improves it",
       "example": "The wine complements the flavour of the cheese perfectly."
     },
@@ -833,7 +1109,10 @@
       "word": "comprehensive",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["átfogó", "teljes körű"],
+      "translations": [
+        "átfogó",
+        "teljes körű"
+      ],
       "definition": "complete and including everything",
       "example": "The report provides a comprehensive overview of the situation."
     },
@@ -842,7 +1121,10 @@
       "word": "concise",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["tömör", "velős"],
+      "translations": [
+        "tömör",
+        "velős"
+      ],
       "definition": "giving a lot of information clearly in few words",
       "example": "Please provide a concise summary of your findings."
     },
@@ -851,7 +1133,10 @@
       "word": "conform",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["alkalmazkodik", "megfelel"],
+      "translations": [
+        "alkalmazkodik",
+        "megfelel"
+      ],
       "definition": "to comply with rules or standards; to behave according to accepted standards",
       "example": "All products must conform to safety regulations."
     },
@@ -860,7 +1145,10 @@
       "word": "contemplate",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["fontolgat", "szemlél"],
+      "translations": [
+        "fontolgat",
+        "szemlél"
+      ],
       "definition": "to think about carefully; to consider",
       "example": "She is contemplating a career change."
     },
@@ -869,7 +1157,10 @@
       "word": "contradict",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["ellentmond", "cáfol"],
+      "translations": [
+        "ellentmond",
+        "cáfol"
+      ],
       "definition": "to deny the truth of a statement; to be contrary to",
       "example": "The evidence contradicts the witness's testimony."
     },
@@ -878,7 +1169,10 @@
       "word": "diligent",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["szorgalmas", "gondos"],
+      "translations": [
+        "szorgalmas",
+        "gondos"
+      ],
       "definition": "showing care and effort in one's work",
       "example": "She is a diligent student who never misses deadlines."
     },
@@ -887,7 +1181,10 @@
       "word": "embrace",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["felkarol", "magáévá tesz"],
+      "translations": [
+        "felkarol",
+        "magáévá tesz"
+      ],
       "definition": "to accept or support willingly and enthusiastically",
       "example": "The company has embraced new technology."
     },
@@ -896,7 +1193,10 @@
       "word": "endorse",
       "level": "C1",
       "partOfSpeech": "verb",
-      "translations": ["támogat", "jóváhagy"],
+      "translations": [
+        "támogat",
+        "jóváhagy"
+      ],
       "definition": "to declare one's public approval of",
       "example": "Several celebrities have endorsed the campaign."
     },
@@ -905,7 +1205,10 @@
       "word": "excerpt",
       "level": "C1",
       "partOfSpeech": "noun",
-      "translations": ["részlet", "kivonat"],
+      "translations": [
+        "részlet",
+        "kivonat"
+      ],
       "definition": "a short extract from a film, broadcast, or piece of writing",
       "example": "The book contains excerpts from her personal diary."
     },
@@ -914,7 +1217,10 @@
       "word": "explicit",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["kifejezett", "világos"],
+      "translations": [
+        "kifejezett",
+        "világos"
+      ],
       "definition": "stated clearly and in detail, leaving no room for confusion",
       "example": "The contract contains explicit terms and conditions."
     },
@@ -923,9 +1229,589 @@
       "word": "meticulous",
       "level": "C1",
       "partOfSpeech": "adjective",
-      "translations": ["aprólékos", "gondos"],
+      "translations": [
+        "aprólékos",
+        "gondos"
+      ],
       "definition": "showing great attention to detail; very careful",
       "example": "The scientist kept meticulous records of all experiments."
+    },
+    {
+      "id": "bedroom",
+      "word": "bedroom",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "hálószoba"
+      ],
+      "definition": "A room used for sleeping in",
+      "example": "My bedroom is on the second floor of the house."
+    },
+    {
+      "id": "kitchen",
+      "word": "kitchen",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "konyha"
+      ],
+      "definition": "A room where food is prepared and cooked",
+      "example": "She was cooking dinner in the kitchen when I arrived."
+    },
+    {
+      "id": "neighbour",
+      "word": "neighbour",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szomszéd"
+      ],
+      "definition": "A person who lives next to or near you",
+      "example": "Our neighbours invited us for tea yesterday."
+    },
+    {
+      "id": "relative",
+      "word": "relative",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "rokon",
+        "családtag"
+      ],
+      "definition": "A member of your family",
+      "example": "All my relatives are coming to the wedding."
+    },
+    {
+      "id": "cousin",
+      "word": "cousin",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "unokatestvér"
+      ],
+      "definition": "The child of your aunt or uncle",
+      "example": "My cousin lives in London with her family."
+    },
+    {
+      "id": "nephew",
+      "word": "nephew",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "unokaöcs"
+      ],
+      "definition": "The son of your brother or sister",
+      "example": "My nephew is starting school next week."
+    },
+    {
+      "id": "niece",
+      "word": "niece",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "unokahúg"
+      ],
+      "definition": "The daughter of your brother or sister",
+      "example": "I bought a birthday present for my niece."
+    },
+    {
+      "id": "recipe",
+      "word": "recipe",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "recept"
+      ],
+      "definition": "A set of instructions for cooking food",
+      "example": "I found a great recipe for chocolate cake online."
+    },
+    {
+      "id": "ingredient",
+      "word": "ingredient",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "hozzávaló",
+        "összetevő"
+      ],
+      "definition": "One of the foods that you use to make a particular dish",
+      "example": "Make sure you have all the ingredients before you start cooking."
+    },
+    {
+      "id": "meal",
+      "word": "meal",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "étkezés",
+        "étel"
+      ],
+      "definition": "An occasion when food is eaten, or the food that is eaten",
+      "example": "We usually have our main meal in the evening."
+    },
+    {
+      "id": "snack",
+      "word": "snack",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "harapnivaló",
+        "nassolnivaló"
+      ],
+      "definition": "A small amount of food eaten between meals",
+      "example": "I had an apple as a snack this afternoon."
+    },
+    {
+      "id": "delicious",
+      "word": "delicious",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "finom",
+        "ízletes"
+      ],
+      "definition": "Having a very pleasant taste",
+      "example": "This soup is absolutely delicious!"
+    },
+    {
+      "id": "fresh",
+      "word": "fresh",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "friss"
+      ],
+      "definition": "Recently made, picked, or prepared",
+      "example": "I always buy fresh vegetables from the market."
+    },
+    {
+      "id": "boil",
+      "word": "boil",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "főz",
+        "forral"
+      ],
+      "definition": "To cook food in boiling water",
+      "example": "Boil the eggs for ten minutes."
+    },
+    {
+      "id": "fry",
+      "word": "fry",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "süt"
+      ],
+      "definition": "To cook food in hot oil or fat",
+      "example": "Fry the onions until they are golden brown."
+    },
+    {
+      "id": "furniture",
+      "word": "furniture",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "bútor"
+      ],
+      "definition": "Objects such as chairs, tables, and beds that you put in a room",
+      "example": "We need to buy some new furniture for the living room."
+    },
+    {
+      "id": "comfortable",
+      "word": "comfortable",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "kényelmes"
+      ],
+      "definition": "Making you feel relaxed and pleasant",
+      "example": "This is a very comfortable sofa."
+    },
+    {
+      "id": "tidy",
+      "word": "tidy",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "rendezett",
+        "rendben lévő"
+      ],
+      "definition": "Arranged neatly and in order",
+      "example": "Please keep your room tidy."
+    },
+    {
+      "id": "messy",
+      "word": "messy",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "rendetlen",
+        "kócos"
+      ],
+      "definition": "Untidy or dirty",
+      "example": "My son's bedroom is always messy."
+    },
+    {
+      "id": "organise",
+      "word": "organise",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "szervez",
+        "rendez"
+      ],
+      "definition": "To arrange or plan something",
+      "example": "We need to organise a meeting for next week."
+    },
+    {
+      "id": "clean",
+      "word": "clean",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "takarít",
+        "tisztít"
+      ],
+      "definition": "To remove dirt from something",
+      "example": "I clean the bathroom every Saturday."
+    },
+    {
+      "id": "wash",
+      "word": "wash",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "mos"
+      ],
+      "definition": "To clean something using water",
+      "example": "Don't forget to wash your hands before dinner."
+    },
+    {
+      "id": "iron",
+      "word": "iron",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "vasal"
+      ],
+      "definition": "To make clothes smooth using a heated iron",
+      "example": "I need to iron my shirt for tomorrow."
+    },
+    {
+      "id": "laundry",
+      "word": "laundry",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "mosás",
+        "szennyesruha"
+      ],
+      "definition": "Clothes that need to be washed or are being washed",
+      "example": "I do the laundry twice a week."
+    },
+    {
+      "id": "dishwasher",
+      "word": "dishwasher",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "mosogatógép"
+      ],
+      "definition": "A machine that washes plates, cups, and other kitchen items",
+      "example": "Put the dirty plates in the dishwasher."
+    },
+    {
+      "id": "rubbish",
+      "word": "rubbish",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szemét",
+        "hulladék"
+      ],
+      "definition": "Waste material or things that are no longer useful",
+      "example": "Please take out the rubbish before you leave."
+    },
+    {
+      "id": "electricity",
+      "word": "electricity",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "elektromosság",
+        "villany"
+      ],
+      "definition": "A form of energy used to provide light and heat and to power machines",
+      "example": "Our electricity bill was very high last month."
+    },
+    {
+      "id": "heating",
+      "word": "heating",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "fűtés"
+      ],
+      "definition": "A system for keeping a building warm",
+      "example": "We need to turn on the heating because it's cold."
+    },
+    {
+      "id": "outdoors",
+      "word": "outdoors",
+      "level": "B1",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "kint",
+        "szabadban"
+      ],
+      "definition": "Outside a building",
+      "example": "The children love playing outdoors in summer."
+    },
+    {
+      "id": "indoors",
+      "word": "indoors",
+      "level": "B1",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "bent",
+        "zárt térben"
+      ],
+      "definition": "Inside a building",
+      "example": "It's raining, so we'll have to stay indoors today."
+    },
+    {
+      "id": "upstairs",
+      "word": "upstairs",
+      "level": "B1",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "fent",
+        "emeleten"
+      ],
+      "definition": "On or to an upper floor of a building",
+      "example": "My office is upstairs on the third floor."
+    },
+    {
+      "id": "downstairs",
+      "word": "downstairs",
+      "level": "B1",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "lent",
+        "földszinten"
+      ],
+      "definition": "On or to a lower floor of a building",
+      "example": "Come downstairs and have breakfast with us."
+    },
+    {
+      "id": "journey",
+      "word": "journey",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "utazás"
+      ],
+      "definition": "The act of travelling from one place to another",
+      "example": "The journey to work takes about 30 minutes."
+    },
+    {
+      "id": "arrive",
+      "word": "arrive",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megérkezik"
+      ],
+      "definition": "To reach a place",
+      "example": "What time does your train arrive in Manchester?"
+    },
+    {
+      "id": "depart",
+      "word": "depart",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "elindul",
+        "távozik"
+      ],
+      "definition": "To leave a place",
+      "example": "The bus departs from the station at 8 o'clock."
+    },
+    {
+      "id": "appointment",
+      "word": "appointment",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "találkozó",
+        "időpont"
+      ],
+      "definition": "An arrangement to meet someone at a particular time",
+      "example": "I have a doctor's appointment at three o'clock."
+    },
+    {
+      "id": "invite",
+      "word": "invite",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "meghív"
+      ],
+      "definition": "To ask someone to come to an event",
+      "example": "We're inviting all our friends to the party."
+    },
+    {
+      "id": "guest",
+      "word": "guest",
+      "level": "B1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "vendég"
+      ],
+      "definition": "Someone who is invited to visit or stay in your home",
+      "example": "We're expecting guests for dinner tonight."
+    },
+    {
+      "id": "celebrate",
+      "word": "celebrate",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "ünnepel"
+      ],
+      "definition": "To do something enjoyable for a special reason",
+      "example": "We're celebrating my mother's birthday this weekend."
+    },
+    {
+      "id": "borrow",
+      "word": "borrow",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "kölcsönvesz",
+        "kölcsönkér"
+      ],
+      "definition": "To use something that belongs to someone else and then return it",
+      "example": "Can I borrow your pen for a moment?"
+    },
+    {
+      "id": "lend",
+      "word": "lend",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "kölcsönad"
+      ],
+      "definition": "To give something to someone for a short time",
+      "example": "Could you lend me your umbrella until tomorrow?"
+    },
+    {
+      "id": "useful",
+      "word": "useful",
+      "level": "B1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "hasznos"
+      ],
+      "definition": "Helping you to do or achieve something",
+      "example": "This book has lots of useful information."
+    },
+    {
+      "id": "suddenly",
+      "word": "suddenly",
+      "level": "B1",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "hirtelen",
+        "váratlanul"
+      ],
+      "definition": "Quickly and unexpectedly",
+      "example": "Suddenly, the lights went out and everything was dark."
+    },
+    {
+      "id": "immediately",
+      "word": "immediately",
+      "level": "B1",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "azonnal",
+        "rögtön"
+      ],
+      "definition": "Without delay; at once",
+      "example": "Please call me immediately when you arrive."
+    },
+    {
+      "id": "although",
+      "word": "although",
+      "level": "B1",
+      "partOfSpeech": "conjunction",
+      "translations": [
+        "bár",
+        "habár"
+      ],
+      "definition": "Despite the fact that",
+      "example": "Although it was raining, we went for a walk."
+    },
+    {
+      "id": "however",
+      "word": "however",
+      "level": "B1",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "azonban",
+        "viszont"
+      ],
+      "definition": "Used to introduce a statement that contrasts with what was said before",
+      "example": "The hotel was expensive. However, it was very comfortable."
+    },
+    {
+      "id": "according",
+      "word": "according",
+      "level": "B1",
+      "partOfSpeech": "preposition",
+      "translations": [
+        "szerint"
+      ],
+      "definition": "As stated by someone or shown by something",
+      "example": "According to the weather forecast, it will rain tomorrow."
+    },
+    {
+      "id": "during",
+      "word": "during",
+      "level": "B1",
+      "partOfSpeech": "preposition",
+      "translations": [
+        "alatt",
+        "közben"
+      ],
+      "definition": "Throughout the time of something",
+      "example": "I fell asleep during the film."
+    },
+    {
+      "id": "towards",
+      "word": "towards",
+      "level": "B1",
+      "partOfSpeech": "preposition",
+      "translations": [
+        "felé",
+        "irányába"
+      ],
+      "definition": "In the direction of something or someone",
+      "example": "She walked towards the door and left the room."
+    },
+    {
+      "id": "afford",
+      "word": "afford",
+      "level": "B1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megenged magának",
+        "kitelik"
+      ],
+      "definition": "To have enough money to buy something",
+      "example": "We can't afford a holiday this year."
     }
   ]
 }
