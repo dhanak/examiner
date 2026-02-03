@@ -5088,6 +5088,3008 @@
       ],
       "definition": "A claim that someone has done something illegal or wrong, without proof",
       "example": "The politician denied all allegations of corruption."
+    },
+    {
+      "id": "algorithm",
+      "word": "algorithm",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "algoritmus"
+      ],
+      "definition": "A set of rules or steps to be followed in calculations or problem-solving operations, especially by a computer.",
+      "example": "The search engine uses a complex algorithm to rank websites."
+    },
+    {
+      "id": "analyse",
+      "word": "analyse",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "elemez",
+        "analiz"
+      ],
+      "definition": "To examine something in detail in order to understand it better or discover more about it.",
+      "example": "Scientists analyse the data to identify patterns and trends."
+    },
+    {
+      "id": "bandwidth",
+      "word": "bandwidth",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "sávszélesség"
+      ],
+      "definition": "The maximum rate of data transfer across a given path in a computer network.",
+      "example": "You need high bandwidth to stream videos without buffering."
+    },
+    {
+      "id": "breakthrough",
+      "word": "breakthrough",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "áttörés"
+      ],
+      "definition": "A sudden, important discovery or development, especially in science or technology.",
+      "example": "The team made a breakthrough in renewable energy research."
+    },
+    {
+      "id": "browse",
+      "word": "browse",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "böngészik",
+        "tallóz"
+      ],
+      "definition": "To look through information on the internet or in a book without a specific purpose.",
+      "example": "I like to browse online shops during my lunch break."
+    },
+    {
+      "id": "cloud",
+      "word": "cloud",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "felhő"
+      ],
+      "definition": "A network of remote servers used to store, manage, and process data over the internet.",
+      "example": "All my photos are backed up to the cloud automatically."
+    },
+    {
+      "id": "component",
+      "word": "component",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "alkatrész",
+        "komponens"
+      ],
+      "definition": "A part or element of a larger whole, especially a part of a machine or system.",
+      "example": "The motherboard is an essential component of every computer."
+    },
+    {
+      "id": "compress",
+      "word": "compress",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "tömörít"
+      ],
+      "definition": "To reduce the size of a file or data by encoding it using fewer bits.",
+      "example": "You should compress large files before sending them by email."
+    },
+    {
+      "id": "configuration",
+      "word": "configuration",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "konfiguráció",
+        "beállítás"
+      ],
+      "definition": "The arrangement or setting up of the parts of a computer system or network.",
+      "example": "The network configuration needs to be adjusted for better security."
+    },
+    {
+      "id": "cutting-edge",
+      "word": "cutting-edge",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "élvonalbeli",
+        "csúcstechnológiás"
+      ],
+      "definition": "Very modern and advanced, representing the most recent developments.",
+      "example": "The company specialises in cutting-edge artificial intelligence technology."
+    },
+    {
+      "id": "database",
+      "word": "database",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "adatbázis"
+      ],
+      "definition": "An organised collection of structured information or data stored electronically.",
+      "example": "Customer details are stored in a secure database."
+    },
+    {
+      "id": "debug",
+      "word": "debug",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "hibakeresés",
+        "debuggol"
+      ],
+      "definition": "To identify and remove errors from computer hardware or software.",
+      "example": "It took hours to debug the application before the release."
+    },
+    {
+      "id": "device",
+      "word": "device",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "eszköz",
+        "készülék"
+      ],
+      "definition": "A piece of equipment or a mechanism designed for a particular purpose.",
+      "example": "Smartphones are the most commonly used digital devices today."
+    },
+    {
+      "id": "digital",
+      "word": "digital",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "digitális"
+      ],
+      "definition": "Relating to or using signals or information represented by discrete values.",
+      "example": "The museum has created a digital archive of its entire collection."
+    },
+    {
+      "id": "download",
+      "word": "download",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "letölt"
+      ],
+      "definition": "To copy data from one computer system to another, typically over the internet.",
+      "example": "You can download the software for free from our website."
+    },
+    {
+      "id": "encrypt",
+      "word": "encrypt",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "titkosít"
+      ],
+      "definition": "To convert information into a code to prevent unauthorised access.",
+      "example": "Banks encrypt sensitive data to protect customer information."
+    },
+    {
+      "id": "experiment",
+      "word": "experiment",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kísérlet"
+      ],
+      "definition": "A scientific procedure undertaken to test a hypothesis or demonstrate a known fact.",
+      "example": "The researchers conducted an experiment to test the new drug."
+    },
+    {
+      "id": "firewall",
+      "word": "firewall",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "tűzfal"
+      ],
+      "definition": "A security system that monitors and controls incoming and outgoing network traffic.",
+      "example": "Our company uses a firewall to protect against cyber attacks."
+    },
+    {
+      "id": "formula",
+      "word": "formula",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "képlet",
+        "formula"
+      ],
+      "definition": "A mathematical relationship or rule expressed in symbols or numbers.",
+      "example": "Einstein's famous formula relates energy to mass and the speed of light."
+    },
+    {
+      "id": "function",
+      "word": "function",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "működik",
+        "funkcionál"
+      ],
+      "definition": "To work or operate in a proper or particular way.",
+      "example": "The system won't function properly without regular updates."
+    },
+    {
+      "id": "generate",
+      "word": "generate",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "generál",
+        "létrehoz"
+      ],
+      "definition": "To produce or create something, especially using a computer or machine.",
+      "example": "The programme can generate detailed reports automatically."
+    },
+    {
+      "id": "hardware",
+      "word": "hardware",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "hardver",
+        "számítógép alkatrészek"
+      ],
+      "definition": "The physical components of a computer system.",
+      "example": "We need to upgrade our hardware to run the new software."
+    },
+    {
+      "id": "innovative",
+      "word": "innovative",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "innovatív",
+        "újító"
+      ],
+      "definition": "Introducing new ideas or methods; original and creative in thinking.",
+      "example": "The team developed an innovative solution to reduce energy consumption."
+    },
+    {
+      "id": "install",
+      "word": "install",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "telepít",
+        "installál"
+      ],
+      "definition": "To set up software or equipment for use on a computer or system.",
+      "example": "Please install the latest version of the application on your device."
+    },
+    {
+      "id": "interface",
+      "word": "interface",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "felület",
+        "interfész"
+      ],
+      "definition": "A point where two systems or subjects meet and interact, especially a user interface.",
+      "example": "The new interface is much more user-friendly than the old one."
+    },
+    {
+      "id": "investigate",
+      "word": "investigate",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "vizsgál",
+        "kutat"
+      ],
+      "definition": "To carry out research or study into a subject to discover facts or information.",
+      "example": "Scientists are investigating the effects of pollution on marine life."
+    },
+    {
+      "id": "malware",
+      "word": "malware",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "rosszindulatú szoftver",
+        "kártevő"
+      ],
+      "definition": "Software designed to disrupt, damage, or gain unauthorised access to a computer system.",
+      "example": "Antivirus software helps protect your computer from malware."
+    },
+    {
+      "id": "mechanism",
+      "word": "mechanism",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "mechanizmus"
+      ],
+      "definition": "A system of parts working together in a machine or a process.",
+      "example": "The locking mechanism prevents unauthorised access to the system."
+    },
+    {
+      "id": "methodology",
+      "word": "methodology",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "módszertan"
+      ],
+      "definition": "A system of methods used in a particular area of study or activity.",
+      "example": "The research team followed a strict scientific methodology."
+    },
+    {
+      "id": "migrate",
+      "word": "migrate",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "áttelepít",
+        "migrál"
+      ],
+      "definition": "To transfer data or programs from one system to another.",
+      "example": "The company plans to migrate all its data to the cloud next year."
+    },
+    {
+      "id": "network",
+      "word": "network",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "hálózat"
+      ],
+      "definition": "A group of computers or devices connected together to share resources.",
+      "example": "The office network allows employees to share files easily."
+    },
+    {
+      "id": "observe",
+      "word": "observe",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megfigyel",
+        "észlel"
+      ],
+      "definition": "To watch carefully the way something happens or the way someone does something.",
+      "example": "Researchers observe the behaviour of particles under different conditions."
+    },
+    {
+      "id": "operating system",
+      "word": "operating system",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "operációs rendszer"
+      ],
+      "definition": "The software that manages computer hardware and software resources.",
+      "example": "Windows and macOS are popular operating systems for personal computers."
+    },
+    {
+      "id": "optimise",
+      "word": "optimise",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "optimalizál"
+      ],
+      "definition": "To make something as effective or functional as possible.",
+      "example": "The developers optimised the code to improve performance."
+    },
+    {
+      "id": "patent",
+      "word": "patent",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szabadalom"
+      ],
+      "definition": "An official document granting exclusive rights to an invention or process.",
+      "example": "The company filed a patent for its new technology."
+    },
+    {
+      "id": "pixel",
+      "word": "pixel",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "pixel",
+        "képpont"
+      ],
+      "definition": "The smallest unit of a digital image or display that can be controlled.",
+      "example": "Modern smartphones have screens with millions of pixels for sharp images."
+    },
+    {
+      "id": "procedure",
+      "word": "procedure",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "eljárás",
+        "folyamat"
+      ],
+      "definition": "An established or official way of doing something.",
+      "example": "Follow the correct procedure when installing the software."
+    },
+    {
+      "id": "process",
+      "word": "process",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "feldolgoz"
+      ],
+      "definition": "To perform a series of operations on data in order to obtain required information.",
+      "example": "The computer can process thousands of transactions per second."
+    },
+    {
+      "id": "processor",
+      "word": "processor",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "processzor"
+      ],
+      "definition": "The central processing unit of a computer that performs calculations and operations.",
+      "example": "This laptop has a powerful processor for running demanding applications."
+    },
+    {
+      "id": "prototype",
+      "word": "prototype",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "prototípus"
+      ],
+      "definition": "A first or preliminary version of a device or vehicle from which other forms are developed.",
+      "example": "Engineers are testing the prototype before mass production begins."
+    },
+    {
+      "id": "router",
+      "word": "router",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "router",
+        "útválasztó"
+      ],
+      "definition": "A device that forwards data packets between computer networks.",
+      "example": "Reset your router if you're experiencing connection problems."
+    },
+    {
+      "id": "scan",
+      "word": "scan",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "pásztáz",
+        "beolvas"
+      ],
+      "definition": "To examine or read data using an optical or electronic device.",
+      "example": "You need to scan the QR code to access the website."
+    },
+    {
+      "id": "server",
+      "word": "server",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szerver"
+      ],
+      "definition": "A computer or system that provides data or services to other computers over a network.",
+      "example": "The company's main server went down during the storm."
+    },
+    {
+      "id": "simulate",
+      "word": "simulate",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "szimulál"
+      ],
+      "definition": "To create a computer model of a process or system.",
+      "example": "Scientists simulate climate conditions to predict future changes."
+    },
+    {
+      "id": "software",
+      "word": "software",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szoftver"
+      ],
+      "definition": "Programs and operating information used by a computer.",
+      "example": "We need to update our accounting software to the latest version."
+    },
+    {
+      "id": "sophisticated",
+      "word": "sophisticated",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "kifinomult",
+        "fejlett"
+      ],
+      "definition": "Highly developed and complex, especially in terms of technology.",
+      "example": "The laboratory uses sophisticated equipment for genetic research."
+    },
+    {
+      "id": "storage",
+      "word": "storage",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "tárhely",
+        "tárolás"
+      ],
+      "definition": "The capacity to keep or retain data on a computer or device.",
+      "example": "Cloud storage allows you to access files from any device."
+    },
+    {
+      "id": "stream",
+      "word": "stream",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "streamel",
+        "közvetít"
+      ],
+      "definition": "To transmit or receive data over the internet as a steady continuous flow.",
+      "example": "I usually stream music rather than downloading songs."
+    },
+    {
+      "id": "sustainable",
+      "word": "sustainable",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "fenntartható"
+      ],
+      "definition": "Able to be maintained at a certain rate or level without depleting resources.",
+      "example": "Scientists are developing sustainable energy solutions for the future."
+    },
+    {
+      "id": "technical",
+      "word": "technical",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "technikai"
+      ],
+      "definition": "Relating to a particular subject, art, or craft, or its techniques.",
+      "example": "The manual contains detailed technical specifications for the device."
+    },
+    {
+      "id": "technological",
+      "word": "technological",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "technológiai"
+      ],
+      "definition": "Relating to or using technology.",
+      "example": "Rapid technological advances have transformed the way we communicate."
+    },
+    {
+      "id": "terminal",
+      "word": "terminal",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "terminál"
+      ],
+      "definition": "A device at which a user enters data or commands for a computer system.",
+      "example": "Programmers often use a terminal to execute commands directly."
+    },
+    {
+      "id": "transmit",
+      "word": "transmit",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "továbbít",
+        "sugároz"
+      ],
+      "definition": "To send or pass something from one place or person to another electronically.",
+      "example": "Radio waves transmit signals across long distances."
+    },
+    {
+      "id": "update",
+      "word": "update",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "frissít"
+      ],
+      "definition": "To make something more modern by adding new information or features.",
+      "example": "Remember to update your antivirus software regularly."
+    },
+    {
+      "id": "upgrade",
+      "word": "upgrade",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "frissít",
+        "korszerűsít"
+      ],
+      "definition": "To raise something to a higher standard by improving or replacing components.",
+      "example": "It's time to upgrade your computer's memory for better performance."
+    },
+    {
+      "id": "upload",
+      "word": "upload",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "feltölt"
+      ],
+      "definition": "To transfer data from one computer to another or to the internet.",
+      "example": "You can upload photos directly from your phone to social media."
+    },
+    {
+      "id": "variable",
+      "word": "variable",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "változó"
+      ],
+      "definition": "An element or factor that can change or be changed in a programme or experiment.",
+      "example": "Temperature is an important variable in this chemical reaction."
+    },
+    {
+      "id": "verify",
+      "word": "verify",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "ellenőriz",
+        "hitelesít"
+      ],
+      "definition": "To make sure or demonstrate that something is true, accurate, or justified.",
+      "example": "Please verify your email address to complete the registration."
+    },
+    {
+      "id": "virtual",
+      "word": "virtual",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "virtuális"
+      ],
+      "definition": "Existing or occurring in a computer or on the internet rather than in the physical world.",
+      "example": "The conference will be held in a virtual environment this year."
+    },
+    {
+      "id": "virus",
+      "word": "virus",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "vírus"
+      ],
+      "definition": "A piece of code capable of copying itself and damaging a computer system.",
+      "example": "A computer virus infected hundreds of systems worldwide."
+    },
+    {
+      "id": "wireless",
+      "word": "wireless",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "vezeték nélküli"
+      ],
+      "definition": "Operating without a physical connection, typically using radio or electromagnetic signals.",
+      "example": "Most modern devices connect to the internet via wireless technology."
+    },
+    {
+      "id": "accurately",
+      "word": "accurately",
+      "level": "B2",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "pontosan",
+        "precízen"
+      ],
+      "definition": "In a way that is correct and precise.",
+      "example": "The sensors can measure temperature accurately to within 0.1 degrees."
+    },
+    {
+      "id": "automatically",
+      "word": "automatically",
+      "level": "B2",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "automatikusan"
+      ],
+      "definition": "By itself with little or no direct human control.",
+      "example": "The system automatically backs up your files every night."
+    },
+    {
+      "id": "efficiently",
+      "word": "efficiently",
+      "level": "B2",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "hatékonyan"
+      ],
+      "definition": "In a way that achieves maximum productivity with minimum wasted effort.",
+      "example": "Modern computers process data much more efficiently than older models."
+    },
+    {
+      "id": "significantly",
+      "word": "significantly",
+      "level": "B2",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "jelentősen"
+      ],
+      "definition": "In a sufficiently great or important way to be worthy of attention.",
+      "example": "Internet speeds have improved significantly over the past decade."
+    },
+    {
+      "id": "wirelessly",
+      "word": "wirelessly",
+      "level": "B2",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "vezeték nélkül"
+      ],
+      "definition": "Using wireless technology without physical connections.",
+      "example": "You can charge your phone wirelessly using this charging pad."
+    },
+    {
+      "id": "innovation",
+      "word": "innovation",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "innováció",
+        "újítás"
+      ],
+      "definition": "A new method, idea, or product resulting from study and experimentation.",
+      "example": "The company is known for its innovation in smartphone technology."
+    },
+    {
+      "id": "cybersecurity",
+      "word": "cybersecurity",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kiberbiztonság"
+      ],
+      "definition": "The practice of protecting systems and networks from digital attacks.",
+      "example": "Companies invest heavily in cybersecurity to protect customer data."
+    },
+    {
+      "id": "artificial intelligence",
+      "word": "artificial intelligence",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "mesterséges intelligencia"
+      ],
+      "definition": "The theory and development of computer systems able to perform tasks normally requiring human intelligence.",
+      "example": "Artificial intelligence is transforming industries from healthcare to finance."
+    },
+    {
+      "id": "backup",
+      "word": "backup",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "biztonsági mentés"
+      ],
+      "definition": "A copy of data stored separately to prevent loss in case of system failure.",
+      "example": "Always keep a backup of important files on an external drive."
+    },
+    {
+      "id": "automation",
+      "word": "automation",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "automatizálás"
+      ],
+      "definition": "The use of technology to perform tasks with reduced human assistance.",
+      "example": "Factory automation has increased production efficiency significantly."
+    },
+    {
+      "id": "connectivity",
+      "word": "connectivity",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kapcsolat",
+        "csatlakozás"
+      ],
+      "definition": "The state of being connected or interconnected, especially via networks.",
+      "example": "Good internet connectivity is essential for remote working."
+    },
+    {
+      "id": "expenditure",
+      "word": "expenditure",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kiadás",
+        "költség"
+      ],
+      "definition": "The action of spending funds or the amount of money spent",
+      "example": "Government expenditure on healthcare has risen significantly."
+    },
+    {
+      "id": "profit",
+      "word": "profit",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "nyereség",
+        "profit"
+      ],
+      "definition": "A financial gain, especially the difference between the amount earned and the amount spent",
+      "example": "The business made a healthy profit in its first year."
+    },
+    {
+      "id": "invest",
+      "word": "invest",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "befektet",
+        "beruház"
+      ],
+      "definition": "To put money into financial schemes, shares, or property with the expectation of achieving a profit",
+      "example": "She decided to invest her savings in the stock market."
+    },
+    {
+      "id": "profitable",
+      "word": "profitable",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "jövedelmező",
+        "nyereséges"
+      ],
+      "definition": "Yielding profit or financial gain",
+      "example": "The new product line proved to be very profitable."
+    },
+    {
+      "id": "budget",
+      "word": "budget",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "költségvetés",
+        "büdzsé"
+      ],
+      "definition": "An estimate of income and expenditure for a set period of time",
+      "example": "We need to prepare next year's budget by December."
+    },
+    {
+      "id": "forecast",
+      "word": "forecast",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "előrejelz",
+        "előrevetít"
+      ],
+      "definition": "To predict or estimate a future event or trend, especially in business or economics",
+      "example": "Economists forecast a slowdown in economic growth next quarter."
+    },
+    {
+      "id": "merger",
+      "word": "merger",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "egyesülés",
+        "fúzió"
+      ],
+      "definition": "The combining of two or more companies into one organisation",
+      "example": "The merger between the two banks created the country's largest financial institution."
+    },
+    {
+      "id": "shareholder",
+      "word": "shareholder",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "részvényes",
+        "tulajdonos"
+      ],
+      "definition": "An owner of shares in a company",
+      "example": "Shareholders will vote on the proposed changes at the annual meeting."
+    },
+    {
+      "id": "dividend",
+      "word": "dividend",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "osztalék",
+        "dyividend"
+      ],
+      "definition": "A sum of money paid regularly by a company to its shareholders out of its profits",
+      "example": "The company announced a dividend of 50p per share."
+    },
+    {
+      "id": "assets",
+      "word": "assets",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "eszközök",
+        "vagyon"
+      ],
+      "definition": "Property or items of value owned by a person or company",
+      "example": "The company's assets include buildings, equipment, and cash reserves."
+    },
+    {
+      "id": "turnover",
+      "word": "turnover",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "forgalom",
+        "árbevétel"
+      ],
+      "definition": "The total sales made by a business in a particular period",
+      "example": "The company achieved a turnover of £2 million last year."
+    },
+    {
+      "id": "invoice",
+      "word": "invoice",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "számla",
+        "faktura"
+      ],
+      "definition": "A document itemising goods or services provided and the amount owed",
+      "example": "Please send us an invoice for the work completed."
+    },
+    {
+      "id": "quota",
+      "word": "quota",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kvóta",
+        "mennyiségi korlát"
+      ],
+      "definition": "A limited quantity of a particular product that can be produced, exported, or imported",
+      "example": "The government imposed quotas on steel imports."
+    },
+    {
+      "id": "tariff",
+      "word": "tariff",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "vám",
+        "tarifa"
+      ],
+      "definition": "A tax or duty to be paid on a particular class of imports or exports",
+      "example": "New tariffs on imported cars will increase prices for consumers."
+    },
+    {
+      "id": "negotiate",
+      "word": "negotiate",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "tárgyal",
+        "alkudozik"
+      ],
+      "definition": "To try to reach an agreement through discussion and compromise",
+      "example": "We're negotiating a new contract with our suppliers."
+    },
+    {
+      "id": "contract",
+      "word": "contract",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szerződés",
+        "kontraktus"
+      ],
+      "definition": "A written or spoken agreement, especially one concerning employment or sales, that is legally binding",
+      "example": "She signed a three-year contract with the company."
+    },
+    {
+      "id": "competitive",
+      "word": "competitive",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "versenyképes",
+        "konkurens"
+      ],
+      "definition": "Relating to or characterised by competition, or having prices comparable to rivals",
+      "example": "We need to offer competitive salaries to attract the best talent."
+    },
+    {
+      "id": "monopoly",
+      "word": "monopoly",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "monopólium",
+        "egyedárusítás"
+      ],
+      "definition": "The exclusive possession or control of the supply of a service or commodity",
+      "example": "The company had a monopoly on telecommunications for decades."
+    },
+    {
+      "id": "recession",
+      "word": "recession",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "recesszió",
+        "gazdasági visszaesés"
+      ],
+      "definition": "A period of temporary economic decline during which trade and industrial activity are reduced",
+      "example": "The country entered a recession after two consecutive quarters of negative growth."
+    },
+    {
+      "id": "inflation",
+      "word": "inflation",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "infláció",
+        "áremelkedés"
+      ],
+      "definition": "A general increase in prices and fall in the purchasing value of money",
+      "example": "Inflation rose to 4% last month, exceeding the central bank's target."
+    },
+    {
+      "id": "entrepreneur",
+      "word": "entrepreneur",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "vállalkozó",
+        "üzletember"
+      ],
+      "definition": "A person who sets up a business, taking on financial risks in the hope of profit",
+      "example": "She became a successful entrepreneur by launching her own technology startup."
+    },
+    {
+      "id": "bankrupt",
+      "word": "bankrupt",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "csődbe ment",
+        "fizetésképtelen"
+      ],
+      "definition": "Unable to pay debts and having been declared in law unable to do so",
+      "example": "The company went bankrupt after failing to secure additional funding."
+    },
+    {
+      "id": "subsidy",
+      "word": "subsidy",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "támogatás",
+        "szubvenció"
+      ],
+      "definition": "A sum of money granted by the state or a public body to help an industry or business keep prices low",
+      "example": "The government provides subsidies to farmers to support food production."
+    },
+    {
+      "id": "export",
+      "word": "export",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "exportál",
+        "kivisz"
+      ],
+      "definition": "To send goods or services to another country for sale",
+      "example": "The country exports large quantities of wheat to overseas markets."
+    },
+    {
+      "id": "import",
+      "word": "import",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "importál",
+        "behoz"
+      ],
+      "definition": "To bring goods or services into a country from abroad for sale",
+      "example": "We import coffee beans from Brazil and Colombia."
+    },
+    {
+      "id": "retail",
+      "word": "retail",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kiskereskedelem",
+        "retail"
+      ],
+      "definition": "The sale of goods to the public in relatively small quantities for use or consumption",
+      "example": "She works in retail, managing a clothing store in the city centre."
+    },
+    {
+      "id": "wholesale",
+      "word": "wholesale",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "nagykereskedelmi",
+        "nagybani"
+      ],
+      "definition": "Relating to the selling of goods in large quantities to be retold by others",
+      "example": "The wholesale price is significantly lower than the retail price."
+    },
+    {
+      "id": "currency",
+      "word": "currency",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "valuta",
+        "pénznem"
+      ],
+      "definition": "A system of money in general use in a particular country",
+      "example": "The euro is the official currency of 19 European Union countries."
+    },
+    {
+      "id": "transaction",
+      "word": "transaction",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "ügylet",
+        "tranzakció"
+      ],
+      "definition": "An instance of buying or selling something or an exchange of goods or services",
+      "example": "All transactions are recorded in the company's financial system."
+    },
+    {
+      "id": "audit",
+      "word": "audit",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "ellenőrzés",
+        "audit"
+      ],
+      "definition": "An official inspection of an organisation's accounts, typically by an independent body",
+      "example": "The annual audit revealed no significant irregularities in the accounts."
+    },
+    {
+      "id": "accountant",
+      "word": "accountant",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "könyvelő",
+        "számvevő"
+      ],
+      "definition": "A person whose job is to keep or inspect financial accounts",
+      "example": "Our accountant prepares the tax returns every year."
+    },
+    {
+      "id": "lease",
+      "word": "lease",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "bérlet",
+        "lízing"
+      ],
+      "definition": "A contract by which one party conveys property to another for a specified time, usually in return for rent",
+      "example": "We signed a five-year lease for the office building."
+    },
+    {
+      "id": "mortgage",
+      "word": "mortgage",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "jelzáloghitel",
+        "jelzálog"
+      ],
+      "definition": "A loan from a bank or building society to help buy a property, with the property as security",
+      "example": "They took out a 25-year mortgage to buy their first home."
+    },
+    {
+      "id": "equity",
+      "word": "equity",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "saját tőke",
+        "részvény"
+      ],
+      "definition": "The value of shares issued by a company or the value of property minus debts owed",
+      "example": "After paying the mortgage for ten years, they now have substantial equity in their home."
+    },
+    {
+      "id": "promotion",
+      "word": "promotion",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "előléptetés",
+        "promóció"
+      ],
+      "definition": "The action of raising someone to a higher position or rank",
+      "example": "She received a promotion to senior manager after three years."
+    },
+    {
+      "id": "pension",
+      "word": "pension",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "nyugdíj",
+        "járadék"
+      ],
+      "definition": "A regular payment made to someone who has retired from work",
+      "example": "She receives a monthly pension from her former employer."
+    },
+    {
+      "id": "workforce",
+      "word": "workforce",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "munkaerő",
+        "dolgozók"
+      ],
+      "definition": "The people engaged in or available for work in a particular area or company",
+      "example": "The company employs a diverse workforce of over 5,000 people."
+    },
+    {
+      "id": "estimate",
+      "word": "estimate",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "becsül",
+        "megbecsül"
+      ],
+      "definition": "To roughly calculate or judge the value, number, quantity, or extent of something",
+      "example": "We estimate that the repairs will cost approximately £5,000."
+    },
+    {
+      "id": "competitor",
+      "word": "competitor",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "versenytárs",
+        "konkurens"
+      ],
+      "definition": "An organisation or person engaged in commercial or economic competition with others",
+      "example": "Our main competitors have launched a similar product at a lower price."
+    },
+    {
+      "id": "stock",
+      "word": "stock",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "készlet",
+        "részvény"
+      ],
+      "definition": "The goods or merchandise kept on the premises of a shop or warehouse and available for sale",
+      "example": "We need to check our stock levels before placing a new order."
+    },
+    {
+      "id": "supply",
+      "word": "supply",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "szállít",
+        "ellát"
+      ],
+      "definition": "To make something available for use; provide",
+      "example": "The company supplies office equipment to businesses throughout Europe."
+    },
+    {
+      "id": "demand",
+      "word": "demand",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kereslet",
+        "igény"
+      ],
+      "definition": "The desire of purchasers or consumers for a particular commodity or service",
+      "example": "There has been a significant increase in demand for electric vehicles."
+    },
+    {
+      "id": "bonus",
+      "word": "bonus",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "bónusz",
+        "prémium"
+      ],
+      "definition": "An amount of money added to wages on a seasonal basis, especially as a reward for good performance",
+      "example": "Employees receive an annual bonus based on company performance."
+    },
+    {
+      "id": "commission",
+      "word": "commission",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "jutalék",
+        "megbízás"
+      ],
+      "definition": "A sum of money paid to an agent in a commercial transaction, usually as a percentage of the value",
+      "example": "The sales team earns a 10% commission on every product they sell."
+    },
+    {
+      "id": "profitable",
+      "word": "distribution",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "elosztás",
+        "forgalmazás"
+      ],
+      "definition": "The action of sharing something out among a number of recipients or the process of supplying goods to retailers",
+      "example": "The company handles the distribution of products to over 500 retail outlets."
+    },
+    {
+      "id": "consumer",
+      "word": "consumer",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "fogyasztó",
+        "vásárló"
+      ],
+      "definition": "A person who purchases goods and services for personal use",
+      "example": "Consumer confidence has fallen due to economic uncertainty."
+    },
+    {
+      "id": "launch",
+      "word": "launch",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "elindít",
+        "piacra dob"
+      ],
+      "definition": "To introduce a new product or service to the market",
+      "example": "The company plans to launch its new smartphone next month."
+    },
+    {
+      "id": "brand",
+      "word": "brand",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "márka",
+        "védjegy"
+      ],
+      "definition": "A type of product manufactured by a particular company under a particular name",
+      "example": "Nike is one of the world's most recognised sports brands."
+    },
+    {
+      "id": "advertise",
+      "word": "advertise",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "hirdet",
+        "reklámoz"
+      ],
+      "definition": "To describe or draw attention to a product or service in a public medium to promote sales",
+      "example": "We advertise our products on social media and television."
+    },
+    {
+      "id": "market",
+      "word": "market",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "piacra visz",
+        "értékesít"
+      ],
+      "definition": "To advertise or promote a product or service",
+      "example": "They market their products primarily to young professionals."
+    },
+    {
+      "id": "headquarters",
+      "word": "headquarters",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "központ",
+        "székhely"
+      ],
+      "definition": "The main offices or centre of operations of an organisation",
+      "example": "The company's headquarters are located in London."
+    },
+    {
+      "id": "subsidiary",
+      "word": "subsidiary",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "leányvállalat",
+        "fióktelep"
+      ],
+      "definition": "A company controlled by a holding or parent company",
+      "example": "The corporation owns several subsidiaries in different countries."
+    },
+    {
+      "id": "franchise",
+      "word": "franchise",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "franchise",
+        "üzleti koncesszió"
+      ],
+      "definition": "An authorisation granted by a company to sell or distribute its goods or services in a particular area",
+      "example": "She opened a franchise of a well-known fast-food chain."
+    },
+    {
+      "id": "expand",
+      "word": "expand",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "bővít",
+        "terjeszkedik"
+      ],
+      "definition": "To increase in size, number, or importance, or to make something do this",
+      "example": "The company plans to expand its operations into Asian markets."
+    },
+    {
+      "id": "decline",
+      "word": "decline",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "hanyatlik",
+        "csökken"
+      ],
+      "definition": "To become smaller, fewer, or less; decrease",
+      "example": "Sales have declined by 20% compared to last year."
+    },
+    {
+      "id": "mature",
+      "word": "mature",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "érett",
+        "kiforrott"
+      ],
+      "definition": "Fully developed in a business context, especially referring to markets or industries",
+      "example": "The smartphone market is now considered mature with limited growth potential."
+    },
+    {
+      "id": "diversify",
+      "word": "diversify",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "diverzifikál",
+        "változatosabbá tesz"
+      ],
+      "definition": "To enlarge or vary the range of products or investments",
+      "example": "The company decided to diversify its product portfolio to reduce risk."
+    },
+    {
+      "id": "sustainability",
+      "word": "sustainability",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "fenntarthatóság",
+        "tartósság"
+      ],
+      "definition": "The ability to maintain something at a certain rate or level, especially in business without depleting resources",
+      "example": "Environmental sustainability is now a key priority for many corporations."
+    },
+    {
+      "id": "venture",
+      "word": "venture",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "vállalkozás",
+        "kockázatos üzlet"
+      ],
+      "definition": "A business enterprise involving considerable risk",
+      "example": "His latest venture is a technology startup focused on artificial intelligence."
+    },
+    {
+      "id": "portfolio",
+      "word": "portfolio",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "portfólió",
+        "befektetési alap"
+      ],
+      "definition": "A range of investments held by a person or organisation",
+      "example": "A diversified portfolio helps to minimise investment risk."
+    },
+    {
+      "id": "trend",
+      "word": "trend",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "trend",
+        "irányzat"
+      ],
+      "definition": "A general direction in which something is developing or changing in a market or industry",
+      "example": "The latest trend in retail is towards online shopping."
+    },
+    {
+      "id": "overhead",
+      "word": "overhead",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "általános költség",
+        "rezsi"
+      ],
+      "definition": "Ongoing business expenses not directly attributed to creating a product or service",
+      "example": "Rent and utilities are part of our monthly overheads."
+    },
+    {
+      "id": "stakeholder",
+      "word": "stakeholder",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "érdekelt fél",
+        "résztvevő"
+      ],
+      "definition": "A person or organisation with an interest or concern in a business",
+      "example": "We need to consult all stakeholders before making this decision."
+    },
+    {
+      "id": "tender",
+      "word": "tender",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "pályázat",
+        "ajánlat"
+      ],
+      "definition": "A formal written offer to supply goods or do work at a stated price",
+      "example": "Several companies submitted tenders for the construction project."
+    },
+    {
+      "id": "incorporate",
+      "word": "incorporate",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "bejegyez",
+        "társasággá alakít"
+      ],
+      "definition": "To constitute a company as a legal corporation",
+      "example": "They incorporated the business last year to limit personal liability."
+    },
+    {
+      "id": "liquidate",
+      "word": "liquidate",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "felszámol",
+        "likvidál"
+      ],
+      "definition": "To close down a business and sell its assets to pay debts",
+      "example": "The company was forced to liquidate after filing for bankruptcy."
+    },
+    {
+      "id": "environment",
+      "word": "environment",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "környezet",
+        "környék"
+      ],
+      "definition": "The natural world, including the land, water, air, plants, and animals, especially as affected by human activity.",
+      "example": "Protecting the environment is one of the greatest challenges facing our generation."
+    },
+    {
+      "id": "climate",
+      "word": "climate",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "éghajlat",
+        "klíma"
+      ],
+      "definition": "The general weather conditions that are typical of a place over a long period.",
+      "example": "The Earth's climate has been changing rapidly over the past century."
+    },
+    {
+      "id": "pollution",
+      "word": "pollution",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szennyezés",
+        "környezetszennyezés"
+      ],
+      "definition": "The presence of harmful substances in the environment, especially as a result of human activity.",
+      "example": "Air pollution in major cities has reached dangerous levels this winter."
+    },
+    {
+      "id": "pollute",
+      "word": "pollute",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "szennyez",
+        "beszennyez"
+      ],
+      "definition": "To make air, water, soil, etc. dirty and harmful to people, animals, and plants.",
+      "example": "Factories continue to pollute rivers with toxic chemicals."
+    },
+    {
+      "id": "government",
+      "word": "government",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kormány",
+        "kormányzat"
+      ],
+      "definition": "The group of people who officially control a country and make decisions about laws and taxes.",
+      "example": "The government has announced new measures to tackle unemployment."
+    },
+    {
+      "id": "policy",
+      "word": "policy",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "politika",
+        "irányelv"
+      ],
+      "definition": "A set of plans or actions agreed on by a government, political party, business, or other group.",
+      "example": "The school has introduced a new policy on mobile phone use in classrooms."
+    },
+    {
+      "id": "politics",
+      "word": "politics",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "politika"
+      ],
+      "definition": "The activities associated with governing a country or area, especially the debate between parties having power.",
+      "example": "She has never been interested in politics, preferring to focus on local community work."
+    },
+    {
+      "id": "political",
+      "word": "political",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "politikai"
+      ],
+      "definition": "Relating to the government or public affairs of a country.",
+      "example": "The political situation in the region remains unstable after the recent elections."
+    },
+    {
+      "id": "ecology",
+      "word": "ecology",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "ökológia",
+        "környezettan"
+      ],
+      "definition": "The study of the relationships between living things and their environment.",
+      "example": "She studied ecology at university and now works for a conservation charity."
+    },
+    {
+      "id": "ecological",
+      "word": "ecological",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "ökológiai",
+        "környezeti"
+      ],
+      "definition": "Relating to the relationships between living things and their environment.",
+      "example": "The oil spill caused severe ecological damage to marine life."
+    },
+    {
+      "id": "recycle",
+      "word": "recycle",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "újrahasznosít",
+        "recyclingol"
+      ],
+      "definition": "To collect and treat rubbish to produce useful materials which can be used again.",
+      "example": "We recycle all our paper, plastic, and glass waste at home."
+    },
+    {
+      "id": "renewable",
+      "word": "renewable",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "megújuló",
+        "újítható"
+      ],
+      "definition": "A form of energy that can be produced as quickly as it is used.",
+      "example": "Solar and wind power are renewable sources of energy."
+    },
+    {
+      "id": "emission",
+      "word": "emission",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kibocsátás",
+        "emisszió"
+      ],
+      "definition": "The production and discharge of something, especially gas or radiation.",
+      "example": "Carbon emissions from vehicles are a major contributor to global warming."
+    },
+    {
+      "id": "carbon",
+      "word": "carbon",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szén",
+        "karbon"
+      ],
+      "definition": "A chemical element that is found in all living things and is the main element in coal and oil.",
+      "example": "Reducing our carbon footprint is essential for fighting climate change."
+    },
+    {
+      "id": "deforestation",
+      "word": "deforestation",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "erdőirtás",
+        "erdőpusztítás"
+      ],
+      "definition": "The action of clearing a wide area of trees.",
+      "example": "Deforestation in the Amazon has accelerated dramatically in recent years."
+    },
+    {
+      "id": "biodiversity",
+      "word": "biodiversity",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "biodiverzitás",
+        "biológiai sokféleség"
+      ],
+      "definition": "The variety of plant and animal life in the world or in a particular habitat.",
+      "example": "Tropical rainforests contain the greatest biodiversity on Earth."
+    },
+    {
+      "id": "conservation",
+      "word": "conservation",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "megőrzés",
+        "természetvédelem"
+      ],
+      "definition": "The protection of plants, animals, and natural areas, especially from the damaging effects of human activity.",
+      "example": "Wildlife conservation efforts have helped the tiger population to recover."
+    },
+    {
+      "id": "conserve",
+      "word": "conserve",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megőriz",
+        "takarékoskodik"
+      ],
+      "definition": "To keep and protect something from damage, change, or waste.",
+      "example": "We must conserve water during the drought by taking shorter showers."
+    },
+    {
+      "id": "ecosystem",
+      "word": "ecosystem",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "ökoszisztéma",
+        "ökológiai rendszer"
+      ],
+      "definition": "All the living things in an area and the way they affect each other and the environment.",
+      "example": "Coral reefs are complex ecosystems that support thousands of species."
+    },
+    {
+      "id": "habitat",
+      "word": "habitat",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "élőhely",
+        "természetes környezet"
+      ],
+      "definition": "The natural home or environment of an animal, plant, or other organism.",
+      "example": "Polar bears are losing their habitat as Arctic ice melts."
+    },
+    {
+      "id": "endangered",
+      "word": "endangered",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "veszélyeztetett",
+        "kihalással fenyegetett"
+      ],
+      "definition": "A species at serious risk of extinction.",
+      "example": "The giant panda is no longer classified as an endangered species."
+    },
+    {
+      "id": "extinction",
+      "word": "extinction",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kihalás",
+        "kipusztulás"
+      ],
+      "definition": "The state of no longer existing, especially of a species of animal or plant.",
+      "example": "Many scientists fear that mass extinction events are becoming more frequent."
+    },
+    {
+      "id": "waste",
+      "word": "waste",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "hulladék",
+        "szemét"
+      ],
+      "definition": "Unwanted or unusable materials produced during an activity or process.",
+      "example": "Plastic waste is accumulating in our oceans at an alarming rate."
+    },
+    {
+      "id": "global",
+      "word": "global",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "globális",
+        "világméretű"
+      ],
+      "definition": "Relating to the whole world; worldwide.",
+      "example": "Global temperatures have risen by more than one degree in the past century."
+    },
+    {
+      "id": "warming",
+      "word": "warming",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "melegedés",
+        "felmelegedés"
+      ],
+      "definition": "An increase in temperature, especially of the Earth's atmosphere.",
+      "example": "Global warming is causing ice caps to melt at unprecedented rates."
+    },
+    {
+      "id": "greenhouse",
+      "word": "greenhouse",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "üvegház",
+        "melegház"
+      ],
+      "definition": "A glass building in which plants are grown; also used in 'greenhouse effect' or 'greenhouse gases'.",
+      "example": "Greenhouse gases trap heat in the Earth's atmosphere."
+    },
+    {
+      "id": "fossil",
+      "word": "fossil",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "fosszília",
+        "kövület"
+      ],
+      "definition": "The remains of an ancient plant or animal preserved in rock; also used in 'fossil fuel'.",
+      "example": "Burning fossil fuels releases carbon dioxide into the atmosphere."
+    },
+    {
+      "id": "solar",
+      "word": "solar",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "nap-",
+        "napenergiás"
+      ],
+      "definition": "Relating to the sun or using the energy from the sun.",
+      "example": "They installed solar panels on their roof to reduce electricity costs."
+    },
+    {
+      "id": "nuclear",
+      "word": "nuclear",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "nukleáris",
+        "atomenergiás"
+      ],
+      "definition": "Relating to or using the energy released when atoms are divided or joined.",
+      "example": "Nuclear power stations provide a significant portion of our electricity."
+    },
+    {
+      "id": "toxic",
+      "word": "toxic",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "mérgező",
+        "toxikus"
+      ],
+      "definition": "Containing poison; poisonous.",
+      "example": "Toxic chemicals from the factory leaked into the groundwater."
+    },
+    {
+      "id": "contamination",
+      "word": "contamination",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szennyeződés",
+        "fertőzés"
+      ],
+      "definition": "The action or state of making something impure by polluting or poisoning it.",
+      "example": "Water contamination can lead to serious health problems in local communities."
+    },
+    {
+      "id": "contaminate",
+      "word": "contaminate",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "szennyez",
+        "fertőz"
+      ],
+      "definition": "To make something less pure or make it poisonous.",
+      "example": "Industrial waste can contaminate rivers and harm aquatic life."
+    },
+    {
+      "id": "regulate",
+      "word": "regulate",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "szabályoz",
+        "irányít"
+      ],
+      "definition": "To control something, especially by rules.",
+      "example": "The government needs to regulate emissions from power plants more strictly."
+    },
+    {
+      "id": "regulation",
+      "word": "regulation",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szabályozás",
+        "rendelet"
+      ],
+      "definition": "An official rule or law that controls the way something is done.",
+      "example": "Environmental regulations have become much stricter in recent years."
+    },
+    {
+      "id": "treaty",
+      "word": "treaty",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "egyezmény",
+        "szerződés"
+      ],
+      "definition": "A formal agreement between two or more countries.",
+      "example": "The Paris Treaty aims to limit global temperature increases."
+    },
+    {
+      "id": "agreement",
+      "word": "agreement",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "megállapodás",
+        "egyezség"
+      ],
+      "definition": "A decision or arrangement, often formal and written, between two or more groups or people.",
+      "example": "Countries reached an agreement to reduce plastic waste in oceans."
+    },
+    {
+      "id": "summit",
+      "word": "summit",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "csúcstalálkozó",
+        "csúcs"
+      ],
+      "definition": "An important formal meeting between leaders of governments.",
+      "example": "World leaders gathered at the climate summit to discuss urgent action."
+    },
+    {
+      "id": "initiative",
+      "word": "initiative",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kezdeményezés",
+        "kezdeményező képesség"
+      ],
+      "definition": "A new plan or process to achieve something or solve a problem.",
+      "example": "The city launched a new initiative to promote cycling and reduce car use."
+    },
+    {
+      "id": "democracy",
+      "word": "democracy",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "demokrácia",
+        "népuralom"
+      ],
+      "definition": "A system of government in which power is held by elected representatives and an elected leader.",
+      "example": "Democracy requires active participation from informed citizens."
+    },
+    {
+      "id": "democratic",
+      "word": "democratic",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "demokratikus"
+      ],
+      "definition": "Relating to a system where people have the power to make decisions through voting.",
+      "example": "The country is transitioning to a more democratic form of government."
+    },
+    {
+      "id": "parliament",
+      "word": "parliament",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "parlament",
+        "törvényhozás"
+      ],
+      "definition": "The group of elected politicians who make the laws in some countries.",
+      "example": "Parliament voted in favour of the new climate change bill."
+    },
+    {
+      "id": "election",
+      "word": "election",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "választás",
+        "szavazás"
+      ],
+      "definition": "An occasion when people vote to choose someone for an official position.",
+      "example": "The next general election will be held in two years."
+    },
+    {
+      "id": "vote",
+      "word": "vote",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "szavaz",
+        "voksol"
+      ],
+      "definition": "To express your choice or opinion in an election or meeting by raising your hand or marking a paper.",
+      "example": "Citizens aged 18 and over have the right to vote in elections."
+    },
+    {
+      "id": "protest",
+      "word": "protest",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "tiltakozás",
+        "tüntetés"
+      ],
+      "definition": "A strong complaint or disagreement, or an occasion when people show this.",
+      "example": "Thousands of students joined the climate protest in London."
+    },
+    {
+      "id": "activist",
+      "word": "activist",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "aktivista",
+        "harcos"
+      ],
+      "definition": "A person who campaigns for social or political change.",
+      "example": "Environmental activists are calling for a ban on single-use plastics."
+    },
+    {
+      "id": "consequence",
+      "word": "consequence",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "következmény",
+        "hatás"
+      ],
+      "definition": "A result of a particular action or situation, often one that is bad or not convenient.",
+      "example": "Rising sea levels are a direct consequence of climate change."
+    },
+    {
+      "id": "impact",
+      "word": "impact",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "hatás",
+        "befolyás"
+      ],
+      "definition": "The effect or influence that an event, situation, etc. has on someone or something.",
+      "example": "The environmental impact of fast fashion is becoming increasingly clear."
+    },
+    {
+      "id": "crisis",
+      "word": "crisis",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "válság",
+        "krízis"
+      ],
+      "definition": "A time of great danger, difficulty, or confusion when problems must be solved quickly.",
+      "example": "The world is facing an unprecedented climate crisis."
+    },
+    {
+      "id": "emergency",
+      "word": "emergency",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "vészhelyzet",
+        "sürgősségi eset"
+      ],
+      "definition": "A serious, unexpected, and often dangerous situation requiring immediate action.",
+      "example": "The government has declared a state of emergency due to severe flooding."
+    },
+    {
+      "id": "disaster",
+      "word": "disaster",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "katasztrófa",
+        "szerencsétlenség"
+      ],
+      "definition": "A sudden event such as a flood, storm, or accident which causes great damage or suffering.",
+      "example": "The oil spill was an environmental disaster affecting thousands of miles of coastline."
+    },
+    {
+      "id": "drought",
+      "word": "drought",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "aszály",
+        "szárazság"
+      ],
+      "definition": "A long period when there is little or no rain and crops die.",
+      "example": "The severe drought has forced farmers to abandon their crops."
+    },
+    {
+      "id": "flood",
+      "word": "flood",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "árvíz",
+        "áradás"
+      ],
+      "definition": "A large amount of water covering an area that is usually dry.",
+      "example": "Heavy rainfall caused severe floods in several coastal towns."
+    },
+    {
+      "id": "hurricane",
+      "word": "hurricane",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "hurrikán",
+        "orkán"
+      ],
+      "definition": "A violent storm with very strong winds, especially in the western Atlantic Ocean.",
+      "example": "The hurricane destroyed thousands of homes along the coast."
+    },
+    {
+      "id": "extreme",
+      "word": "extreme",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "szélsőséges",
+        "extrém"
+      ],
+      "definition": "Very large in amount or degree; very severe or serious.",
+      "example": "Extreme weather events are becoming more common due to climate change."
+    },
+    {
+      "id": "temperature",
+      "word": "temperature",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "hőmérséklet"
+      ],
+      "definition": "The degree of heat or cold in a place or object.",
+      "example": "Global temperatures continue to rise year after year."
+    },
+    {
+      "id": "atmosphere",
+      "word": "atmosphere",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "légkör",
+        "atmoszféra"
+      ],
+      "definition": "The mixture of gases around the Earth.",
+      "example": "Carbon dioxide levels in the atmosphere have reached record highs."
+    },
+    {
+      "id": "resource",
+      "word": "resource",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "erőforrás",
+        "természeti kincs"
+      ],
+      "definition": "Something valuable such as land, oil, or water that exists in a country and can be used.",
+      "example": "Natural resources like fresh water are becoming increasingly scarce."
+    },
+    {
+      "id": "scarcity",
+      "word": "scarcity",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "hiány",
+        "szűkösség"
+      ],
+      "definition": "A situation in which something is not easy to find or get; lack of something.",
+      "example": "Water scarcity affects millions of people in developing countries."
+    },
+    {
+      "id": "preserve",
+      "word": "preserve",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megőriz",
+        "fenntart"
+      ],
+      "definition": "To keep something as it is, especially in order to prevent it from decaying or being damaged.",
+      "example": "It's important to preserve natural habitats for future generations."
+    },
+    {
+      "id": "protect",
+      "word": "protect",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "véd",
+        "megvéd"
+      ],
+      "definition": "To keep someone or something safe from harm, damage, or illness.",
+      "example": "We must protect endangered species from poaching and habitat loss."
+    },
+    {
+      "id": "protection",
+      "word": "protection",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "védelem",
+        "oltalom"
+      ],
+      "definition": "The act of protecting, or the state of being protected.",
+      "example": "Environmental protection should be a top priority for all governments."
+    },
+    {
+      "id": "responsibility",
+      "word": "responsibility",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "felelősség",
+        "kötelezettség"
+      ],
+      "definition": "A duty to deal with or take care of someone or something.",
+      "example": "We all share responsibility for protecting the environment."
+    },
+    {
+      "id": "solution",
+      "word": "solution",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "megoldás",
+        "megfejtés"
+      ],
+      "definition": "A way to solve a problem or deal with a difficult situation.",
+      "example": "Renewable energy offers a long-term solution to our energy needs."
+    },
+    {
+      "id": "alternative",
+      "word": "alternative",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "alternatíva",
+        "más lehetőség"
+      ],
+      "definition": "Something that is different from something else, especially from what is usual.",
+      "example": "We need to find alternatives to plastic packaging."
+    },
+    {
+      "id": "reduce",
+      "word": "reduce",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "csökkent",
+        "redukál"
+      ],
+      "definition": "To make something less in size, amount, degree, importance, etc.",
+      "example": "We can reduce our carbon footprint by using public transport."
+    },
+    {
+      "id": "reduction",
+      "word": "reduction",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "csökkentés",
+        "redukció"
+      ],
+      "definition": "The act of making something less or smaller; the amount by which something is made less.",
+      "example": "A significant reduction in emissions is needed to meet our climate targets."
+    },
+    {
+      "id": "increase",
+      "word": "increase",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "növel",
+        "emelkedik"
+      ],
+      "definition": "To become or make something greater in size, amount, or degree.",
+      "example": "Global temperatures are expected to increase by several degrees this century."
+    },
+    {
+      "id": "threaten",
+      "word": "threaten",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "fenyeget",
+        "veszélyeztet"
+      ],
+      "definition": "To be likely to cause harm or damage to something.",
+      "example": "Rising temperatures threaten the survival of many Arctic species."
+    },
+    {
+      "id": "threat",
+      "word": "threat",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "fenyegetés",
+        "veszély"
+      ],
+      "definition": "A situation or person that is regarded as dangerous and likely to cause harm.",
+      "example": "Climate change poses the greatest threat to our planet's future."
+    },
+    {
+      "id": "vulnerable",
+      "word": "vulnerable",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "sebezhető",
+        "veszélyeztetett"
+      ],
+      "definition": "Able to be easily hurt, influenced, or attacked.",
+      "example": "Coastal communities are particularly vulnerable to rising sea levels."
+    },
+    {
+      "id": "consume",
+      "word": "consume",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "fogyaszt",
+        "elfogyaszt"
+      ],
+      "definition": "To use fuel, energy, time, or a product, especially in large amounts.",
+      "example": "We consume far more resources than the planet can regenerate."
+    },
+    {
+      "id": "consumption",
+      "word": "consumption",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "fogyasztás",
+        "felhasználás"
+      ],
+      "definition": "The amount used or eaten; the act of using, eating, or drinking something.",
+      "example": "Reducing meat consumption can significantly lower your carbon footprint."
+    },
+    {
+      "id": "production",
+      "word": "production",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "termelés",
+        "gyártás"
+      ],
+      "definition": "The process of making or growing goods to be sold.",
+      "example": "The production of electric vehicles has increased dramatically."
+    },
+    {
+      "id": "industry",
+      "word": "industry",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "ipar",
+        "iparág"
+      ],
+      "definition": "The production of goods from raw materials, especially in factories.",
+      "example": "The fashion industry is one of the world's biggest polluters."
+    },
+    {
+      "id": "industrial",
+      "word": "industrial",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "ipari",
+        "iparosított"
+      ],
+      "definition": "Relating to industry, or having a lot of industry and factories.",
+      "example": "Industrial pollution has contaminated the river for decades."
+    },
+    {
+      "id": "corporation",
+      "word": "corporation",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "vállalat",
+        "társaság"
+      ],
+      "definition": "A large company or group of companies that is recognised as a single entity in law.",
+      "example": "Large corporations must take greater responsibility for their environmental impact."
+    },
+    {
+      "id": "organisation",
+      "word": "organisation",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szervezet",
+        "szervezés"
+      ],
+      "definition": "A group of people who work together in an organised way for a shared purpose.",
+      "example": "International organisations are working together to combat climate change."
+    },
+    {
+      "id": "authority",
+      "word": "authority",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "hatóság",
+        "felhatalmazás"
+      ],
+      "definition": "A group of people with official responsibility for a particular area of activity.",
+      "example": "Local authorities are responsible for waste management and recycling."
+    },
+    {
+      "id": "official",
+      "word": "official",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "hivatalos",
+        "formális"
+      ],
+      "definition": "Relating to a position of authority; approved by the government or someone in authority.",
+      "example": "The official report confirmed that air quality had deteriorated."
+    },
+    {
+      "id": "minister",
+      "word": "minister",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "miniszter",
+        "lelkész"
+      ],
+      "definition": "A member of the government who is in charge of a government department.",
+      "example": "The Environment Minister announced new targets for reducing emissions."
+    },
+    {
+      "id": "minister",
+      "word": "ministry",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "minisztérium"
+      ],
+      "definition": "A government department led by a minister.",
+      "example": "The Ministry of Environment has proposed stricter pollution controls."
+    },
+    {
+      "id": "fund",
+      "word": "fund",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "finanszíroz",
+        "alapot biztosít"
+      ],
+      "definition": "To provide money for an activity, organisation, event, etc.",
+      "example": "The government agreed to fund research into clean energy technologies."
+    },
+    {
+      "id": "investment",
+      "word": "investment",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "befektetés",
+        "beruházás"
+      ],
+      "definition": "The act of putting money, effort, time, etc. into something; the money that is put in.",
+      "example": "Investment in green technology is essential for a sustainable future."
+    },
+    {
+      "id": "develop",
+      "word": "develop",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "fejleszt",
+        "kifejleszt"
+      ],
+      "definition": "To grow, change, or make something grow or change into a more advanced form.",
+      "example": "Scientists are working to develop new methods of carbon capture."
+    },
+    {
+      "id": "development",
+      "word": "development",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "fejlesztés",
+        "fejlődés"
+      ],
+      "definition": "The process of growing, changing, or making progress.",
+      "example": "Sustainable development requires balancing economic and environmental needs."
+    },
+    {
+      "id": "progress",
+      "word": "progress",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "haladás",
+        "fejlődés"
+      ],
+      "definition": "Movement towards achieving something; development and improvement.",
+      "example": "The country has made significant progress in reducing air pollution."
+    },
+    {
+      "id": "target",
+      "word": "target",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "cél",
+        "célpont"
+      ],
+      "definition": "A level or result that you hope to achieve.",
+      "example": "The government has set ambitious targets for cutting carbon emissions."
+    },
+    {
+      "id": "goal",
+      "word": "goal",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "cél",
+        "célkitűzés"
+      ],
+      "definition": "An aim or purpose; something that you want to achieve.",
+      "example": "Our goal is to become carbon neutral by 2030."
+    },
+    {
+      "id": "objective",
+      "word": "objective",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "cél",
+        "célkitűzés"
+      ],
+      "definition": "Something that you plan to achieve, especially in business or work.",
+      "example": "The main objective of the policy is to reduce plastic waste."
+    },
+    {
+      "id": "strategy",
+      "word": "strategy",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "stratégia",
+        "tervezés"
+      ],
+      "definition": "A detailed plan for achieving success in situations such as war, politics, business, etc.",
+      "example": "The government announced its new strategy for tackling climate change."
+    },
+    {
+      "id": "measure",
+      "word": "measure",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "intézkedés",
+        "mérték"
+      ],
+      "definition": "A way of achieving something, or a method for dealing with a situation.",
+      "example": "The council has introduced measures to improve air quality."
+    },
+    {
+      "id": "action",
+      "word": "action",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "cselekvés",
+        "intézkedés"
+      ],
+      "definition": "The process of doing something, especially to deal with a problem or difficulty.",
+      "example": "Urgent action is needed to prevent further environmental damage."
+    },
+    {
+      "id": "compliance",
+      "word": "compliance",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "megfelelés",
+        "betartás"
+      ],
+      "definition": "The act of obeying an order, rule, or request.",
+      "example": "Companies must ensure compliance with environmental regulations."
+    },
+    {
+      "id": "violate",
+      "word": "violate",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megszeg",
+        "megsért"
+      ],
+      "definition": "To break or act against something, especially a law, agreement, or principle.",
+      "example": "The factory was fined for violating pollution control laws."
+    },
+    {
+      "id": "penalty",
+      "word": "penalty",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "büntetés",
+        "bírság"
+      ],
+      "definition": "A punishment for breaking a law, rule, or contract.",
+      "example": "Companies face heavy penalties for illegal dumping of toxic waste."
+    },
+    {
+      "id": "ban",
+      "word": "ban",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "betilt",
+        "megtilt"
+      ],
+      "definition": "To officially forbid something from being done, said, or used.",
+      "example": "Several countries have banned single-use plastic bags."
+    },
+    {
+      "id": "restriction",
+      "word": "restriction",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "korlátozás",
+        "megszorítás"
+      ],
+      "definition": "An official limit on something.",
+      "example": "The government imposed restrictions on water use during the drought."
+    },
+    {
+      "id": "limit",
+      "word": "limit",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "korlátoz",
+        "megszorít"
+      ],
+      "definition": "To control something so that it is less than a particular amount or number.",
+      "example": "We need to limit our greenhouse gas emissions to slow global warming."
+    },
+    {
+      "id": "capacity",
+      "word": "capacity",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kapacitás",
+        "befogadóképesség"
+      ],
+      "definition": "The total amount that can be contained or produced; the ability to do something.",
+      "example": "The country is increasing its capacity to generate renewable energy."
+    },
+    {
+      "id": "efficiency",
+      "word": "efficiency",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "hatékonyság",
+        "teljesítmény"
+      ],
+      "definition": "The quality of doing something well with no waste of time or money.",
+      "example": "Improving energy efficiency in buildings can significantly reduce emissions."
+    },
+    {
+      "id": "adapt",
+      "word": "adapt",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "alkalmazkodik",
+        "átalakít"
+      ],
+      "definition": "To change behaviour or ideas to suit new conditions.",
+      "example": "Communities must adapt to the changing climate and rising sea levels."
+    },
+    {
+      "id": "adaptation",
+      "word": "adaptation",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "alkalmazkodás",
+        "adaptáció"
+      ],
+      "definition": "The process of changing to suit different conditions.",
+      "example": "Climate adaptation strategies are essential for vulnerable regions."
+    },
+    {
+      "id": "transition",
+      "word": "transition",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "átmenet",
+        "átállás"
+      ],
+      "definition": "The process of changing from one form or state to another.",
+      "example": "The transition to clean energy will create millions of new jobs."
+    },
+    {
+      "id": "shift",
+      "word": "shift",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "elmozdít",
+        "változtat"
+      ],
+      "definition": "To move or change from one position or direction to another.",
+      "example": "We need to shift away from fossil fuels towards renewable energy."
+    },
+    {
+      "id": "reverse",
+      "word": "reverse",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megfordít",
+        "visszafordít"
+      ],
+      "definition": "To change the direction, order, position, or result of something to its opposite.",
+      "example": "It may already be too late to reverse the effects of climate change."
+    },
+    {
+      "id": "restore",
+      "word": "restore",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "helyreállít",
+        "visszaállít"
+      ],
+      "definition": "To return something or someone to an earlier good condition or position.",
+      "example": "The project aims to restore damaged wetlands and improve water quality."
+    },
+    {
+      "id": "rehabilitation",
+      "word": "rehabilitation",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "rehabilitáció",
+        "helyreállítás"
+      ],
+      "definition": "The process of returning something to a good condition.",
+      "example": "Environmental rehabilitation of the mining site will take many years."
+    },
+    {
+      "id": "monitor",
+      "word": "monitor",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "figyel",
+        "ellenőriz"
+      ],
+      "definition": "To watch and check something carefully over a period of time.",
+      "example": "Scientists monitor air quality levels in major cities continuously."
+    },
+    {
+      "id": "assess",
+      "word": "assess",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "értékel",
+        "felmér"
+      ],
+      "definition": "To judge or decide the amount, value, quality, or importance of something.",
+      "example": "Experts are assessing the environmental impact of the new motorway."
+    },
+    {
+      "id": "assessment",
+      "word": "assessment",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "értékelés",
+        "felmérés"
+      ],
+      "definition": "The act of judging or deciding the amount, value, quality, or importance of something.",
+      "example": "An environmental assessment must be completed before construction begins."
+    },
+    {
+      "id": "data",
+      "word": "data",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "adat",
+        "adatok"
+      ],
+      "definition": "Information, especially facts or numbers, collected for examination and consideration.",
+      "example": "Climate data shows a clear warming trend over the past century."
+    },
+    {
+      "id": "evidence",
+      "word": "evidence",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "bizonyíték",
+        "tanúbizonyság"
+      ],
+      "definition": "Facts or information that show whether something is true or exists.",
+      "example": "There is overwhelming evidence that human activity is causing climate change."
+    },
+    {
+      "id": "research",
+      "word": "research",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kutatás",
+        "tanulmány"
+      ],
+      "definition": "A detailed study of a subject in order to discover new information or reach a new understanding.",
+      "example": "Scientific research has confirmed the link between emissions and global warming."
+    },
+    {
+      "id": "cooperation",
+      "word": "cooperation",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "együttműködés",
+        "kooperáció"
+      ],
+      "definition": "The act of working together with someone or doing what they ask you to do.",
+      "example": "International cooperation is essential for tackling climate change."
+    },
+    {
+      "id": "contribution",
+      "word": "contribution",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "hozzájárulás",
+        "közreműködés"
+      ],
+      "definition": "Something that you give or do to help make something successful.",
+      "example": "Every small contribution to reducing waste makes a difference."
+    },
+    {
+      "id": "commitment",
+      "word": "commitment",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "elkötelezettség",
+        "kötelezettségvállalás"
+      ],
+      "definition": "A promise to do something or to behave in a particular way.",
+      "example": "The government has made a commitment to achieving net-zero emissions by 2050."
     }
   ]
 }
