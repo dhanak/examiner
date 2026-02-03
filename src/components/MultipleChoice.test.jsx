@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest'
-import { render, screen, fireEvent } from '@testing-library/react'
+import { render, fireEvent } from '@testing-library/react'
 import MultipleChoice from './MultipleChoice.jsx'
 import { usePracticeStore } from '../store/practiceStore'
 import { useVocabularyStore } from '../store/vocabularyStore'
@@ -95,7 +95,6 @@ describe('MultipleChoice', () => {
     const buttons = container.querySelectorAll('.option-button')
     if (buttons.length > 0) {
       fireEvent.click(buttons[0])
-      const initialCard = container.querySelector('.question-card')
       fireEvent.keyDown(document, { key: 'Enter' })
       const nextCard = container.querySelector('.question-card')
       // Card should still exist (regenerated)
@@ -105,7 +104,7 @@ describe('MultipleChoice', () => {
 
   it('regenerates question when direction changes', () => {
     const { rerender, container: container1 } = render(<MultipleChoice />)
-    const options1 = container1.querySelectorAll('.option-button').length
+    container1.querySelectorAll('.option-button').length
 
     usePracticeStore.mockReturnValue({
       direction: 'en-to-hu',
