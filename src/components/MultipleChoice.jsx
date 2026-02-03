@@ -221,11 +221,6 @@ export default function MultipleChoice() {
             </button>
           </div>
         )}
-
-        <div className="keyboard-hints">
-          Press 1-{options.length} to select
-          {isCorrect !== null && ', Enter for next'}
-        </div>
       </div>
     </div>
   )

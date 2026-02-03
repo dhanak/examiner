@@ -33,8 +33,6 @@ export default function Dashboard() {
 
   return (
     <div className="dashboard">
-      <h1>Dashboard</h1>
-      
       {/* Vocabulary Stats */}
       <section className="dashboard-section vocabulary-section">
         <h2>Vocabulary Progress</h2>
