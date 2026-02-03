@@ -1,0 +1,243 @@
+.fill-blanks {
+  padding: 0;
+}
+
+.no-words-message {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--text-secondary);
+}
+
+.no-words-message p {
+  margin: 10px 0;
+}
+
+.exercise-card {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
+.sentence {
+  font-size: 1rem;
+  line-height: 2.2;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  width: 100%;
+}
+
+.fill-blanks .word {
+  display: inline;
+  white-space: normal;
+  font-size: inherit;
+  font-weight: normal;
+  margin: 0 2px 0 0;
+  text-shadow: none;
+}
+
+.blank-slot {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: baseline;
+  padding-right: 8px;
+}
+
+.receptacle-lozenge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  border-radius: 16px;
+  font-weight: 500;
+  font-size: 1rem;
+  vertical-align: baseline;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  line-height: 1.6;
+}
+
+.receptacle-lozenge.empty {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  min-width: 70px;
+  text-align: center;
+  padding: 4px 16px;
+  cursor: grab;
+}
+
+.receptacle-lozenge.empty.drag-over {
+  border-color: var(--accent-color);
+  background: rgba(59, 130, 246, 0.1);
+  box-shadow: inset 0 0 0 2px var(--accent-color);
+}
+
+.receptacle-lozenge.filled {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.receptacle-lozenge.filled:hover {
+  background: var(--accent-hover);
+}
+
+.receptacle-lozenge .hotkey {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 16px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 700;
+  flex-shrink: 0;
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  color: inherit !important;
+  opacity: 1 !important;
+}
+
+.receptacle-lozenge .word-text {
+  display: inline;
+}
+
+/* Word options row with draggable lozenges */
+.options-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  justify-content: center;
+  width: 100%;
+}
+
+.lozenge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  background: var(--background-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  cursor: grab;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.lozenge:hover {
+  background: var(--hover-color);
+  border-color: var(--accent-color);
+  transform: translateY(-1px);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lozenge:active {
+  cursor: grabbing;
+}
+
+.lozenge.used {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.lozenge .hotkey {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 16px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 700;
+  flex-shrink: 0;
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  color: inherit !important;
+  opacity: 1 !important;
+}
+
+.lozenge-text {
+  display: inline;
+  flex: 1;
+  min-width: 0;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+  width: 100%;
+}
+
+.check-button,
+.next-button {
+  padding: 0.6rem 1.5rem;
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.check-button:hover,
+.next-button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.feedback {
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 1rem;
+  max-width: 400px;
+  text-align: center;
+}
+
+.feedback.correct {
+  background: rgba(34, 197, 94, 0.1);
+  color: #22c55e;
+  border: 1px solid #22c55e;
+}
+
+.feedback.incorrect {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border: 1px solid #ef4444;
+}
+
+.feedback.incomplete {
+  background: rgba(229, 231, 235, 0.5);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}

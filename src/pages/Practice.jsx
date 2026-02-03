@@ -1,6 +1,7 @@
 import PracticeControls from '../components/PracticeControls'
 import MultipleChoice from '../components/MultipleChoice'
 import MatchPairs from '../components/MatchPairs'
+import FillBlanks from '../components/FillBlanks'
 import { usePracticeStore } from '../store/practiceStore'
 import './Practice.css'
 
@@ -14,12 +15,7 @@ export default function Practice() {
       case 'match-pairs':
         return <MatchPairs />
       case 'fill-blanks':
-        return (
-          <div className="coming-soon">
-            <h2>Fill in the Blanks</h2>
-            <p>This mode is coming soon!</p>
-          </div>
-        )
+        return <FillBlanks />
       default:
         return null
     }

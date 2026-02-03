@@ -23,10 +23,11 @@ export const usePracticeStore = create((set, get) => ({
       optionCount: 4  // 4, 6, or 8 options
     },
     matchPairs: {
-      pairCount: 6    // 4-8 pairs
+      pairCount: 4    // 4-8 pairs
     },
     fillBlanks: {
-      distractorCount: 3  // 2-4 distractors
+      blankCount: 2,       // 1-3 blanks per sentence
+      distractorCount: 3   // 2-4 distractors
     }
   },
   

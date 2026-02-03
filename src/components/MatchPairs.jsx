@@ -131,8 +131,6 @@ export default function MatchPairs() {
     if (!hasInitializedRef.current) {
       hasInitializedRef.current = true
       const { leftItems: left, rightItems: right, pairs: newPairs } = generatePairs()
-      // We intentionally set state here to load pairs on mount only
-      // eslint-disable-next-line react-hooks/set-state-in-effect
       setLeftItems(left)
       setRightItems(right)
       setPairs(newPairs)
