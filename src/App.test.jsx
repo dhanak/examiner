@@ -19,7 +19,9 @@ describe('App', () => {
         <App />
       </BrowserRouter>
     )
-    expect(screen.getByText('Dashboard')).toBeInTheDocument()
+    expect(screen.getByRole('navigation')).toBeInTheDocument()
+    const dashboardLink = screen.getAllByText('Dashboard')[0]
+    expect(dashboardLink).toBeInTheDocument()
     expect(screen.getByText('Vocabulary')).toBeInTheDocument()
     expect(screen.getByText('Practice')).toBeInTheDocument()
   })
