@@ -111,6 +111,19 @@ export default function FillBlanks() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
+  // Regenerate when blankCount or distractorCount changes
+  useEffect(() => {
+    const exercise = generateExercise()
+    if (exercise) {
+      setWord(exercise.word)
+      setSentence(exercise.sentence)
+      setBlanks(exercise.blanks)
+      setOptions(exercise.options)
+      setFilledBlanks({})
+      setFeedback(null)
+    }
+  }, [blankCount, distractorCount, generateExercise])
+
   const handleCheck = useCallback(() => {
     if (!word || blanks.length === 0) return
 

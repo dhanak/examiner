@@ -141,6 +141,17 @@ export default function MatchPairs() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
+  // Regenerate when pairCount changes
+  useEffect(() => {
+    const { leftItems: left, rightItems: right, pairs: newPairs } = generatePairs()
+    setLeftItems(left)
+    setRightItems(right)
+    setPairs(newPairs)
+    setSelectedLeft(null)
+    setSelectedRight(null)
+    setMatches(new Set())
+  }, [pairCount, generatePairs])
+
   const handleItemClick = useCallback((itemId, side) => {
     // If the item is already matched, don't do anything
     const item = side === 'left' 

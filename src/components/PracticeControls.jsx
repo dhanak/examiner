@@ -8,9 +8,11 @@ export default function PracticeControls() {
     wordPoolFilter,
     correctCount,
     incorrectCount,
+    settings,
     setMode,
     setDirection,
     setWordPoolFilter,
+    updateSettings,
     getAccuracy,
     resetSession
   } = usePracticeStore()
@@ -95,6 +97,59 @@ export default function PracticeControls() {
           </select>
         </div>
       </div>
+
+      {/* Mode-Specific Parameters */}
+      {currentMode === 'match-pairs' && (
+        <div className="control-section parameter-controls">
+          <div className="setting-group">
+            <label htmlFor="pair-count">
+              Pairs: <span className="param-value">{settings.matchPairs.pairCount}</span>
+            </label>
+            <input
+              id="pair-count"
+              type="range"
+              min="4"
+              max="8"
+              value={settings.matchPairs.pairCount}
+              onChange={(e) => updateSettings('matchPairs', { pairCount: parseInt(e.target.value) })}
+              className="param-slider"
+            />
+          </div>
+        </div>
+      )}
+
+      {currentMode === 'fill-blanks' && (
+        <div className="control-section parameter-controls">
+          <div className="setting-group">
+            <label htmlFor="blank-count">
+              Blanks: <span className="param-value">{settings.fillBlanks.blankCount}</span>
+            </label>
+            <input
+              id="blank-count"
+              type="range"
+              min="1"
+              max="3"
+              value={settings.fillBlanks.blankCount}
+              onChange={(e) => updateSettings('fillBlanks', { blankCount: parseInt(e.target.value) })}
+              className="param-slider"
+            />
+          </div>
+          <div className="setting-group">
+            <label htmlFor="distractor-count">
+              Distractors: <span className="param-value">{settings.fillBlanks.distractorCount}</span>
+            </label>
+            <input
+              id="distractor-count"
+              type="range"
+              min="2"
+              max="6"
+              value={settings.fillBlanks.distractorCount}
+              onChange={(e) => updateSettings('fillBlanks', { distractorCount: parseInt(e.target.value) })}
+              className="param-slider"
+            />
+          </div>
+        </div>
+      )}
 
       {/* Stats Display */}
       <div className="control-section stats-display">
