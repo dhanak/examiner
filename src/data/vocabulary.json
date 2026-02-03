@@ -3444,6 +3444,1650 @@
       ],
       "definition": "no longer feeling worried or anxious",
       "example": "I was relieved to hear that the operation was successful."
+    },
+    {
+      "id": "perspective",
+      "word": "perspective",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "nézőpont",
+        "perspektíva"
+      ],
+      "definition": "A particular way of considering or regarding something; a point of view",
+      "example": "From my perspective, the proposal has several advantages."
+    },
+    {
+      "id": "assumption",
+      "word": "assumption",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "feltételezés",
+        "feltevés"
+      ],
+      "definition": "A thing that is accepted as true or certain to happen, without proof",
+      "example": "Your argument is based on a false assumption."
+    },
+    {
+      "id": "notion",
+      "word": "notion",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "elképzelés",
+        "fogalom"
+      ],
+      "definition": "A conception or belief about something",
+      "example": "She has some romantic notions about country life."
+    },
+    {
+      "id": "stance",
+      "word": "stance",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "álláspont",
+        "vélemény"
+      ],
+      "definition": "The attitude of a person or organisation towards something; a standpoint",
+      "example": "The government's stance on immigration has changed."
+    },
+    {
+      "id": "undermine",
+      "word": "undermine",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "aláás",
+        "gyengít"
+      ],
+      "definition": "To lessen the effectiveness, power, or ability of something",
+      "example": "His constant criticism undermined her confidence."
+    },
+    {
+      "id": "justify",
+      "word": "justify",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "igazol",
+        "indokol"
+      ],
+      "definition": "To show or prove to be right or reasonable",
+      "example": "How can you justify spending so much money?"
+    },
+    {
+      "id": "acknowledge",
+      "word": "acknowledge",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "elismer",
+        "beismer"
+      ],
+      "definition": "To accept or admit the existence or truth of something",
+      "example": "She acknowledged that the project had failed."
+    },
+    {
+      "id": "clarify",
+      "word": "clarify",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "tisztáz",
+        "világossá tesz"
+      ],
+      "definition": "To make a statement or situation less confused and more comprehensible",
+      "example": "Could you clarify what you mean by that?"
+    },
+    {
+      "id": "emphasise",
+      "word": "emphasise",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "hangsúlyoz",
+        "kiemel"
+      ],
+      "definition": "To give special importance or prominence to something in speaking or writing",
+      "example": "The report emphasises the need for better education."
+    },
+    {
+      "id": "imply",
+      "word": "imply",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "sugall",
+        "céloz"
+      ],
+      "definition": "To suggest or indicate something without stating it directly",
+      "example": "Are you implying that I'm lying?"
+    },
+    {
+      "id": "abstract",
+      "word": "abstract",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "elvont",
+        "absztrakt"
+      ],
+      "definition": "Existing in thought or as an idea but not having a physical existence",
+      "example": "Truth and beauty are abstract concepts."
+    },
+    {
+      "id": "subjective",
+      "word": "subjective",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "szubjektív",
+        "egyéni"
+      ],
+      "definition": "Based on or influenced by personal feelings or opinions",
+      "example": "Beauty is subjective and varies from person to person."
+    },
+    {
+      "id": "controversial",
+      "word": "controversial",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "vitatott",
+        "ellentmondásos"
+      ],
+      "definition": "Giving rise or likely to give rise to controversy or public disagreement",
+      "example": "The film deals with controversial political issues."
+    },
+    {
+      "id": "ambiguous",
+      "word": "ambiguous",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "kétértelmű",
+        "homályos"
+      ],
+      "definition": "Open to more than one interpretation; not having one obvious meaning",
+      "example": "Her answer was deliberately ambiguous."
+    },
+    {
+      "id": "fundamental",
+      "word": "fundamental",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "alapvető",
+        "lényeges"
+      ],
+      "definition": "Forming a necessary base or core; of central importance",
+      "example": "Fresh air is fundamental to good health."
+    },
+    {
+      "id": "valid",
+      "word": "valid",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "érvényes",
+        "megalapozott"
+      ],
+      "definition": "Actually supporting the intended point; legally or officially acceptable",
+      "example": "That's a valid point that we should consider."
+    },
+    {
+      "id": "compelling",
+      "word": "compelling",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "meggyőző",
+        "lenyűgöző"
+      ],
+      "definition": "Evoking interest or attention in a powerfully irresistible way",
+      "example": "She made a compelling case for reform."
+    },
+    {
+      "id": "assertion",
+      "word": "assertion",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "állítás",
+        "kijelentés"
+      ],
+      "definition": "A confident and forceful statement of fact or belief",
+      "example": "His assertion that he was innocent proved to be false."
+    },
+    {
+      "id": "premise",
+      "word": "premise",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "előfeltevés",
+        "premissza"
+      ],
+      "definition": "A previous statement or proposition from which another is inferred",
+      "example": "The film is based on the premise that technology will save us."
+    },
+    {
+      "id": "hypothesis",
+      "word": "hypothesis",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "hipotézis",
+        "feltevés"
+      ],
+      "definition": "A supposition or proposed explanation made on limited evidence",
+      "example": "Scientists tested their hypothesis through experiments."
+    },
+    {
+      "id": "reasoning",
+      "word": "reasoning",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "érvelés",
+        "okoskodás"
+      ],
+      "definition": "The action of thinking about something in a logical way",
+      "example": "I don't follow your reasoning on this matter."
+    },
+    {
+      "id": "speculation",
+      "word": "speculation",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "spekuláció",
+        "találgatás"
+      ],
+      "definition": "The forming of a theory without firm evidence",
+      "example": "There has been much speculation about his resignation."
+    },
+    {
+      "id": "deliberate",
+      "word": "deliberate",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "szándékos",
+        "megfontolt"
+      ],
+      "definition": "Done consciously and intentionally",
+      "example": "It was a deliberate attempt to mislead the public."
+    },
+    {
+      "id": "inherent",
+      "word": "inherent",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "veleszületett",
+        "rejlő"
+      ],
+      "definition": "Existing as a natural or essential part of something",
+      "example": "There are inherent risks in any business venture."
+    },
+    {
+      "id": "cynical",
+      "word": "cynical",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "cinikus",
+        "kétkedő"
+      ],
+      "definition": "Believing that people are motivated purely by self-interest",
+      "example": "She has a cynical view of human nature."
+    },
+    {
+      "id": "rational",
+      "word": "rational",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "racionális",
+        "ésszerű"
+      ],
+      "definition": "Based on or in accordance with reason or logic",
+      "example": "There must be a rational explanation for this."
+    },
+    {
+      "id": "bias",
+      "word": "bias",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "elfogultság",
+        "torzítás"
+      ],
+      "definition": "Prejudice in favour of or against one thing compared with another",
+      "example": "The newspaper has a clear political bias."
+    },
+    {
+      "id": "consensus",
+      "word": "consensus",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "konszenzus",
+        "egyetértés"
+      ],
+      "definition": "General agreement among a group of people",
+      "example": "There is a growing consensus that the policy has failed."
+    },
+    {
+      "id": "critique",
+      "word": "critique",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kritika",
+        "bírálat"
+      ],
+      "definition": "A detailed analysis and assessment of something",
+      "example": "She wrote a critique of modern art."
+    },
+    {
+      "id": "dispute",
+      "word": "dispute",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "vita",
+        "nézeteltérés"
+      ],
+      "definition": "A disagreement or argument",
+      "example": "The dispute between the two countries continues."
+    },
+    {
+      "id": "analogy",
+      "word": "analogy",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "analógia",
+        "hasonlat"
+      ],
+      "definition": "A comparison between one thing and another for explanation",
+      "example": "He drew an analogy between the brain and a computer."
+    },
+    {
+      "id": "principle",
+      "word": "principle",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "elv",
+        "alapelv"
+      ],
+      "definition": "A fundamental truth or proposition serving as a foundation",
+      "example": "I agree with you in principle, but not in practice."
+    },
+    {
+      "id": "perceive",
+      "word": "perceive",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "észlel",
+        "felfog"
+      ],
+      "definition": "To become aware of something through the senses; to interpret",
+      "example": "How do you perceive the current situation?"
+    },
+    {
+      "id": "evaluate",
+      "word": "evaluate",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "értékel",
+        "megítél"
+      ],
+      "definition": "To form an idea of the amount or value of something",
+      "example": "We need to evaluate the effectiveness of the programme."
+    },
+    {
+      "id": "deduce",
+      "word": "deduce",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "következtet",
+        "levezet"
+      ],
+      "definition": "To arrive at a conclusion by reasoning",
+      "example": "From the evidence, we can deduce that he was lying."
+    },
+    {
+      "id": "convey",
+      "word": "convey",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "közvetít",
+        "kifejez"
+      ],
+      "definition": "To communicate or make known an idea or feeling",
+      "example": "She conveyed her disappointment through her expression."
+    },
+    {
+      "id": "reinforce",
+      "word": "reinforce",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megerősít",
+        "erősít"
+      ],
+      "definition": "To strengthen or support an idea or feeling",
+      "example": "This evidence reinforces my belief that he is innocent."
+    },
+    {
+      "id": "refute",
+      "word": "refute",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megcáfol",
+        "visszautasít"
+      ],
+      "definition": "To prove a statement or theory to be wrong or false",
+      "example": "The lawyer refuted all the accusations against her client."
+    },
+    {
+      "id": "substantial",
+      "word": "substantial",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "jelentős",
+        "lényeges"
+      ],
+      "definition": "Of considerable importance, size, or worth",
+      "example": "They made substantial changes to the proposal."
+    },
+    {
+      "id": "profound",
+      "word": "profound",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "mély",
+        "alapos"
+      ],
+      "definition": "Very great or intense; showing great knowledge or insight",
+      "example": "The book had a profound effect on her thinking."
+    },
+    {
+      "id": "implicit",
+      "word": "implicit",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "implicit",
+        "hallgatólagos"
+      ],
+      "definition": "Suggested though not directly expressed",
+      "example": "There was an implicit threat in his words."
+    },
+    {
+      "id": "rigid",
+      "word": "rigid",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "merev",
+        "rugalmatlan"
+      ],
+      "definition": "Unable to bend or be forced out of shape; not flexible",
+      "example": "The company has a rigid hierarchy."
+    },
+    {
+      "id": "premise",
+      "word": "ethical",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "etikai",
+        "erkölcsi"
+      ],
+      "definition": "Relating to moral principles or the branch of knowledge dealing with these",
+      "example": "The experiment raises serious ethical questions."
+    },
+    {
+      "id": "legitimate",
+      "word": "legitimate",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "jogos",
+        "törvényes"
+      ],
+      "definition": "Conforming to the law or to rules; able to be defended with logic",
+      "example": "That's a legitimate concern that should be addressed."
+    },
+    {
+      "id": "paradox",
+      "word": "paradox",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "paradoxon",
+        "ellentmondás"
+      ],
+      "definition": "A seemingly absurd or contradictory statement which may be true",
+      "example": "It's a paradox that in a wealthy country, many people are poor."
+    },
+    {
+      "id": "virtue",
+      "word": "virtue",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "erény",
+        "előny"
+      ],
+      "definition": "Behaviour showing high moral standards; a good quality",
+      "example": "Patience is a virtue that not everyone possesses."
+    },
+    {
+      "id": "essence",
+      "word": "essence",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "lényeg",
+        "esszencia"
+      ],
+      "definition": "The intrinsic nature or most important quality of something",
+      "example": "Time is of the essence in this matter."
+    },
+    {
+      "id": "prejudice",
+      "word": "prejudice",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "előítélet",
+        "elfogultság"
+      ],
+      "definition": "Preconceived opinion not based on reason or experience",
+      "example": "We must fight against racial prejudice."
+    },
+    {
+      "id": "scepticism",
+      "word": "scepticism",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szkepticizmus",
+        "kétkedés"
+      ],
+      "definition": "A sceptical attitude; doubt about the truth of something",
+      "example": "His claims were met with considerable scepticism."
+    },
+    {
+      "id": "empathy",
+      "word": "empathy",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "empátia",
+        "beleélés"
+      ],
+      "definition": "The ability to understand and share the feelings of another",
+      "example": "She showed great empathy towards the victims."
+    },
+    {
+      "id": "conviction",
+      "word": "conviction",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "meggyőződés",
+        "ítélet"
+      ],
+      "definition": "A firmly held belief or opinion",
+      "example": "She spoke with conviction about the need for change."
+    },
+    {
+      "id": "inclination",
+      "word": "inclination",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "hajlam",
+        "vonzalom"
+      ],
+      "definition": "A person's natural tendency or urge to act in a particular way",
+      "example": "He showed little inclination to help with the work."
+    },
+    {
+      "id": "assertion",
+      "word": "insight",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "belátás",
+        "felismerés"
+      ],
+      "definition": "The capacity to gain an accurate and deep understanding",
+      "example": "The book provides valuable insights into human behaviour."
+    },
+    {
+      "id": "attribute",
+      "word": "attribute",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "tulajdonít",
+        "betudhat"
+      ],
+      "definition": "To regard something as being caused by someone or something",
+      "example": "She attributes her success to hard work and luck."
+    },
+    {
+      "id": "discern",
+      "word": "discern",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "észrevesz",
+        "felismer"
+      ],
+      "definition": "To recognise or find out with difficulty",
+      "example": "It's difficult to discern any pattern in these figures."
+    },
+    {
+      "id": "anticipate",
+      "word": "anticipate",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "előrelát",
+        "vár"
+      ],
+      "definition": "To regard as probable; to expect or predict",
+      "example": "We anticipate that prices will rise next year."
+    },
+    {
+      "id": "speculate",
+      "word": "speculate",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "spekulál",
+        "töpreng"
+      ],
+      "definition": "To form a theory without firm evidence",
+      "example": "Scientists can only speculate about life on other planets."
+    },
+    {
+      "id": "elaborate",
+      "word": "elaborate",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "kibővít",
+        "részletez"
+      ],
+      "definition": "To develop or present a theory or idea in detail",
+      "example": "Could you elaborate on your proposal?"
+    },
+    {
+      "id": "reconcile",
+      "word": "reconcile",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "összeegyeztet",
+        "kibékít"
+      ],
+      "definition": "To make two apparently conflicting things compatible",
+      "example": "It's difficult to reconcile his behaviour with his beliefs."
+    },
+    {
+      "id": "contempt",
+      "word": "contempt",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "megvetés",
+        "lenézés"
+      ],
+      "definition": "The feeling that a person or thing is worthless or beneath consideration",
+      "example": "She looked at him with contempt."
+    },
+    {
+      "id": "proposition",
+      "word": "proposition",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "állítás",
+        "javaslat"
+      ],
+      "definition": "A statement or assertion that expresses a judgement or opinion",
+      "example": "The proposition that all men are equal is debatable."
+    },
+    {
+      "id": "sentiment",
+      "word": "sentiment",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "érzelem",
+        "vélemény"
+      ],
+      "definition": "A view or opinion that is held or expressed",
+      "example": "Public sentiment has turned against the government."
+    },
+    {
+      "id": "indifferent",
+      "word": "indifferent",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "közömbös",
+        "érdektelen"
+      ],
+      "definition": "Having no particular interest or sympathy; unconcerned",
+      "example": "She seemed indifferent to his suffering."
+    },
+    {
+      "id": "consistently",
+      "word": "consistently",
+      "level": "B2",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "következetesen",
+        "állandóan"
+      ],
+      "definition": "In a way that does not vary; in every case or occasion",
+      "example": "He has consistently denied the allegations."
+    },
+    {
+      "id": "inequality",
+      "word": "inequality",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "egyenlőtlenség",
+        "különbség"
+      ],
+      "definition": "Difference in size, degree, or circumstances; lack of equality",
+      "example": "There is growing inequality between rich and poor."
+    },
+    {
+      "id": "discrimination",
+      "word": "discrimination",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "diszkrimináció",
+        "megkülönböztetés"
+      ],
+      "definition": "Unjust treatment of different categories of people",
+      "example": "Racial discrimination is illegal in this country."
+    },
+    {
+      "id": "integration",
+      "word": "integration",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "integráció",
+        "beilleszkedés"
+      ],
+      "definition": "The action or process of combining things to form a whole",
+      "example": "The integration of immigrants into society takes time."
+    },
+    {
+      "id": "diversity",
+      "word": "diversity",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "sokszínűség",
+        "változatosság"
+      ],
+      "definition": "The state of being diverse; variety",
+      "example": "The school celebrates cultural diversity."
+    },
+    {
+      "id": "stereotype",
+      "word": "stereotype",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "sztereotípia",
+        "sablon"
+      ],
+      "definition": "A widely held but fixed and oversimplified image of a type of person",
+      "example": "The film challenges traditional gender stereotypes."
+    },
+    {
+      "id": "heritage",
+      "word": "heritage",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "örökség",
+        "hagyomány"
+      ],
+      "definition": "Valued objects and qualities such as historic buildings and cultural traditions",
+      "example": "We must preserve our cultural heritage for future generations."
+    },
+    {
+      "id": "institution",
+      "word": "institution",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "intézmény",
+        "szervezet"
+      ],
+      "definition": "An established organisation, especially one dedicated to education or culture",
+      "example": "The BBC is a national institution."
+    },
+    {
+      "id": "welfare",
+      "word": "welfare",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "jólét",
+        "szociális ellátás"
+      ],
+      "definition": "The health, happiness, and fortunes of a person or group",
+      "example": "The government is responsible for the welfare of its citizens."
+    },
+    {
+      "id": "poverty",
+      "word": "poverty",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szegénység",
+        "nélkülözés"
+      ],
+      "definition": "The state of being extremely poor",
+      "example": "Millions of people live in poverty."
+    },
+    {
+      "id": "prosperity",
+      "word": "prosperity",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "jólét",
+        "virágzás"
+      ],
+      "definition": "The state of being prosperous; success or wealth",
+      "example": "The country enjoyed a period of economic prosperity."
+    },
+    {
+      "id": "genre",
+      "word": "genre",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "műfaj",
+        "stílus"
+      ],
+      "definition": "A category of artistic composition characterised by a particular style",
+      "example": "Science fiction is my favourite film genre."
+    },
+    {
+      "id": "masterpiece",
+      "word": "masterpiece",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "remekmű",
+        "mesterműve"
+      ],
+      "definition": "A work of outstanding artistry or skill",
+      "example": "The painting is considered a masterpiece of Renaissance art."
+    },
+    {
+      "id": "critique",
+      "word": "depict",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "ábrázol",
+        "bemutat"
+      ],
+      "definition": "To show or represent by a drawing, painting, or other art form",
+      "example": "The painting depicts a rural scene from the 19th century."
+    },
+    {
+      "id": "portray",
+      "word": "portray",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "ábrázol",
+        "megjelenít"
+      ],
+      "definition": "To depict someone or something in a work of art or literature",
+      "example": "The film portrays him as a hero."
+    },
+    {
+      "id": "narrative",
+      "word": "narrative",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "elbeszélés",
+        "narratíva"
+      ],
+      "definition": "A spoken or written account of connected events; a story",
+      "example": "The film has a compelling narrative."
+    },
+    {
+      "id": "aesthetic",
+      "word": "aesthetic",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "esztétikai",
+        "művészi"
+      ],
+      "definition": "Concerned with beauty or the appreciation of beauty",
+      "example": "The building has great aesthetic appeal."
+    },
+    {
+      "id": "contemporary",
+      "word": "contemporary",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "kortárs",
+        "jelenkori"
+      ],
+      "definition": "Living or occurring at the same time; belonging to the present time",
+      "example": "She's an expert in contemporary art."
+    },
+    {
+      "id": "renowned",
+      "word": "renowned",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "híres",
+        "elismert"
+      ],
+      "definition": "Known or talked about by many people; famous",
+      "example": "She is renowned for her contributions to science."
+    },
+    {
+      "id": "prominent",
+      "word": "prominent",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "kiemelked",
+        "jelentős"
+      ],
+      "definition": "Important; famous; projecting from something",
+      "example": "She played a prominent role in the campaign."
+    },
+    {
+      "id": "coverage",
+      "word": "coverage",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "tudósítás",
+        "lefedettség"
+      ],
+      "definition": "The treatment of an issue by the media",
+      "example": "The newspaper gave extensive coverage to the story."
+    },
+    {
+      "id": "headline",
+      "word": "headline",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "főcím",
+        "címlap"
+      ],
+      "definition": "A heading at the top of an article or page in a newspaper",
+      "example": "The scandal made headlines around the world."
+    },
+    {
+      "id": "journalism",
+      "word": "journalism",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "újságírás",
+        "sajtó"
+      ],
+      "definition": "The activity or profession of writing for newspapers or broadcasting news",
+      "example": "She studied journalism at university."
+    },
+    {
+      "id": "bias",
+      "word": "censorship",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "cenzúra",
+        "ellenőrzés"
+      ],
+      "definition": "The suppression or prohibition of speech or writing deemed unacceptable",
+      "example": "Many countries practise censorship of the media."
+    },
+    {
+      "id": "propaganda",
+      "word": "propaganda",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "propaganda",
+        "agitáció"
+      ],
+      "definition": "Information used to promote a political cause or point of view",
+      "example": "The film was dismissed as government propaganda."
+    },
+    {
+      "id": "phenomenon",
+      "word": "phenomenon",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "jelenség",
+        "tünemény"
+      ],
+      "definition": "A fact or situation that is observed to exist or happen",
+      "example": "Social media is a relatively new phenomenon."
+    },
+    {
+      "id": "tradition",
+      "word": "tradition",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "hagyomány",
+        "tradíció"
+      ],
+      "definition": "The transmission of customs or beliefs from generation to generation",
+      "example": "It's a tradition to eat turkey at Christmas."
+    },
+    {
+      "id": "ritual",
+      "word": "ritual",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "rituálé",
+        "szertartás"
+      ],
+      "definition": "A religious or solemn ceremony consisting of a series of actions",
+      "example": "The tribe performs ancient rituals."
+    },
+    {
+      "id": "custom",
+      "word": "custom",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szokás",
+        "hagyomány"
+      ],
+      "definition": "A traditional and widely accepted way of behaving specific to a society",
+      "example": "It is the custom to shake hands when you meet someone."
+    },
+    {
+      "id": "preservation",
+      "word": "preservation",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "megőrzés",
+        "védelem"
+      ],
+      "definition": "The action of preserving something",
+      "example": "The preservation of historic buildings is important."
+    },
+    {
+      "id": "campaign",
+      "word": "campaign",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kampány",
+        "hadjárat"
+      ],
+      "definition": "An organised course of action to achieve a goal",
+      "example": "They launched a campaign to raise awareness."
+    },
+    {
+      "id": "reform",
+      "word": "reform",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "reform",
+        "megújítás"
+      ],
+      "definition": "The action or process of reforming an institution or practice",
+      "example": "The government has promised educational reform."
+    },
+    {
+      "id": "legislation",
+      "word": "legislation",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "jogszabályok",
+        "törvényhozás"
+      ],
+      "definition": "Laws, considered collectively",
+      "example": "New legislation on data protection was introduced."
+    },
+    {
+      "id": "implement",
+      "word": "implement",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "végrehajt",
+        "megvalósít"
+      ],
+      "definition": "To put a decision or plan into effect",
+      "example": "The company will implement the new policy next month."
+    },
+    {
+      "id": "comply",
+      "word": "comply",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megfelel",
+        "eleget tesz"
+      ],
+      "definition": "To act in accordance with a wish or command",
+      "example": "All companies must comply with safety regulations."
+    },
+    {
+      "id": "enforce",
+      "word": "enforce",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "érvényesít",
+        "kikényszerít"
+      ],
+      "definition": "To compel observance of a law or rule",
+      "example": "It's the police's job to enforce the law."
+    },
+    {
+      "id": "emerge",
+      "word": "emerge",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "kiemelkedik",
+        "előbukkan"
+      ],
+      "definition": "To become apparent or prominent",
+      "example": "New evidence has emerged in the case."
+    },
+    {
+      "id": "prevail",
+      "word": "prevail",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "győzedelmeskedik",
+        "uralkodik"
+      ],
+      "definition": "To prove more powerful; to be widespread in a particular area",
+      "example": "Common sense will prevail in the end."
+    },
+    {
+      "id": "sustain",
+      "word": "sustain",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "fenntart",
+        "eltart"
+      ],
+      "definition": "To cause to continue for an extended period or without interruption",
+      "example": "The economy cannot sustain this level of growth."
+    },
+    {
+      "id": "transform",
+      "word": "transform",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "átalakít",
+        "átváltoztat"
+      ],
+      "definition": "To make a marked change in form, nature, or appearance",
+      "example": "Technology has transformed the way we work."
+    },
+    {
+      "id": "revolutionary",
+      "word": "revolutionary",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "forradalmi",
+        "újító"
+      ],
+      "definition": "Involving or causing a complete or dramatic change",
+      "example": "The invention was revolutionary for its time."
+    },
+    {
+      "id": "progressive",
+      "word": "progressive",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "progresszív",
+        "haladó"
+      ],
+      "definition": "Happening or developing gradually over a period of time",
+      "example": "The school has a progressive approach to education."
+    },
+    {
+      "id": "orthodox",
+      "word": "orthodox",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "ortodox",
+        "hagyományos"
+      ],
+      "definition": "Following traditional or generally accepted beliefs",
+      "example": "His views are fairly orthodox on most issues."
+    },
+    {
+      "id": "marginal",
+      "word": "marginal",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "marginális",
+        "csekély"
+      ],
+      "definition": "Of minor importance; at the edge or periphery",
+      "example": "The difference in price is marginal."
+    },
+    {
+      "id": "superficial",
+      "word": "superficial",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "felszínes",
+        "felületes"
+      ],
+      "definition": "Existing or occurring at or on the surface; not thorough or deep",
+      "example": "His knowledge of the subject is rather superficial."
+    },
+    {
+      "id": "trivial",
+      "word": "trivial",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "triviális",
+        "jelentéktelen"
+      ],
+      "definition": "Of little value or importance",
+      "example": "Don't waste time on trivial matters."
+    },
+    {
+      "id": "obligation",
+      "word": "obligation",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kötelezettség",
+        "kötelesség"
+      ],
+      "definition": "An act or course of action to which a person is morally or legally bound",
+      "example": "Parents have an obligation to care for their children."
+    },
+    {
+      "id": "privilege",
+      "word": "privilege",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kiváltság",
+        "előjog"
+      ],
+      "definition": "A special right or advantage granted to a person or group",
+      "example": "Education is a privilege, not a right."
+    },
+    {
+      "id": "accountability",
+      "word": "accountability",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "elszámoltathatóság",
+        "felelősség"
+      ],
+      "definition": "The fact of being responsible for decisions and able to explain them",
+      "example": "There needs to be greater accountability in government."
+    },
+    {
+      "id": "transparency",
+      "word": "transparency",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "átláthatóság",
+        "nyitottság"
+      ],
+      "definition": "The condition of being open and honest; lack of secrecy",
+      "example": "The company has committed to greater transparency."
+    },
+    {
+      "id": "consciousness",
+      "word": "consciousness",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "tudatosság",
+        "tudat"
+      ],
+      "definition": "The state of being aware of and responsive to one's surroundings",
+      "example": "Environmental consciousness is growing."
+    },
+    {
+      "id": "awareness",
+      "word": "awareness",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "tudatosság",
+        "ismeret"
+      ],
+      "definition": "Knowledge or perception of a situation or fact",
+      "example": "The campaign raised awareness of the issue."
+    },
+    {
+      "id": "manifestation",
+      "word": "manifestation",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "megnyilvánulás",
+        "megjelenés"
+      ],
+      "definition": "An event, action, or object that clearly shows or embodies something",
+      "example": "The riots were a manifestation of public anger."
+    },
+    {
+      "id": "phenomenon",
+      "word": "tendency",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "tendencia",
+        "hajlam"
+      ],
+      "definition": "An inclination towards a particular characteristic or type of behaviour",
+      "example": "There's a tendency for prices to rise before Christmas."
+    },
+    {
+      "id": "sphere",
+      "word": "sphere",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szféra",
+        "terület"
+      ],
+      "definition": "An area of activity, interest, or expertise",
+      "example": "She works in the sphere of international relations."
+    },
+    {
+      "id": "domain",
+      "word": "domain",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "terület",
+        "szakterület"
+      ],
+      "definition": "A specified sphere of activity or knowledge",
+      "example": "Physics is outside my domain of expertise."
+    },
+    {
+      "id": "realm",
+      "word": "realm",
+      "level": "B2",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "terület",
+        "birodalom"
+      ],
+      "definition": "A field or domain of activity or interest",
+      "example": "This question belongs in the realm of philosophy."
+    },
+    {
+      "id": "invoke",
+      "word": "invoke",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "hivatkozik",
+        "segítségül hív"
+      ],
+      "definition": "To cite or appeal to someone or something as an authority",
+      "example": "She invoked her right to remain silent."
+    },
+    {
+      "id": "entail",
+      "word": "entail",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "maga után von",
+        "magában foglal"
+      ],
+      "definition": "To involve something as a necessary or inevitable part or consequence",
+      "example": "The job entails a lot of travelling."
+    },
+    {
+      "id": "comprise",
+      "word": "comprise",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "tartalmaz",
+        "áll valamiből"
+      ],
+      "definition": "To consist of; to be made up of",
+      "example": "The committee comprises representatives from all departments."
+    },
+    {
+      "id": "constitute",
+      "word": "constitute",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "alkot",
+        "képez"
+      ],
+      "definition": "To be a part of a whole; to form or compose",
+      "example": "Women constitute 40% of the workforce."
+    },
+    {
+      "id": "flourish",
+      "word": "flourish",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "virágzik",
+        "boldogul"
+      ],
+      "definition": "To grow or develop in a healthy or vigorous way",
+      "example": "The arts flourished during this period."
+    },
+    {
+      "id": "nonetheless",
+      "word": "nonetheless",
+      "level": "B2",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "ennek ellenére",
+        "mindazonáltal"
+      ],
+      "definition": "In spite of that; nevertheless",
+      "example": "The weather was bad; nonetheless, we enjoyed ourselves."
+    },
+    {
+      "id": "moreover",
+      "word": "moreover",
+      "level": "B2",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "ráadásul",
+        "továbbá"
+      ],
+      "definition": "As a further matter; besides",
+      "example": "The plan is expensive; moreover, it's impractical."
+    },
+    {
+      "id": "thereby",
+      "word": "thereby",
+      "level": "B2",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "ezáltal",
+        "így"
+      ],
+      "definition": "By that means; as a result of that",
+      "example": "He increased investment, thereby creating more jobs."
+    },
+    {
+      "id": "whereby",
+      "word": "whereby",
+      "level": "B2",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "amely által",
+        "amelynek révén"
+      ],
+      "definition": "By which; through which",
+      "example": "We need a system whereby information can be shared."
+    },
+    {
+      "id": "ideology",
+      "word": "ideology",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "ideológia",
+        "eszmerendszer"
+      ],
+      "definition": "A system of ideas and ideals forming the basis of a political theory",
+      "example": "The party's ideology is based on social equality."
+    },
+    {
+      "id": "exploit",
+      "word": "exploit",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "kihasznál",
+        "kiaknáz"
+      ],
+      "definition": "To make use of a situation in a way that is unfair or unethical",
+      "example": "Companies should not exploit their workers."
+    },
+    {
+      "id": "collaborate",
+      "word": "collaborate",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "együttműködik",
+        "kooperál"
+      ],
+      "definition": "To work jointly on an activity or project",
+      "example": "Scientists from different countries collaborated on the research."
+    },
+    {
+      "id": "facilitate",
+      "word": "facilitate",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "elősegít",
+        "megkönnyít"
+      ],
+      "definition": "To make an action or process easier",
+      "example": "Technology can facilitate communication across distances."
+    },
+    {
+      "id": "substantial",
+      "word": "underestimate",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "alábecsül",
+        "lebecsül"
+      ],
+      "definition": "To estimate something to be smaller or less important than it really is",
+      "example": "Don't underestimate the difficulty of the task."
+    },
+    {
+      "id": "distort",
+      "word": "distort",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "torzít",
+        "elferdít"
+      ],
+      "definition": "To give a misleading account or impression; to pull or twist out of shape",
+      "example": "The media distorted the facts of the case."
+    },
+    {
+      "id": "manipulate",
+      "word": "manipulate",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "manipulál",
+        "befolyásol"
+      ],
+      "definition": "To control or influence someone or something cleverly or unscrupulously",
+      "example": "He tried to manipulate public opinion."
+    },
+    {
+      "id": "allegation",
+      "word": "allegation",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "állítás",
+        "vád"
+      ],
+      "definition": "A claim that someone has done something illegal or wrong, without proof",
+      "example": "The politician denied all allegations of corruption."
     }
   ]
 }
