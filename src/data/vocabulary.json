@@ -8090,6 +8090,3798 @@
       ],
       "definition": "A promise to do something or to behave in a particular way.",
       "example": "The government has made a commitment to achieving net-zero emissions by 2050."
+    },
+    {
+      "id": "scrutinise",
+      "word": "scrutinise",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "alaposan megvizsgál",
+        "átvizsgál"
+      ],
+      "definition": "to examine something very carefully in order to discover information",
+      "example": "The committee will scrutinise every aspect of the proposal before making their final decision."
+    },
+    {
+      "id": "corroborate",
+      "word": "corroborate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megerősít",
+        "alátámaszt"
+      ],
+      "definition": "to provide evidence or information that supports a statement or theory",
+      "example": "The witness's testimony corroborates the defendant's claim that he was elsewhere during the incident."
+    },
+    {
+      "id": "ubiquitous",
+      "word": "ubiquitous",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "mindenütt jelenlevő",
+        "széles körben elterjedt"
+      ],
+      "definition": "appearing or found everywhere; very common",
+      "example": "Mobile devices have become ubiquitous in modern society, fundamentally changing how we communicate and access information."
+    },
+    {
+      "id": "exacerbate",
+      "word": "exacerbate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "súlyosbít",
+        "ront"
+      ],
+      "definition": "to make a problem, bad situation, or negative feeling worse",
+      "example": "The government's reluctance to address the issue has only served to exacerbate the existing tensions."
+    },
+    {
+      "id": "proliferate",
+      "word": "proliferate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "elszaporodik",
+        "gyorsan növekszik"
+      ],
+      "definition": "to increase rapidly in number or amount",
+      "example": "Social media platforms have proliferated over the past decade, transforming the landscape of digital communication."
+    },
+    {
+      "id": "mitigate",
+      "word": "mitigate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "enyhít",
+        "csökkent"
+      ],
+      "definition": "to make something less severe, serious, or painful",
+      "example": "The organisation has implemented several measures to mitigate the environmental impact of its operations."
+    },
+    {
+      "id": "substantiate",
+      "word": "substantiate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "alátámaszt",
+        "bizonyít"
+      ],
+      "definition": "to provide evidence to support or prove the truth of something",
+      "example": "The researchers were unable to substantiate their claims due to insufficient empirical data."
+    },
+    {
+      "id": "intricate",
+      "word": "intricate",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "bonyolult",
+        "összetett"
+      ],
+      "definition": "very complicated or detailed; having many connected parts",
+      "example": "The project requires an understanding of the intricate relationships between various economic factors."
+    },
+    {
+      "id": "detrimental",
+      "word": "detrimental",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "káros",
+        "ártalmas"
+      ],
+      "definition": "causing harm or damage",
+      "example": "The policy changes proved detrimental to small businesses, resulting in numerous closures across the region."
+    },
+    {
+      "id": "elucidate",
+      "word": "elucidate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megvilágít",
+        "tisztáz"
+      ],
+      "definition": "to make something clear or easier to understand by explaining it more fully",
+      "example": "The professor took considerable time to elucidate the complex theoretical framework underlying the study."
+    },
+    {
+      "id": "paramount",
+      "word": "paramount",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "elsőrendű",
+        "legfontosabb"
+      ],
+      "definition": "more important than anything else; supreme",
+      "example": "In medical practice, patient safety is of paramount importance and must never be compromised."
+    },
+    {
+      "id": "circumvent",
+      "word": "circumvent",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megkerül",
+        "kijátszik"
+      ],
+      "definition": "to find a way of avoiding or getting around a difficulty or rule",
+      "example": "Some corporations employ sophisticated strategies to circumvent tax regulations whilst remaining technically compliant."
+    },
+    {
+      "id": "perpetuate",
+      "word": "perpetuate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "fenntart",
+        "örökít"
+      ],
+      "definition": "to cause something to continue indefinitely",
+      "example": "These stereotypes perpetuate inequality by reinforcing outdated attitudes towards marginalised communities."
+    },
+    {
+      "id": "contentious",
+      "word": "contentious",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "vitatott",
+        "ellentmondásos"
+      ],
+      "definition": "causing or likely to cause disagreement or argument",
+      "example": "The proposal to reform the education system remains highly contentious amongst both educators and policymakers."
+    },
+    {
+      "id": "astute",
+      "word": "astute",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "éles eszű",
+        "agyafúrt"
+      ],
+      "definition": "having or showing an ability to accurately assess situations and turn them to one's advantage",
+      "example": "Her astute observations regarding market trends enabled the company to make profitable investments."
+    },
+    {
+      "id": "ascertain",
+      "word": "ascertain",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megállapít",
+        "kiderít"
+      ],
+      "definition": "to find out something with certainty through examination or investigation",
+      "example": "Investigators are working to ascertain the precise cause of the incident before releasing their official report."
+    },
+    {
+      "id": "lucrative",
+      "word": "lucrative",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "jövedelmező",
+        "nyereséges"
+      ],
+      "definition": "producing a large amount of money; profitable",
+      "example": "The pharmaceutical industry has traditionally been one of the most lucrative sectors in the global economy."
+    },
+    {
+      "id": "consolidate",
+      "word": "consolidate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megszilárdít",
+        "összevon"
+      ],
+      "definition": "to combine several things into a single more effective or coherent whole",
+      "example": "The company plans to consolidate its operations by merging several departments to improve efficiency."
+    },
+    {
+      "id": "ambivalent",
+      "word": "ambivalent",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "ambivalens",
+        "ellentmondásos érzésekkel"
+      ],
+      "definition": "having mixed or contradictory feelings about something",
+      "example": "The public remains ambivalent about the proposed changes, with opinion polls showing no clear majority."
+    },
+    {
+      "id": "epitomise",
+      "word": "epitomise",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megtestesít",
+        "jellemez"
+      ],
+      "definition": "to be a perfect example of a particular quality or type",
+      "example": "The building's architecture epitomises the innovative design principles of the modernist movement."
+    },
+    {
+      "id": "rudimentary",
+      "word": "rudimentary",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "kezdetleges",
+        "alapvető"
+      ],
+      "definition": "involving or limited to basic principles; elementary",
+      "example": "Despite having only rudimentary knowledge of the subject, she managed to grasp the fundamental concepts."
+    },
+    {
+      "id": "vindicate",
+      "word": "vindicate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "igazol",
+        "rehabilitál"
+      ],
+      "definition": "to clear someone of blame or suspicion; to show that something is right or reasonable",
+      "example": "The investigation vindicated the scientist's theories, which had been dismissed by many colleagues as implausible."
+    },
+    {
+      "id": "stringent",
+      "word": "stringent",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "szigorú",
+        "kemény"
+      ],
+      "definition": "extremely strict, precise, and exacting",
+      "example": "The pharmaceutical industry is subject to stringent regulatory controls to ensure product safety and efficacy."
+    },
+    {
+      "id": "dispel",
+      "word": "dispel",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "eloszlat",
+        "elűz"
+      ],
+      "definition": "to make a doubt, feeling, or belief disappear",
+      "example": "The comprehensive report helped to dispel many of the misconceptions surrounding the controversial topic."
+    },
+    {
+      "id": "ascribe",
+      "word": "ascribe",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "tulajdonít",
+        "betud"
+      ],
+      "definition": "to regard something as being caused by a particular thing or person",
+      "example": "Scholars ascribe the decline in traditional industries to a combination of globalisation and technological advancement."
+    },
+    {
+      "id": "complacent",
+      "word": "complacent",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "önelégült",
+        "elbizakodott"
+      ],
+      "definition": "showing smug satisfaction with oneself or one's achievements",
+      "example": "The organisation must not become complacent about security measures despite the recent absence of incidents."
+    },
+    {
+      "id": "eloquent",
+      "word": "eloquent",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "ékesszóló",
+        "meggyőző"
+      ],
+      "definition": "fluent or persuasive in speaking or writing",
+      "example": "The advocate's eloquent defence of human rights resonated deeply with the international community."
+    },
+    {
+      "id": "curtail",
+      "word": "curtail",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "csökkent",
+        "korlátoz"
+      ],
+      "definition": "to reduce or limit something, especially by removing a part of it",
+      "example": "The government has been forced to curtail public spending in response to the deteriorating fiscal situation."
+    },
+    {
+      "id": "impeccable",
+      "word": "impeccable",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "kifogástalan",
+        "hibátlan"
+      ],
+      "definition": "without fault or error; perfect",
+      "example": "Her impeccable credentials and extensive experience made her the ideal candidate for the prestigious position."
+    },
+    {
+      "id": "transcend",
+      "word": "transcend",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "túllép",
+        "meghalad"
+      ],
+      "definition": "to go beyond the range or limits of something",
+      "example": "Great literature transcends cultural boundaries, addressing universal themes that resonate across different societies."
+    },
+    {
+      "id": "delineate",
+      "word": "delineate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "kijelöl",
+        "leír"
+      ],
+      "definition": "to describe or portray something precisely",
+      "example": "The contract clearly delineates the responsibilities and obligations of each party involved in the agreement."
+    },
+    {
+      "id": "expedite",
+      "word": "expedite",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "sürget",
+        "felgyorsít"
+      ],
+      "definition": "to make an action or process happen sooner or more quickly",
+      "example": "The department has implemented new procedures to expedite the processing of applications and reduce waiting times."
+    },
+    {
+      "id": "pervasive",
+      "word": "pervasive",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "átható",
+        "általános"
+      ],
+      "definition": "spreading widely throughout an area or group of people",
+      "example": "The pervasive influence of social media has fundamentally altered patterns of communication and information sharing."
+    },
+    {
+      "id": "enumerate",
+      "word": "enumerate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "felsorol",
+        "megszámol"
+      ],
+      "definition": "to mention a number of things one by one",
+      "example": "The report enumerates several factors that have contributed to the decline in biodiversity over recent decades."
+    },
+    {
+      "id": "austere",
+      "word": "austere",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "szigorú",
+        "szerény"
+      ],
+      "definition": "severe or strict in manner or attitude; having no comforts or luxuries",
+      "example": "The government's austere fiscal policies have resulted in significant cuts to public services and welfare programmes."
+    },
+    {
+      "id": "substantive",
+      "word": "substantive",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "érdemi",
+        "lényeges"
+      ],
+      "definition": "having a firm basis in reality and therefore important or meaningful",
+      "example": "Despite lengthy negotiations, there has been little substantive progress towards resolving the ongoing dispute."
+    },
+    {
+      "id": "augment",
+      "word": "augment",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "növel",
+        "megnagyobbít"
+      ],
+      "definition": "to make something greater by adding to it; to increase",
+      "example": "The university plans to augment its research capabilities by investing in state-of-the-art laboratory facilities."
+    },
+    {
+      "id": "conspicuous",
+      "word": "conspicuous",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "feltűnő",
+        "szembetűnő"
+      ],
+      "definition": "clearly visible or attracting notice; obvious",
+      "example": "The minister's conspicuous absence from the debate has fuelled speculation about internal party divisions."
+    },
+    {
+      "id": "ameliorate",
+      "word": "ameliorate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "javít",
+        "enyhít"
+      ],
+      "definition": "to make something bad or unsatisfactory better",
+      "example": "The government has introduced several measures designed to ameliorate the effects of poverty in urban areas."
+    },
+    {
+      "id": "ostensible",
+      "word": "ostensible",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "látszólagos",
+        "állítólagos"
+      ],
+      "definition": "stated or appearing to be true, but not necessarily so",
+      "example": "The ostensible purpose of the meeting was to discuss budgetary matters, though political tensions clearly dominated proceedings."
+    },
+    {
+      "id": "accentuate",
+      "word": "accentuate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "hangsúlyoz",
+        "kihangsúlyoz"
+      ],
+      "definition": "to make something more noticeable or prominent",
+      "example": "The economic downturn has accentuated existing inequalities between different socioeconomic groups."
+    },
+    {
+      "id": "imminent",
+      "word": "imminent",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "küszöbön álló",
+        "közelgő"
+      ],
+      "definition": "about to happen; impending",
+      "example": "Scientists warn that without immediate action, the collapse of the ecosystem is imminent."
+    },
+    {
+      "id": "stipulate",
+      "word": "stipulate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "kikötésként meghatároz",
+        "előír"
+      ],
+      "definition": "to demand or specify a requirement as part of an agreement",
+      "example": "The contract stipulates that all work must be completed within six months of the commencement date."
+    },
+    {
+      "id": "culminate",
+      "word": "culminate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "betetőz",
+        "csúcsosodik"
+      ],
+      "definition": "to reach a climax or point of highest development",
+      "example": "Years of painstaking research culminated in a groundbreaking discovery that transformed the field."
+    },
+    {
+      "id": "prudent",
+      "word": "prudent",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "körültekintő",
+        "előrelátó"
+      ],
+      "definition": "acting with or showing care and thought for the future",
+      "example": "Given the economic uncertainty, it would be prudent to maintain substantial financial reserves."
+    },
+    {
+      "id": "alleviate",
+      "word": "alleviate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "enyhít",
+        "csökkent"
+      ],
+      "definition": "to make suffering, deficiency, or a problem less severe",
+      "example": "The new infrastructure projects are intended to alleviate traffic congestion in the city centre."
+    },
+    {
+      "id": "extrapolate",
+      "word": "extrapolate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "extrapolál",
+        "következtet"
+      ],
+      "definition": "to extend the application of a method or conclusion to an unknown situation by assuming existing trends will continue",
+      "example": "Researchers extrapolated from current data to predict potential outcomes over the next decade."
+    },
+    {
+      "id": "judicious",
+      "word": "judicious",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "megfontolt",
+        "bölcs"
+      ],
+      "definition": "having or showing good judgement; wise and sensible",
+      "example": "The manager's judicious allocation of resources ensured that all departments could operate efficiently."
+    },
+    {
+      "id": "propagate",
+      "word": "propagate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "terjeszt",
+        "terjeszkedik"
+      ],
+      "definition": "to spread and promote an idea, theory, or knowledge widely",
+      "example": "The organisation seeks to propagate awareness of environmental issues through educational initiatives."
+    },
+    {
+      "id": "arduous",
+      "word": "arduous",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "fáradságos",
+        "nehéz"
+      ],
+      "definition": "involving or requiring strenuous effort; difficult and tiring",
+      "example": "The arduous task of compiling the comprehensive database required several years of intensive work."
+    },
+    {
+      "id": "disseminate",
+      "word": "disseminate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "terjeszten",
+        "szétszór"
+      ],
+      "definition": "to spread information, knowledge, or ideas widely",
+      "example": "Academic journals play a crucial role in disseminating research findings to the wider scientific community."
+    },
+    {
+      "id": "categorical",
+      "word": "categorical",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "kategorikus",
+        "egyértelmű"
+      ],
+      "definition": "unambiguously explicit and direct; absolute",
+      "example": "The minister issued a categorical denial of any involvement in the alleged misconduct."
+    },
+    {
+      "id": "adhere",
+      "word": "adhere",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "ragaszkodik",
+        "betart"
+      ],
+      "definition": "to believe in and follow the practices of; to stick firmly to something",
+      "example": "All members of the profession must adhere to the strict ethical guidelines established by the regulatory body."
+    },
+    {
+      "id": "superfluous",
+      "word": "superfluous",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "felesleges",
+        "fölösleges"
+      ],
+      "definition": "unnecessary, especially through being more than enough",
+      "example": "The editor removed all superfluous material to ensure the article remained concise and focused."
+    },
+    {
+      "id": "inaugurate",
+      "word": "inaugurate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "felavat",
+        "bevezet"
+      ],
+      "definition": "to begin or introduce a system, policy, or period; to mark the beginning of",
+      "example": "The ceremony will inaugurate a new era of cooperation between the two historically divided nations."
+    },
+    {
+      "id": "unequivocal",
+      "word": "unequivocal",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "egyértelmű",
+        "világos"
+      ],
+      "definition": "leaving no doubt; unambiguous and clear",
+      "example": "The evidence provides unequivocal proof that climate change is occurring at an accelerating rate."
+    },
+    {
+      "id": "intrinsic",
+      "word": "intrinsic",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "belső",
+        "eredendő"
+      ],
+      "definition": "belonging naturally; essential; inherent",
+      "example": "Education has intrinsic value beyond its role in preparing individuals for employment opportunities."
+    },
+    {
+      "id": "construe",
+      "word": "construe",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "értelmez",
+        "magyaráz"
+      ],
+      "definition": "to interpret a word or action in a particular way",
+      "example": "The government's silence on this matter should not be construed as tacit approval of the proposed changes."
+    },
+    {
+      "id": "tangible",
+      "word": "tangible",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "kézzelfogható",
+        "valóságos"
+      ],
+      "definition": "perceptible by touch; clear and definite; real",
+      "example": "The initiative has produced tangible improvements in educational outcomes across all demographic groups."
+    },
+    {
+      "id": "impede",
+      "word": "impede",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "akadályoz",
+        "gátol"
+      ],
+      "definition": "to delay or prevent someone or something by obstructing them",
+      "example": "Bureaucratic obstacles continue to impede progress towards the implementation of necessary reforms."
+    },
+    {
+      "id": "resilient",
+      "word": "resilient",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "rugalmas",
+        "ellenálló"
+      ],
+      "definition": "able to withstand or recover quickly from difficult conditions",
+      "example": "The economy has proven remarkably resilient in the face of numerous external shocks and challenges."
+    },
+    {
+      "id": "doctrine",
+      "word": "doctrine",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "tan",
+        "doktrína"
+      ],
+      "definition": "a principle or set of principles held to be true by a group or organisation",
+      "example": "The legal doctrine of precedent ensures consistency and predictability in judicial decision-making."
+    },
+    {
+      "id": "deploy",
+      "word": "deploy",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "bevet",
+        "alkalmaz"
+      ],
+      "definition": "to move into position for military action or to bring into effective action",
+      "example": "The organisation has deployed considerable resources to address the humanitarian crisis in the region."
+    },
+    {
+      "id": "ambiguity",
+      "word": "ambiguity",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kétértelműség",
+        "félreérthetőség"
+      ],
+      "definition": "the quality of being open to more than one interpretation; inexactness",
+      "example": "The ambiguity of the legislation has led to inconsistent application and numerous legal challenges."
+    },
+    {
+      "id": "incisive",
+      "word": "incisive",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "éles",
+        "átható"
+      ],
+      "definition": "intelligently analytical and clear-thinking; direct and decisive",
+      "example": "Her incisive critique of contemporary economic policy has influenced policymakers across the political spectrum."
+    },
+    {
+      "id": "conducive",
+      "word": "conducive",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "elősegítő",
+        "kedvező"
+      ],
+      "definition": "making a certain situation or outcome likely or possible",
+      "example": "The university strives to create an environment conducive to academic excellence and intellectual curiosity."
+    },
+    {
+      "id": "engender",
+      "word": "engender",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "okoz",
+        "kelt"
+      ],
+      "definition": "to cause or give rise to a feeling, situation, or condition",
+      "example": "The government's handling of the crisis has engendered considerable public distrust in official institutions."
+    },
+    {
+      "id": "manifold",
+      "word": "manifold",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "sokféle",
+        "sokrétű"
+      ],
+      "definition": "many and of various types",
+      "example": "The project faces manifold challenges, ranging from technical difficulties to regulatory compliance issues."
+    },
+    {
+      "id": "inference",
+      "word": "inference",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "következtetés",
+        "levonás"
+      ],
+      "definition": "a conclusion reached on the basis of evidence and reasoning",
+      "example": "The researcher's inference that correlation implies causation has been challenged by subsequent studies."
+    },
+    {
+      "id": "exemplify",
+      "word": "exemplify",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "példáz",
+        "szemléltet"
+      ],
+      "definition": "to be a typical example of; to give an example in order to clarify",
+      "example": "This case study exemplifies the complex ethical dilemmas that practitioners frequently encounter in their work."
+    },
+    {
+      "id": "salient",
+      "word": "salient",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "kiemelkedő",
+        "szembetűnő"
+      ],
+      "definition": "most noticeable or important; prominent",
+      "example": "The report highlights the salient features of the proposal whilst acknowledging certain areas requiring further consideration."
+    },
+    {
+      "id": "scrutinise",
+      "word": "scrutinise",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "alaposan megvizsgál",
+        "szemügyre vesz"
+      ],
+      "definition": "to examine or inspect closely and thoroughly",
+      "example": "Financial regulators will scrutinise the transaction to ensure compliance with anti-money laundering legislation."
+    },
+    {
+      "id": "come_across",
+      "word": "come across",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "találkozik (véletlenül)",
+        "rátalál"
+      ],
+      "definition": "to find something or meet someone by chance",
+      "example": "Whilst researching my thesis, I came across an obscure manuscript that fundamentally altered my understanding of the subject."
+    },
+    {
+      "id": "put_off",
+      "word": "put off",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "elhalaszt",
+        "elriaszt"
+      ],
+      "definition": "to postpone or to cause someone to feel dislike or aversion",
+      "example": "The committee decided to put off the decision until more conclusive evidence could be gathered."
+    },
+    {
+      "id": "bring_about",
+      "word": "bring about",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "előidéz",
+        "létrehoz"
+      ],
+      "definition": "to cause something to happen, especially a change",
+      "example": "The industrial revolution brought about profound social and economic transformations across Europe."
+    },
+    {
+      "id": "carry_out",
+      "word": "carry out",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "végrehajt",
+        "elvégez"
+      ],
+      "definition": "to perform or complete a task, especially systematically",
+      "example": "The researchers carried out a comprehensive study involving over 10,000 participants."
+    },
+    {
+      "id": "look_into",
+      "word": "look into",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megvizsgál",
+        "utánanéz"
+      ],
+      "definition": "to investigate or examine something carefully",
+      "example": "The authorities have promised to look into allegations of corruption within the department."
+    },
+    {
+      "id": "set_out",
+      "word": "set out",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "elindul",
+        "kifejt"
+      ],
+      "definition": "to begin a journey or to explain something clearly and systematically",
+      "example": "The report sets out the key principles that should govern future environmental policy."
+    },
+    {
+      "id": "take_up",
+      "word": "take up",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "elkezd",
+        "elfoglal"
+      ],
+      "definition": "to begin to do something regularly or to occupy space or time",
+      "example": "After retiring, she took up watercolour painting and quickly developed considerable skill."
+    },
+    {
+      "id": "turn_down",
+      "word": "turn down",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "elutasít",
+        "visszautasít"
+      ],
+      "definition": "to refuse an offer or request",
+      "example": "Despite the lucrative salary, he turned down the position because it would require extensive travel."
+    },
+    {
+      "id": "break_down",
+      "word": "break down",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "lebont",
+        "elemez"
+      ],
+      "definition": "to separate into parts for analysis or to stop functioning",
+      "example": "The accountant broke down the expenditure into various categories to identify areas for cost reduction."
+    },
+    {
+      "id": "fall_through",
+      "word": "fall through",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "meghiúsul",
+        "dugába dől"
+      ],
+      "definition": "to fail to happen or be completed as planned",
+      "example": "The merger negotiations fell through at the last moment due to irreconcilable differences."
+    },
+    {
+      "id": "inadvertently",
+      "word": "inadvertently",
+      "level": "C1",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "véletlenül",
+        "akaratlanul"
+      ],
+      "definition": "without intention; accidentally",
+      "example": "The researcher inadvertently disclosed confidential information during the press conference."
+    },
+    {
+      "id": "preliminary",
+      "word": "preliminary",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "előzetes",
+        "bevezető"
+      ],
+      "definition": "denoting an action or event preceding or done in preparation for something more important",
+      "example": "The preliminary findings suggest a strong correlation, though further research is required."
+    },
+    {
+      "id": "subtle",
+      "word": "subtle",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "finom",
+        "alig észrevehető"
+      ],
+      "definition": "so delicate or precise as to be difficult to analyse or describe",
+      "example": "There was a subtle shift in public opinion that pollsters initially failed to detect."
+    },
+    {
+      "id": "take_into_account",
+      "word": "take into account",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "figyelembe vesz",
+        "számításba vesz"
+      ],
+      "definition": "to consider something when making a judgement or decision",
+      "example": "When formulating policy, we must take into account the diverse needs of all stakeholders."
+    },
+    {
+      "id": "shed_light_on",
+      "word": "shed light on",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megvilágít",
+        "tisztázz"
+      ],
+      "definition": "to help to explain or clarify something",
+      "example": "Recent archaeological discoveries have shed light on previously unknown aspects of ancient civilisations."
+    },
+    {
+      "id": "bear_in_mind",
+      "word": "bear in mind",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "szem előtt tart",
+        "emlékezetben tart"
+      ],
+      "definition": "to remember and consider something when making decisions",
+      "example": "You should bear in mind that economic conditions may change significantly over the next quarter."
+    },
+    {
+      "id": "give_rise_to",
+      "word": "give rise to",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "okoz",
+        "előidéz"
+      ],
+      "definition": "to cause something to happen or exist",
+      "example": "The controversial legislation gave rise to widespread protests across the country."
+    },
+    {
+      "id": "make_sense_of",
+      "word": "make sense of",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megért",
+        "értelmet ad"
+      ],
+      "definition": "to understand something that is difficult or confusing",
+      "example": "Scientists are still trying to make sense of the anomalous data collected during the experiment."
+    },
+    {
+      "id": "convoluted",
+      "word": "convoluted",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "bonyolult",
+        "tekervényes"
+      ],
+      "definition": "extremely complex and difficult to follow",
+      "example": "The legal document was so convoluted that even experienced solicitors struggled to interpret it."
+    },
+    {
+      "id": "exemplary",
+      "word": "exemplary",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "példamutató",
+        "kiváló"
+      ],
+      "definition": "serving as a desirable model; very good",
+      "example": "Her exemplary performance throughout the year earned her a prestigious industry award."
+    },
+    {
+      "id": "meagre",
+      "word": "meagre",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "sovány",
+        "csekély"
+      ],
+      "definition": "lacking in quantity or quality",
+      "example": "Despite working full-time, many households survive on meagre incomes that barely cover basic necessities."
+    },
+    {
+      "id": "pertinent",
+      "word": "pertinent",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "releváns",
+        "lényegre törő"
+      ],
+      "definition": "relevant or applicable to a particular matter",
+      "example": "The barrister raised several pertinent questions that challenged the prosecution's case."
+    },
+    {
+      "id": "prolific",
+      "word": "prolific",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "termékeny",
+        "sokat alkotó"
+      ],
+      "definition": "producing much fruit, foliage, or many works",
+      "example": "The prolific author published over thirty novels during her distinguished literary career."
+    },
+    {
+      "id": "unanimous",
+      "word": "unanimous",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "egyhangú",
+        "egyetértő"
+      ],
+      "definition": "fully in agreement",
+      "example": "The jury reached a unanimous verdict after deliberating for less than two hours."
+    },
+    {
+      "id": "hamper",
+      "word": "hamper",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "akadályoz",
+        "gátol"
+      ],
+      "definition": "to hinder or impede the movement or progress of",
+      "example": "Budget constraints have hampered our ability to recruit additional staff for the project."
+    },
+    {
+      "id": "warrant",
+      "word": "warrant",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "indokol",
+        "megalapoz"
+      ],
+      "definition": "to justify or necessitate a certain course of action",
+      "example": "The severity of the situation warrants immediate intervention by international authorities."
+    },
+    {
+      "id": "in_light_of",
+      "word": "in light of",
+      "level": "C1",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "figyelembe véve",
+        "tekintettel"
+      ],
+      "definition": "taking into consideration",
+      "example": "In light of recent developments, the committee has decided to postpone the decision indefinitely."
+    },
+    {
+      "id": "by_virtue_of",
+      "word": "by virtue of",
+      "level": "C1",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "révén",
+        "alapján"
+      ],
+      "definition": "by means of or because of",
+      "example": "She became chairwoman by virtue of her extensive experience in the sector."
+    },
+    {
+      "id": "notwithstanding",
+      "word": "notwithstanding",
+      "level": "C1",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "ellenére",
+        "dacára"
+      ],
+      "definition": "nevertheless; in spite of",
+      "example": "Notwithstanding the difficulties encountered, the project was completed ahead of schedule."
+    },
+    {
+      "id": "consequently",
+      "word": "consequently",
+      "level": "C1",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "következésképpen",
+        "ennek következtében"
+      ],
+      "definition": "as a result",
+      "example": "The experiment yielded unexpected results; consequently, we had to revise our theoretical framework."
+    },
+    {
+      "id": "draw_on",
+      "word": "draw on",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "felhasznál",
+        "támaszkodik"
+      ],
+      "definition": "to use a supply or source of something",
+      "example": "The author draws on her personal experiences to create authentic and compelling characters."
+    },
+    {
+      "id": "account_for",
+      "word": "account for",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "magyaráz",
+        "számot ad"
+      ],
+      "definition": "to explain the reason for something or to comprise a certain amount",
+      "example": "Tourism accounts for approximately 15% of the nation's gross domestic product."
+    },
+    {
+      "id": "phase_out",
+      "word": "phase out",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "fokozatosan megszüntet",
+        "kivezet"
+      ],
+      "definition": "to gradually stop using or providing something",
+      "example": "The government plans to phase out fossil fuel subsidies over the next decade."
+    },
+    {
+      "id": "scale_back",
+      "word": "scale back",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "leépít",
+        "csökkent"
+      ],
+      "definition": "to reduce the size, extent, or scope of something",
+      "example": "Due to budget constraints, the organisation had to scale back its expansion plans significantly."
+    },
+    {
+      "id": "call_for",
+      "word": "call for",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "igényel",
+        "követel"
+      ],
+      "definition": "to require or demand something",
+      "example": "The situation calls for decisive action rather than continued deliberation."
+    },
+    {
+      "id": "stem_from",
+      "word": "stem from",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "ered",
+        "származik"
+      ],
+      "definition": "to originate from or be caused by",
+      "example": "Many contemporary social issues stem from historical inequalities that remain unaddressed."
+    },
+    {
+      "id": "embark_on",
+      "word": "embark on",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "belekezd",
+        "nekivág"
+      ],
+      "definition": "to begin a course of action, especially one that is important or demanding",
+      "example": "The university has embarked on an ambitious programme to modernise its research facilities."
+    },
+    {
+      "id": "adhere_to",
+      "word": "adhere to",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "ragaszkodik",
+        "betart"
+      ],
+      "definition": "to stick to or follow a rule, standard, or agreement",
+      "example": "All participants must adhere to the ethical guidelines established by the research committee."
+    },
+    {
+      "id": "hinge_on",
+      "word": "hinge on",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "múlik",
+        "függ"
+      ],
+      "definition": "to depend entirely on",
+      "example": "The success of the entire venture hinges on securing adequate funding within the next quarter."
+    },
+    {
+      "id": "tangential",
+      "word": "tangential",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "érintőleges",
+        "mellékes"
+      ],
+      "definition": "relating to or along a tangent; diverging from a previous course",
+      "example": "His comments, whilst interesting, were largely tangential to the main topic of discussion."
+    },
+    {
+      "id": "expedient",
+      "word": "expedient",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "célszerű",
+        "hasznos"
+      ],
+      "definition": "convenient and practical although possibly improper or immoral",
+      "example": "The minister chose the most politically expedient course of action rather than addressing the underlying problem."
+    },
+    {
+      "id": "precarious",
+      "word": "precarious",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "bizonytalan",
+        "ingatag"
+      ],
+      "definition": "not securely held or in position; dangerously unstable",
+      "example": "The company's financial position remains precarious despite recent efforts to reduce expenditure."
+    },
+    {
+      "id": "indispensable",
+      "word": "indispensable",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "nélkülözhetetlen",
+        "elengedhetetlen"
+      ],
+      "definition": "absolutely necessary",
+      "example": "Access to reliable data is indispensable for making informed policy decisions."
+    },
+    {
+      "id": "tenuous",
+      "word": "tenuous",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "gyenge",
+        "vékony"
+      ],
+      "definition": "very weak or slight",
+      "example": "The prosecution's case rested on tenuous evidence that was easily challenged by the defence."
+    },
+    {
+      "id": "disparate",
+      "word": "disparate",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "különböző",
+        "eltérő"
+      ],
+      "definition": "containing or made up of fundamentally different and often incongruous elements",
+      "example": "The committee brought together disparate viewpoints in an attempt to reach a comprehensive solution."
+    },
+    {
+      "id": "pivotal",
+      "word": "pivotal",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "döntő fontosságú",
+        "központi"
+      ],
+      "definition": "of crucial importance in relation to the development or success of something else",
+      "example": "Her testimony proved pivotal in securing a conviction in this high-profile case."
+    },
+    {
+      "id": "reticent",
+      "word": "reticent",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "zárkózott",
+        "tartózkodó"
+      ],
+      "definition": "not revealing one's thoughts or feelings readily",
+      "example": "The minister remained reticent about the government's plans for tax reform."
+    },
+    {
+      "id": "nuanced",
+      "word": "nuanced",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "árnyalt",
+        "finom"
+      ],
+      "definition": "characterised by subtle shades of meaning or expression",
+      "example": "Her nuanced understanding of the political landscape enabled her to navigate complex negotiations successfully."
+    },
+    {
+      "id": "inherently",
+      "word": "inherently",
+      "level": "C1",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "eleve",
+        "lényegénél fogva"
+      ],
+      "definition": "in a permanent, essential, or characteristic way",
+      "example": "Some argue that human beings are inherently competitive, whilst others emphasise our cooperative nature."
+    },
+    {
+      "id": "predominantly",
+      "word": "predominantly",
+      "level": "C1",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "túlnyomórészt",
+        "főleg"
+      ],
+      "definition": "mainly; for the most part",
+      "example": "The workforce is predominantly composed of highly qualified professionals with advanced degrees."
+    },
+    {
+      "id": "substantially",
+      "word": "substantially",
+      "level": "C1",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "lényegesen",
+        "jelentősen"
+      ],
+      "definition": "to a great or significant extent",
+      "example": "Investment in infrastructure has increased substantially over the past five years."
+    },
+    {
+      "id": "notably",
+      "word": "notably",
+      "level": "C1",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "különösen",
+        "feltűnően"
+      ],
+      "definition": "especially; in particular",
+      "example": "Several European countries, most notably Germany and France, opposed the proposed sanctions."
+    },
+    {
+      "id": "invariably",
+      "word": "invariably",
+      "level": "C1",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "mindig",
+        "változatlanul"
+      ],
+      "definition": "in every case or on every occasion; always",
+      "example": "His presentations are invariably well-researched and delivered with considerable expertise."
+    },
+    {
+      "id": "run_out_of",
+      "word": "run out of",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "kifogy",
+        "elfogy"
+      ],
+      "definition": "to use all of something and have no more available",
+      "example": "Negotiators are running out of time to reach an agreement before the deadline expires."
+    },
+    {
+      "id": "catch_on",
+      "word": "catch on",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megért",
+        "elterjed"
+      ],
+      "definition": "to become popular or to understand something",
+      "example": "The innovative teaching method quickly caught on and is now used in schools nationwide."
+    },
+    {
+      "id": "stand_out",
+      "word": "stand out",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "kiemelkedik",
+        "kitűnik"
+      ],
+      "definition": "to be easily noticeable or much better than others",
+      "example": "Her exceptional analytical skills make her stand out amongst other candidates for the position."
+    },
+    {
+      "id": "comply_with",
+      "word": "comply with",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megfelel",
+        "engedelmeskedik"
+      ],
+      "definition": "to act in accordance with a wish or command",
+      "example": "All organisations must comply with the new data protection regulations by the specified deadline."
+    },
+    {
+      "id": "attribute_to",
+      "word": "attribute to",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "tulajdonít",
+        "betudni"
+      ],
+      "definition": "to regard something as being caused by",
+      "example": "Economists attribute the recent economic downturn to a combination of global and domestic factors."
+    },
+    {
+      "id": "verge_on",
+      "word": "verge on",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "határos",
+        "közel jár"
+      ],
+      "definition": "to be very close to a particular state or condition",
+      "example": "The minister's comments verged on the offensive, prompting demands for an apology."
+    },
+    {
+      "id": "resort_to",
+      "word": "resort to",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "folyamodik",
+        "fordul"
+      ],
+      "definition": "to turn to and adopt a course of action, especially an extreme one",
+      "example": "When negotiations failed, the government reluctantly resorted to imposing economic sanctions."
+    },
+    {
+      "id": "delve_into",
+      "word": "delve into",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "belemélyed",
+        "kutat"
+      ],
+      "definition": "to research or make painstaking enquiries into something",
+      "example": "The documentary delves into the complex historical factors that led to the conflict."
+    },
+    {
+      "id": "disparity",
+      "word": "disparity",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "egyenlőtlenség",
+        "eltérés"
+      ],
+      "definition": "a great difference",
+      "example": "There remains a significant disparity between urban and rural areas in terms of access to healthcare."
+    },
+    {
+      "id": "impediment",
+      "word": "impediment",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "akadály",
+        "gát"
+      ],
+      "definition": "a hindrance or obstruction in doing something",
+      "example": "Lack of adequate funding has proved a major impediment to progress on the project."
+    },
+    {
+      "id": "ramification",
+      "word": "ramification",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "következmény",
+        "elágazás"
+      ],
+      "definition": "a complex or unwelcome consequence of an action or event",
+      "example": "The policy change will have far-reaching ramifications for the entire education sector."
+    },
+    {
+      "id": "prerequisite",
+      "word": "prerequisite",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "előfeltétel",
+        "előkövetelmény"
+      ],
+      "definition": "a thing that is required as a prior condition for something else to happen",
+      "example": "A degree in economics is generally considered a prerequisite for employment in financial analysis."
+    },
+    {
+      "id": "precedent",
+      "word": "precedent",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "precedens",
+        "előzmény"
+      ],
+      "definition": "an earlier event or action that is regarded as an example or guide",
+      "example": "The court's ruling established an important precedent for future cases involving similar circumstances."
+    },
+    {
+      "id": "anomaly",
+      "word": "anomaly",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "rendellenesség",
+        "anomália"
+      ],
+      "definition": "something that deviates from what is standard, normal, or expected",
+      "example": "The statistical anomaly in the data prompted researchers to conduct a more thorough investigation."
+    },
+    {
+      "id": "catalyst",
+      "word": "catalyst",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "katalizátor",
+        "ösztönző"
+      ],
+      "definition": "a person or thing that precipitates an event or change",
+      "example": "The financial crisis served as a catalyst for widespread regulatory reform across the banking sector."
+    },
+    {
+      "id": "proponent",
+      "word": "proponent",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "támogató",
+        "szószóló"
+      ],
+      "definition": "a person who advocates a theory, proposal, or course of action",
+      "example": "Proponents of the scheme argue that it will generate substantial economic benefits for the region."
+    },
+    {
+      "id": "propensity",
+      "word": "propensity",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "hajlam",
+        "késztetés"
+      ],
+      "definition": "an inclination or natural tendency to behave in a particular way",
+      "example": "Studies suggest that humans have an innate propensity for pattern recognition and categorisation."
+    },
+    {
+      "id": "cohesion",
+      "word": "cohesion",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kohézió",
+        "összetartás"
+      ],
+      "definition": "the action or fact of forming a united whole",
+      "example": "Strong leadership is essential for maintaining team cohesion during periods of organisational change."
+    },
+    {
+      "id": "connotation",
+      "word": "connotation",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "konnotáció",
+        "mellékjelentés"
+      ],
+      "definition": "an idea or feeling that a word invokes in addition to its literal meaning",
+      "example": "The word 'bureaucrat' often carries negative connotations of inefficiency and excessive regulation."
+    },
+    {
+      "id": "discretion",
+      "word": "discretion",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "mérlegelési jogkör",
+        "diszkréció"
+      ],
+      "definition": "the freedom to decide what should be done in a particular situation",
+      "example": "Police officers are granted considerable discretion in determining appropriate responses to incidents."
+    },
+    {
+      "id": "equilibrium",
+      "word": "equilibrium",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "egyensúly",
+        "kiegyensúlyozottság"
+      ],
+      "definition": "a state in which opposing forces or influences are balanced",
+      "example": "The ecosystem maintains a delicate equilibrium that can be easily disrupted by external factors."
+    },
+    {
+      "id": "magnitude",
+      "word": "magnitude",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "nagyságrend",
+        "jelentőség"
+      ],
+      "definition": "the great size or extent of something",
+      "example": "The magnitude of the environmental challenge requires coordinated international action."
+    },
+    {
+      "id": "sophistication",
+      "word": "sophistication",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kifinomultság",
+        "fejlettség"
+      ],
+      "definition": "the quality of being sophisticated or having refined knowledge",
+      "example": "The sophistication of modern encryption technology makes it virtually impossible to breach without authorisation."
+    },
+    {
+      "id": "endeavour",
+      "word": "endeavour",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "törekvés",
+        "vállalkozás"
+      ],
+      "definition": "an attempt to achieve a goal",
+      "example": "The space programme represents humanity's most ambitious scientific endeavour to date."
+    },
+    {
+      "id": "paramount_importance",
+      "word": "paramount importance",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kiemelt fontosság",
+        "legfontosabb"
+      ],
+      "definition": "supreme or utmost significance",
+      "example": "Maintaining confidentiality is of paramount importance when handling sensitive patient information."
+    },
+    {
+      "id": "utilise",
+      "word": "utilise",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "felhasznál",
+        "hasznosít"
+      ],
+      "definition": "to make practical and effective use of something",
+      "example": "The company decided to utilise renewable energy sources to reduce its carbon footprint."
+    },
+    {
+      "id": "allegory",
+      "word": "allegory",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "allegória",
+        "példázat"
+      ],
+      "definition": "a story, poem, or picture that can be interpreted to reveal a hidden meaning, typically a moral or political one",
+      "example": "Orwell's Animal Farm is a powerful allegory of totalitarian regimes and political corruption."
+    },
+    {
+      "id": "catharsis",
+      "word": "catharsis",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "katarzis",
+        "megtisztulás"
+      ],
+      "definition": "the process of releasing strong or repressed emotions through art, especially tragedy",
+      "example": "Greek tragedy aimed to achieve catharsis by evoking pity and fear in the audience."
+    },
+    {
+      "id": "existential",
+      "word": "existential",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "egzisztenciális",
+        "létbeli"
+      ],
+      "definition": "relating to existence and the human condition, especially as discussed in existentialist philosophy",
+      "example": "The novel explores existential themes such as freedom, authenticity, and the meaning of life."
+    },
+    {
+      "id": "nihilism",
+      "word": "nihilism",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "nihilizmus",
+        "semmittevés"
+      ],
+      "definition": "the rejection of all religious and moral principles, often in the belief that life is meaningless",
+      "example": "Nietzsche warned against the dangers of nihilism following the death of traditional values."
+    },
+    {
+      "id": "melancholy",
+      "word": "melancholy",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "melankólia",
+        "szomorúság"
+      ],
+      "definition": "a deep, pensive sadness, typically with no obvious cause",
+      "example": "The poet's work is suffused with a gentle melancholy that reflects his longing for lost youth."
+    },
+    {
+      "id": "cognition",
+      "word": "cognition",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "megismerés",
+        "kogníció"
+      ],
+      "definition": "the mental action or process of acquiring knowledge and understanding through thought and experience",
+      "example": "Research in cognition has revealed fascinating insights into how humans process information."
+    },
+    {
+      "id": "unconscious",
+      "word": "unconscious",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "tudattalan",
+        "öntudatlan"
+      ],
+      "definition": "the part of the mind which is inaccessible to the conscious mind but affects behaviour and emotions",
+      "example": "Freud believed that dreams provide access to the unconscious mind and repressed desires."
+    },
+    {
+      "id": "sublime",
+      "word": "sublime",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "fenséges",
+        "magasztos"
+      ],
+      "definition": "of such excellence or beauty as to inspire great admiration or awe",
+      "example": "The painting captures the sublime grandeur of the mountain landscape at dawn."
+    },
+    {
+      "id": "juxtaposition",
+      "word": "juxtaposition",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "egymás mellé helyezés",
+        "szembeállítás"
+      ],
+      "definition": "the fact of two things being seen or placed close together with contrasting effect",
+      "example": "The juxtaposition of poverty and wealth in the novel highlights social inequality."
+    },
+    {
+      "id": "metaphysical",
+      "word": "metaphysical",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "metafizikai",
+        "elvont"
+      ],
+      "definition": "relating to the branch of philosophy dealing with the nature of existence and reality",
+      "example": "The metaphysical poets of the seventeenth century explored profound questions about love and mortality."
+    },
+    {
+      "id": "introspection",
+      "word": "introspection",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "önvizsgálat",
+        "befelé tekintés"
+      ],
+      "definition": "the examination of one's own mental and emotional processes",
+      "example": "The protagonist's journey is characterised by deep introspection and self-discovery."
+    },
+    {
+      "id": "zeitgeist",
+      "word": "zeitgeist",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "korszellem",
+        "időszak szelleme"
+      ],
+      "definition": "the defining spirit or mood of a particular period of history as shown by the ideas of the time",
+      "example": "The artist's work perfectly captures the zeitgeist of the 1960s counterculture movement."
+    },
+    {
+      "id": "dichotomy",
+      "word": "dichotomy",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kettéválás",
+        "dichotómia"
+      ],
+      "definition": "a division or contrast between two things that are represented as being opposed or entirely different",
+      "example": "The play explores the dichotomy between appearance and reality in human relationships."
+    },
+    {
+      "id": "ephemeral",
+      "word": "ephemeral",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "múlékony",
+        "röpke"
+      ],
+      "definition": "lasting for a very short time",
+      "example": "The poet meditates on the ephemeral nature of beauty and the inevitability of decay."
+    },
+    {
+      "id": "surrealism",
+      "word": "surrealism",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szürrealizmus",
+        "fölöttesvalóság"
+      ],
+      "definition": "an artistic movement emphasising the expression of the unconscious mind through bizarre imagery",
+      "example": "Dalí's paintings exemplify surrealism with their dreamlike landscapes and impossible juxtapositions."
+    },
+    {
+      "id": "archetype",
+      "word": "archetype",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "archetípus",
+        "őstípus"
+      ],
+      "definition": "a very typical example of a certain person or thing; an original model",
+      "example": "Jung identified the shadow as a fundamental archetype in the collective unconscious."
+    },
+    {
+      "id": "pathos",
+      "word": "pathos",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "pátosz",
+        "együttérzés"
+      ],
+      "definition": "a quality that evokes pity or sadness",
+      "example": "The film's pathos derives from the protagonist's futile struggle against circumstance."
+    },
+    {
+      "id": "empiricism",
+      "word": "empiricism",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "empirizmus",
+        "tapasztalati megismerés"
+      ],
+      "definition": "the theory that all knowledge is derived from sensory experience",
+      "example": "British empiricism, championed by Locke and Hume, profoundly influenced modern philosophy."
+    },
+    {
+      "id": "transcendent",
+      "word": "transcendent",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "transzcendens",
+        "felülmúló"
+      ],
+      "definition": "beyond or above the range of normal physical human experience",
+      "example": "The mystic sought transcendent experiences through meditation and contemplation."
+    },
+    {
+      "id": "hermeneutics",
+      "word": "hermeneutics",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "hermeneutika",
+        "értelmezéstan"
+      ],
+      "definition": "the branch of knowledge dealing with interpretation, especially of scripture or literary texts",
+      "example": "Modern hermeneutics emphasises the role of the reader's context in textual interpretation."
+    },
+    {
+      "id": "verisimilitude",
+      "word": "verisimilitude",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "valószerűség",
+        "életszerűség"
+      ],
+      "definition": "the appearance of being true or real",
+      "example": "The novel's verisimilitude is enhanced by its meticulous attention to historical detail."
+    },
+    {
+      "id": "patina",
+      "word": "patina",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "patina",
+        "régiség fénye"
+      ],
+      "definition": "a sheen on a surface produced by age or use; an impression of beauty resulting from age",
+      "example": "The antique furniture had acquired a rich patina that spoke of its lengthy history."
+    },
+    {
+      "id": "iconoclast",
+      "word": "iconoclast",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "képromboló",
+        "hagyományromboló"
+      ],
+      "definition": "a person who attacks cherished beliefs or institutions",
+      "example": "The artist was an iconoclast who challenged conventional notions of beauty and representation."
+    },
+    {
+      "id": "synthesis",
+      "word": "synthesis",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szintézis",
+        "egyesítés"
+      ],
+      "definition": "the combination of components to form a connected whole",
+      "example": "Hegel's philosophy proposed a dialectical synthesis of opposing ideas to reach higher truth."
+    },
+    {
+      "id": "solipsism",
+      "word": "solipsism",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szolipszizmus",
+        "önmagába zártság"
+      ],
+      "definition": "the view that the self is all that can be known to exist",
+      "example": "The philosopher's extreme solipsism led him to question the very existence of other minds."
+    },
+    {
+      "id": "temperament",
+      "word": "temperament",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "temperamentum",
+        "vérmérséklet"
+      ],
+      "definition": "a person's nature, especially as it affects their behaviour",
+      "example": "The artist's volatile temperament was reflected in the passionate intensity of her paintings."
+    },
+    {
+      "id": "epistemology",
+      "word": "epistemology",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "ismeretelmélet",
+        "episztemológia"
+      ],
+      "definition": "the branch of philosophy concerned with the theory of knowledge",
+      "example": "Kant's epistemology revolutionised philosophy by examining the limits of human understanding."
+    },
+    {
+      "id": "motif",
+      "word": "motif",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "motívum",
+        "téma"
+      ],
+      "definition": "a recurring subject, theme, or idea in a literary or artistic work",
+      "example": "The motif of imprisonment runs throughout the novel, symbolising psychological confinement."
+    },
+    {
+      "id": "chiaroscuro",
+      "word": "chiaroscuro",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "chiaroscuro",
+        "világosság-sötétség kontraszt"
+      ],
+      "definition": "the treatment of light and shade in drawing and painting",
+      "example": "Caravaggio's masterful use of chiaroscuro creates dramatic tension in his religious paintings."
+    },
+    {
+      "id": "pastoral",
+      "word": "pastoral",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "bukolikus",
+        "pásztori"
+      ],
+      "definition": "portraying rural life in an idealised way",
+      "example": "The pastoral poetry of the Romantic era celebrated the simple virtues of country living."
+    },
+    {
+      "id": "dialectic",
+      "word": "dialectic",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "dialektika",
+        "érvelés"
+      ],
+      "definition": "the art of investigating the truth of opinions through logical discussion",
+      "example": "Socratic dialectic involved questioning assumptions to arrive at deeper understanding."
+    },
+    {
+      "id": "pedagogy",
+      "word": "pedagogy",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "pedagógia",
+        "oktatásmódszertan"
+      ],
+      "definition": "the method and practice of teaching, especially as an academic subject",
+      "example": "Progressive pedagogy emphasises student-centred learning and critical thinking skills."
+    },
+    {
+      "id": "ineffable",
+      "word": "ineffable",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "kimondhatatlan",
+        "leírhatatlan"
+      ],
+      "definition": "too great or extreme to be expressed in words",
+      "example": "The mystic described an ineffable experience of unity with the divine that transcended language."
+    },
+    {
+      "id": "ontology",
+      "word": "ontology",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "ontológia",
+        "léttan"
+      ],
+      "definition": "the branch of metaphysics dealing with the nature of being",
+      "example": "Heidegger's ontology sought to understand the fundamental nature of existence and being."
+    },
+    {
+      "id": "hubris",
+      "word": "hubris",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "hybris",
+        "gőg"
+      ],
+      "definition": "excessive pride or self-confidence, especially when leading to downfall",
+      "example": "The tragic hero's hubris inevitably leads to his catastrophic fall from grace."
+    },
+    {
+      "id": "impressionism",
+      "word": "impressionism",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "impresszionizmus",
+        "benyomásfestészet"
+      ],
+      "definition": "an artistic style depicting the visual impression of the moment through light and colour",
+      "example": "Monet's water lily paintings epitomise impressionism with their focus on transient atmospheric effects."
+    },
+    {
+      "id": "denouement",
+      "word": "denouement",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kibontakozás",
+        "megoldás"
+      ],
+      "definition": "the final resolution of the intricacies of a plot",
+      "example": "The denouement reveals the detective's brilliant deductions and resolves all mysteries."
+    },
+    {
+      "id": "stoicism",
+      "word": "stoicism",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "sztoicizmus",
+        "közöny"
+      ],
+      "definition": "the endurance of pain or hardship without complaint; an ancient Greek philosophy",
+      "example": "Marcus Aurelius's stoicism taught that virtue and reason should guide one's response to adversity."
+    },
+    {
+      "id": "hedonism",
+      "word": "hedonism",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "hedonizmus",
+        "élvezetkeresés"
+      ],
+      "definition": "the pursuit of pleasure as the highest good and proper aim of life",
+      "example": "Wilde's philosophy bordered on hedonism, celebrating aesthetic pleasure and sensory experience."
+    },
+    {
+      "id": "subliminal",
+      "word": "subliminal",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "tudatalatti",
+        "küszöb alatti"
+      ],
+      "definition": "below the threshold of conscious perception",
+      "example": "Psychologists investigate how subliminal messages might influence consumer behaviour."
+    },
+    {
+      "id": "baroque",
+      "word": "baroque",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "barokk",
+        "díszített"
+      ],
+      "definition": "relating to an ornate artistic style characterised by exuberant decoration",
+      "example": "The baroque architecture of the cathedral features elaborate sculptures and gilded ornamentation."
+    },
+    {
+      "id": "anachronism",
+      "word": "anachronism",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "anakronizmus",
+        "időbeli hiba"
+      ],
+      "definition": "something belonging to a period other than that in which it exists",
+      "example": "The wristwatch worn by the Roman soldier in the film was a glaring anachronism."
+    },
+    {
+      "id": "mimesis",
+      "word": "mimesis",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "mimézis",
+        "utánzás"
+      ],
+      "definition": "the imitation or representation of nature and human behaviour in art and literature",
+      "example": "Aristotle argued that mimesis is fundamental to artistic creation and human learning."
+    },
+    {
+      "id": "narcissism",
+      "word": "narcissism",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "nárcizmus",
+        "önimádat"
+      ],
+      "definition": "excessive interest in or admiration of oneself and one's physical appearance",
+      "example": "The protagonist's narcissism blinds him to the needs and feelings of others."
+    },
+    {
+      "id": "romanticism",
+      "word": "romanticism",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "romantika",
+        "romantikus művészet"
+      ],
+      "definition": "an artistic movement emphasising emotion, individualism, and the glorification of nature",
+      "example": "Wordsworth's poetry exemplifies romanticism through its celebration of natural beauty and imagination."
+    },
+    {
+      "id": "tableau",
+      "word": "tableau",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "tablókép",
+        "élőkép"
+      ],
+      "definition": "a group of models or motionless figures representing a scene",
+      "example": "The final act concludes with a striking tableau of the characters frozen in dramatic poses."
+    },
+    {
+      "id": "syntax",
+      "word": "syntax",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szintaxis",
+        "mondattan"
+      ],
+      "definition": "the arrangement of words and phrases to create well-formed sentences",
+      "example": "Joyce's experimental syntax in Ulysses challenges conventional narrative structure."
+    },
+    {
+      "id": "doppelgänger",
+      "word": "doppelgänger",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "hasonmás",
+        "kísértet"
+      ],
+      "definition": "an apparition or double of a living person",
+      "example": "The theme of the doppelgänger appears frequently in Gothic literature as a symbol of psychological duality."
+    },
+    {
+      "id": "aphorism",
+      "word": "aphorism",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "aforizma",
+        "bölcs mondás"
+      ],
+      "definition": "a concise statement of a principle or truth",
+      "example": "Oscar Wilde was renowned for his witty aphorisms that cleverly subverted conventional wisdom."
+    },
+    {
+      "id": "ennui",
+      "word": "ennui",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "unalom",
+        "tétlenség"
+      ],
+      "definition": "a feeling of listlessness and dissatisfaction arising from a lack of occupation",
+      "example": "The protagonist's ennui reflects the spiritual emptiness of modern urban existence."
+    },
+    {
+      "id": "expressionism",
+      "word": "expressionism",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "expresszionizmus",
+        "kifejezéskultusz"
+      ],
+      "definition": "an artistic style seeking to express emotional experience rather than physical reality",
+      "example": "Munch's The Scream is a quintessential work of expressionism, conveying existential anxiety."
+    },
+    {
+      "id": "semantics",
+      "word": "semantics",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szemantika",
+        "jelentéstan"
+      ],
+      "definition": "the branch of linguistics concerned with meaning",
+      "example": "The debate hinged on semantics, particularly the precise definition of key terms."
+    },
+    {
+      "id": "cathartic",
+      "word": "cathartic",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "katartikus",
+        "megtisztító"
+      ],
+      "definition": "providing psychological relief through the expression of strong emotions",
+      "example": "Writing about traumatic experiences can be cathartic, helping individuals process difficult emotions."
+    },
+    {
+      "id": "rationalism",
+      "word": "rationalism",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "racionalizmus",
+        "ésszerűség"
+      ],
+      "definition": "the belief that reason and logic are the primary sources of knowledge",
+      "example": "Descartes's rationalism asserted that certain truths could be known through reason alone."
+    },
+    {
+      "id": "foreshadowing",
+      "word": "foreshadowing",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "előrevetítés",
+        "előjelzés"
+      ],
+      "definition": "a literary device using hints about what will happen later in the story",
+      "example": "The ominous storm in the opening chapter serves as foreshadowing of the tragedy to come."
+    },
+    {
+      "id": "synecdoche",
+      "word": "synecdoche",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szinekdoché",
+        "rész-egész alakzat"
+      ],
+      "definition": "a figure of speech in which a part represents the whole or vice versa",
+      "example": "In the phrase 'all hands on deck', hands is a synecdoche for sailors or crew members."
+    },
+    {
+      "id": "psychoanalysis",
+      "word": "psychoanalysis",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "pszichoanalízis",
+        "lélekelemzés"
+      ],
+      "definition": "a method of treating mental disorders by investigating the unconscious mind",
+      "example": "Freud developed psychoanalysis as a therapeutic technique for exploring repressed memories."
+    },
+    {
+      "id": "bathos",
+      "word": "bathos",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "batosz",
+        "hirtelen lehangolás"
+      ],
+      "definition": "an anticlimax; a sudden change from the sublime to the ridiculous",
+      "example": "The poem's descent into bathos undermines its serious intentions with unintentional comedy."
+    },
+    {
+      "id": "determinism",
+      "word": "determinism",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "determinizmus",
+        "meghatározottság"
+      ],
+      "definition": "the doctrine that all events are determined by previously existing causes",
+      "example": "The novel explores determinism through characters whose fates seem inexorably fixed by circumstance."
+    },
+    {
+      "id": "grotesque",
+      "word": "grotesque",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "groteszk",
+        "torz"
+      ],
+      "definition": "comically or repulsively ugly or distorted",
+      "example": "Kafka's grotesque transformation of Gregor into an insect serves as a powerful metaphor for alienation."
+    },
+    {
+      "id": "proscenium",
+      "word": "proscenium",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "proszcénium",
+        "színpadi keret"
+      ],
+      "definition": "the part of a theatre stage in front of the curtain",
+      "example": "Traditional theatre utilises the proscenium arch to create a clear separation between actors and audience."
+    },
+    {
+      "id": "realism",
+      "word": "realism",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "realizmus",
+        "valóságábrázolás"
+      ],
+      "definition": "the accurate depiction of contemporary life in art and literature",
+      "example": "Flaubert's realism captured the mundane details of provincial French life with meticulous precision."
+    },
+    {
+      "id": "anthropomorphism",
+      "word": "anthropomorphism",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "antropomorfizmus",
+        "megszemélyesítés"
+      ],
+      "definition": "the attribution of human characteristics to animals or inanimate objects",
+      "example": "Animal Farm employs anthropomorphism to satirise political systems through the behaviour of farm animals."
+    },
+    {
+      "id": "empirical",
+      "word": "empirical",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "empirikus",
+        "tapasztalati"
+      ],
+      "definition": "based on observation or experience rather than theory",
+      "example": "The scientist demanded empirical evidence to support the controversial hypothesis."
+    },
+    {
+      "id": "phenomenology",
+      "word": "phenomenology",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "fenomenológia",
+        "jelenségtan"
+      ],
+      "definition": "the philosophical study of conscious experience from the first-person perspective",
+      "example": "Husserl's phenomenology investigates how objects appear to consciousness in lived experience."
+    },
+    {
+      "id": "jurisprudence",
+      "word": "jurisprudence",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "jogtudomány",
+        "jogfilozófia"
+      ],
+      "definition": "The theory or philosophy of law, or the study of legal systems and principles.",
+      "example": "Her dissertation on constitutional jurisprudence examined the evolution of human rights protection across different legal traditions."
+    },
+    {
+      "id": "litigation",
+      "word": "litigation",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "perlés",
+        "peres eljárás"
+      ],
+      "definition": "The process of taking legal action through the courts.",
+      "example": "The company decided to avoid costly litigation by reaching an out-of-court settlement with the plaintiffs."
+    },
+    {
+      "id": "adjudicate",
+      "word": "adjudicate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "ítéletet hoz",
+        "dönt"
+      ],
+      "definition": "To make a formal judgement on a disputed matter.",
+      "example": "The tribunal was appointed to adjudicate the boundary dispute between the neighbouring countries."
+    },
+    {
+      "id": "indictment",
+      "word": "indictment",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "vádirat",
+        "vád"
+      ],
+      "definition": "A formal charge or accusation of a serious crime.",
+      "example": "The grand jury issued an indictment against the former minister for corruption and embezzlement."
+    },
+    {
+      "id": "exonerate",
+      "word": "exonerate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "felment",
+        "tisztáz"
+      ],
+      "definition": "To officially absolve someone from blame for a fault or wrongdoing.",
+      "example": "New DNA evidence emerged that completely exonerated the defendant after fifteen years of wrongful imprisonment."
+    },
+    {
+      "id": "plaintiff",
+      "word": "plaintiff",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "felperes",
+        "panaszos"
+      ],
+      "definition": "A person who brings a case against another in a court of law.",
+      "example": "The plaintiff claimed substantial damages for the injuries sustained in the workplace accident."
+    },
+    {
+      "id": "jurisdiction",
+      "word": "jurisdiction",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "joghatóság",
+        "illetékesség"
+      ],
+      "definition": "The official power to make legal decisions and judgements, or the extent of this power.",
+      "example": "The international court lacks jurisdiction over domestic matters unless human rights violations are involved."
+    },
+    {
+      "id": "amnesty",
+      "word": "amnesty",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "amnesztia",
+        "kegyelem"
+      ],
+      "definition": "An official pardon for people who have been convicted of political offences.",
+      "example": "The new government granted amnesty to all political prisoners as part of the reconciliation process."
+    },
+    {
+      "id": "coerce",
+      "word": "coerce",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "kényszerít",
+        "rákényszerít"
+      ],
+      "definition": "To persuade someone forcefully to do something against their will.",
+      "example": "The witness testified that the defendants had attempted to coerce her into signing a false statement."
+    },
+    {
+      "id": "pathology",
+      "word": "pathology",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "patológia",
+        "kórtan"
+      ],
+      "definition": "The science of the causes and effects of diseases, especially through laboratory examination of samples.",
+      "example": "The pathology report revealed abnormal cellular changes that required immediate oncological intervention."
+    },
+    {
+      "id": "diagnosis",
+      "word": "diagnosis",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "diagnózis",
+        "kórismézés"
+      ],
+      "definition": "The identification of the nature of an illness or other problem through examination of the symptoms.",
+      "example": "The consultant's diagnosis of autoimmune hepatitis was confirmed by the laboratory results and biopsy findings."
+    },
+    {
+      "id": "prognosis",
+      "word": "prognosis",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "prognózis",
+        "előrejelzés"
+      ],
+      "definition": "A forecast of the likely course and outcome of a disease or ailment.",
+      "example": "Despite the advanced stage of the disease, the patient's prognosis improved significantly following the innovative treatment."
+    },
+    {
+      "id": "auscultation",
+      "word": "auscultation",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "hallgatózás",
+        "auszkultáció"
+      ],
+      "definition": "The action of listening to sounds from the heart, lungs, or other organs, typically with a stethoscope.",
+      "example": "During auscultation, the physician detected irregular heart rhythms that warranted further cardiac investigation."
+    },
+    {
+      "id": "palliative",
+      "word": "palliative",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "enyhítő",
+        "palliatív"
+      ],
+      "definition": "Relieving pain or alleviating a problem without dealing with the underlying cause.",
+      "example": "The patient was transferred to palliative care where the focus shifted to managing symptoms and ensuring comfort."
+    },
+    {
+      "id": "benign",
+      "word": "benign",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "jóindulatú",
+        "ártalmatlan"
+      ],
+      "definition": "Not harmful in effect, particularly in relation to a disease or tumour that is not cancerous.",
+      "example": "The biopsy results confirmed that the tumour was benign, providing immense relief to the anxious patient."
+    },
+    {
+      "id": "malignant",
+      "word": "malignant",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "rosszindulatú",
+        "malignus"
+      ],
+      "definition": "Very virulent or infectious, or relating to a cancerous tumour that tends to invade surrounding tissue.",
+      "example": "The oncologist explained that the malignant cells had metastasised to the lymph nodes, requiring aggressive chemotherapy."
+    },
+    {
+      "id": "epidemiology",
+      "word": "epidemiology",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "epidemiológia",
+        "járványtan"
+      ],
+      "definition": "The branch of medicine which deals with the incidence, distribution, and control of diseases.",
+      "example": "The epidemiology of the outbreak suggested a common source of infection at the contaminated water facility."
+    },
+    {
+      "id": "therapeutic",
+      "word": "therapeutic",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "gyógyászati",
+        "terápiás"
+      ],
+      "definition": "Relating to the healing of disease or the treatment of a medical condition.",
+      "example": "The therapeutic benefits of the new medication were evident within weeks, with significant improvement in symptoms."
+    },
+    {
+      "id": "pharmacology",
+      "word": "pharmacology",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "farmakológia",
+        "gyógyszertan"
+      ],
+      "definition": "The branch of medicine concerned with the uses, effects, and modes of action of drugs.",
+      "example": "Her research in clinical pharmacology focused on drug interactions in elderly patients with multiple comorbidities."
+    },
+    {
+      "id": "symmetry",
+      "word": "symmetry",
+      "level": "B2",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szimmetria",
+        "tükörképesség"
+      ],
+      "definition": "The quality of being made up of exactly similar parts facing each other or around an axis.",
+      "example": "The architect's design emphasised bilateral symmetry, creating a sense of balance and harmony in the façade."
+    },
+    {
+      "id": "façade",
+      "word": "façade",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "homlokzat",
+        "előcsarnok"
+      ],
+      "definition": "The principal front of a building, that faces on to a street or open space.",
+      "example": "The ornate baroque façade featured intricate stonework and classical columns that dominated the city square."
+    },
+    {
+      "id": "cantilevered",
+      "word": "cantilevered",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "konzolosan kinyúló",
+        "kiugró"
+      ],
+      "definition": "Projecting outwards as a beam or part of a structure supported at only one end.",
+      "example": "The cantilevered balcony extended dramatically over the cliff edge, offering breathtaking views of the coastline."
+    },
+    {
+      "id": "colonnade",
+      "word": "colonnade",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "oszlopsor",
+        "oszlopcsarnok"
+      ],
+      "definition": "A row of columns supporting a roof, an entablature, or series of arches.",
+      "example": "The neoclassical colonnade provided both structural support and aesthetic grandeur to the museum's entrance."
+    },
+    {
+      "id": "cornice",
+      "word": "cornice",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "párkány",
+        "koronázópárkány"
+      ],
+      "definition": "An ornamental moulding round the wall of a room just below the ceiling.",
+      "example": "The elaborate plaster cornice featured acanthus leaves and classical motifs typical of Victorian architecture."
+    },
+    {
+      "id": "parapet",
+      "word": "parapet",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "mellvéd",
+        "védőkorlát"
+      ],
+      "definition": "A low protective wall along the edge of a roof, bridge, or balcony.",
+      "example": "The stone parapet surrounding the medieval castle's ramparts had been restored to its original medieval specifications."
+    },
+    {
+      "id": "buttress",
+      "word": "buttress",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "támfal",
+        "támpillér"
+      ],
+      "definition": "A projecting support of stone or brick built against a wall.",
+      "example": "The flying buttresses of the Gothic cathedral transferred the weight of the vaulted ceiling to external supports."
+    },
+    {
+      "id": "edifice",
+      "word": "edifice",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "épület",
+        "építmény"
+      ],
+      "definition": "A building, especially a large, imposing one.",
+      "example": "The marble edifice stood as a testament to the empire's architectural prowess and cultural sophistication."
+    },
+    {
+      "id": "atrium",
+      "word": "atrium",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "átrium",
+        "előcsarnok"
+      ],
+      "definition": "A central hall or court in a modern building, typically rising through several storeys.",
+      "example": "The hotel's glass-roofed atrium flooded the interior spaces with natural light whilst maintaining climate control."
+    },
+    {
+      "id": "vernacular",
+      "word": "vernacular",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "helyi",
+        "népies"
+      ],
+      "definition": "Concerned with domestic and functional rather than public buildings, using local materials and traditions.",
+      "example": "The vernacular architecture of the region featured thick stone walls and small windows adapted to the harsh climate."
+    },
+    {
+      "id": "beat around the bush",
+      "word": "beat around the bush",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "kertel",
+        "kerülgeti a forró kását"
+      ],
+      "definition": "To discuss a matter without addressing the main point directly.",
+      "example": "Rather than beating around the bush, the chairman confronted the board directly about the financial irregularities."
+    },
+    {
+      "id": "cut corners",
+      "word": "cut corners",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "spórol",
+        "lefaragja a költségeket"
+      ],
+      "definition": "To do something in the easiest, cheapest, or fastest way, often by ignoring quality standards.",
+      "example": "The construction firm's decision to cut corners on materials resulted in structural deficiencies that required costly repairs."
+    },
+    {
+      "id": "hit the nail on the head",
+      "word": "hit the nail on the head",
+      "level": "B2",
+      "partOfSpeech": "verb",
+      "translations": [
+        "teljesen eltalálta",
+        "a lényegre tapintott"
+      ],
+      "definition": "To describe exactly what is causing a situation or problem.",
+      "example": "When she suggested that communication breakdown was the root cause, she really hit the nail on the head."
+    },
+    {
+      "id": "pull strings",
+      "word": "pull strings",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "protekciót érvényesít",
+        "befolyást gyakorol"
+      ],
+      "definition": "To use one's influence with others, especially in an unofficial or secret way, to achieve something.",
+      "example": "The ambassador pulled strings behind the scenes to expedite the visa application for the distinguished scholar."
+    },
+    {
+      "id": "burn bridges",
+      "word": "burn bridges",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "elégeti a hidakat",
+        "visszavonhatatlanná tesz"
+      ],
+      "definition": "To do something that makes it impossible to return to an earlier situation.",
+      "example": "By publicly criticising his former employer, he effectively burnt bridges and jeopardised future opportunities in the industry."
+    },
+    {
+      "id": "weather the storm",
+      "word": "weather the storm",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "kiállja a vihart",
+        "túléli a nehézségeket"
+      ],
+      "definition": "To survive a difficult period or situation without being seriously harmed.",
+      "example": "Despite the economic recession and falling revenues, the company managed to weather the storm through strategic cost reduction."
+    },
+    {
+      "id": "paradigm",
+      "word": "paradigm",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "paradigma",
+        "minta"
+      ],
+      "definition": "A typical example or pattern of something; a model or framework of concepts.",
+      "example": "The discovery of quantum mechanics represented a fundamental paradigm shift in our understanding of physical reality."
+    },
+    {
+      "id": "nomenclature",
+      "word": "nomenclature",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "nómenklatúra",
+        "szaknyelv"
+      ],
+      "definition": "The devising or choosing of names for things, especially in a science or other discipline.",
+      "example": "The binomial nomenclature system provides a standardised method for classifying and naming biological organisms."
+    },
+    {
+      "id": "esoteric",
+      "word": "esoteric",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "ezoterikus",
+        "beavatottaknak szóló"
+      ],
+      "definition": "Intended for or likely to be understood by only a small number of people with specialised knowledge.",
+      "example": "The professor's lecture on quantum field theory was decidedly esoteric, comprehensible only to advanced physics students."
+    },
+    {
+      "id": "nuance",
+      "word": "nuance",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "árnyalat",
+        "finomság"
+      ],
+      "definition": "A subtle difference in or shade of meaning, expression, or sound.",
+      "example": "The translator struggled to capture the subtle nuances of the poet's language in the target vernacular."
+    },
+    {
+      "id": "endemic",
+      "word": "endemic",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "endemikus",
+        "bennszülött"
+      ],
+      "definition": "Regularly found among particular people or in a certain area.",
+      "example": "Corruption had become endemic in the bureaucracy, requiring comprehensive institutional reform to address systemic problems."
+    },
+    {
+      "id": "synergy",
+      "word": "synergy",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "szinergia",
+        "együtthatás"
+      ],
+      "definition": "The interaction or cooperation of two or more organisations, substances, or agents to produce a combined effect greater than the sum of their separate effects.",
+      "example": "The merger created significant synergy between the two companies' complementary technologies and distribution networks."
+    },
+    {
+      "id": "rhetoric",
+      "word": "rhetoric",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "retorika",
+        "szónoklattan"
+      ],
+      "definition": "The art of effective or persuasive speaking or writing, especially the exploitation of figures of speech.",
+      "example": "The politician's inflammatory rhetoric succeeded in mobilising supporters but alienated moderate voters and independent observers."
+    },
+    {
+      "id": "commensurate",
+      "word": "commensurate",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "arányos",
+        "megfelelő"
+      ],
+      "definition": "Corresponding in size or degree; in proportion.",
+      "example": "The compensation package offered was not commensurate with the candidate's extensive experience and exceptional qualifications."
+    },
+    {
+      "id": "acquiesce",
+      "word": "acquiesce",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "belenyugszik",
+        "beleegyezik"
+      ],
+      "definition": "To accept something reluctantly but without protest.",
+      "example": "After prolonged negotiations, the union reluctantly acquiesced to the management's proposals regarding pension reform."
+    },
+    {
+      "id": "transient",
+      "word": "transient",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "átmeneti",
+        "mulandó"
+      ],
+      "definition": "Lasting only for a short time; impermanent.",
+      "example": "The symptoms proved to be transient, disappearing spontaneously within forty-eight hours without medical intervention."
+    },
+    {
+      "id": "negligent",
+      "word": "negligent",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "gondatlan",
+        "hanyag"
+      ],
+      "definition": "Failing to take proper care over something.",
+      "example": "The court found the hospital negligent in its duty of care, resulting in substantial damages awarded to the plaintiff."
+    },
+    {
+      "id": "culpable",
+      "word": "culpable",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "bűnös",
+        "hibáztatható"
+      ],
+      "definition": "Deserving blame for something wrong or harmful.",
+      "example": "The inquiry determined that senior management were culpable for the safety violations that precipitated the industrial accident."
+    },
+    {
+      "id": "fortuitous",
+      "word": "fortuitous",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "véletlen",
+        "szerencsés"
+      ],
+      "definition": "Happening by accident or chance rather than design.",
+      "example": "The discovery of penicillin was fortuitous, resulting from Fleming's observation of contaminated bacterial cultures."
+    },
+    {
+      "id": "verbose",
+      "word": "verbose",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "bőbeszédű",
+        "terjengős"
+      ],
+      "definition": "Using or expressed in more words than are needed.",
+      "example": "The professor's verbose writing style obscured rather than clarified his arguments, frustrating even sympathetic readers."
+    },
+    {
+      "id": "succinct",
+      "word": "succinct",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "tömör",
+        "velős"
+      ],
+      "definition": "Briefly and clearly expressed.",
+      "example": "The executive summary provided a succinct overview of the findings, distilling two hundred pages into essential conclusions."
+    },
+    {
+      "id": "innate",
+      "word": "innate",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "veleszületett",
+        "természetes"
+      ],
+      "definition": "Inborn; natural; possessed from birth.",
+      "example": "The debate continues over whether musical ability is innate or primarily acquired through deliberate practice and exposure."
+    },
+    {
+      "id": "cognisant",
+      "word": "cognisant",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "tudatában van",
+        "tisztában van"
+      ],
+      "definition": "Having knowledge or awareness of something.",
+      "example": "The board must remain cognisant of its fiduciary responsibilities whilst pursuing innovative strategic initiatives."
+    },
+    {
+      "id": "gregarious",
+      "word": "gregarious",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "társaságkedvelő",
+        "csoportosan élő"
+      ],
+      "definition": "Fond of company; sociable.",
+      "example": "Despite his gregarious personality, the author required extended periods of solitude to concentrate on creative work."
+    },
+    {
+      "id": "taciturn",
+      "word": "taciturn",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "hallgatag",
+        "szűkszavú"
+      ],
+      "definition": "Reserved or uncommunicative in speech; saying little.",
+      "example": "The witness's taciturn responses frustrated the prosecution's attempts to establish a coherent timeline of events."
+    },
+    {
+      "id": "tenacious",
+      "word": "tenacious",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "kitartó",
+        "szívós"
+      ],
+      "definition": "Not readily relinquishing a position, principle, or course of action; determined.",
+      "example": "Her tenacious pursuit of justice over two decades ultimately resulted in the overturning of wrongful convictions."
+    },
+    {
+      "id": "perfunctory",
+      "word": "perfunctory",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "felületes",
+        "felszínes"
+      ],
+      "definition": "Carried out without real interest, feeling, or effort.",
+      "example": "The inspection proved perfunctory at best, with inspectors spending barely an hour examining complex safety systems."
+    },
+    {
+      "id": "vicarious",
+      "word": "vicarious",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "helyettes",
+        "közvetett"
+      ],
+      "definition": "Experienced in the imagination through the feelings or actions of another person.",
+      "example": "Literature provides readers with vicarious experiences of lives and circumstances vastly different from their own."
+    },
+    {
+      "id": "altruistic",
+      "word": "altruistic",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "önzetlen",
+        "altruista"
+      ],
+      "definition": "Showing a disinterested and selfless concern for the well-being of others.",
+      "example": "Her altruistic dedication to humanitarian causes inspired countless volunteers to participate in relief efforts."
+    },
+    {
+      "id": "capricious",
+      "word": "capricious",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "szeszélyes",
+        "kiszámíthatatlan"
+      ],
+      "definition": "Given to sudden and unaccountable changes of mood or behaviour.",
+      "example": "The market's capricious fluctuations made long-term investment planning extraordinarily challenging for portfolio managers."
+    },
+    {
+      "id": "fastidious",
+      "word": "fastidious",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "igényes",
+        "válogatós"
+      ],
+      "definition": "Very attentive to accuracy and detail; very concerned about matters of cleanliness.",
+      "example": "The researcher's fastidious attention to experimental protocols ensured the reproducibility of her groundbreaking findings."
+    },
+    {
+      "id": "indolent",
+      "word": "indolent",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "tunya",
+        "lusta"
+      ],
+      "definition": "Wanting to avoid activity or exertion; lazy.",
+      "example": "The committee's indolent response to the crisis allowed minor problems to escalate into institutional failures."
+    },
+    {
+      "id": "affable",
+      "word": "affable",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "barátságos",
+        "jóindulatú"
+      ],
+      "definition": "Friendly, good-natured, and easy to talk to.",
+      "example": "Despite his formidable reputation, the professor proved remarkably affable, engaging students in thoughtful intellectual discourse."
+    },
+    {
+      "id": "abrasive",
+      "word": "abrasive",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "durva",
+        "bántó"
+      ],
+      "definition": "Showing little concern for the feelings of others; harsh.",
+      "example": "His abrasive management style alienated colleagues and created a hostile work environment throughout the department."
+    },
+    {
+      "id": "candid",
+      "word": "candid",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "őszinte",
+        "nyílt"
+      ],
+      "definition": "Truthful and straightforward; frank.",
+      "example": "In a candid interview, the minister acknowledged serious policy failures and accepted personal responsibility for the outcomes."
+    },
+    {
+      "id": "deference",
+      "word": "deference",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "tisztelet",
+        "engedékenység"
+      ],
+      "definition": "Polite submission and respect.",
+      "example": "The junior barrister showed appropriate deference to the senior counsel whilst still advancing independent legal arguments."
+    },
+    {
+      "id": "incumbent",
+      "word": "incumbent",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "hivatalban lévő",
+        "kötelező"
+      ],
+      "definition": "Necessary for someone as a duty or responsibility.",
+      "example": "It is incumbent upon medical professionals to maintain patient confidentiality except where disclosure prevents serious harm."
+    },
+    {
+      "id": "eminent",
+      "word": "eminent",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "kiváló",
+        "neves"
+      ],
+      "definition": "Famous and respected within a particular sphere.",
+      "example": "The conference assembled eminent scholars from diverse disciplines to address contemporary challenges in climate science."
+    },
+    {
+      "id": "avert",
+      "word": "avert",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "elkerül",
+        "megakadályoz"
+      ],
+      "definition": "To turn away one's eyes or thoughts; to prevent or ward off an undesirable occurrence.",
+      "example": "Diplomatic negotiations at the eleventh hour managed to avert military confrontation between the neighbouring states."
+    },
+    {
+      "id": "assimilate",
+      "word": "assimilate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "asszimilál",
+        "beilleszkedik"
+      ],
+      "definition": "To take in and understand fully; to absorb and integrate people, ideas, or culture.",
+      "example": "The curriculum was designed to help students assimilate complex theoretical concepts through practical application."
+    },
+    {
+      "id": "conjecture",
+      "word": "conjecture",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "feltevés",
+        "sejtés"
+      ],
+      "definition": "An opinion or conclusion formed on the basis of incomplete information.",
+      "example": "Without access to primary sources, the historian's account remained largely conjecture rather than substantiated analysis."
+    },
+    {
+      "id": "relinquish",
+      "word": "relinquish",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "lemond",
+        "felad"
+      ],
+      "definition": "To voluntarily cease to keep or claim; to give up.",
+      "example": "The dictator reluctantly relinquished power following sustained international pressure and domestic opposition."
+    },
+    {
+      "id": "repudiate",
+      "word": "repudiate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "elutasít",
+        "megtagad"
+      ],
+      "definition": "To refuse to accept; to deny the truth or validity of.",
+      "example": "The government moved swiftly to repudiate allegations of corruption, threatening legal action against accusers."
+    },
+    {
+      "id": "remuneration",
+      "word": "remuneration",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "díjazás",
+        "fizetés"
+      ],
+      "definition": "Money paid for work or a service.",
+      "example": "Executive remuneration packages have increased disproportionately compared to average employee wages over recent decades."
+    },
+    {
+      "id": "arbitration",
+      "word": "arbitration",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "választottbírósági eljárás",
+        "közvetítés"
+      ],
+      "definition": "The use of an arbitrator to settle a dispute.",
+      "example": "The parties agreed to submit their commercial dispute to binding international arbitration rather than pursue litigation."
+    },
+    {
+      "id": "ratification",
+      "word": "ratification",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "ratifikáció",
+        "jóváhagyás"
+      ],
+      "definition": "The action of signing or giving formal consent to a treaty, contract, or agreement.",
+      "example": "The treaty required ratification by two-thirds of member states before entering into force internationally."
+    },
+    {
+      "id": "stipulation",
+      "word": "stipulation",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kikötés",
+        "feltétel"
+      ],
+      "definition": "A condition or requirement that is specified or demanded as part of an agreement.",
+      "example": "The contract contained a stipulation requiring quarterly performance reviews and immediate termination clauses."
+    },
+    {
+      "id": "quintessential",
+      "word": "quintessential",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "lényegi",
+        "jellegzetes"
+      ],
+      "definition": "representing the most perfect or typical example of a quality or class",
+      "example": "The Rolling Stones are often regarded as the quintessential rock band of the 1960s."
+    },
+    {
+      "id": "ostensibly",
+      "word": "ostensibly",
+      "level": "C1",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "látszólag",
+        "állítólag"
+      ],
+      "definition": "apparently or purportedly, but perhaps not actually",
+      "example": "The meeting was ostensibly about budget cuts, though everyone suspected it was actually about redundancies."
+    },
+    {
+      "id": "promulgate",
+      "word": "promulgate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "kihirdet",
+        "nyilvánosságra hoz"
+      ],
+      "definition": "to promote or make widely known an idea or cause, or to put a law into effect by official proclamation",
+      "example": "The government promulgated new guidelines for data protection following the recent security breaches."
+    },
+    {
+      "id": "reverberate",
+      "word": "reverberate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "visszhangzik",
+        "továbbgyűrűzik"
+      ],
+      "definition": "to continue to have serious effects for a long time, or to echo repeatedly",
+      "example": "The financial crisis of 2008 continues to reverberate through global markets more than a decade later."
+    },
+    {
+      "id": "anachronistic",
+      "word": "anachronistic",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "anakronisztikus",
+        "korszerűtlen"
+      ],
+      "definition": "belonging to a period other than that being portrayed, or outdated",
+      "example": "The use of fax machines in modern offices seems increasingly anachronistic in the age of email."
+    },
+    {
+      "id": "obfuscate",
+      "word": "obfuscate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "elhomályosít",
+        "megzavar"
+      ],
+      "definition": "to make something unclear or difficult to understand, especially deliberately",
+      "example": "Politicians often obfuscate the real issues by using technical jargon and convoluted arguments."
+    },
+    {
+      "id": "pejorative",
+      "word": "pejorative",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "pejoratív",
+        "lekicsinylő"
+      ],
+      "definition": "expressing contempt or disapproval; having a negative connotation",
+      "example": "The term 'bureaucrat' is often used in a pejorative sense to describe inefficient civil servants."
+    },
+    {
+      "id": "supersede",
+      "word": "supersede",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "felülír",
+        "helyettesít"
+      ],
+      "definition": "to replace something, especially something older or more old-fashioned",
+      "example": "Digital streaming services have largely superseded traditional television broadcasting amongst younger audiences."
+    },
+    {
+      "id": "insidious",
+      "word": "insidious",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "alattomos",
+        "észrevétlen"
+      ],
+      "definition": "proceeding in a gradual, subtle way, but with very harmful effects",
+      "example": "The insidious spread of misinformation through social media poses a serious threat to democratic institutions."
+    },
+    {
+      "id": "recalcitrant",
+      "word": "recalcitrant",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "makacs",
+        "engedetlen"
+      ],
+      "definition": "having an obstinately uncooperative attitude towards authority or discipline",
+      "example": "The recalcitrant student refused to comply with the school's dress code despite repeated warnings."
+    },
+    {
+      "id": "denigrate",
+      "word": "denigrate",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "rágalmaz",
+        "becsmérel"
+      ],
+      "definition": "to criticise someone or something unfairly, or to say that someone or something is not good or important",
+      "example": "The opposition party attempted to denigrate the prime minister's achievements throughout the campaign."
+    },
+    {
+      "id": "surreptitious",
+      "word": "surreptitious",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "titokzatos",
+        "lopakodó"
+      ],
+      "definition": "kept secret, especially because it would not be approved of",
+      "example": "She cast a surreptitious glance at her watch, hoping the tedious meeting would conclude soon."
+    },
+    {
+      "id": "inexorably",
+      "word": "inexorably",
+      "level": "C1",
+      "partOfSpeech": "adverb",
+      "translations": [
+        "kérlelhetetlenül",
+        "megállíthatatlanul"
+      ],
+      "definition": "in a way that is impossible to stop or prevent; relentlessly",
+      "example": "The population continues to age inexorably, placing increasing demands on healthcare systems."
+    },
+    {
+      "id": "intransigent",
+      "word": "intransigent",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "hajthatatlan",
+        "megalkuvást nem ismerő"
+      ],
+      "definition": "unwilling or refusing to change one's views or to agree about something",
+      "example": "The union's intransigent position on wages made negotiations increasingly difficult and protracted."
+    },
+    {
+      "id": "perspicacious",
+      "word": "perspicacious",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "éles eszű",
+        "átlátó"
+      ],
+      "definition": "having a ready insight into and understanding of things; mentally sharp or discerning",
+      "example": "The perspicacious analyst correctly predicted the market crash months before it occurred."
+    },
+    {
+      "id": "admonish",
+      "word": "admonish",
+      "level": "C1",
+      "partOfSpeech": "verb",
+      "translations": [
+        "megint",
+        "figyelmeztet"
+      ],
+      "definition": "to warn or reprimand someone firmly",
+      "example": "The teacher admonished the students for their poor behaviour."
+    },
+    {
+      "id": "belligerent",
+      "word": "belligerent",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "harcias",
+        "agresszív"
+      ],
+      "definition": "hostile and aggressive",
+      "example": "His belligerent attitude made negotiations difficult."
+    },
+    {
+      "id": "bourgeois",
+      "word": "bourgeois",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "burzsoá",
+        "polgári"
+      ],
+      "definition": "relating to the middle class, typically with reference to materialistic values",
+      "example": "She rejected bourgeois conventions and embraced a bohemian lifestyle."
+    },
+    {
+      "id": "cacophony",
+      "word": "cacophony",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kakofónia",
+        "disszonancia"
+      ],
+      "definition": "a harsh, discordant mixture of sounds",
+      "example": "The cacophony of car horns filled the busy street."
+    },
+    {
+      "id": "clemency",
+      "word": "clemency",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "kegyelem",
+        "enyhítés"
+      ],
+      "definition": "mercy; lenience",
+      "example": "The prisoner appealed for clemency from the governor."
+    },
+    {
+      "id": "copious",
+      "word": "copious",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "bőséges",
+        "reichlich"
+      ],
+      "definition": "abundant in supply or quantity",
+      "example": "She took copious notes during the lecture."
+    },
+    {
+      "id": "dearth",
+      "word": "dearth",
+      "level": "C1",
+      "partOfSpeech": "noun",
+      "translations": [
+        "hiány",
+        "szűkösség"
+      ],
+      "definition": "a scarcity or lack of something",
+      "example": "There is a dearth of qualified teachers in rural areas."
+    },
+    {
+      "id": "ebullient",
+      "word": "ebullient",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "lelkes",
+        "buzgó"
+      ],
+      "definition": "cheerful and full of energy",
+      "example": "Her ebullient personality made her popular with colleagues."
+    },
+    {
+      "id": "equivocal",
+      "word": "equivocal",
+      "level": "C1",
+      "partOfSpeech": "adjective",
+      "translations": [
+        "kétértelmű",
+        "homályos"
+      ],
+      "definition": "open to more than one interpretation; ambiguous",
+      "example": "His equivocal response left us uncertain about his true intentions."
     }
   ]
 }
