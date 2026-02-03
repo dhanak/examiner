@@ -134,8 +134,8 @@ describe('FillBlanks', () => {
     const checkButton = screen.queryByText(/Check \(Enter\)/)
     
     if (checkButton) {
-      // Button should be interactive
-      expect(checkButton).toBeEnabled()
+      // Button should be disabled when blanks not filled
+      expect(checkButton).toBeDisabled()
     }
   })
 

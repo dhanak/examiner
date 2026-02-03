@@ -44,6 +44,7 @@ export default function FillBlanks() {
   const [filledBlanks, setFilledBlanks] = useState({}) // {blankId: wordId}
   const [draggedLozenge, setDraggedLozenge] = useState(null) // Track dragged word
   const [feedback, setFeedback] = useState(null) // {type, message}
+  const [showingAnswers, setShowingAnswers] = useState(false) // Showing correct answers (disables lozenges)
 
   const hasInitializedRef = useRef(false)
 
@@ -121,8 +122,18 @@ export default function FillBlanks() {
       setOptions(exercise.options)
       setFilledBlanks({})
       setFeedback(null)
+      setShowingAnswers(false)
     }
-  }, [blankCount, distractorCount, generateExercise])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [blankCount, distractorCount])
+
+  // Clear error feedback when user modifies filled blanks (try again)
+  useEffect(() => {
+    if (feedback?.type === 'incorrect') {
+      setFeedback(null)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [filledBlanks])
 
   const handleCheck = useCallback(() => {
     if (!word || blanks.length === 0) return
@@ -130,7 +141,7 @@ export default function FillBlanks() {
     // Check if all blanks are filled
     const unfilled = blanks.filter(b => !filledBlanks[b.id])
     if (unfilled.length > 0) {
-      setFeedback({ type: 'incomplete', message: '✓ Please fill all blanks before checking.' })
+      // Don't set feedback, just return (button will be disabled)
       return
     }
 
@@ -169,8 +180,16 @@ export default function FillBlanks() {
       setOptions(exercise.options)
       setFilledBlanks({})
       setFeedback(null)
+      setShowingAnswers(false)
     }
   }, [generateExercise])
+
+  const handleShowAnswers = useCallback(() => {
+    // Clear filled blanks, disable lozenges, show correct answers
+    setFilledBlanks({})
+    setShowingAnswers(true)
+    setFeedback(null)
+  }, [])
 
   // Keyboard shortcuts
   useEffect(() => {
@@ -178,13 +197,21 @@ export default function FillBlanks() {
       // Enter for Check/Next
       if (e.key === 'Enter') {
         e.preventDefault()
-        if (feedback === null || feedback.type === 'incomplete') {
-          handleCheck()
-        } else {
+        // Check: only if no feedback and not showing answers
+        if (feedback === null && !showingAnswers) {
+          const allFilled = blanks.every(b => filledBlanks[b.id])
+          if (allFilled) {
+            handleCheck()
+          }
+        } else if (feedback?.type === 'incorrect' || feedback?.type === 'correct' || showingAnswers) {
+          // Next: when incorrect, correct, or showing answers
           handleNext()
         }
         return
       }
+
+      // Don't allow hotkeys when showing answers
+      if (showingAnswers) return
 
       // Hotkeys 1-9 for selecting lozenges or removing filled ones
       const keyNum = parseInt(e.key, 10)
@@ -222,7 +249,7 @@ export default function FillBlanks() {
 
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [feedback, handleCheck, handleNext, blanks, filledBlanks, options])
+  }, [feedback, handleCheck, handleNext, blanks, filledBlanks, options, showingAnswers])
 
   if (filteredWords.length === 0) {
     return (
@@ -248,35 +275,46 @@ export default function FillBlanks() {
       const filledOption = filledOptionId ? options.find(o => o.id === filledOptionId) : null
       // Find the hotkey for this option
       const hotkeyNumber = filledOption ? options.findIndex(o => o.id === filledOption.id) + 1 : null
-      
+
+      // Show correct answer if showingAnswers is true
+      const shouldShowCorrect = showingAnswers
+      const correctWord = shouldShowCorrect ? blank.correctWord : null
+
       return (
         <span key={idx} className="blank-slot">
           {filledOption ? (
             <span
               className="receptacle-lozenge filled"
               onClick={() => {
-                setFilledBlanks(prev => {
-                  const updated = { ...prev }
-                  delete updated[blank.id]
-                  return updated
-                })
+                if (!showingAnswers) {
+                  setFilledBlanks(prev => {
+                    const updated = { ...prev }
+                    delete updated[blank.id]
+                    return updated
+                  })
+                }
               }}
-              title="Click to remove"
+              title={showingAnswers ? '' : 'Click to remove'}
             >
               {hotkeyNumber && hotkeyNumber <= 9 && <span className="hotkey">{hotkeyNumber}</span>}
               <span className="word-text">{filledOption.word}</span>
+            </span>
+          ) : shouldShowCorrect ? (
+            <span className="receptacle-lozenge correct-answer">
+              <span className="word-text">{correctWord}</span>
             </span>
           ) : (
             <span
               className="receptacle-lozenge empty"
               onDragOver={(e) => {
                 e.preventDefault()
-                e.currentTarget.classList.add('drag-over')
+                if (!showingAnswers) e.currentTarget.classList.add('drag-over')
               }}
               onDragLeave={(e) => {
                 e.currentTarget.classList.remove('drag-over')
               }}
               onDrop={(e) => {
+                if (showingAnswers) return
                 e.preventDefault()
                 e.currentTarget.classList.remove('drag-over')
                 if (draggedLozenge) {
@@ -313,9 +351,11 @@ export default function FillBlanks() {
             return (
               <div
                 key={option.id}
-                className={`lozenge ${isUsed ? 'used' : ''}`}
-                draggable
-                onDragStart={() => setDraggedLozenge(option.id)}
+                className={`lozenge ${isUsed ? 'used' : ''} ${showingAnswers ? 'disabled' : ''}`}
+                draggable={!showingAnswers}
+                onDragStart={() => {
+                  if (!showingAnswers) setDraggedLozenge(option.id)
+                }}
                 onDragEnd={() => setDraggedLozenge(null)}
                 title={hotkey ? `${option.word} (${hotkey})` : option.word}
               >
@@ -327,21 +367,41 @@ export default function FillBlanks() {
         </div>
 
         <div className="button-row">
-          {feedback === null || feedback.type === 'incomplete' ? (
-            <button className="check-button" onClick={handleCheck}>
+          {showingAnswers ? (
+            <>
+              <div className={`feedback correct`}>✓ Correct answers shown above.</div>
+              <button className="next-button" onClick={handleNext}>
+                Next (Enter)
+              </button>
+            </>
+          ) : feedback === null ? (
+            <button
+              className="check-button"
+              onClick={handleCheck}
+              disabled={blanks.some(b => !filledBlanks[b.id])}
+            >
               Check (Enter)
             </button>
-          ) : (
+          ) : feedback.type === 'correct' ? (
             <>
               <div className={`feedback ${feedback.type}`}>{feedback.message}</div>
               <button className="next-button" onClick={handleNext}>
                 Next (Enter)
               </button>
             </>
-          )}
-          {feedback && feedback.type === 'incomplete' && (
-            <div className={`feedback ${feedback.type}`}>{feedback.message}</div>
-          )}
+          ) : feedback.type === 'incorrect' ? (
+            <>
+              <div className={`feedback ${feedback.type}`}>{feedback.message}</div>
+              <div className="incorrect-actions">
+                <button className="show-answer-button" onClick={handleShowAnswers}>
+                  Show Answers
+                </button>
+                <button className="next-button" onClick={handleNext}>
+                  Next (Enter)
+                </button>
+              </div>
+            </>
+          ) : null}
         </div>
       </div>
     </div>

@@ -95,6 +95,15 @@
   background: var(--accent-hover);
 }
 
+.receptacle-lozenge.correct-answer {
+  background: var(--success-color);
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  font-style: italic;
+  opacity: 0.8;
+}
+
 .receptacle-lozenge .hotkey {
   display: inline-flex;
   align-items: center;
@@ -162,6 +171,12 @@
   pointer-events: none;
 }
 
+.lozenge.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 .lozenge .hotkey {
   display: inline-flex;
   align-items: center;
@@ -195,7 +210,8 @@
 }
 
 .check-button,
-.next-button {
+.next-button,
+.show-answer-button {
   padding: 0.6rem 1.5rem;
   background: var(--accent-color);
   color: white;
@@ -208,11 +224,33 @@
   flex-shrink: 0;
 }
 
-.check-button:hover,
-.next-button:hover {
+.check-button:hover:not(:disabled),
+.next-button:hover,
+.show-answer-button:hover {
   background: var(--accent-hover);
   transform: translateY(-1px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.check-button:disabled {
+  background: var(--border-color);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.show-answer-button {
+  background: var(--primary-color);
+}
+
+.show-answer-button:hover {
+  background: #2563eb;
+}
+
+.incorrect-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .feedback {
