@@ -23,6 +23,19 @@
   min-width: 0;
 }
 
+/* Ensure speakers on match items are aligned to the far right */
+.match-item {
+  padding-right: 2.4rem; /* space for speaker icon */
+}
+
+.match-pairs .match-item .speaker-icon {
+  position: absolute;
+  right: 0.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 0;
+}
+
 .match-item {
   padding: 1rem;
   background: var(--background-color);

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useVocabularyStore } from '../store/vocabularyStore'
 import './FlipCard.css'
+import SpeakerIcon from './SpeakerIcon'
 
 export default function FlipCard({ wordId, word, level, partOfSpeech, translations, definition, example }) {
   const [isFlipped, setIsFlipped] = useState(false)
@@ -68,7 +69,7 @@ export default function FlipCard({ wordId, word, level, partOfSpeech, translatio
             {learned ? '✓' : '○'}
           </button>
           <div className="word-container">
-            <h2 className="word">{word}</h2>
+            <h2 className="word">{word} <SpeakerIcon text={word} size={20} className="flipcard-speaker" /></h2>
           </div>
           <div className="flip-hint">Click or press Space to flip • Press Enter to mark as learned</div>
         </div>
@@ -86,7 +87,7 @@ export default function FlipCard({ wordId, word, level, partOfSpeech, translatio
           </button>
           <div className="back-content">
             <div className="word-header">
-              <h3 className="word-title">{word}</h3>
+              <h3 className="word-title">{word}<SpeakerIcon text={word} size={18} className="flipcard-back-speaker" noRole /></h3>
               <span className="part-of-speech">{partOfSpeech}</span>
             </div>
             
@@ -96,13 +97,13 @@ export default function FlipCard({ wordId, word, level, partOfSpeech, translatio
             
             {definition && (
               <div className="definition">
-                <strong>Definition:</strong> {definition}
+                <strong>Definition:</strong> {definition} <SpeakerIcon text={definition} size={16} className="flipcard-back-speaker" noRole />
               </div>
             )}
             
             {example && (
               <div className="example">
-                <strong>Example:</strong> "{example}"
+                <strong>Example:</strong> "{example}" <SpeakerIcon text={example} size={16} className="flipcard-back-speaker" noRole />
               </div>
             )}
           </div>

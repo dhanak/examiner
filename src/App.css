@@ -1,4 +1,12 @@
 /* Theme-specific variables */
+
+/* Global speaker dark color variables (flipcard uses this regardless of theme) */
+:root {
+  --speaker-dark-color: #d1d5db;
+  --speaker-dark-hover: #ffffff;
+  --speaker-dark-speaking: var(--success-color);
+  --speaker-dark-disabled: #6b7280;
+}
 :root[data-theme="light"] {
   /* App.css original variables */
   --bg-primary: #ffffff;
@@ -21,6 +29,12 @@
   --success-color: #22c55e;
   --error-color: #ef4444;
   --warning-color: #f59e0b;
+
+  /* Speaker icon color scheme (light) */
+  --speaker-color: #6b7280; /* default */
+  --speaker-hover: #374151; /* hover */
+  --speaker-speaking: var(--success-color); /* while speaking */
+  --speaker-disabled: #9ca3af; /* disabled */
 }
 
 :root[data-theme="dark"] {
@@ -45,6 +59,12 @@
   --success-color: #22c55e;
   --error-color: #ef4444;
   --warning-color: #f59e0b;
+
+  /* Speaker icon color scheme (dark) */
+  --speaker-color: #d1d5db; /* default (visible on dark surface) */
+  --speaker-hover: #ffffff; /* hover */
+  --speaker-speaking: var(--success-color); /* while speaking */
+  --speaker-disabled: #6b7280; /* disabled */
 }
 
 .app {

@@ -4,6 +4,7 @@ import { useVocabularyStore } from '../store/vocabularyStore'
 import { shuffleArray } from '../utils/practiceUtils'
 import vocabularyData from '../data/vocabulary.json'
 import './FillBlanks.css'
+import SpeakerIcon from './SpeakerIcon'
 
 export default function FillBlanks() {
   const {
@@ -436,7 +437,14 @@ export default function FillBlanks() {
   return (
     <div className="fill-blanks">
       <div className="exercise-card">
-        <p className="sentence">{sentenceElements}</p>
+        <div className="sentence-header">
+          <p className="sentence">{sentenceElements}</p>
+          {(showingAnswers || feedback?.type === 'correct') && (
+            <div className="sentence-controls">
+              <SpeakerIcon text={sentence} size={18} className="sentence-speaker" noRole />
+            </div>
+          )}
+        </div>
 
         <div className="options-row">
           {options.map((option, idx) => {
@@ -462,6 +470,7 @@ export default function FillBlanks() {
               >
                 {hotkey && <span className="hotkey">{hotkey}</span>}
                 <span className="lozenge-text">{option.word}</span>
+                <SpeakerIcon text={option.word} size={16} className="lozenge-speaker" noRole />
               </div>
             )
           })}

@@ -59,6 +59,18 @@
   justify-content: center;
 }
 
+/* Align speaker next to the prompt word similar to flipcard front */
+.prompt-word .multiplechoice-speaker {
+  margin-left: 1.2rem;
+  margin-top: 1rem;
+  align-self: center;
+}
+
+/* Position speaker icons on the right side of option buttons */
+.option-button .multiplechoice-speaker {
+  margin-left: auto;
+}
+
 .instruction {
   text-align: center;
   color: var(--text-secondary);

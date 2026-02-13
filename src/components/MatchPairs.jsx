@@ -4,6 +4,7 @@ import { useVocabularyStore } from '../store/vocabularyStore'
 import { getRandomWords, shuffleArray, getRandomTranslation } from '../utils/practiceUtils'
 import vocabularyData from '../data/vocabulary.json'
 import './MatchPairs.css'
+import SpeakerIcon from './SpeakerIcon'
 
 export default function MatchPairs() {
   const {
@@ -68,39 +69,21 @@ export default function MatchPairs() {
       const pairId = `pair-${index}`
       pairs.set(pairId, word.id)
 
-      if (direction === 'hu-to-en') {
-        // Left: English (with number hotkey), Right: Hungarian (hotkey assigned after shuffle)
-        leftItems.push({
-          id: `left-${index}`,
-          pairId,
-          text: word.word,
-          type: 'english',
-          hotkey: String(index + 1)
-        })
-        rightItems.push({
-          id: `right-${index}`,
-          pairId,
-          text: getRandomTranslation(word),
-          type: 'hungarian',
-          hotkey: '' // Will be assigned after shuffle
-        })
-      } else {
-        // Left: Hungarian (with number hotkey), Right: English (hotkey assigned after shuffle)
-        leftItems.push({
-          id: `left-${index}`,
-          pairId,
-          text: getRandomTranslation(word),
-          type: 'hungarian',
-          hotkey: String(index + 1)
-        })
-        rightItems.push({
-          id: `right-${index}`,
-          pairId,
-          text: word.word,
-          type: 'english',
-          hotkey: '' // Will be assigned after shuffle
-        })
-      }
+      // Always display Hungarian on the left and English on the right for consistent layout
+      leftItems.push({
+        id: `left-${index}`,
+        pairId,
+        text: getRandomTranslation(word),
+        type: 'hungarian',
+        hotkey: String(index + 1)
+      })
+      rightItems.push({
+        id: `right-${index}`,
+        pairId,
+        text: word.word,
+        type: 'english',
+        hotkey: '' // Will be assigned after shuffle
+      })
     })
 
     // Only keep items up to pairCount
@@ -133,7 +116,7 @@ export default function MatchPairs() {
   const [animateSlide, setAnimateSlide] = useState(false)
   const hasInitializedRef = useRef(false)
   const itemsAreNewRef = useRef(true)
-  
+
   // Refs to measure item positions
   const leftItemsRefs = useRef({})
   const rightItemsRefs = useRef({})
@@ -191,12 +174,12 @@ export default function MatchPairs() {
   const handleItemClick = useCallback((itemId, side) => {
     // Mark items as no longer new on first interaction
     itemsAreNewRef.current = false
-    
+
     // If the item is already matched, don't do anything
-    const item = side === 'left' 
+    const item = side === 'left'
       ? leftItems.find(i => i.id === itemId)
       : rightItems.find(i => i.id === itemId)
-    
+
     if (item && matches.has(item.pairId)) {
       return
     }
@@ -263,24 +246,24 @@ export default function MatchPairs() {
   const getSlideOffset = (rightItem) => {
     // Don't calculate offset if not animating or items are new
     if (!animateSlide || itemsAreNewRef.current) return 0
-    
+
     // Find where this item should be
     const targetIndex = leftItems.findIndex(li => li.pairId === rightItem.pairId)
     const currentIndex = rightItems.findIndex(ri => ri.id === rightItem.id)
-    
+
     if (targetIndex === -1 || currentIndex === -1) return 0
-    
+
     // Get actual DOM positions
     const leftElement = leftItemsRefs.current[leftItems[targetIndex]?.id]
     const rightElement = rightItemsRefs.current[rightItem.id]
-    
+
     if (!leftElement || !rightElement) return 0
-    
+
     // Calculate the difference in top position
     const leftTop = leftElement.getBoundingClientRect().top
     const rightTop = rightElement.getBoundingClientRect().top
     const offsetPixels = leftTop - rightTop
-    
+
     return offsetPixels
   }
 
@@ -352,7 +335,7 @@ export default function MatchPairs() {
             const slideOffset = getSlideOffset(item)
             const shouldAnimate = animateSlide && !itemsAreNewRef.current
             const slideStyle = shouldAnimate ? { transform: `translateY(${slideOffset}px)` } : {}
-            
+
             return (
               <button
                 key={item.id}
@@ -364,6 +347,7 @@ export default function MatchPairs() {
               >
                 <span className="hotkey">{item.hotkey}</span>
                 {item.text}
+                <SpeakerIcon text={item.text} noRole />
               </button>
             )
           })}

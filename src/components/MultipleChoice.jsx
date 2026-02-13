@@ -4,6 +4,8 @@ import { useVocabularyStore } from '../store/vocabularyStore'
 import { getRandomWords, getDistractors, shuffleArray, getRandomTranslation } from '../utils/practiceUtils'
 import vocabularyData from '../data/vocabulary.json'
 import './MultipleChoice.css'
+import SpeakerIcon from './SpeakerIcon'
+import { shouldShowTTSForMultipleChoice } from '../utils/ttsUtils'
 
 export default function MultipleChoice() {
   const {
@@ -188,6 +190,9 @@ export default function MultipleChoice() {
     ? 'Select the Hungarian translation:'
     : 'Select the English word:'
 
+  const showMainSpeaker = shouldShowTTSForMultipleChoice({ direction, side: 'main' })
+  const showOptionSpeaker = shouldShowTTSForMultipleChoice({ direction, side: 'option' })
+
   return (
     <div className="multiple-choice">
       <div className="question-card">
@@ -198,6 +203,7 @@ export default function MultipleChoice() {
 
         <div className="prompt-word">
           {promptText}
+          {showMainSpeaker && <SpeakerIcon text={promptText} size={18} className="multiplechoice-speaker" noRole />}
         </div>
 
         <div className="instruction">
@@ -220,6 +226,7 @@ export default function MultipleChoice() {
               >
                 <span className="option-number">{index + 1}</span>
                 <span className="option-text">{option}</span>
+                {showOptionSpeaker && <SpeakerIcon text={option} size={16} className="multiplechoice-speaker" noRole />}
                 {showAsCorrect && <span className="option-icon">✓</span>}
                 {showAsWrong && <span className="option-icon">✗</span>}
               </button>

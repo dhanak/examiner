@@ -407,3 +407,25 @@
   color: var(--text-color);
   border: 1px solid var(--border-color);
 }
+
+/* Speaker controls for sentence and lozenge */
+.sentence-header {
+  display:flex;
+  align-items:center;
+  gap:0.5rem;
+  width:100%;
+  justify-content:space-between;
+}
+.sentence-controls {
+  display:flex;
+  align-items:center;
+  gap:0.5rem;
+}
+.sentence-speaker {
+  margin-left: 0.5rem;
+}
+.lozenge .speaker-icon {
+  margin-left: 0.25rem;
+  color: var(--speaker-color);
+}
+
