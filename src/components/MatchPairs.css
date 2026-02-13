@@ -36,8 +36,29 @@
   margin-left: 0;
 }
 
+/* Keep hotkeys aligned middle-left within the match item card */
+.match-pairs .match-item .hotkey {
+  position: absolute !important;
+  top: 50% !important;
+  left: 0.6rem !important;
+  transform: translateY(-50%); /* vertically center hotkey */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 16px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  color: inherit;
+  opacity: 0.9;
+  padding: 0;
+}
+
 .match-item {
   padding: 1rem;
+  padding-left: 2.4rem; /* space for hotkey */
   background: var(--background-color);
   border: 2px solid var(--border-color);
   border-radius: 8px;
@@ -59,13 +80,21 @@
 }
 
 .hotkey {
-  position: absolute;
-  top: 0.25rem;
-  left: 0.5rem;
-  font-size: 0.7rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 16px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-size: 10px;
   font-weight: 700;
-  color: var(--text-secondary);
-  opacity: 0.7;
+  color: inherit;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
 }
 
 .match-item:hover:not(:disabled) {

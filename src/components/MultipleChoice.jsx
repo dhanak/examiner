@@ -224,7 +224,7 @@ export default function MultipleChoice() {
                 onClick={() => handleOptionClick(option)}
                 disabled={isCorrect !== null}
               >
-                <span className="option-number">{index + 1}</span>
+                <span className="hotkey">{index + 1}</span>
                 <span className="option-text">{option}</span>
                 {showOptionSpeaker && <SpeakerIcon text={option} size={16} className="multiplechoice-speaker" noRole />}
                 {showAsCorrect && <span className="option-icon">✓</span>}
