@@ -13,7 +13,7 @@ export default function useTextToSpeech({ langPreference = 'en-GB' } = {}) {
     const setVoices = () => {
       try {
         voicesRef.current = synth.getVoices() || []
-      } catch (e) {
+      } catch {
         voicesRef.current = []
       }
     }
@@ -23,20 +23,26 @@ export default function useTextToSpeech({ langPreference = 'en-GB' } = {}) {
     return () => {
       try {
         synth.removeEventListener && synth.removeEventListener('voiceschanged', setVoices)
-      } catch (e) {}
+      } catch {
+        /* ignore */
+      }
     }
   }, [])
 
   const chooseVoice = useCallback(
-    (lang) => {
+    (desiredLang) => {
       const voices = voicesRef.current || []
       if (!voices.length) return null
-      // Prefer exact langPreference (e.g. en-GB)
-      const pref = voices.find((v) => v.lang && v.lang.toLowerCase().startsWith(langPreference.toLowerCase()))
-      if (pref) return pref
+      const target = (desiredLang || langPreference).toLowerCase()
+      // Try exact match for requested language
+      const exact = voices.find((v) => v.lang && v.lang.toLowerCase().startsWith(target))
+      if (exact) return exact
       // Fallback to any English voice
       const en = voices.find((v) => v.lang && v.lang.toLowerCase().startsWith('en'))
-      return en || voices[0]
+      if (en) return en
+      // Fallback to preferred language voice
+      const pref = voices.find((v) => v.lang && v.lang.toLowerCase().startsWith(langPreference.toLowerCase()))
+      return pref || voices[0]
     },
     [langPreference]
   )
@@ -52,8 +58,8 @@ export default function useTextToSpeech({ langPreference = 'en-GB' } = {}) {
         if (synthRef.current.speaking) {
           synthRef.current.cancel()
         }
-      } catch (e) {
-        // ignore
+      } catch {
+        /* ignore */
       }
 
       const utter = new SpeechSynthesisUtterance(normalized)
@@ -82,7 +88,9 @@ export default function useTextToSpeech({ langPreference = 'en-GB' } = {}) {
     if (!synthRef.current) return
     try {
       synthRef.current.cancel()
-    } catch (e) {}
+    } catch {
+      /* ignore */
+    }
     setIsSpeaking(false)
   }, [])
 

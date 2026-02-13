@@ -8,7 +8,6 @@ import SpeakerIcon from './SpeakerIcon'
 
 export default function MatchPairs() {
   const {
-    direction,
     wordPoolFilter,
     levelFilter,
     settings,
@@ -104,7 +103,7 @@ export default function MatchPairs() {
       rightItems: rightItemsWithHotkeys,
       pairs
     }
-  }, [filteredWords, pairCount, direction])
+  }, [filteredWords, pairCount])
 
   // State management
   const [leftItems, setLeftItems] = useState([])
