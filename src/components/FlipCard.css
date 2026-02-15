@@ -113,6 +113,13 @@
   backface-visibility: hidden;
 }
 
+/* Firefox: transform + backface-visibility:hidden on descendants causes clipping */
+.flip-card-back .speaker-icon {
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  margin-left: 0.5rem;
+}
+
 .flip-card-front {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;

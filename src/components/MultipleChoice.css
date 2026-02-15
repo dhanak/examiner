@@ -64,6 +64,8 @@
   margin-left: 1.2rem;
   margin-top: 1rem;
   align-self: center;
+  /* Use speaker translate variable so the speaking animation preserves this offset */
+  --speaker-translate: translateY(0.12em);
 }
 
 /* Position speaker icons on the right side of option buttons */
@@ -127,19 +129,6 @@
   background: rgba(239, 68, 68, 0.1);
 }
 
-.hotkey {
-  flex-shrink: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 16px;
-  height: 16px;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  font-size: 10px;
-  font-weight: 700;
-  color: inherit;
-  margin-right: 0.5rem;
 }
 
 .option-button.correct .hotkey {

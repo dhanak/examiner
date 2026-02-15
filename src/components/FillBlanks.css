@@ -233,16 +233,7 @@
 }
 
 .receptacle-lozenge .hotkey {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 16px;
-  height: 16px;
-  background: rgba(255, 255, 255, 0.3);
   border-radius: 3px;
-  font-size: 10px;
-  font-weight: 700;
-  flex-shrink: 0;
   position: static !important;
   top: auto !important;
   left: auto !important;
@@ -306,16 +297,7 @@
 }
 
 .lozenge .hotkey {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 16px;
-  height: 16px;
-  background: rgba(255, 255, 255, 0.3);
   border-radius: 3px;
-  font-size: 10px;
-  font-weight: 700;
-  flex-shrink: 0;
   position: static !important;
   top: auto !important;
   left: auto !important;
@@ -427,5 +409,14 @@
 .lozenge .speaker-icon {
   margin-left: 0.25rem;
   color: var(--speaker-color);
+}
+
+/* Ensure lozenge and receptacle speakers use speaking color when active */
+.receptacle-lozenge .speaker-icon.speaking,
+.lozenge .speaker-icon.speaking,
+.speaker-icon.lozenge-speaker.speaking,
+.speaker-icon.sentence-speaker.speaking {
+  color: var(--speaker-speaking);
+  animation: speaker-pulse 900ms infinite;
 }
 

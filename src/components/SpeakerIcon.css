@@ -9,6 +9,8 @@
   color: var(--speaker-color);
   cursor: pointer;
   line-height: 0;
+  /* base transform includes an optional translate offset via --speaker-translate and a scale factor */
+  transform: var(--speaker-translate, translateY(0)) scale(1);
 }
 
 .speaker-icon:hover {
@@ -71,8 +73,35 @@
   margin-left: 0.5rem;
 }
 
+.speaker-icon.flipcard-back-speaker {
+  margin-left: 0;
+  color: var(--speaker-color);
+}
+
+.speaker-icon.flipcard-back-speaker:hover {
+  color: var(--speaker-hover);
+}
+
+.speaker-icon.flipcard-back-speaker:focus-visible {
+  outline: 2px solid var(--speaker-hover);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.speaker-icon.flipcard-back-speaker.speaking {
+  color: var(--speaker-speaking);
+}
+
+.speaker-icon.flipcard-back-speaker.disabled,
+.speaker-icon.flipcard-back-speaker[disabled],
+.disabled .speaker-icon.flipcard-back-speaker {
+  color: var(--speaker-disabled);
+  pointer-events: none;
+  opacity: 0.75;
+}
+
 @keyframes speaker-pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+  0% { transform: var(--speaker-translate, translateY(0)) scale(1); }
+  50% { transform: var(--speaker-translate, translateY(0)) scale(1.05); }
+  100% { transform: var(--speaker-translate, translateY(0)) scale(1); }
 }

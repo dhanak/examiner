@@ -18,7 +18,7 @@
   --accent-hover: #535bf2;
   --button-bg: #f9f9f9;
   --button-hover: #e9e9e9;
-  
+
   /* Additional component variables */
   --background-color: #f9fafb;
   --surface-color: #ffffff;
@@ -48,7 +48,7 @@
   --accent-hover: #535bf2;
   --button-bg: #1a1a1a;
   --button-hover: #2a2a2a;
-  
+
   /* Additional component variables */
   --background-color: #111827;
   --surface-color: #1f2937;
@@ -237,4 +237,19 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin: 0;
+}
+
+/* Unified hotkey badge style (used in MatchPairs, MultipleChoice, FillBlanks) */
+.hotkey {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: inherit;
+  flex-shrink: 0;
 }
