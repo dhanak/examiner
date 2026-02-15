@@ -53,7 +53,7 @@ export default function FillBlanks() {
   const [feedback, setFeedback] = useState(null) // {type, message}
   const [showingAnswers, setShowingAnswers] = useState(false) // Showing correct answers (disables lozenges)
   const [hoveredBlankId, setHoveredBlankId] = useState(null) // Track hovered correct answer in sentence
-  const [touchTarget, setTouchTarget] = useState(null) // Track touch target receptacle
+  const [, setTouchTarget] = useState(null) // Track touch target receptacle
 
   const hasInitializedRef = useRef(false)
 
@@ -443,7 +443,7 @@ export default function FillBlanks() {
                     try {
                       e.dataTransfer.setData('text/plain', option.id)
                       e.dataTransfer.effectAllowed = 'move'
-                    } catch (err) {
+                    } catch {
                       /* ignore */
                     }
                     setDraggedLozenge(option.id)
