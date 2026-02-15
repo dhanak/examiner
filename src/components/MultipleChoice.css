@@ -62,7 +62,7 @@
 /* Align speaker next to the prompt word similar to flipcard front */
 .prompt-word .multiplechoice-speaker {
   margin-left: 1.2rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   align-self: center;
   /* Use speaker translate variable so the speaking animation preserves this offset */
   --speaker-translate: translateY(0.12em);

@@ -325,6 +325,7 @@ export default function FillBlanks() {
           {filledOption ? (
             <span
               className="receptacle-lozenge filled"
+              data-blank-id={blank.id}
               onClick={() => {
                 if (!showingAnswers) {
                   setFilledBlanks(prev => {
@@ -342,6 +343,7 @@ export default function FillBlanks() {
           ) : shouldShowCorrect ? (
             <span 
               className="receptacle-lozenge correct-answer"
+              data-blank-id={blank.id}
               onMouseEnter={() => setHoveredBlankId(blank.id)}
               onMouseLeave={() => setHoveredBlankId(null)}
               style={{ position: 'relative' }}
@@ -379,6 +381,7 @@ export default function FillBlanks() {
           ) : (
             <span
               className="receptacle-lozenge empty"
+              data-blank-id={blank.id}
               onDragOver={(e) => {
                 e.preventDefault()
                 if (!showingAnswers) e.currentTarget.classList.add('drag-over')
@@ -390,34 +393,14 @@ export default function FillBlanks() {
                 if (showingAnswers) return
                 e.preventDefault()
                 e.currentTarget.classList.remove('drag-over')
-                if (draggedLozenge) {
+                const data = e.dataTransfer && e.dataTransfer.getData && e.dataTransfer.getData('text/plain')
+                const draggedId = data || draggedLozenge
+                if (draggedId) {
                   setFilledBlanks(prev => ({
                     ...prev,
-                    [blank.id]: draggedLozenge
+                    [blank.id]: draggedId
                   }))
                   setDraggedLozenge(null)
-                }
-              }}
-              onTouchOver={(e) => {
-                if (!showingAnswers && draggedLozenge) {
-                  e.currentTarget.classList.add('drag-over')
-                  setTouchTarget(blank.id)
-                }
-              }}
-              onTouchLeave={(e) => {
-                e.currentTarget.classList.remove('drag-over')
-                setTouchTarget(null)
-              }}
-              onTouchEnd={(e) => {
-                if (showingAnswers || !draggedLozenge) return
-                e.currentTarget.classList.remove('drag-over')
-                if (touchTarget === blank.id) {
-                  setFilledBlanks(prev => ({
-                    ...prev,
-                    [blank.id]: draggedLozenge
-                  }))
-                  setDraggedLozenge(null)
-                  setTouchTarget(null)
                 }
               }}
             >
@@ -455,16 +438,57 @@ export default function FillBlanks() {
                 key={option.id}
                 className={`lozenge ${isUsed ? 'used' : ''} ${showingAnswers ? 'disabled' : ''}`}
                 draggable={!showingAnswers}
-                onDragStart={() => {
-                  if (!showingAnswers) setDraggedLozenge(option.id)
+                onDragStart={(e) => {
+                  if (!showingAnswers) {
+                    try {
+                      e.dataTransfer.setData('text/plain', option.id)
+                      e.dataTransfer.effectAllowed = 'move'
+                    } catch (err) {
+                      /* ignore */
+                    }
+                    setDraggedLozenge(option.id)
+                  }
                 }}
                 onDragEnd={() => setDraggedLozenge(null)}
                 onTouchStart={() => {
                   if (!showingAnswers) setDraggedLozenge(option.id)
                 }}
-                onTouchEnd={() => {
+                onTouchEnd={(e) => {
+                  if (showingAnswers) {
+                    setDraggedLozenge(null)
+                    setTouchTarget(null)
+                    return
+                  }
+                  const touch = e.changedTouches && e.changedTouches[0]
+                  if (touch) {
+                    const el = document.elementFromPoint(touch.clientX, touch.clientY)
+                    const recept = el && el.closest && el.closest('.receptacle-lozenge')
+                    if (recept && !recept.classList.contains('filled') && !recept.classList.contains('correct-answer')) {
+                      const blankId = recept.getAttribute('data-blank-id')
+                      if (blankId) {
+                        setFilledBlanks(prev => ({ ...prev, [blankId]: option.id }))
+                      }
+                    }
+                  }
                   setDraggedLozenge(null)
                   setTouchTarget(null)
+                }}
+                onClick={() => {
+                  if (showingAnswers) return
+                  const filledBlankId = Object.keys(filledBlanks).find(bId => filledBlanks[bId] === option.id)
+                  if (filledBlankId) {
+                    setFilledBlanks(prev => {
+                      const updated = { ...prev }
+                      delete updated[filledBlankId]
+                      return updated
+                    })
+                  } else {
+                    const sortedBlanks = [...blanks].sort((a, b) => a.wordIdx - b.wordIdx)
+                    const emptyBlank = sortedBlanks.find(b => !filledBlanks[b.id])
+                    if (emptyBlank) {
+                      setFilledBlanks(prev => ({ ...prev, [emptyBlank.id]: option.id }))
+                    }
+                  }
                 }}
                 title={hotkey ? `${option.word} (${hotkey})` : option.word}
               >

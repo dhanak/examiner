@@ -143,6 +143,25 @@ export default function PracticeControls() {
         </div>
       )}
 
+      {currentMode === 'multiple-choice' && (
+        <div className="control-section parameter-controls">
+          <div className="setting-group">
+            <label htmlFor="option-count">
+              Choices: <span className="param-value">{settings.multipleChoice.optionCount}</span>
+            </label>
+            <input
+              id="option-count"
+              type="range"
+              min="4"
+              max="8"
+              value={settings.multipleChoice.optionCount}
+              onChange={(e) => updateSettings('multipleChoice', { optionCount: parseInt(e.target.value) })}
+              className="param-slider"
+            />
+          </div>
+        </div>
+      )}
+
       {currentMode === 'fill-blanks' && (
         <div className="control-section parameter-controls">
           <div className="setting-group">
