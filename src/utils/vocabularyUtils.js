@@ -1,4 +1,4 @@
-import vocabularyEn from '../data/vocabulary.json'
+import vocabularyEn from '../data/vocabulary-en.json'
 import vocabularyDe from '../data/vocabulary-de.json'
 
 const vocabularies = {
