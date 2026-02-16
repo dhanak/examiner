@@ -90,7 +90,7 @@ export default function FlipCard({ wordId, word, level, partOfSpeech, translatio
           <div className="back-content">
             <div className="word-header">
               <h3 className="word-title">{word}<SpeakerIcon text={word} size={18} className="flipcard-back-speaker" noRole /></h3>
-              <span className="part-of-speech">{partOfSpeech}</span>
+              <span className="part-of-speech">{t(partOfSpeech)}</span>
             </div>
             
             <div className="translations">

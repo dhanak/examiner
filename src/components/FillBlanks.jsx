@@ -363,7 +363,7 @@ export default function FillBlanks() {
                     <div className="tooltip-word">{blank.wordData.word}</div>
                     <div className="tooltip-meta">
                       <span className="tooltip-level">{blank.wordData.level}</span>
-                      <span className="tooltip-pos">{blank.wordData.partOfSpeech}</span>
+                      <span className="tooltip-pos">{t(blank.wordData.partOfSpeech)}</span>
                     </div>
                   </div>
                   

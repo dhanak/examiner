@@ -107,6 +107,15 @@ const en = {
   allCorrect: '✓ Perfect! All answers are correct.',
   someIncorrect: '✗ Some answers are incorrect. Try again or move to the next sentence.',
   showAnswers: 'Show Answers (S)',
+
+  // Part of speech
+  noun: 'noun',
+  verb: 'verb',
+  adjective: 'adjective',
+  adverb: 'adverb',
+  preposition: 'preposition',
+  conjunction: 'conjunction',
+  pronoun: 'pronoun',
 }
 
 export default en

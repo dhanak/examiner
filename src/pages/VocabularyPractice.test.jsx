@@ -5,7 +5,7 @@ import VocabularyPractice from './VocabularyPractice'
 import { useVocabularyStore } from '../store/vocabularyStore'
 
 // Mock vocabulary data
-vi.mock('../data/vocabulary.json', () => ({
+vi.mock('../data/vocabulary-en.json', () => ({
   default: {
     words: [
       { id: 'word1', word: 'Test Word 1', level: 'B2', partOfSpeech: 'noun', translations: ['teszt1'], definition: 'def1', example: 'ex1' },

@@ -6,7 +6,7 @@ import { usePracticeStore } from '../store/practiceStore'
 import { useVocabularyStore } from '../store/vocabularyStore'
 
 // Mock the data
-vi.mock('../data/vocabulary.json', () => ({
+vi.mock('../data/vocabulary-en.json', () => ({
   default: {
     words: [
       { id: '1', word: 'apple', level: 'B2', partOfSpeech: 'noun', translations: ['alma'], definition: 'A fruit', example: 'I eat an apple every day.' },

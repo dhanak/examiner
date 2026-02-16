@@ -107,6 +107,15 @@ const de = {
   allCorrect: '✓ Perfekt! Alle Antworten sind richtig.',
   someIncorrect: '✗ Einige Antworten sind falsch. Versuche es nochmal oder gehe zum nächsten Satz.',
   showAnswers: 'Antworten zeigen (S)',
+
+  // Part of speech
+  noun: 'Substantiv',
+  verb: 'Verb',
+  adjective: 'Adjektiv',
+  adverb: 'Adverb',
+  preposition: 'Präposition',
+  conjunction: 'Konjunktion',
+  pronoun: 'Pronomen',
 }
 
 export default de
