@@ -1,27 +1,38 @@
 # C1 Examiner
 
-A single-page web application for Hungarian learners preparing for the Cambridge C1 (Advanced) English language exam. This app runs entirely in the browser with no backend dependencies, making it perfect for hosting on GitHub Pages.
+A single-page web application for language learners preparing for Cambridge C1 (Advanced) or Goethe-Zertifikat C1 exams. Supports both English and German target languages. This app runs entirely in the browser with no backend dependencies, making it perfect for hosting on GitHub Pages.
 
 ## Language Context
 
-- **Target Language**: British English (1000 words: 190 B1, 398 B2, 412 C1)
+- **Target Languages**:
+  - British English (Cambridge C1 Advanced / CAE)
+  - German (Goethe-Zertifikat C1 / DSD)
 - **Learner's Native Language**: Hungarian
-- **Exam Focus**: Cambridge C1 Advanced (CAE)
+- **Vocabulary**: 1000 words per language (200 B1, 400 B2, 400 C1)
 
 ## Features
 
+### Language Support
+- **Bilingual Interface**: Switch between English and German UI with flag buttons (🇬🇧 / 🇩🇪) in the header
+- **Separate Vocabularies**: 1000 independent words for each target language
+- **Language-Aware Stats**: Progress and statistics tracked separately per language
+- **Vocabulary Context**: All definitions and examples in the target language; translations in Hungarian
+- **Text-to-Speech**: Native speaker voices (en-GB for English, de-DE for German)
+
 ### Vocabulary Management
-- **Flashcards**: Interactive flipcard system with English words and Hungarian translations
-- **1000+ Words**: Comprehensive vocabulary bank covering B1, B2, and C1 levels
+- **Flashcards**: Interactive flipcard system with words and Hungarian translations
+- **1000+ Words per Language**: Comprehensive vocabulary bank covering B1, B2, and C1 levels
 - **Filtering**: Filter by language level (B1, B2, C1) and learning status (learned/unlearned)
 - **Shuffle**: Randomize card order for varied practice
 - **Progress Tracking**: Visual indicators for learned words and overall progress
+- **Part of Speech**: Displayed and translated for both languages (e.g., German: "Substantiv", "Verb", "Adjektiv")
 
 ### Practice Modes
-- **Multiple Choice**: Select correct Hungarian translation or English word (4-8 options)
-- **Match Pairs**: Match English words with Hungarian translations (4-8 pairs)
-- **Fill in Blanks**: Complete English sentences with correct words (1-3 blanks, 2-6 distractors)
-- **Direction Toggle**: Practice English→Hungarian or Hungarian→English
+- **Multiple Choice**: Select correct Hungarian translation or target language word (4-8 options)
+- **Match Pairs**: Match target language words with Hungarian translations (4-8 pairs)
+- **Fill in Blanks**: Complete target language sentences with correct words (1-3 blanks, 2-6 distractors)
+- **Direction Toggle**: Practice Language→Hungarian or Hungarian→Language
+- **Case Preservation**: German nouns maintain proper capitalization (e.g., "Substantiv" not "substantiv")
 
 ### Progress & Analytics
 - **Global Statistics**: Track cumulative correct/incorrect answers across all sessions
@@ -107,11 +118,22 @@ npm run preview
 src/
  pages/          # Page components (Dashboard, Practice, VocabularyPractice)
  components/     # UI components (MultipleChoice, MatchPairs, FillBlanks, FlipCard, etc.)
- store/          # Zustand state management (practiceStore, vocabularyStore, themeStore)
- utils/          # Utility functions (practiceUtils, formatScore, etc.)
- data/           # Static data (vocabulary-en.json - alphabetically sorted)
+ store/          # Zustand state management (practiceStore, vocabularyStore, themeStore, languageStore)
+ utils/          # Utility functions (practiceUtils, formatScore, vocabularyUtils, etc.)
+ data/           # Static data (vocabulary-en.json, vocabulary-de.json - alphabetically sorted)
+ i18n/           # Internationalization (en.js, de.js, index.js)
+ hooks/          # Custom hooks (useTranslation.js, useTimer.js)
  App.jsx         # Main application component
 ```
+
+## Header Layout
+
+The header uses CSS Grid for stable layout:
+- **Left**: Application title ("C1 Examiner")
+- **Center**: Navigation tabs (Dashboard, Vocabulary, Practice) — perfectly centered regardless of title length
+- **Right**: Language selector (🇬🇧 / 🇩🇪) and theme toggle (☀️ / 🌙)
+
+Layout remains stable when switching languages (e.g., "Prüfung" vs "Practice" have different widths)
 
 ## Key Components
 
@@ -127,16 +149,29 @@ src/
 - **VocabularyPractice.jsx**: Flipcard learning mode with filters and shuffle
 
 ### State Management
-- **practiceStore.js**: Global and session statistics, practice mode settings
-- **vocabularyStore.js**: Learned words, mistakes, vocabulary filters
+- **languageStore.js**: Current target language (en/de), persisted to localStorage
+- **practiceStore.js**: Global and session statistics, practice mode settings — **per-language**
+- **vocabularyStore.js**: Learned words, mistakes, vocabulary filters — **per-language**
 - **themeStore.js**: Dark/light theme preference
+
+### Internationalization (i18n)
+- **System**: Custom i18n solution (not a library) for lightweight performance
+- **Files**: `src/i18n/en.js` and `src/i18n/de.js` contain all UI strings
+- **Part of Speech Translations**:
+  - English: noun, verb, adjective, adverb, preposition, conjunction, pronoun
+  - German: Substantiv, Verb, Adjektiv, Adverb, Präposition, Konjunktion, Pronomen
 
 ## Vocabulary Data
 
-- **File**: `src/data/vocabulary-en.json`
-- **Format**: Alphabetically sorted array of word objects
-- **Structure**: Each word includes id, word, level (B1/B2/C1), partOfSpeech, translations (Hungarian), definition (British English), and example
-- **Total**: 1000 words (190 B1 + 398 B2 + 412 C1)
+- **English**: `src/data/vocabulary-en.json`
+- **German**: `src/data/vocabulary-de.json`
+- **Format**: Alphabetically sorted arrays of word objects (articles ignored for noun sorting)
+- **Structure**: Each word includes id, word, level (B1/B2/C1), partOfSpeech, translations (Hungarian), definition (target language), and example
+- **Total**: 1000 words per language (200 B1 + 400 B2 + 400 C1)
+- **German Specifics**:
+  - Nouns include articles (der, die, das) and maintain proper capitalization
+  - Definitions and examples use German grammar and conventions
+  - All parts of speech follow German language norms
 
 ## Deployment
 
@@ -176,4 +211,3 @@ Contributions are welcome! Please ensure:
 ## License
 
 MIT
-
