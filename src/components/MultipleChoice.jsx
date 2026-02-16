@@ -1,8 +1,10 @@
 import { useState, useEffect, useMemo, useCallback, useRef } from 'react'
 import { usePracticeStore } from '../store/practiceStore'
 import { useVocabularyStore } from '../store/vocabularyStore'
+import { useLanguageStore } from '../store/languageStore'
+import useTranslation from '../hooks/useTranslation'
 import { getRandomWords, getDistractors, shuffleArray, getRandomTranslation } from '../utils/practiceUtils'
-import vocabularyData from '../data/vocabulary.json'
+import { getVocabularyWords, getDirections } from '../utils/vocabularyUtils'
 import './MultipleChoice.css'
 import SpeakerIcon from './SpeakerIcon'
 import { shouldShowTTSForMultipleChoice } from '../utils/ttsUtils'
@@ -24,6 +26,11 @@ export default function MultipleChoice() {
     clearMistake
   } = useVocabularyStore()
 
+  const { language } = useLanguageStore()
+  const { t } = useTranslation()
+  const langDirections = getDirections(language)
+  const allWords = getVocabularyWords(language)
+
   const [currentWord, setCurrentWord] = useState(null)
   const [options, setOptions] = useState([])
   const [selectedOption, setSelectedOption] = useState(null)
@@ -35,7 +42,7 @@ export default function MultipleChoice() {
 
   // Filter words based on word pool filter and level filter
   const filteredWords = useMemo(() => {
-    let words = vocabularyData.words
+    let words = allWords
 
     // Apply word pool filter
     if (wordPoolFilter === 'learned') {
@@ -50,7 +57,7 @@ export default function MultipleChoice() {
     }
 
     return words
-  }, [wordPoolFilter, levelFilter, learnedWords, mistakeWords])
+  }, [wordPoolFilter, levelFilter, learnedWords, mistakeWords, allWords])
 
   // Generate new question
   const generateQuestion = useCallback(() => {
@@ -61,8 +68,9 @@ export default function MultipleChoice() {
     // Pick a random word
     const [word] = getRandomWords(filteredWords, 1)
 
-    // Generate options based on direction
-    if (direction === 'en-to-hu') {
+    // Generate options based on direction (target-to-native or native-to-target)
+    const isToNative = direction === langDirections.toNative
+    if (isToNative) {
       // Show English word, pick Hungarian translation
       const correct = getRandomTranslation(word)
 
@@ -90,7 +98,7 @@ export default function MultipleChoice() {
 
       return { word: wordWithPrompt, options: allOptions, correctAnswer: word.word }
     }
-  }, [filteredWords, direction, optionCount])
+  }, [filteredWords, direction, optionCount, langDirections.toNative])
 
   // Generate first question on mount only
   useEffect(() => {
@@ -171,24 +179,25 @@ export default function MultipleChoice() {
     return (
       <div className="multiple-choice">
         <div className="no-words-message">
-          <p>No words available with the current filter settings.</p>
-          <p>Try changing the word pool filter or add more words to your collection.</p>
+          <p>{t('noWordsAvailable')}</p>
+          <p>{t('tryChangingFilter')}</p>
         </div>
       </div>
     )
   }
 
   if (!currentWord) {
-    return <div className="multiple-choice">Loading...</div>
+    return <div className="multiple-choice">{t('loading')}</div>
   }
 
-  const promptText = direction === 'en-to-hu'
+  const isToNative = direction === langDirections.toNative
+  const promptText = isToNative
     ? currentWord.word
     : currentWord.promptText
 
-  const instructionText = direction === 'en-to-hu'
-    ? 'Select the Hungarian translation:'
-    : 'Select the English word:'
+  const instructionText = isToNative
+    ? t('selectTranslation')
+    : t('selectWord')
 
   const showMainSpeaker = shouldShowTTSForMultipleChoice({ direction, side: 'main' })
   const showOptionSpeaker = shouldShowTTSForMultipleChoice({ direction, side: 'option' })
@@ -237,12 +246,12 @@ export default function MultipleChoice() {
         {isCorrect !== null && (
           <div className={`feedback ${isCorrect ? 'correct-feedback' : 'wrong-feedback'}`}>
             {isCorrect ? (
-              <p>✓ Correct!</p>
+              <p>{t('correctFeedback')}</p>
             ) : (
-              <p>✗ Incorrect. The correct answer was: <strong>{correctAnswer}</strong></p>
+              <p>{t('incorrectFeedback', { answer: correctAnswer })}</p>
             )}
             <button className="next-button" onClick={handleNext}>
-              Next Question (Enter)
+              {t('nextQuestion')}
             </button>
           </div>
         )}

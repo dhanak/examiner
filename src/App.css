@@ -174,6 +174,39 @@
   line-height: 1;
 }
 
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.language-selector {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.lang-flag {
+  font-size: 1.5rem;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 2px 4px;
+  line-height: 1;
+  transition: border-color 0.2s, opacity 0.2s;
+  opacity: 0.5;
+}
+
+.lang-flag:hover {
+  opacity: 0.8;
+}
+
+.lang-flag.active {
+  opacity: 1;
+  border-color: var(--accent-color);
+}
+
 .app-main {
   flex: 1;
   overflow-y: auto;

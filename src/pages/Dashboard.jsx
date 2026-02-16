@@ -1,6 +1,8 @@
 import { usePracticeStore } from '../store/practiceStore'
 import { useVocabularyStore } from '../store/vocabularyStore'
-import vocabularyData from '../data/vocabulary.json'
+import { useLanguageStore } from '../store/languageStore'
+import useTranslation from '../hooks/useTranslation'
+import { getVocabularyWords } from '../utils/vocabularyUtils'
 import './Dashboard.css'
 
 export default function Dashboard() {
@@ -16,7 +18,11 @@ export default function Dashboard() {
     resetProgress
   } = useVocabularyStore()
 
-  const totalVocabulary = vocabularyData.words.length
+  const { language } = useLanguageStore()
+  const { t } = useTranslation()
+
+  const words = getVocabularyWords(language)
+  const totalVocabulary = words.length
   const learnedCount = learnedWords.size
   const mistakeCount = mistakeWords.size
   const totalAttempts = globalCorrectCount + globalIncorrectCount
@@ -25,7 +31,7 @@ export default function Dashboard() {
     : 0
 
   const handleClearProgress = () => {
-    if (window.confirm('Are you sure you want to clear all progress? This will:\n\n• Reset all practice statistics\n• Forget all learned words\n• Clear all mistake records\n• Reset all practice settings\n\nThis action cannot be undone.')) {
+    if (window.confirm(t('clearProgressConfirm'))) {
       resetAll()
       resetProgress()
     }
@@ -35,37 +41,37 @@ export default function Dashboard() {
     <div className="dashboard">
       {/* Vocabulary Stats */}
       <section className="dashboard-section vocabulary-section">
-        <h2>Vocabulary Progress</h2>
+        <h2>{t('vocabularyProgress')}</h2>
         <div className="stats-grid">
           <div className="stat-card">
             <div className="stat-icon">📚</div>
             <div className="stat-content">
-              <h3>Total Words</h3>
+              <h3>{t('totalWords')}</h3>
               <p className="stat-value">{totalVocabulary}</p>
             </div>
           </div>
           <div className="stat-card">
             <div className="stat-icon">✓</div>
             <div className="stat-content">
-              <h3>Learned Words</h3>
+              <h3>{t('learnedWords')}</h3>
               <p className="stat-value">{learnedCount}</p>
-              <p className="stat-percentage">{totalVocabulary > 0 ? Math.round((learnedCount / totalVocabulary) * 100) : 0}% complete</p>
+              <p className="stat-percentage">{totalVocabulary > 0 ? Math.round((learnedCount / totalVocabulary) * 100) : 0}{t('percentComplete')}</p>
             </div>
           </div>
           <div className="stat-card">
             <div className="stat-icon">⚠️</div>
             <div className="stat-content">
-              <h3>Mistake Words</h3>
+              <h3>{t('mistakeWords')}</h3>
               <p className="stat-value">{mistakeCount}</p>
-              <p className="stat-percentage">Need review</p>
+              <p className="stat-percentage">{t('needReview')}</p>
             </div>
           </div>
           <div className="stat-card">
             <div className="stat-icon">?</div>
             <div className="stat-content">
-              <h3>Words to Learn</h3>
+              <h3>{t('wordsToLearn')}</h3>
               <p className="stat-value">{totalVocabulary - learnedCount}</p>
-              <p className="stat-percentage">Not yet learned</p>
+              <p className="stat-percentage">{t('notYetLearned')}</p>
             </div>
           </div>
         </div>
@@ -73,33 +79,33 @@ export default function Dashboard() {
 
       {/* Practice Stats */}
       <section className="dashboard-section practice-section">
-        <h2>Practice Statistics</h2>
+        <h2>{t('practiceStatistics')}</h2>
         <div className="stats-grid">
           <div className="stat-card">
             <div className="stat-icon">🎯</div>
             <div className="stat-content">
-              <h3>Total Attempts</h3>
+              <h3>{t('totalAttempts')}</h3>
               <p className="stat-value">{totalAttempts}</p>
             </div>
           </div>
           <div className="stat-card stat-success">
             <div className="stat-icon">✓</div>
             <div className="stat-content">
-              <h3>Correct Answers</h3>
+              <h3>{t('correctAnswers')}</h3>
               <p className="stat-value">{globalCorrectCount}</p>
             </div>
           </div>
           <div className="stat-card stat-error">
             <div className="stat-icon">✗</div>
             <div className="stat-content">
-              <h3>Incorrect Answers</h3>
+              <h3>{t('incorrectAnswers')}</h3>
               <p className="stat-value">{globalIncorrectCount}</p>
             </div>
           </div>
           <div className="stat-card stat-accuracy">
             <div className="stat-icon">📊</div>
             <div className="stat-content">
-              <h3>Accuracy</h3>
+              <h3>{t('accuracy')}</h3>
               <p className="stat-value">{accuracy}%</p>
             </div>
           </div>
@@ -112,10 +118,10 @@ export default function Dashboard() {
           className="btn-clear-progress"
           onClick={handleClearProgress}
         >
-          Clear All Progress
+          {t('clearAllProgress')}
         </button>
         <p className="action-hint">
-          This will reset all statistics, learned words, and mistakes.
+          {t('clearProgressHint')}
         </p>
       </section>
     </div>

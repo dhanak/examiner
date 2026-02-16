@@ -1,4 +1,8 @@
+import { useEffect } from 'react'
 import { usePracticeStore } from '../store/practiceStore'
+import { useLanguageStore } from '../store/languageStore'
+import useTranslation from '../hooks/useTranslation'
+import { getDirections } from '../utils/vocabularyUtils'
 import './PracticeControls.css'
 
 export default function PracticeControls() {
@@ -19,25 +23,29 @@ export default function PracticeControls() {
     resetSession
   } = usePracticeStore()
 
+  const { language } = useLanguageStore()
+  const { t } = useTranslation()
+  const langDirections = getDirections(language)
+
   const modes = [
-    { id: 'multiple-choice', label: 'Multiple Choice' },
-    { id: 'match-pairs', label: 'Match Pairs' },
-    { id: 'fill-blanks', label: 'Fill in Blanks' }
+    { id: 'multiple-choice', label: t('modeMultipleChoice') },
+    { id: 'match-pairs', label: t('modeMatchPairs') },
+    { id: 'fill-blanks', label: t('modeFillBlanks') }
   ]
 
   const directions = [
-    { id: 'hu-to-en', label: 'Hungarian to English' },
-    { id: 'en-to-hu', label: 'English to Hungarian' }
+    { id: langDirections.toTarget, label: t('directionToTarget') },
+    { id: langDirections.toNative, label: t('directionToNative') }
   ]
 
   const filters = [
-    { id: 'all', label: 'All Words' },
-    { id: 'learned', label: 'Learned Only' },
-    { id: 'mistakes', label: 'Mistakes Only' }
+    { id: 'all', label: t('filterAllWords') },
+    { id: 'learned', label: t('filterLearnedOnly') },
+    { id: 'mistakes', label: t('filterMistakesOnly') }
   ]
 
   const levels = [
-    { id: 'all', label: 'All Levels' },
+    { id: 'all', label: t('filterAllLevels') },
     { id: 'B1', label: 'B1' },
     { id: 'B2', label: 'B2' },
     { id: 'C1', label: 'C1' }
@@ -45,6 +53,17 @@ export default function PracticeControls() {
 
   const totalAttempts = correctCount + incorrectCount
   const accuracy = getAccuracy()
+
+  // Ensure direction is valid for current language
+  const validDirection = directions.some(d => d.id === direction) ? direction : langDirections.toTarget
+
+  // Auto-correct direction when language changes
+  useEffect(() => {
+    const validIds = [langDirections.toTarget, langDirections.toNative]
+    if (!validIds.includes(direction)) {
+      setDirection(langDirections.toTarget)
+    }
+  }, [language, direction, langDirections.toTarget, langDirections.toNative, setDirection])
 
   const handleModeChange = (modeId) => {
     setMode(modeId)
@@ -74,10 +93,10 @@ export default function PracticeControls() {
         {/* Only show direction for multiple-choice mode */}
         {currentMode === 'multiple-choice' && (
           <div className="setting-group">
-            <label htmlFor="direction-select">Direction:</label>
+            <label htmlFor="direction-select">{t('directionSelectLabel')}</label>
             <select
               id="direction-select"
-              value={direction}
+              value={validDirection}
               onChange={(e) => setDirection(e.target.value)}
               className="direction-select"
             >
@@ -91,7 +110,7 @@ export default function PracticeControls() {
         )}
 
         <div className="setting-group">
-          <label htmlFor="filter-select">Word Pool:</label>
+          <label htmlFor="filter-select">{t('wordPoolLabel')}</label>
           <select
             id="filter-select"
             value={wordPoolFilter}
@@ -107,7 +126,7 @@ export default function PracticeControls() {
         </div>
 
         <div className="setting-group">
-          <label htmlFor="level-select">Level:</label>
+          <label htmlFor="level-select">{t('levelLabel')}</label>
           <select
             id="level-select"
             value={levelFilter}
@@ -128,7 +147,7 @@ export default function PracticeControls() {
         <div className="control-section parameter-controls">
           <div className="setting-group">
             <label htmlFor="pair-count">
-              Pairs: <span className="param-value">{settings.matchPairs.pairCount}</span>
+              {t('pairsLabel')} <span className="param-value">{settings.matchPairs.pairCount}</span>
             </label>
             <input
               id="pair-count"
@@ -147,7 +166,7 @@ export default function PracticeControls() {
         <div className="control-section parameter-controls">
           <div className="setting-group">
             <label htmlFor="option-count">
-              Choices: <span className="param-value">{settings.multipleChoice.optionCount}</span>
+              {t('choicesLabel')} <span className="param-value">{settings.multipleChoice.optionCount}</span>
             </label>
             <input
               id="option-count"
@@ -166,7 +185,7 @@ export default function PracticeControls() {
         <div className="control-section parameter-controls">
           <div className="setting-group">
             <label htmlFor="blank-count">
-              Blanks: <span className="param-value">{settings.fillBlanks.blankCount}</span>
+              {t('blanksLabel')} <span className="param-value">{settings.fillBlanks.blankCount}</span>
             </label>
             <input
               id="blank-count"
@@ -180,7 +199,7 @@ export default function PracticeControls() {
           </div>
           <div className="setting-group">
             <label htmlFor="distractor-count">
-              Distractors: <span className="param-value">{settings.fillBlanks.distractorCount}</span>
+              {t('distractorsLabel')} <span className="param-value">{settings.fillBlanks.distractorCount}</span>
             </label>
             <input
               id="distractor-count"
@@ -202,21 +221,21 @@ export default function PracticeControls() {
             <div className="stat-item stat-correct">
               <span className="stat-icon">✓</span>
               <span className="stat-value">{correctCount}</span>
-              <span className="stat-label">correct</span>
+              <span className="stat-label">{t('correct')}</span>
             </div>
             <div className="stat-item stat-incorrect">
               <span className="stat-icon">✗</span>
               <span className="stat-value">{incorrectCount}</span>
-              <span className="stat-label">incorrect</span>
+              <span className="stat-label">{t('incorrect')}</span>
             </div>
             <div className="stat-item stat-accuracy">
               <span className="stat-value">{accuracy}%</span>
-              <span className="stat-label">accuracy</span>
+              <span className="stat-label">{t('accuracy')}</span>
             </div>
           </>
         ) : (
           <div className="stat-placeholder">
-            Start practicing to see your stats
+            {t('startPracticing')}
           </div>
         )}
       </div>

@@ -1,8 +1,12 @@
 import React from 'react'
 import useTextToSpeech from '../hooks/useTextToSpeech'
+import { useLanguageStore } from '../store/languageStore'
+import { getTTSLang } from '../utils/vocabularyUtils'
 import './SpeakerIcon.css'
 
-export default function SpeakerIcon({ text = '', size = 16, className = '', lang = 'en-GB', noRole = false }) {
+export default function SpeakerIcon({ text = '', size = 16, className = '', lang, noRole = false }) {
+  const language = useLanguageStore((s) => s.language)
+  const ttsLang = lang || getTTSLang(language)
   const { speak, isSpeaking } = useTextToSpeech()
 
   const handleClick = (e) => {
@@ -10,7 +14,7 @@ export default function SpeakerIcon({ text = '', size = 16, className = '', lang
     e.stopPropagation()
     if (e.preventDefault) e.preventDefault()
     // Speak (ignore promise)
-    speak(text, { lang }).catch(() => {})
+    speak(text, { lang: ttsLang }).catch(() => {})
   }
 
   const svg = (

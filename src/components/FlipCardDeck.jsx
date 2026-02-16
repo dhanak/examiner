@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react'
 import FlipCard from './FlipCard'
+import useTranslation from '../hooks/useTranslation'
 import './FlipCardDeck.css'
 
 export default function FlipCardDeck({ words, onProgress }) {
+  const { t } = useTranslation()
   const [currentIndex, setCurrentIndex] = useState(0)
 
   // Reset index when words change
@@ -57,7 +59,7 @@ export default function FlipCardDeck({ words, onProgress }) {
   }, [currentIndex, words.length, onProgress])
 
   if (!words.length) {
-    return <div className="no-words">No vocabulary words available.</div>
+    return <div className="no-words">{t('noVocabulary')}</div>
   }
 
   const currentWord = words[currentIndex]
@@ -82,20 +84,20 @@ export default function FlipCardDeck({ words, onProgress }) {
           onClick={handlePrevious}
           disabled={currentIndex === 0}
           className="btn btn-primary btn-nav"
-          aria-label="Previous card"
+          aria-label={t('previousCard')}
         >
-          ← Previous
+          {t('previousButton')}
         </button>
         
-        <span className="keyboard-hint">Use ← → arrow keys</span>
+        <span className="keyboard-hint">{t('keyboardHint')}</span>
         
         <button 
           onClick={handleNext}
           disabled={currentIndex === words.length - 1}
           className="btn btn-primary btn-nav"
-          aria-label="Next card"
+          aria-label={t('nextCard')}
         >
-          Next →
+          {t('nextButton')}
         </button>
       </div>
     </div>

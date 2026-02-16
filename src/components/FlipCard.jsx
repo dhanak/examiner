@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react'
 import { useVocabularyStore } from '../store/vocabularyStore'
+import useTranslation from '../hooks/useTranslation'
 import './FlipCard.css'
 import SpeakerIcon from './SpeakerIcon'
 
 export default function FlipCard({ wordId, word, level, partOfSpeech, translations, definition, example }) {
   const [isFlipped, setIsFlipped] = useState(false)
   const { isLearned, markAsLearned, unmarkAsLearned } = useVocabularyStore()
+  const { t } = useTranslation()
   const learned = isLearned(wordId)
 
   const handleFlip = () => {
@@ -54,7 +56,7 @@ export default function FlipCard({ wordId, word, level, partOfSpeech, translatio
       onKeyPress={handleKeyPress}
       tabIndex={0}
       role="button"
-      aria-label={`Flashcard for word: ${word}. ${isFlipped ? 'Showing translation' : 'Showing word'}. ${learned ? 'Marked as learned' : 'Not learned yet'}`}
+      aria-label={t('flashcardAria', { word, state: isFlipped ? t('showingTranslation') : t('showingWord'), learnedState: learned ? t('markedLearned') : t('notLearnedYet') })}
     >
       <div className="flip-card-inner">
         {/* Front Side */}
@@ -63,15 +65,15 @@ export default function FlipCard({ wordId, word, level, partOfSpeech, translatio
           <button
             className={`learned-toggle ${learned ? 'is-learned' : ''}`}
             onClick={handleToggleLearned}
-            aria-label={learned ? 'Mark as not learned' : 'Mark as learned'}
-            title={learned ? 'Mark as not learned' : 'Mark as learned'}
+            aria-label={learned ? t('markNotLearned') : t('markLearned')}
+            title={learned ? t('markNotLearned') : t('markLearned')}
           >
             {learned ? '✓' : '○'}
           </button>
           <div className="word-container">
             <h2 className="word">{word} <SpeakerIcon text={word} size={20} className="flipcard-speaker" /></h2>
           </div>
-          <div className="flip-hint">Click or press Space to flip • Press Enter to mark as learned</div>
+          <div className="flip-hint">{t('flipHint')}</div>
         </div>
 
         {/* Back Side */}
@@ -80,8 +82,8 @@ export default function FlipCard({ wordId, word, level, partOfSpeech, translatio
           <button
             className={`learned-toggle ${learned ? 'is-learned' : ''}`}
             onClick={handleToggleLearned}
-            aria-label={learned ? 'Mark as not learned' : 'Mark as learned'}
-            title={learned ? 'Mark as not learned' : 'Mark as learned'}
+            aria-label={learned ? t('markNotLearned') : t('markLearned')}
+            title={learned ? t('markNotLearned') : t('markLearned')}
           >
             {learned ? '✓' : '○'}
           </button>
@@ -92,18 +94,18 @@ export default function FlipCard({ wordId, word, level, partOfSpeech, translatio
             </div>
             
             <div className="translations">
-              <strong>Magyar:</strong> {translations.join(', ')}
+              <strong>{t('nativeLabel')}</strong> {translations.join(', ')}
             </div>
             
             {definition && (
               <div className="definition">
-                <strong>Definition:</strong> {definition} <SpeakerIcon text={definition} size={16} className="flipcard-back-speaker" noRole />
+                <strong>{t('definitionLabel')}</strong> {definition} <SpeakerIcon text={definition} size={16} className="flipcard-back-speaker" noRole />
               </div>
             )}
             
             {example && (
               <div className="example">
-                <strong>Example:</strong> "{example}" <SpeakerIcon text={example} size={16} className="flipcard-back-speaker" noRole />
+                <strong>{t('exampleLabel')}</strong> "{example}" <SpeakerIcon text={example} size={16} className="flipcard-back-speaker" noRole />
               </div>
             )}
           </div>

@@ -5,9 +5,13 @@ import Dashboard from './pages/Dashboard'
 import Practice from './pages/Practice'
 import VocabularyPractice from './pages/VocabularyPractice'
 import { useThemeStore } from './store/themeStore'
+import { useLanguageStore } from './store/languageStore'
+import useTranslation from './hooks/useTranslation'
 
 function App() {
   const { theme, toggleTheme } = useThemeStore()
+  const { language, setLanguage } = useLanguageStore()
+  const { t } = useTranslation()
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
@@ -16,18 +20,36 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>C1 Examiner</h1>
-        <nav>
-          <NavLink to="/" end>Dashboard</NavLink>
-          <NavLink to="/vocabulary">Vocabulary</NavLink>
-          <NavLink to="/practice">Practice</NavLink>
-        </nav>
-        <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
-          <span className="theme-toggle-track">
-            <span className="theme-toggle-thumb" />
-          </span>
-          <span className="theme-toggle-label">{theme === 'light' ? '☀️' : '🌙'}</span>
-        </button>
+        <div>
+          <h1>{t('appTitle')}</h1>
+          <nav>
+            <NavLink to="/" end>{t('navDashboard')}</NavLink>
+            <NavLink to="/vocabulary">{t('navVocabulary')}</NavLink>
+            <NavLink to="/practice">{t('navPractice')}</NavLink>
+          </nav>
+        </div>
+        <div className="header-controls">
+          <div className="language-selector">
+            <button
+              className={`lang-flag ${language === 'en' ? 'active' : ''}`}
+              onClick={() => setLanguage('en')}
+              aria-label="English"
+              title="English"
+            >🇬🇧</button>
+            <button
+              className={`lang-flag ${language === 'de' ? 'active' : ''}`}
+              onClick={() => setLanguage('de')}
+              aria-label="Deutsch"
+              title="Deutsch"
+            >🇩🇪</button>
+          </div>
+          <button className="theme-toggle" onClick={toggleTheme} aria-label={t('toggleTheme')}>
+            <span className="theme-toggle-track">
+              <span className="theme-toggle-thumb" />
+            </span>
+            <span className="theme-toggle-label">{theme === 'light' ? '☀️' : '🌙'}</span>
+          </button>
+        </div>
       </header>
       <main className="app-main">
         <Routes>

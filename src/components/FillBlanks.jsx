@@ -1,8 +1,10 @@
 import { useState, useEffect, useMemo, useCallback, useRef } from 'react'
 import { usePracticeStore } from '../store/practiceStore'
 import { useVocabularyStore } from '../store/vocabularyStore'
+import { useLanguageStore } from '../store/languageStore'
+import useTranslation from '../hooks/useTranslation'
 import { shuffleArray } from '../utils/practiceUtils'
-import vocabularyData from '../data/vocabulary.json'
+import { getVocabulary, getVocabularyWords } from '../utils/vocabularyUtils'
 import './FillBlanks.css'
 import SpeakerIcon from './SpeakerIcon'
 
@@ -22,12 +24,17 @@ export default function FillBlanks() {
     clearMistake
   } = useVocabularyStore()
 
+  const { language } = useLanguageStore()
+  const { t } = useTranslation()
+  const allWords = getVocabularyWords(language)
+  const vocabularyDataForLang = getVocabulary(language)
+
   const blankCount = settings.fillBlanks.blankCount
   const distractorCount = settings.fillBlanks.distractorCount
 
   // Filter words based on word pool filter and ensure they have examples
   const filteredWords = useMemo(() => {
-    let words = vocabularyData.words.filter(w => w.example && w.example.trim().length > 0)
+    let words = allWords.filter(w => w.example && w.example.trim().length > 0)
 
     if (wordPoolFilter === 'learned') {
       words = words.filter(w => learnedWords.has(w.id))
@@ -41,7 +48,7 @@ export default function FillBlanks() {
     }
 
     return words
-  }, [wordPoolFilter, levelFilter, learnedWords, mistakeWords])
+  }, [wordPoolFilter, levelFilter, learnedWords, mistakeWords, allWords])
 
   // State for current exercise
   const [word, setWord] = useState(null)
@@ -90,8 +97,8 @@ export default function FillBlanks() {
 
     // Build blanks array with correct words and their vocabulary data
     const newBlanks = blankIndices.map((idx) => {
-      const correctWord = words[idx].toLowerCase().replace(/[^a-z]/g, '')
-      const wordData = vocabularyData.words.find(w => w.word.toLowerCase() === correctWord)
+      const correctWord = words[idx].toLowerCase().replace(/[^a-zäöüß]/gi, '')
+      const wordData = vocabularyDataForLang.words.find(w => w.word.toLowerCase() === correctWord)
       return {
         id: `blank-${idx}`,
         wordIdx: idx,
@@ -124,7 +131,7 @@ export default function FillBlanks() {
       blanks: newBlanks,
       options: shuffleArray(optionsList)
     }
-  }, [filteredWords, blankCount, distractorCount])
+  }, [filteredWords, blankCount, distractorCount, vocabularyDataForLang.words])
 
   // Initialize exercise on mount
   useEffect(() => {
@@ -192,15 +199,15 @@ export default function FillBlanks() {
         incrementCorrect()
         clearMistake(word.id)
       }
-      setFeedback({ type: 'correct', message: '✓ Perfect! All answers are correct.' })
+      setFeedback({ type: 'correct', message: t('allCorrect') })
     } else {
       if (word) {
         incrementIncorrect()
         markAsMistake(word.id)
       }
-      setFeedback({ type: 'incorrect', message: '✗ Some answers are incorrect. Try again or move to the next sentence.' })
+      setFeedback({ type: 'incorrect', message: t('someIncorrect') })
     }
-  }, [word, blanks, filledBlanks, options, incrementCorrect, incrementIncorrect, markAsMistake, clearMistake])
+  }, [word, blanks, filledBlanks, options, incrementCorrect, incrementIncorrect, markAsMistake, clearMistake, t])
 
   const handleNext = useCallback(() => {
     const exercise = generateExercise()
@@ -293,15 +300,15 @@ export default function FillBlanks() {
     return (
       <div className="fill-blanks">
         <div className="no-words-message">
-          <p>No words available with examples for this exercise.</p>
-          <p>Try changing the word pool filter or add more words to your collection.</p>
+          <p>{t('noWordsWithExamples')}</p>
+          <p>{t('tryChangingFilter')}</p>
         </div>
       </div>
     )
   }
 
   if (!word) {
-    return <div className="fill-blanks">Loading...</div>
+    return <div className="fill-blanks">{t('loading')}</div>
   }
 
   // Build the sentence with blanks as interactive elements
@@ -335,7 +342,7 @@ export default function FillBlanks() {
                   })
                 }
               }}
-              title={showingAnswers ? '' : 'Click to remove'}
+              title={showingAnswers ? '' : t('clickToRemove')}
             >
               {hotkeyNumber && hotkeyNumber <= 9 && <span className="hotkey">{hotkeyNumber}</span>}
               <span className="word-text">{filledOption.word}</span>
@@ -361,18 +368,18 @@ export default function FillBlanks() {
                   </div>
                   
                   <div className="tooltip-translations">
-                    <strong>Magyar:</strong> {blank.wordData.translations && blank.wordData.translations.join(', ')}
+                    <strong>{t('nativeLabel')}</strong> {blank.wordData.translations && blank.wordData.translations.join(', ')}
                   </div>
                   
                   {blank.wordData.definition && (
                     <div className="tooltip-definition">
-                      <strong>Definition:</strong> {blank.wordData.definition}
+                      <strong>{t('definitionLabel')}</strong> {blank.wordData.definition}
                     </div>
                   )}
                   
                   {blank.wordData.example && (
                     <div className="tooltip-example">
-                      <strong>Example:</strong> {blank.wordData.example}
+                      <strong>{t('exampleLabel')}</strong> {blank.wordData.example}
                     </div>
                   )}
                 </div>
@@ -503,9 +510,9 @@ export default function FillBlanks() {
         <div className="button-row">
           {showingAnswers ? (
             <>
-              <div className={`feedback correct`}>✓ Correct answers shown above.</div>
+              <div className={`feedback correct`}>{t('correctAnswersShown')}</div>
               <button className="next-button" onClick={handleNext}>
-                Next (Enter)
+                {t('nextEnter')}
               </button>
             </>
           ) : feedback === null ? (
@@ -514,13 +521,13 @@ export default function FillBlanks() {
               onClick={handleCheck}
               disabled={blanks.some(b => !filledBlanks[b.id])}
             >
-              Check (Enter)
+              {t('checkEnter')}
             </button>
           ) : feedback.type === 'correct' ? (
             <>
               <div className={`feedback ${feedback.type}`}>{feedback.message}</div>
               <button className="next-button" onClick={handleNext}>
-                Next (Enter)
+                {t('nextEnter')}
               </button>
             </>
           ) : feedback.type === 'incorrect' ? (
@@ -528,10 +535,10 @@ export default function FillBlanks() {
               <div className={`feedback ${feedback.type}`}>{feedback.message}</div>
               <div className="incorrect-actions">
                 <button className="show-answer-button" onClick={handleShowAnswers}>
-                  Show Answers (S)
+                  {t('showAnswers')}
                 </button>
                 <button className="next-button" onClick={handleNext}>
-                  Next (Enter)
+                  {t('nextEnter')}
                 </button>
               </div>
             </>

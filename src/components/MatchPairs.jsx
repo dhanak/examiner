@@ -1,8 +1,10 @@
 import { useState, useEffect, useMemo, useCallback, useRef } from 'react'
 import { usePracticeStore } from '../store/practiceStore'
 import { useVocabularyStore } from '../store/vocabularyStore'
+import { useLanguageStore } from '../store/languageStore'
+import useTranslation from '../hooks/useTranslation'
 import { getRandomWords, shuffleArray, getRandomTranslation } from '../utils/practiceUtils'
-import vocabularyData from '../data/vocabulary.json'
+import { getVocabularyWords } from '../utils/vocabularyUtils'
 import './MatchPairs.css'
 import SpeakerIcon from './SpeakerIcon'
 
@@ -22,11 +24,15 @@ export default function MatchPairs() {
     clearMistake
   } = useVocabularyStore()
 
+  const { language } = useLanguageStore()
+  const { t } = useTranslation()
+  const allWords = getVocabularyWords(language)
+
   const pairCount = settings.matchPairs.pairCount
 
   // Filter words based on word pool filter and level filter
   const filteredWords = useMemo(() => {
-    let words = vocabularyData.words
+    let words = allWords
 
     if (wordPoolFilter === 'learned') {
       words = words.filter(w => learnedWords.has(w.id))
@@ -40,7 +46,7 @@ export default function MatchPairs() {
     }
 
     return words
-  }, [wordPoolFilter, levelFilter, learnedWords, mistakeWords])
+  }, [wordPoolFilter, levelFilter, learnedWords, mistakeWords, allWords])
 
   // Generate pairs for matching
   const generatePairs = useCallback(() => {
@@ -304,8 +310,8 @@ export default function MatchPairs() {
     return (
       <div className="match-pairs">
         <div className="no-words-message">
-          <p>Not enough words available for matching.</p>
-          <p>Try changing the word pool filter or add more words to your collection.</p>
+          <p>{t('notEnoughWords')}</p>
+          <p>{t('tryChangingFilter')}</p>
         </div>
       </div>
     )
@@ -355,9 +361,9 @@ export default function MatchPairs() {
 
       {allMatched && (
         <div className="completion-message">
-          <p>✓ All pairs matched! Great job!</p>
+          <p>{t('allPairsMatched')}</p>
           <button className="new-round-button" onClick={handleReset}>
-            New Round (Enter)
+            {t('newRound')}
           </button>
         </div>
       )}
