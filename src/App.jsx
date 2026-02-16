@@ -30,14 +30,12 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <div>
-          <h1>{t('appTitle')}</h1>
-          <nav>
-            <NavLink to="/" end>{t('navDashboard')}</NavLink>
-            <NavLink to="/vocabulary">{t('navVocabulary')}</NavLink>
-            <NavLink to="/practice">{t('navPractice')}</NavLink>
-          </nav>
-        </div>
+        <h1>{t('appTitle')}</h1>
+        <nav>
+          <NavLink to="/" end>{t('navDashboard')}</NavLink>
+          <NavLink to="/vocabulary">{t('navVocabulary')}</NavLink>
+          <NavLink to="/practice">{t('navPractice')}</NavLink>
+        </nav>
         <div className="header-controls">
           <div className="language-selector">
             <button
