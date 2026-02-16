@@ -7,7 +7,7 @@ export const usePracticeStore = create(
       // Current mode: 'multiple-choice', 'match-pairs', 'fill-blanks'
       currentMode: 'multiple-choice',
       
-      // Translation direction: 'hu-to-en' (Hungarian→English) or 'en-to-hu' (English→Hungarian)
+      // Translation direction: language-specific (e.g., 'hu-to-en', 'en-to-hu', 'hu-to-de', 'de-to-hu')
       direction: 'hu-to-en',
       
       // Word pool filter: 'all', 'learned', 'mistakes'
@@ -16,7 +16,14 @@ export const usePracticeStore = create(
       // Level filter: 'all', 'B1', 'B2', 'C1'
       levelFilter: 'all',
       
-      // Global statistics (persist across session resets)
+      // Per-language statistics storage
+      _statsPerLanguage: {
+        en: { globalCorrectCount: 0, globalIncorrectCount: 0 },
+        de: { globalCorrectCount: 0, globalIncorrectCount: 0 },
+      },
+      _currentLanguage: 'en',
+      
+      // Global statistics (for current language)
       globalCorrectCount: 0,
       globalIncorrectCount: 0,
       
@@ -40,6 +47,30 @@ export const usePracticeStore = create(
           distractorCount: 3   // 2-6 distractors
         }
       },
+      
+      // Switch language: save current stats, load new language's stats
+      setLanguage: (lang) => set((state) => {
+        const curLang = state._currentLanguage || 'en'
+        const stats = { ...state._statsPerLanguage }
+        // Save current
+        stats[curLang] = {
+          globalCorrectCount: state.globalCorrectCount,
+          globalIncorrectCount: state.globalIncorrectCount,
+        }
+        // Load new
+        const newStats = stats[lang] || { globalCorrectCount: 0, globalIncorrectCount: 0 }
+        if (!stats[lang]) stats[lang] = newStats
+        return {
+          _currentLanguage: lang,
+          _statsPerLanguage: stats,
+          globalCorrectCount: newStats.globalCorrectCount,
+          globalIncorrectCount: newStats.globalIncorrectCount,
+          // Reset session on language switch
+          correctCount: 0,
+          incorrectCount: 0,
+          currentQuestion: null,
+        }
+      }),
       
       // Actions
       setMode: (mode) => set({ currentMode: mode }),
@@ -81,29 +112,57 @@ export const usePracticeStore = create(
         currentQuestion: null
       }),
       
-      resetAll: () => set({
-        currentMode: 'multiple-choice',
-        direction: 'hu-to-en',
-        wordPoolFilter: 'all',
-        correctCount: 0,
-        incorrectCount: 0,
-        globalCorrectCount: 0,
-        globalIncorrectCount: 0,
-        currentQuestion: null,
-        settings: {
-          multipleChoice: {
-            optionCount: 4
-          },
-          matchPairs: {
-            pairCount: 6
-          },
-          fillBlanks: {
-            blankCount: 2,
-            distractorCount: 3
+      resetAll: () => set((state) => {
+        const lang = state._currentLanguage || 'en'
+        const stats = { ...state._statsPerLanguage }
+        stats[lang] = { globalCorrectCount: 0, globalIncorrectCount: 0 }
+        return {
+          currentMode: 'multiple-choice',
+          direction: 'hu-to-en',
+          wordPoolFilter: 'all',
+          correctCount: 0,
+          incorrectCount: 0,
+          globalCorrectCount: 0,
+          globalIncorrectCount: 0,
+          currentQuestion: null,
+          _statsPerLanguage: stats,
+          settings: {
+            multipleChoice: {
+              optionCount: 4
+            },
+            matchPairs: {
+              pairCount: 6
+            },
+            fillBlanks: {
+              blankCount: 2,
+              distractorCount: 3
+            }
           }
         }
       })
     }),
-    { name: 'practice-store' }
+    {
+      name: 'practice-store',
+      // Migration: wrap old flat stats into per-language format
+      merge: (persistedState, currentState) => {
+        if (persistedState && !persistedState._statsPerLanguage) {
+          // Old format: migrate globalCorrect/Incorrect as English stats
+          const enStats = {
+            globalCorrectCount: persistedState.globalCorrectCount || 0,
+            globalIncorrectCount: persistedState.globalIncorrectCount || 0,
+          }
+          return {
+            ...currentState,
+            ...persistedState,
+            _currentLanguage: 'en',
+            _statsPerLanguage: {
+              en: enStats,
+              de: { globalCorrectCount: 0, globalIncorrectCount: 0 },
+            },
+          }
+        }
+        return { ...currentState, ...persistedState }
+      }
+    }
   )
 )
