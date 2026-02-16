@@ -75,7 +75,7 @@ export default function FillBlanks() {
 
     // Find the index of the selected word in the sentence to ensure it's always a blank
     const selectedWordIndex = words.findIndex(w =>
-      w.toLowerCase().replace(/[^a-z]/g, '') === selectedWord.word.toLowerCase()
+      w.toLowerCase().replace(/[^a-zäöüß]/g, '') === selectedWord.word.toLowerCase()
     )
 
     // Create blanks: ensure selectedWord is always one of them
@@ -97,8 +97,13 @@ export default function FillBlanks() {
 
     // Build blanks array with correct words and their vocabulary data
     const newBlanks = blankIndices.map((idx) => {
-      const correctWord = words[idx].toLowerCase().replace(/[^a-zäöüß]/gi, '')
-      const wordData = vocabularyDataForLang.words.find(w => w.word.toLowerCase() === correctWord)
+      const wordFromSentence = words[idx].replace(/[^a-zäöüßA-ZÄÖÜ]/g, '')
+      // Find the vocabulary entry - compare case-insensitively
+      const wordData = vocabularyDataForLang.words.find(w => 
+        w.word.toLowerCase() === wordFromSentence.toLowerCase()
+      )
+      // Use the original vocabulary word (preserves capitalization for German nouns)
+      const correctWord = wordData ? wordData.word : wordFromSentence
       return {
         id: `blank-${idx}`,
         wordIdx: idx,
@@ -122,7 +127,7 @@ export default function FillBlanks() {
     const correctWordsList = newBlanks.map(b => b.correctWord)
     const optionsList = [
       ...correctWordsList.map(w => ({ id: `opt-${w}`, word: w, isCorrect: true })),
-      ...distractors.slice(0, distractorCount).map((w, i) => ({ id: `dist-${i}`, word: w.word.toLowerCase(), isCorrect: false }))
+      ...distractors.slice(0, distractorCount).map((w, i) => ({ id: `dist-${i}`, word: w.word, isCorrect: false }))
     ]
 
     return {
@@ -150,7 +155,7 @@ export default function FillBlanks() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  // Regenerate when blankCount or distractorCount changes
+  // Regenerate when blankCount, distractorCount, or language changes
   useEffect(() => {
     const exercise = generateExercise()
     if (exercise) {
@@ -163,7 +168,7 @@ export default function FillBlanks() {
       setShowingAnswers(false)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [blankCount, distractorCount])
+  }, [blankCount, distractorCount, language])
 
   // Clear error feedback when user modifies filled blanks (try again)
   useEffect(() => {
