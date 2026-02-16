@@ -109,7 +109,7 @@ src/
  components/     # UI components (MultipleChoice, MatchPairs, FillBlanks, FlipCard, etc.)
  store/          # Zustand state management (practiceStore, vocabularyStore, themeStore)
  utils/          # Utility functions (practiceUtils, formatScore, etc.)
- data/           # Static data (vocabulary.json - alphabetically sorted)
+ data/           # Static data (vocabulary-en.json - alphabetically sorted)
  App.jsx         # Main application component
 ```
 
@@ -133,7 +133,7 @@ src/
 
 ## Vocabulary Data
 
-- **File**: `src/data/vocabulary.json`
+- **File**: `src/data/vocabulary-en.json`
 - **Format**: Alphabetically sorted array of word objects
 - **Structure**: Each word includes id, word, level (B1/B2/C1), partOfSpeech, translations (Hungarian), definition (British English), and example
 - **Total**: 1000 words (190 B1 + 398 B2 + 412 C1)

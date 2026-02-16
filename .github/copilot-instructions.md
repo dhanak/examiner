@@ -93,7 +93,7 @@ export const useStoreNameStore = create(
 - Avoid direct database mutations in components; use functions in `src/db/`
 
 ### Vocabulary Data
-- Vocabulary words stored in `src/data/vocabulary.json`
+- Vocabulary words stored in `src/data/vocabulary-en.json`
 - JSON file is imported directly and bundled with the build
 - Each word has: `id`, `word`, `level`, `partOfSpeech`, `translations`, `definition`, `example`
 - Translations are in Hungarian (learner's native language)
@@ -113,7 +113,7 @@ export const useStoreNameStore = create(
 ## Common Patterns
 
 ### Adding Vocabulary Words
-1. Edit `src/data/vocabulary.json`
+1. Edit `src/data/vocabulary-en.json`
 2. Add new word object with all required fields
 3. Ensure Hungarian translations are accurate
 4. Include British English definition and example sentence
