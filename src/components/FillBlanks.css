@@ -48,6 +48,21 @@
   text-shadow: none;
 }
 
+.fill-blanks .word.vocab-word {
+  cursor: pointer;
+}
+
+/* Inline underline for vocabulary words inside lozenges and sentence words */
+.vocab-inline {
+  display: inline-block;
+  /* Use text-decoration so underline follows text baseline precisely */
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em; /* keep it close to glyphs */
+}
+
 .blank-slot {
   display: inline-flex;
   align-items: center;
@@ -97,6 +112,7 @@
   background: var(--accent-hover);
 }
 
+.receptacle-lozenge.filled.correct-solution,
 .receptacle-lozenge.correct-answer {
   background: var(--success-color);
   color: white;
@@ -104,6 +120,12 @@
   padding: 4px 8px;
   font-style: italic;
   position: relative;
+  cursor: default;
+}
+
+.receptacle-lozenge.filled.correct-solution:hover,
+.receptacle-lozenge.correct-answer:hover {
+  background: var(--success-color);
 }
 
 /* Tooltip for correct answer words in sentence */
@@ -420,4 +442,3 @@
   color: var(--speaker-speaking);
   animation: speaker-pulse 900ms infinite;
 }
-

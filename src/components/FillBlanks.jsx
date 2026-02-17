@@ -9,6 +9,39 @@ import './FillBlanks.css'
 import useInflections from '../utils/inflections'
 import SpeakerIcon from './SpeakerIcon'
 
+// Helper component to render word tooltip
+function WordTooltip({ wordData, t }) {
+  if (!wordData) return null
+  
+  return (
+    <div className="word-tooltip">
+      <div className="tooltip-header">
+        <div className="tooltip-word">{wordData.word}</div>
+        <div className="tooltip-meta">
+          <span className="tooltip-level">{wordData.level}</span>
+          <span className="tooltip-pos">{t(wordData.partOfSpeech)}</span>
+        </div>
+      </div>
+      
+      <div className="tooltip-translations">
+        <strong>{t('nativeLabel')}</strong> {wordData.translations && wordData.translations.join(', ')}
+      </div>
+      
+      {wordData.definition && (
+        <div className="tooltip-definition">
+          <strong>{t('definitionLabel')}</strong> {wordData.definition}
+        </div>
+      )}
+      
+      {wordData.example && (
+        <div className="tooltip-example">
+          <strong>{t('exampleLabel')}</strong> {wordData.example}
+        </div>
+      )}
+    </div>
+  )
+}
+
 export default function FillBlanks() {
   const {
     wordPoolFilter,
@@ -62,9 +95,52 @@ export default function FillBlanks() {
   const [feedback, setFeedback] = useState(null) // {type, message}
   const [showingAnswers, setShowingAnswers] = useState(false) // Showing correct answers (disables lozenges)
   const [hoveredBlankId, setHoveredBlankId] = useState(null) // Track hovered correct answer in sentence
+  const [hoveredWordIdx, setHoveredWordIdx] = useState(null) // Track hovered vocabulary word in sentence
   const [, setTouchTarget] = useState(null) // Track touch target receptacle
+  const [isCorrect, setIsCorrect] = useState(false) // Track if current exercise is correct
 
   const hasInitializedRef = useRef(false)
+
+  // Normalize text for comparison
+  const normalize = (text) => {
+    return text.toLowerCase().replace(/[^a-zäöüß]/g, '')
+  }
+
+  // Look up a word in the vocabulary and inflections database
+  const lookupWord = useCallback((wordText) => {
+    if (!vocabularyDataForLang || !inflections) return null
+
+    const wordNorm = normalize(wordText)
+    const allVocabWords = vocabularyDataForLang.words || []
+
+    // First try direct vocabulary lookup
+    for (const v of allVocabWords) {
+      if (normalize(v.word) === wordNorm) {
+        return v
+      }
+    }
+
+    // Try to find through inflections database
+    if (inflections.inflections) {
+      for (const [, entry] of Object.entries(inflections.inflections)) {
+        if (entry.observed && Array.isArray(entry.observed)) {
+          for (const obs of entry.observed) {
+            if (normalize(obs.form) === wordNorm) {
+              // Found the observed form, now get the vocabulary entry
+              const lemmaKey = normalize(entry.lemma || entry.base)
+              for (const v of allVocabWords) {
+                if (normalize(v.word) === lemmaKey) {
+                  return v
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    return null
+  }, [vocabularyDataForLang, inflections])
 
   // Generate an exercise by picking a random word and creating blanks
   const generateExercise = useCallback(() => {
@@ -343,6 +419,7 @@ export default function FillBlanks() {
         setOptions(exercise.options)
         setFilledBlanks({})
         setFeedback(null)
+        setIsCorrect(false)
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -359,6 +436,7 @@ export default function FillBlanks() {
       setFilledBlanks({})
       setFeedback(null)
       setShowingAnswers(false)
+      setIsCorrect(false)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [blankCount, distractorCount, language, inflections])
@@ -398,12 +476,14 @@ export default function FillBlanks() {
         clearMistake(word.id)
       }
       setFeedback({ type: 'correct', message: t('allCorrect') })
+      setIsCorrect(true)
     } else {
       if (word) {
         incrementIncorrect()
         markAsMistake(word.id)
       }
       setFeedback({ type: 'incorrect', message: t('someIncorrect') })
+      setIsCorrect(false)
     }
   }, [word, blanks, filledBlanks, options, incrementCorrect, incrementIncorrect, markAsMistake, clearMistake, t])
 
@@ -417,6 +497,7 @@ export default function FillBlanks() {
       setFilledBlanks({})
       setFeedback(null)
       setShowingAnswers(false)
+      setIsCorrect(false)
     }
   }, [generateExercise])
 
@@ -523,16 +604,15 @@ export default function FillBlanks() {
       const shouldShowCorrect = showingAnswers
       const correctWord = shouldShowCorrect ? blank.correctWord : null
       const isHovered = hoveredBlankId === blank.id
-      const showTooltip = shouldShowCorrect && isHovered && blank.wordData
 
       return (
         <span key={idx} className="blank-slot">
           {filledOption ? (
             <span
-              className="receptacle-lozenge filled"
+              className={`receptacle-lozenge filled ${isCorrect ? 'correct-solution' : ''} ${isCorrect && blank.wordData ? 'vocab-word' : ''}`}
               data-blank-id={blank.id}
               onClick={() => {
-                if (!showingAnswers) {
+                if (!showingAnswers && !isCorrect) {
                   setFilledBlanks(prev => {
                     const updated = { ...prev }
                     delete updated[blank.id]
@@ -540,48 +620,31 @@ export default function FillBlanks() {
                   })
                 }
               }}
-              title={showingAnswers ? '' : t('clickToRemove')}
+              onMouseEnter={() => {
+                if (isCorrect) setHoveredBlankId(blank.id)
+              }}
+              onMouseLeave={() => {
+                if (isCorrect) setHoveredBlankId(null)
+              }}
+              title={isCorrect ? '' : t('clickToRemove')}
+              style={isCorrect ? { position: 'relative' } : {}}
             >
-              {hotkeyNumber && hotkeyNumber <= 9 && <span className="hotkey">{hotkeyNumber}</span>}
-              <span className="word-text">{filledOption.word}</span>
+              {hotkeyNumber && hotkeyNumber <= 9 && !isCorrect && <span className="hotkey">{hotkeyNumber}</span>}
+              <span className={`word-text ${blank.wordData && (isCorrect || showingAnswers) ? 'vocab-inline' : ''}`}>{filledOption.word}</span>
+              {/* Tooltip when correct */}
+              {isCorrect && isHovered && <WordTooltip wordData={blank.wordData} t={t} />}
             </span>
           ) : shouldShowCorrect ? (
             <span 
-              className="receptacle-lozenge correct-answer"
+              className={`receptacle-lozenge correct-answer ${blank.wordData ? 'vocab-word' : ''}`}
               data-blank-id={blank.id}
               onMouseEnter={() => setHoveredBlankId(blank.id)}
               onMouseLeave={() => setHoveredBlankId(null)}
               style={{ position: 'relative' }}
             >
-              <span className="word-text">{correctWord}</span>
+              <span className={`word-text ${blank.wordData && (isCorrect || showingAnswers) ? 'vocab-inline' : ''}`}>{correctWord}</span>
               {/* Tooltip for correct answer */}
-              {showTooltip && (
-                <div className="word-tooltip">
-                  <div className="tooltip-header">
-                    <div className="tooltip-word">{blank.wordData.word}</div>
-                    <div className="tooltip-meta">
-                      <span className="tooltip-level">{blank.wordData.level}</span>
-                      <span className="tooltip-pos">{t(blank.wordData.partOfSpeech)}</span>
-                    </div>
-                  </div>
-                  
-                  <div className="tooltip-translations">
-                    <strong>{t('nativeLabel')}</strong> {blank.wordData.translations && blank.wordData.translations.join(', ')}
-                  </div>
-                  
-                  {blank.wordData.definition && (
-                    <div className="tooltip-definition">
-                      <strong>{t('definitionLabel')}</strong> {blank.wordData.definition}
-                    </div>
-                  )}
-                  
-                  {blank.wordData.example && (
-                    <div className="tooltip-example">
-                      <strong>{t('exampleLabel')}</strong> {blank.wordData.example}
-                    </div>
-                  )}
-                </div>
-              )}
+              {isHovered && <WordTooltip wordData={blank.wordData} t={t} />}
             </span>
           ) : (
             <span
@@ -615,9 +678,25 @@ export default function FillBlanks() {
         </span>
       )
     }
+    // Non-blank word: check if it's in vocabulary
+    const vocabEntry = lookupWord(w)
+    const isHovered = hoveredWordIdx === idx
+    const showTooltip = (showingAnswers || isCorrect) && isHovered
+
     return (
-      <span key={idx} className="word">
-        {w}{' '}
+      <span
+        key={idx}
+        className={`word ${vocabEntry ? 'vocab-word' : ''}`}
+        onMouseEnter={() => {
+          if ((showingAnswers || isCorrect) && vocabEntry) {
+            setHoveredWordIdx(idx)
+          }
+        }}
+        onMouseLeave={() => setHoveredWordIdx(null)}
+        style={{ position: vocabEntry ? 'relative' : 'static' }}
+      >
+        <span className={`word-text ${vocabEntry && (showingAnswers || isCorrect) ? 'vocab-inline' : ''}`}>{w}</span>{' '}
+        {showTooltip && <WordTooltip wordData={vocabEntry} t={t} />}
       </span>
     )
   })
