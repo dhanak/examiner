@@ -122,12 +122,39 @@ export default function FillBlanks() {
     const newBlanks = blankIndices.map((idx) => {
       const wordFromSentence = words[idx].replace(/[^a-zäöüßA-ZÄÖÜ]/g, '')
       const normSentence = normalize(wordFromSentence)
-      // Find the vocabulary entry - normalize both sides for robust matching
-      let wordData = vocabularyDataForLang.words.find(w => normalize(w.word) === normSentence)
-
-      // Fallback: try matching against precomputed inflections (if available)
-      if (!wordData && inflections) {
-        for (const [k, entry] of Object.entries(inflections)) {
+      
+      // Try to match using observed forms first (if inflections available)
+      let wordData = null
+      let matchedViaObserved = false
+      
+      if (inflections && inflections.inflections) {
+        for (const [key, entry] of Object.entries(inflections.inflections)) {
+          if (key === '__meta') continue
+          const observed = entry.observed || []
+          for (const obs of observed) {
+            if (normalize(obs.form) === normSentence) {
+              // Found a match in observed forms — now find the vocab entry
+              const lemma = entry.lemma || entry.base || key
+              wordData = vocabularyDataForLang.words.find(w => normalize(w.word) === normalize(lemma))
+              if (wordData) {
+                matchedViaObserved = true
+                break
+              }
+            }
+          }
+          if (matchedViaObserved) break
+        }
+      }
+      
+      // Fallback: direct dictionary match
+      if (!wordData) {
+        wordData = vocabularyDataForLang.words.find(w => normalize(w.word) === normSentence)
+      }
+      
+      // Fallback: try matching against generated inflections (if available)
+      if (!wordData && inflections && inflections.inflections) {
+        for (const [k, entry] of Object.entries(inflections.inflections)) {
+          if (k === '__meta') continue
           const lemma = entry.lemma || entry.base || k
           const normLemma = normalize(lemma)
 
@@ -179,13 +206,35 @@ export default function FillBlanks() {
           correctWord = correctWord.charAt(0).toLowerCase() + correctWord.slice(1)
         }
       }
-
       // Determine target morphological form (to inflect distractors similarly)
       let targetMorph = null
-      if (language === 'de' && inflections && wordData) {
+      if (language === 'de' && inflections && inflections.inflections && wordData) {
         const key = normalize(wordData.word)
-        const entry = inflections[key] || inflections[normalize(stripArticle(wordData.word))]
-        if (entry) {
+        const entry = inflections.inflections[key] || inflections.inflections[normalize(stripArticle(wordData.word))]
+        
+        // Try to detect morph from observed forms first
+        if (entry && entry.observed) {
+          for (const obs of entry.observed) {
+            if (normalize(obs.form) === normSentence) {
+              const feats = obs.features || {}
+              if (feats.Number === 'Plur') {
+                targetMorph = { type: 'plural' }
+              } else if (feats.VerbForm === 'Part') {
+                targetMorph = { type: 'past_participle' }
+              } else if (feats.Tense === 'Past' && feats.VerbForm !== 'Part') {
+                const personMap = {'1': 'ich', '2': 'du', '3': 'er'}
+                targetMorph = { type: 'preterite', person: personMap[feats.Person] || 'er' }
+              } else if (feats.Tense === 'Pres' && feats.Person) {
+                const personMap = {'1': 'ich', '2': 'du', '3': 'er'}
+                targetMorph = { type: 'present', person: personMap[feats.Person] || 'er' }
+              }
+              break
+            }
+          }
+        }
+        
+        // Fallback to generated inflections
+        if (!targetMorph && entry) {
           if (entry.plural && normalize(entry.plural) === normSentence) {
             targetMorph = { type: 'plural' }
           } else if (entry.past_participle && normalize(entry.past_participle) === normSentence) {
@@ -230,9 +279,9 @@ export default function FillBlanks() {
 
       // Try to pick a form for this candidate that matches any blank's targetMorph
       let candidateDisplay = null
-      if (language === 'de' && inflections) {
+      if (language === 'de' && inflections && inflections.inflections) {
         const candKey = normalize(cand.word)
-        const candEntry = inflections[candKey] || inflections[normalize(stripArticle(cand.word))]
+        const candEntry = inflections.inflections[candKey] || inflections.inflections[normalize(stripArticle(cand.word))]
         if (candEntry) {
           for (const blank of newBlanks) {
             const tm = blank.targetMorph
