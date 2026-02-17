@@ -6,6 +6,7 @@ import useTranslation from '../hooks/useTranslation'
 import { shuffleArray } from '../utils/practiceUtils'
 import { getVocabulary, getVocabularyWords } from '../utils/vocabularyUtils'
 import './FillBlanks.css'
+import useInflections from '../utils/inflections'
 import SpeakerIcon from './SpeakerIcon'
 
 export default function FillBlanks() {
@@ -28,6 +29,7 @@ export default function FillBlanks() {
   const { t } = useTranslation()
   const allWords = getVocabularyWords(language)
   const vocabularyDataForLang = getVocabulary(language)
+  const inflections = useInflections(language)
 
   const blankCount = settings.fillBlanks.blankCount
   const distractorCount = settings.fillBlanks.distractorCount
@@ -78,20 +80,38 @@ export default function FillBlanks() {
       w.toLowerCase().replace(/[^a-zäöüß]/g, '') === selectedWord.word.toLowerCase()
     )
 
-    // Create blanks: ensure selectedWord is always one of them
-    const availableIndices = words.map((_, idx) => idx)
+    // Create blanks: select indices but avoid trivial tokens (articles, 'to be' verbs)
+    const allIndices = words.map((_, idx) => idx)
+    const stripToken = (s) => String(s).replace(/[^a-zäöüßA-ZÄÖÜ]/g, '')
+    const isStopToken = (token) => {
+      const tok = stripToken(token).toLowerCase()
+      if (!tok) return true
+      const articlesEn = new Set(['the','a','an'])
+      const beEn = new Set(['be','am','is','are','was','were','being','been'])
+      const articlesDe = new Set(['der','die','das','den','dem','des','ein','eine','einen','einem','eines','einer'])
+      const beDe = new Set(['sein','bin','bist','ist','sind','seid','war','waren','gewesen','warst'])
+      if (language === 'de') {
+        if (articlesDe.has(tok)) return true
+        if (beDe.has(tok)) return true
+      } else {
+        if (articlesEn.has(tok)) return true
+        if (beEn.has(tok)) return true
+      }
+      return false
+    }
+    // Prefer indices that are not trivial tokens
+    let availableIndices = allIndices.filter(idx => !isStopToken(words[idx]))
+    // If filtering removes everything, fall back to all indices
+    if (availableIndices.length === 0) availableIndices = allIndices
     const numBlanks = Math.min(blankCount, availableIndices.length)
-    
-    // Start with the selected word's index
-    let blankIndices = selectedWordIndex >= 0 ? [selectedWordIndex] : []
-    
+    // Start with the selected word's index only if it's not a trivial token
+    let blankIndices = selectedWordIndex >= 0 && !isStopToken(words[selectedWordIndex]) ? [selectedWordIndex] : []
     // Add additional random indices to reach numBlanks
     if (numBlanks > blankIndices.length) {
       const remainingIndices = availableIndices.filter(idx => !blankIndices.includes(idx))
       const additionalIndices = shuffleArray(remainingIndices).slice(0, numBlanks - blankIndices.length)
       blankIndices = blankIndices.concat(additionalIndices)
     }
-    
     // Shuffle the final indices for visual variety
     blankIndices = shuffleArray(blankIndices)
 
@@ -103,14 +123,98 @@ export default function FillBlanks() {
       const wordFromSentence = words[idx].replace(/[^a-zäöüßA-ZÄÖÜ]/g, '')
       const normSentence = normalize(wordFromSentence)
       // Find the vocabulary entry - normalize both sides for robust matching
-      const wordData = vocabularyDataForLang.words.find(w => normalize(w.word) === normSentence)
-      // Use the vocabulary word without leading article for display if available
-      const correctWord = wordData ? stripArticle(wordData.word) : wordFromSentence
+      let wordData = vocabularyDataForLang.words.find(w => normalize(w.word) === normSentence)
+
+      // Fallback: try matching against precomputed inflections (if available)
+      if (!wordData && inflections) {
+        for (const [k, entry] of Object.entries(inflections)) {
+          const lemma = entry.lemma || entry.base || k
+          const normLemma = normalize(lemma)
+
+          if (entry.plural && normalize(entry.plural) === normSentence) {
+            wordData = vocabularyDataForLang.words.find(w => normalize(w.word) === normLemma)
+            if (wordData) break
+          }
+
+          if (entry.past_participle && normalize(entry.past_participle) === normSentence) {
+            wordData = vocabularyDataForLang.words.find(w => normalize(w.word) === normLemma)
+            if (wordData) break
+          }
+
+          if (entry.present) {
+            for (const form of Object.values(entry.present)) {
+              if (normalize(form) === normSentence) {
+                wordData = vocabularyDataForLang.words.find(w => normalize(w.word) === normLemma)
+                break
+              }
+            }
+            if (wordData) break
+          }
+
+          if (entry.preterite) {
+            for (const form of Object.values(entry.preterite)) {
+              if (normalize(form) === normSentence) {
+                wordData = vocabularyDataForLang.words.find(w => normalize(w.word) === normLemma)
+                break
+              }
+            }
+            if (wordData) break
+          }
+
+          if (entry.base && normalize(entry.base.replace(/^(der|die|das)\s+/i, '')) === normSentence) {
+            wordData = vocabularyDataForLang.words.find(w => normalize(w.word) === normLemma)
+            if (wordData) break
+          }
+        }
+      }
+
+      // Use the surface form from the sentence for display (preserve inflection)
+      let correctWord = wordFromSentence
+      // If the blank is at the start of the sentence, prefer a lowercased lozenge
+      // unless the vocabulary form itself starts with uppercase (e.g., German nouns)
+      if (idx === 0) {
+        const vocabForm = wordData ? stripArticle(wordData.word) : null
+        const vocabStartsUpper = vocabForm ? /^[A-ZÄÖÜ]/.test(vocabForm) : false
+        if (!vocabStartsUpper) {
+          correctWord = correctWord.charAt(0).toLowerCase() + correctWord.slice(1)
+        }
+      }
+
+      // Determine target morphological form (to inflect distractors similarly)
+      let targetMorph = null
+      if (language === 'de' && inflections && wordData) {
+        const key = normalize(wordData.word)
+        const entry = inflections[key] || inflections[normalize(stripArticle(wordData.word))]
+        if (entry) {
+          if (entry.plural && normalize(entry.plural) === normSentence) {
+            targetMorph = { type: 'plural' }
+          } else if (entry.past_participle && normalize(entry.past_participle) === normSentence) {
+            targetMorph = { type: 'past_participle' }
+          } else if (entry.preterite) {
+            for (const [person, form] of Object.entries(entry.preterite)) {
+              if (normalize(form) === normSentence) {
+                targetMorph = { type: 'preterite', person }
+                break
+              }
+            }
+          } else if (entry.present) {
+            for (const [person, form] of Object.entries(entry.present)) {
+              if (normalize(form) === normSentence) {
+                targetMorph = { type: 'present', person }
+                break
+              }
+            }
+          }
+        }
+      }
+
       return {
         id: `blank-${idx}`,
         wordIdx: idx,
         correctWord,
-        wordData // Store full word object for tooltip display
+        wordData, // Store full word object for tooltip display
+        targetMorph,
+        normSentence
       }
     })
 
@@ -118,13 +222,56 @@ export default function FillBlanks() {
     const correctWords = new Set(newBlanks.map(b => normalize(b.correctWord)))
     const candidateDistractors = filteredWords.filter(w => !correctWords.has(normalize(w.word)))
     const shuffledCandidates = shuffleArray(candidateDistractors)
-    const distractors = shuffledCandidates.slice(0, distractorCount)
+
+    const distractors = []
+    const usedDisplayNorms = new Set()
+    for (const cand of shuffledCandidates) {
+      if (distractors.length >= distractorCount) break
+
+      // Try to pick a form for this candidate that matches any blank's targetMorph
+      let candidateDisplay = null
+      if (language === 'de' && inflections) {
+        const candKey = normalize(cand.word)
+        const candEntry = inflections[candKey] || inflections[normalize(stripArticle(cand.word))]
+        if (candEntry) {
+          for (const blank of newBlanks) {
+            const tm = blank.targetMorph
+            if (!tm) continue
+            if (tm.type === 'plural' && candEntry.plural) {
+              candidateDisplay = candEntry.plural
+              break
+            }
+            if (tm.type === 'past_participle' && candEntry.past_participle) {
+              candidateDisplay = candEntry.past_participle
+              break
+            }
+            if (tm.type === 'present' && candEntry.present && candEntry.present[tm.person]) {
+              candidateDisplay = candEntry.present[tm.person]
+              break
+            }
+            if (tm.type === 'preterite' && candEntry.preterite && candEntry.preterite[tm.person]) {
+              candidateDisplay = candEntry.preterite[tm.person]
+              break
+            }
+          }
+        }
+      }
+
+      if (!candidateDisplay) {
+        candidateDisplay = cand.partOfSpeech === 'noun' ? stripArticle(cand.word) : cand.word
+      }
+      const candNorm = normalize(candidateDisplay)
+      if (usedDisplayNorms.has(candNorm)) continue
+      if (correctWords.has(candNorm)) continue
+      usedDisplayNorms.add(candNorm)
+      distractors.push({ id: `dist-${cand.id}`, word: candidateDisplay, sourceId: cand.id })
+    }
 
     // Create options: correct words + distractors, with correct flag
     const correctWordsList = newBlanks.map(b => b.correctWord)
     const optionsList = [
-      ...correctWordsList.map(w => ({ id: `opt-${w}`, word: w, isCorrect: true })),
-      ...distractors.map((w, i) => ({ id: `dist-${i}`, word: language === 'de' && w.partOfSpeech === 'noun' ? stripArticle(w.word) : w.word, isCorrect: false }))
+      ...correctWordsList.map((w, i) => ({ id: `opt-${i}`, word: w, isCorrect: true })),
+      ...distractors.map((w, i) => ({ id: `dist-${i}`, word: w.word, isCorrect: false }))
     ]
 
     return {
@@ -133,7 +280,7 @@ export default function FillBlanks() {
       blanks: newBlanks,
       options: shuffleArray(optionsList)
     }
-  }, [filteredWords, blankCount, distractorCount, vocabularyDataForLang.words])
+  }, [filteredWords, blankCount, distractorCount, vocabularyDataForLang.words, inflections, language])
 
   // Initialize exercise on mount
   useEffect(() => {
@@ -165,7 +312,7 @@ export default function FillBlanks() {
       setShowingAnswers(false)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [blankCount, distractorCount, language])
+  }, [blankCount, distractorCount, language, inflections])
 
   // Clear error feedback when user modifies filled blanks (try again)
   useEffect(() => {
