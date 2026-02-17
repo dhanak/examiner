@@ -210,4 +210,4 @@ Contributions are welcome! Please ensure:
 
 ## License
 
-MIT
+MIT © 2026 David Hanak. See LICENSE file for details.

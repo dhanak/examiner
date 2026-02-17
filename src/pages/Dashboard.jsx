@@ -5,6 +5,7 @@ import { useLanguageStore } from '../store/languageStore'
 import useTranslation from '../hooks/useTranslation'
 import { getVocabularyWords } from '../utils/vocabularyUtils'
 import './Dashboard.css'
+import pkg from '../../package.json'
 
 export default function Dashboard() {
   const {
@@ -188,6 +189,18 @@ export default function Dashboard() {
           <input ref={fileInputRef} type="file" accept="application/json" style={{ display: 'none' }} onChange={handleFileSelected} />
         </div>
       </section>
+
+      <footer className="dashboard-footer">
+        <div className="footer-inner">
+          <div className="footer-left">Version {pkg.version}</div>
+          <div className="footer-center">© 2026 David Hanak — <a href="https://github.com/dhanak/examiner/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">MIT License</a></div>
+          <div className="footer-right">
+            <a href="https://github.com/dhanak/examiner" target="_blank" rel="noopener noreferrer" className="github-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.263.82-.583 0-.288-.01-1.05-.015-2.06-3.338.727-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.304.76-1.604-2.665-.304-5.467-1.334-5.467-5.93 0-1.31.468-2.38 1.235-3.22-.123-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.29-1.552 3.296-1.23 3.296-1.23.653 1.653.241 2.874.118 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.807 5.624-5.48 5.92.43.37.814 1.096.814 2.21 0 1.595-.015 2.88-.015 3.27 0 .322.216.698.825.58C20.565 21.796 24 17.295 24 12 24 5.37 18.63 0 12 0z"/></svg>
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
