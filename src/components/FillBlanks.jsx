@@ -196,7 +196,10 @@ export default function FillBlanks() {
     const normalize = (s) => stripArticle(String(s)).toLowerCase().replace(/[^a-zäöüß]/gi, '')
 
     const newBlanks = blankIndices.map((idx) => {
-      const wordFromSentence = words[idx].replace(/[^a-zäöüßA-ZÄÖÜ]/g, '')
+      const rawToken = words[idx]
+      const punctMatch = rawToken.match(/[^a-zäöüßA-ZÄÖÜ]+$/)
+      const trailingPunct = punctMatch ? punctMatch[0] : ''
+      const wordFromSentence = rawToken.replace(/[^a-zäöüßA-ZÄÖÜ]/g, '')
       const normSentence = normalize(wordFromSentence)
       
       // Try to match using observed forms first (if inflections available)
@@ -365,7 +368,8 @@ export default function FillBlanks() {
         correctWord,
         wordData, // Store full word object for tooltip display
         targetMorph,
-        normSentence
+        normSentence,
+        trailingPunct
       }
     })
 
@@ -701,6 +705,7 @@ export default function FillBlanks() {
               _______
             </span>
           )}
+          {blank.trailingPunct}{' '}
         </span>
       )
     }

@@ -139,6 +139,21 @@ export const usePracticeStore = create(
             }
           }
         }
+      }),
+
+      // Import stats for a given language (overwrites per-language stats and updates current stats if language matches)
+      importStatsForLanguage: (lang, payload) => set((state) => {
+        const stats = { ...(state._statsPerLanguage || {}) }
+        stats[lang] = {
+          globalCorrectCount: typeof payload?.globalCorrectCount === 'number' ? payload.globalCorrectCount : 0,
+          globalIncorrectCount: typeof payload?.globalIncorrectCount === 'number' ? payload.globalIncorrectCount : 0,
+        }
+        const updates = { _statsPerLanguage: stats }
+        if ((state._currentLanguage || 'en') === lang) {
+          updates.globalCorrectCount = stats[lang].globalCorrectCount
+          updates.globalIncorrectCount = stats[lang].globalIncorrectCount
+        }
+        return updates
       })
     }),
     {

@@ -24,7 +24,13 @@ const de = {
   accuracy: 'Genauigkeit',
   clearAllProgress: 'Gesamten Fortschritt löschen',
   clearProgressConfirm: 'Möchtest du wirklich den gesamten Fortschritt löschen? Dadurch werden:\n\n• Alle Übungsstatistiken zurückgesetzt\n• Alle gelernten Wörter vergessen\n• Alle Fehlereinträge gelöscht\n• Alle Übungseinstellungen zurückgesetzt\n\nDiese Aktion kann nicht rückgängig gemacht werden.',
-  clearProgressHint: 'Dies setzt alle Statistiken, gelernten Wörter und Fehler zurück.',
+
+  // Export / Import
+  downloadProgress: 'Fortschritt herunterladen',
+  uploadProgress: 'Fortschritt hochladen',
+  uploadProgressConfirm: 'Das Hochladen einer Fortschrittsdatei überschreibt deinen aktuellen Fortschritt für diese Sprache. Fortfahren?',
+  importSuccess: 'Fortschritt erfolgreich importiert.',
+  importError: 'Import fehlgeschlagen: Ungültiges Dateiformat.' ,
 
   // Vocabulary Practice
   levelLabel: 'Stufe:',

@@ -101,6 +101,14 @@
   text-align: center;
 }
 
+.action-buttons {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .btn-clear-progress {
   padding: 0.75rem 1.5rem;
   background: var(--error-color, #ef4444);
@@ -121,12 +129,6 @@
 
 .btn-clear-progress:active {
   transform: translateY(0);
-}
-
-.action-hint {
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-  margin: 0;
 }
 
 /* Responsive Design */

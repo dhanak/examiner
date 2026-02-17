@@ -91,6 +91,21 @@ export const useVocabularyStore = create(
       resetProgress: () => set({ 
         learnedWords: new Set(),
         mistakeWords: new Set()
+      }),
+
+      // Import progress for a given language (overwrites per-language arrays and updates current sets if language matches)
+      importProgress: (lang, payload) => set((state) => {
+        const perLang = { ...(state._perLanguage || {}) }
+        perLang[lang] = {
+          learnedWords: Array.isArray(payload?.learnedWords) ? payload.learnedWords : [],
+          mistakeWords: Array.isArray(payload?.mistakeWords) ? payload.mistakeWords : [],
+        }
+        const updates = { _perLanguage: perLang }
+        if ((state._currentLanguage || 'en') === lang) {
+          updates.learnedWords = new Set(perLang[lang].learnedWords)
+          updates.mistakeWords = new Set(perLang[lang].mistakeWords)
+        }
+        return updates
       })
     }),
     {

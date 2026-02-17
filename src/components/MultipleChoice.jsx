@@ -207,7 +207,7 @@ export default function MultipleChoice() {
       <div className="question-card">
         <div className="badges">
           <span className="level-badge">{currentWord.level}</span>
-          <span className="pos-badge">{currentWord.partOfSpeech}</span>
+          <span className="pos-badge">{t(currentWord.partOfSpeech)}</span>
         </div>
 
         <div className="prompt-word">

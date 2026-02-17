@@ -24,7 +24,13 @@ const en = {
   accuracy: 'Accuracy',
   clearAllProgress: 'Clear All Progress',
   clearProgressConfirm: 'Are you sure you want to clear all progress? This will:\n\n• Reset all practice statistics\n• Forget all learned words\n• Clear all mistake records\n• Reset all practice settings\n\nThis action cannot be undone.',
-  clearProgressHint: 'This will reset all statistics, learned words, and mistakes.',
+
+  // Export / Import
+  downloadProgress: 'Download Progress',
+  uploadProgress: 'Upload Progress',
+  uploadProgressConfirm: 'Uploading a progress file will overwrite your current progress for this language. Continue?',
+  importSuccess: 'Progress imported successfully.',
+  importError: 'Failed to import progress: invalid file format.' ,
 
   // Vocabulary Practice
   levelLabel: 'Level:',
