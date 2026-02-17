@@ -96,14 +96,16 @@ export default function FillBlanks() {
     blankIndices = shuffleArray(blankIndices)
 
     // Build blanks array with correct words and their vocabulary data
+    const stripArticle = (s) => (typeof s === 'string' ? s.replace(/^(der|die|das)\s+/i, '') : s)
+    const normalize = (s) => stripArticle(String(s)).toLowerCase().replace(/[^a-zäöüß]/gi, '')
+
     const newBlanks = blankIndices.map((idx) => {
       const wordFromSentence = words[idx].replace(/[^a-zäöüßA-ZÄÖÜ]/g, '')
-      // Find the vocabulary entry - compare case-insensitively
-      const wordData = vocabularyDataForLang.words.find(w => 
-        w.word.toLowerCase() === wordFromSentence.toLowerCase()
-      )
-      // Use the original vocabulary word (preserves capitalization for German nouns)
-      const correctWord = wordData ? wordData.word : wordFromSentence
+      const normSentence = normalize(wordFromSentence)
+      // Find the vocabulary entry - normalize both sides for robust matching
+      const wordData = vocabularyDataForLang.words.find(w => normalize(w.word) === normSentence)
+      // Use the vocabulary word without leading article for display if available
+      const correctWord = wordData ? stripArticle(wordData.word) : wordFromSentence
       return {
         id: `blank-${idx}`,
         wordIdx: idx,
@@ -112,22 +114,17 @@ export default function FillBlanks() {
       }
     })
 
-    // Get distractor words (exclude correct words and duplicates)
-    const correctWords = new Set(newBlanks.map(b => b.correctWord.toLowerCase()))
-    let distractors = []
-    for (const w of filteredWords) {
-      const wLower = w.word.toLowerCase()
-      if (!correctWords.has(wLower)) {
-        distractors.push(w)
-      }
-      if (distractors.length >= distractorCount) break
-    }
+    // Get distractor words (exclude correct words and duplicates) - pick randomly
+    const correctWords = new Set(newBlanks.map(b => normalize(b.correctWord)))
+    const candidateDistractors = filteredWords.filter(w => !correctWords.has(normalize(w.word)))
+    const shuffledCandidates = shuffleArray(candidateDistractors)
+    const distractors = shuffledCandidates.slice(0, distractorCount)
 
     // Create options: correct words + distractors, with correct flag
     const correctWordsList = newBlanks.map(b => b.correctWord)
     const optionsList = [
       ...correctWordsList.map(w => ({ id: `opt-${w}`, word: w, isCorrect: true })),
-      ...distractors.slice(0, distractorCount).map((w, i) => ({ id: `dist-${i}`, word: w.word, isCorrect: false }))
+      ...distractors.map((w, i) => ({ id: `dist-${i}`, word: language === 'de' && w.partOfSpeech === 'noun' ? stripArticle(w.word) : w.word, isCorrect: false }))
     ]
 
     return {
