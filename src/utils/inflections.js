@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
-// Simple hook to load precomputed inflections for German (if available in public/data)
-// Returns null if not available or for non-German languages.
+// Hook to load precomputed inflections for German and English (if available in public/data)
+// Returns null if not available or for unsupported languages.
 const cache = {}
 
 export default function useInflections(language) {
@@ -10,7 +10,7 @@ export default function useInflections(language) {
   useEffect(() => {
     let mounted = true
     async function load() {
-      if (language !== 'de') {
+      if (language !== 'de' && language !== 'en') {
         if (mounted) setData(null)
         return
       }
@@ -22,11 +22,14 @@ export default function useInflections(language) {
 
       const base = import.meta.env.BASE_URL || '/'
       const stripLeadingSlash = (p) => p.replace(/^\/+/, '')
+      
+      // Build candidate URLs based on language
+      const langCode = language === 'de' ? 'de' : 'en'
       const candidates = [
-        `${base}${stripLeadingSlash('data/vocabulary-de-inflections.json')}`,
-        `${base}${stripLeadingSlash('vocabulary-de-inflections.json')}`,
-        `${base}${stripLeadingSlash('vocab_de_inflections.json')}`,
-        `${base}${stripLeadingSlash('data/vocab_de_inflections.json')}`
+        `${base}${stripLeadingSlash(`data/vocabulary-${langCode}-inflections.json`)}`,
+        `${base}${stripLeadingSlash(`vocabulary-${langCode}-inflections.json`)}`,
+        `${base}${stripLeadingSlash(`vocab_${langCode}_inflections.json`)}`,
+        `${base}${stripLeadingSlash(`data/vocab_${langCode}_inflections.json`)}`
       ]
 
       let loaded = null

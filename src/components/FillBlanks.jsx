@@ -284,7 +284,7 @@ export default function FillBlanks() {
       }
       // Determine target morphological form (to inflect distractors similarly)
       let targetMorph = null
-      if (language === 'de' && inflections && inflections.inflections && wordData) {
+      if (inflections && inflections.inflections && wordData) {
         const key = normalize(wordData.word)
         const entry = inflections.inflections[key] || inflections.inflections[normalize(stripArticle(wordData.word))]
         
@@ -298,11 +298,37 @@ export default function FillBlanks() {
               } else if (feats.VerbForm === 'Part') {
                 targetMorph = { type: 'past_participle' }
               } else if (feats.Tense === 'Past' && feats.VerbForm !== 'Part') {
-                const personMap = {'1': 'ich', '2': 'du', '3': 'er'}
-                targetMorph = { type: 'preterite', person: personMap[feats.Person] || 'er' }
+                // Map person for German and English
+                let person
+                if (language === 'de') {
+                  person = {'1': 'ich', '2': 'du', '3': 'er'}[feats.Person] || 'er'
+                } else {
+                  // For English: map (Person, Number) tuple
+                  const p = feats.Person
+                  const n = feats.Number
+                  if (p === '1' && n === 'Sing') person = 'I'
+                  else if (p === '1' && n === 'Plur') person = 'we'
+                  else if (p === '2') person = 'you'
+                  else if (p === '3' && n === 'Plur') person = 'they'
+                  else person = 'he'
+                }
+                targetMorph = { type: 'preterite', person }
               } else if (feats.Tense === 'Pres' && feats.Person) {
-                const personMap = {'1': 'ich', '2': 'du', '3': 'er'}
-                targetMorph = { type: 'present', person: personMap[feats.Person] || 'er' }
+                // Map person for German and English
+                let person
+                if (language === 'de') {
+                  person = {'1': 'ich', '2': 'du', '3': 'er'}[feats.Person] || 'er'
+                } else {
+                  // For English: map (Person, Number) tuple
+                  const p = feats.Person
+                  const n = feats.Number
+                  if (p === '1' && n === 'Sing') person = 'I'
+                  else if (p === '1' && n === 'Plur') person = 'we'
+                  else if (p === '2') person = 'you'
+                  else if (p === '3' && n === 'Plur') person = 'they'
+                  else person = 'he'
+                }
+                targetMorph = { type: 'present', person }
               }
               break
             }
