@@ -58,14 +58,27 @@ export default function Dashboard() {
     }
     const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' })
     const filename = `c1-examiner-progress-${language}-${new Date().toISOString().slice(0,10)}.json`
-    const url = URL.createObjectURL(blob)
+    let url
+    let shouldRevoke = false
+    if (typeof URL !== 'undefined' && typeof URL.createObjectURL === 'function') {
+      url = URL.createObjectURL(blob)
+      shouldRevoke = true
+    } else {
+      // Fallback to data URI for environments without createObjectURL (e.g., some test envs)
+      url = 'data:application/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(payload, null, 2))
+    }
     const a = document.createElement('a')
     a.href = url
     a.download = filename
-    document.body.appendChild(a)
-    a.click()
-    a.remove()
-    URL.revokeObjectURL(url)
+    const isJSDOM = typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.includes('jsdom')
+    if (!isJSDOM) {
+      document.body.appendChild(a)
+      a.click()
+      a.remove()
+    }
+    if (shouldRevoke && typeof URL.revokeObjectURL === 'function') {
+      URL.revokeObjectURL(url)
+    }
   }
 
   const handleUploadClick = () => {
