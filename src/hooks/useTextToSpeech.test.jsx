@@ -1,11 +1,12 @@
+/* global global */
 import React from 'react'
 import { render, waitFor } from '@testing-library/react'
-import { describe, it, expect, vi } from 'vitest'
+import { describe, it, expect, vi, afterEach } from 'vitest'
 import useTextToSpeech from './useTextToSpeech'
 
 function TestHarness({ onReady }) {
   const tts = useTextToSpeech({ langPreference: 'en-GB' })
-  React.useEffect(() => { onReady(tts) }, [])
+  React.useEffect(() => { onReady(tts) }, [onReady, tts])
   return null
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { describe, it } from 'vitest'
+import { describe, it, expect } from 'vitest'
 import Dashboard from './Dashboard'
 
 describe('Dashboard page', () => {
